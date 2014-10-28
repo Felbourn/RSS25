@@ -1,0 +1,238 @@
+toolbars
+{
+	kspVersions = 0.24.0,0.24.1,0.24.2,0.25.0
+	SPACECENTER
+	{
+		toolbar_603955183
+		{
+			x = 14
+			y = 13
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
+		}
+	}
+	EDITOR
+	{
+		toolbar_21012281
+		{
+			x = 546
+			y = 46
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle,RCSBuildAid.mainButton,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB
+		}
+		toolbar_573567179
+		{
+			x = 297
+			y = 841
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,PartOrganizer.sort,PartOrganizer.filter
+			visibleButtons = PartOrganizer.filter,PartOrganizer.sort
+		}
+		toolbar_237132762
+		{
+			x = 1084
+			y = 29
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = CIT_NodeHelper.NodeHelperButton
+		}
+	}
+	MAINMENU
+	{
+		toolbar_21012281
+		{
+			x = 546
+			y = 46
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle,RCSBuildAid.mainButton,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB
+		}
+		toolbar_573567179
+		{
+			x = 297
+			y = 841
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,PartOrganizer.sort,PartOrganizer.filter
+			visibleButtons = PartOrganizer.filter,PartOrganizer.sort
+		}
+		toolbar_553337208
+		{
+			x = 156
+			y = 1
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels
+		}
+		toolbar_999066674
+		{
+			x = 934
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = test.toVAB,test.toTS,test.toSPH,test.saveAndQuit
+		}
+		toolbar_1775592927
+		{
+			x = 1155
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.LS
+		}
+		toolbar_52115996
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+		toolbar_237132762
+		{
+			x = 1084
+			y = 29
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = CIT_NodeHelper.NodeHelperButton
+		}
+		toolbar_387804338
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+		toolbar_603955183
+		{
+			x = 14
+			y = 13
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
+		}
+	}
+	FLIGHT
+	{
+		toolbar_553337208
+		{
+			x = 156
+			y = 1
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels
+		}
+		toolbar_999066674
+		{
+			x = 934
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = test.toVAB,test.toTS,test.toSPH,test.saveAndQuit
+		}
+		toolbar_1775592927
+		{
+			x = 1155
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.LS
+		}
+	}
+	FLIGHTMAP
+	{
+		toolbar_52115996
+		{
+			x = 156
+			y = -3
+			width = 250
+			height = 81
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,CrewManifest.CrewManifest,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,MechJeb2.Rendezvous_Planner,MechJeb2.Flight_Computer,MechJeb2.Smart_A_S_S_,MechJeb2.Maneuver_Planner,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
+		}
+	}
+	TRACKSTATION
+	{
+		toolbar_387804338
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+}
