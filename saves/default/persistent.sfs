@@ -262,7 +262,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		 = 1245471819
+		 = 810312530
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -300,7 +300,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 13.3799999999998
+		UT = 131.359999999994
 		activeVessel = 0
 		mapViewFiltering = 0
 		VESSEL
@@ -449,6 +449,240 @@ GAME
 				state = 1
 				lastObservedTime = 10.8599999999999
 				lifetime = 126424.896240234
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 9423f27860be4b25965e91d9f1f87bd2
+			name = Ast. XWB-884
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 30.8799999999995
+			lct = 30.8799999999995
+			root = 0
+			lat = 23.2496149054348
+			lon = 101.077702809951
+			alt = 146960738170.8
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.779164,0.366654,0.4715566,0.1900068
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 457441199.834644
+				ECC = 0.954785615786116
+				INC = 66.753223240526
+				LPE = 252.021631007238
+				LAN = 42.5191069505816
+				MNA = 4.64600629299614
+				EPH = 30.8800000004465
+				REF = 1
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 281939589
+				mid = 281939589
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 30.8799999999995
+				lifetime = 150664.334106445
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1b7084b9cc734464b6dd3fd53d649d98
+			name = Ast. RUK-223
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 90.9199999999991
+			lct = 90.9199999999991
+			root = 0
+			lat = 22.9269175903417
+			lon = 100.790086894825
+			alt = 148264380765.771
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2719569,-0.4638882,0.7413514,0.4015535
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 157996052012.067
+				ECC = 0.0633577019424048
+				INC = 23.2232793993068
+				LPE = 126.017779435148
+				LAN = 1.18416351079566
+				MNA = 0.063793546784987
+				EPH = 2624742.5618457
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 575075063
+				mid = 575075063
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 90.9199999999991
+				lifetime = 914232.952880859
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = aa6430c24aa943548b136f818f8d8ca7
+			name = Ast. GGZ-269
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 105.919999999996
+			lct = 105.919999999996
+			root = 0
+			lat = 23.2963326166
+			lon = 99.8035808990338
+			alt = 146434273420.778
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.003555042,-0.5082144,0.7145274,0.4807869
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 154797377833.65
+				ECC = 0.0526132435416745
+				INC = 23.6231645899465
+				LPE = 120.032879919445
+				LAN = 359.791253542075
+				MNA = 0.545326284010843
+				EPH = 4608125.58552734
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 810312530
+				mid = 810312530
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 105.919999999996
+				lifetime = 1558521.44165039
 				refTime = 1728000
 				size = 2
 			}

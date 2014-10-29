@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = History.V2instruments_4294609924
+	part = History.V2instruments_4292917880
 	partName = Part
 	pos = 0.3909788,21.61147,0.05148721
 	rot = 0,0,0,1
@@ -16,10 +16,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = probeCoreOcto2_4294609456
-	link = KzInterstageAdapter2_4294609094
-	attN = top,probeCoreOcto2_4294609456
-	attN = bottom,KzInterstageAdapter2_4294609094
+	link = probeCoreOcto2_4292917412
+	link = KzInterstageAdapter2_4292917050
+	attN = top,probeCoreOcto2_4292917412
+	attN = bottom,KzInterstageAdapter2_4292917050
 	EVENTS
 	{
 	}
@@ -120,7 +120,7 @@ PART
 }
 PART
 {
-	part = probeCoreOcto2_4294609456
+	part = probeCoreOcto2_4292917412
 	partName = Part
 	pos = 0.3909788,21.6673,0.002929006
 	rot = 0,0,0,1
@@ -132,9 +132,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 1.292
-	link = proceduralBattery_4294609404
-	attN = bottom,History.V2instruments_4294609924
-	attN = top,proceduralBattery_4294609404
+	link = proceduralBattery_4292917360
+	attN = bottom,History.V2instruments_4292917880
+	attN = top,proceduralBattery_4292917360
 	EVENTS
 	{
 	}
@@ -193,7 +193,7 @@ PART
 		type = ServiceModule
 		utilization = 86
 		mass = 0.05
-		timestamp = 149.880000000004
+		timestamp = 539.3999999998
 		volume = 50
 		type_UIEditor
 		{
@@ -314,12 +314,43 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleTargetController
+			MechJebModuleCustomWindowEditor
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleSettings
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -374,23 +405,12 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleThrustWindow
+			MechJebModuleSettings
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointWindow
+			MechJebModuleTargetController
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -400,37 +420,17 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleRendezvousGuidance
+			MechJebModuleWaypointWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleJokeObscurePanel
+			MechJebModuleThrustWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
+			ModExtensionDemo
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -543,7 +543,7 @@ PART
 }
 PART
 {
-	part = proceduralBattery_4294609404
+	part = proceduralBattery_4292917360
 	partName = Part
 	pos = 0.3909788,21.77866,0.002929006
 	rot = 0,0,0,1
@@ -554,11 +554,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	modCost = 674.3454
-	link = sasModule_4294609346
-	link = RTShortAntenna1_4294609316
-	attN = top,sasModule_4294609346
-	attN = bottom,probeCoreOcto2_4294609456
+	modCost = 674.3434
+	link = sasModule_4292917302
+	link = RTShortAntenna1_4292917272
+	attN = top,sasModule_4292917302
+	attN = bottom,probeCoreOcto2_4292917412
 	EVENTS
 	{
 	}
@@ -767,8 +767,8 @@ PART
 	RESOURCE
 	{
 		name = ElectricCharge
-		amount = 13486.9
-		maxAmount = 13486.8603515625
+		amount = 13486.86
+		maxAmount = 13486.86
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -777,7 +777,7 @@ PART
 }
 PART
 {
-	part = sasModule_4294609346
+	part = sasModule_4292917302
 	partName = Part
 	pos = 0.3909788,21.93227,0.002929006
 	rot = 0,0,0,1
@@ -789,9 +789,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4294609274
-	attN = bottom,proceduralBattery_4294609404
-	attN = top,strutOcto_4294609274
+	link = strutOcto_4292917230
+	attN = bottom,proceduralBattery_4292917360
+	attN = top,strutOcto_4292917230
 	EVENTS
 	{
 	}
@@ -886,7 +886,7 @@ PART
 }
 PART
 {
-	part = RTShortAntenna1_4294609316
+	part = RTShortAntenna1_4292917272
 	partName = Part
 	pos = 0.08138236,21.83509,0.1816685
 	rot = 0.002656226,-0.2587613,0.009914916,-0.9658868
@@ -898,7 +898,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	srfN = srfAttach,proceduralBattery_4294609404
+	srfN = srfAttach,proceduralBattery_4292917360
 	EVENTS
 	{
 	}
@@ -1064,7 +1064,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294609274
+	part = strutOcto_4292917230
 	partName = Part
 	pos = 0.3909788,22.15211,0.002929006
 	rot = 0,0,0,1
@@ -1076,9 +1076,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4294609248
-	attN = top,strutOcto_4294609248
-	attN = bottom,sasModule_4294609346
+	link = strutOcto_4292917204
+	attN = top,strutOcto_4292917204
+	attN = bottom,sasModule_4292917302
 	EVENTS
 	{
 	}
@@ -1126,7 +1126,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294609248
+	part = strutOcto_4292917204
 	partName = Part
 	pos = 0.3909788,22.40958,0.002929006
 	rot = 0,0,0,1
@@ -1138,9 +1138,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4294609222
-	attN = top,strutOcto_4294609222
-	attN = bottom,strutOcto_4294609274
+	link = strutOcto_4292917178
+	attN = top,strutOcto_4292917178
+	attN = bottom,strutOcto_4292917230
 	EVENTS
 	{
 	}
@@ -1188,7 +1188,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294609222
+	part = strutOcto_4292917178
 	partName = Part
 	pos = 0.3909788,22.66705,0.002929006
 	rot = 0,0,0,1
@@ -1199,11 +1199,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	modCost = 0
-	link = xenonTankRadial_4294609196
-	link = xenonTankRadial_4294609162
-	link = xenonTankRadial_4294609128
-	attN = bottom,strutOcto_4294609248
+	modCost = 9.536743E-06
+	link = xenonTankRadial_4292917152
+	link = xenonTankRadial_4292917118
+	link = xenonTankRadial_4292917084
+	attN = bottom,strutOcto_4292917204
 	EVENTS
 	{
 	}
@@ -1220,7 +1220,7 @@ PART
 		isFreeScale = True
 		version = 1.44.0.0
 		defaultTransformScale = (1, 1, 1)
-		dryCost = 20
+		dryCost = 20.00001
 		tweakScale_UIEditor
 		{
 			controlEnabled = True
@@ -1251,7 +1251,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4294609196
+	part = xenonTankRadial_4292917152
 	partName = Part
 	pos = 0.2499992,22.58506,0.002929006
 	rot = 0,-0.7071068,0,-0.7071068
@@ -1263,9 +1263,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4294609162
-	sym = xenonTankRadial_4294609128
-	srfN = srfAttach,strutOcto_4294609222
+	sym = xenonTankRadial_4292917118
+	sym = xenonTankRadial_4292917084
+	srfN = srfAttach,strutOcto_4292917178
 	EVENTS
 	{
 	}
@@ -1306,7 +1306,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 149.880000000004
+		timestamp = 539.3999999998
 		volume = 40
 		type_UIEditor
 		{
@@ -1362,7 +1362,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4294609162
+	part = xenonTankRadial_4292917118
 	partName = Part
 	pos = 0.4614685,22.58506,0.1250208
 	rot = 0,-0.9659259,0,0.2588191
@@ -1374,9 +1374,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4294609196
-	sym = xenonTankRadial_4294609128
-	srfN = srfAttach,strutOcto_4294609222
+	sym = xenonTankRadial_4292917152
+	sym = xenonTankRadial_4292917084
+	srfN = srfAttach,strutOcto_4292917178
 	EVENTS
 	{
 	}
@@ -1417,7 +1417,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 149.880000000004
+		timestamp = 539.3999999998
 		volume = 40
 		type_UIEditor
 		{
@@ -1473,7 +1473,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4294609128
+	part = xenonTankRadial_4292917084
 	partName = Part
 	pos = 0.4614685,22.58506,-0.1191627
 	rot = 0,-0.258819,0,0.9659259
@@ -1485,9 +1485,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4294609196
-	sym = xenonTankRadial_4294609162
-	srfN = srfAttach,strutOcto_4294609222
+	sym = xenonTankRadial_4292917152
+	sym = xenonTankRadial_4292917118
+	srfN = srfAttach,strutOcto_4292917178
 	EVENTS
 	{
 	}
@@ -1528,7 +1528,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 149.880000000004
+		timestamp = 539.3999999998
 		volume = 40
 		type_UIEditor
 		{
@@ -1584,7 +1584,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4294609094
+	part = KzInterstageAdapter2_4292917050
 	partName = Part
 	pos = 0.3909788,20.87796,0.002929006
 	rot = 0,0,0,1
@@ -1596,19 +1596,19 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 71.61089
-	link = KzProcFairingSide2ger_4294609056
-	link = KzProcFairingSide2ger_4294608998
-	link = KzProcFairingSide2ger_4294608940
-	link = proceduralNoseCone_4294608882
-	link = KzProcFairingSide2ger_4294608832
-	link = KzInterstageAdapter2_4294608774
-	attN = bottom,KzInterstageAdapter2_4294608774
-	attN = top,History.V2instruments_4294609924
-	attN = top1,proceduralNoseCone_4294608882
-	attN = connect01,KzProcFairingSide2ger_4294608998
-	attN = connect02,KzProcFairingSide2ger_4294609056
-	attN = connect03,KzProcFairingSide2ger_4294608832
-	attN = connect04,KzProcFairingSide2ger_4294608940
+	link = KzProcFairingSide2ger_4292917012
+	link = KzProcFairingSide2ger_4292916954
+	link = KzProcFairingSide2ger_4292916896
+	link = KzInterstageAdapter2_4292916838
+	link = proceduralNoseCone_4292913158
+	link = KzProcFairingSide2ger_4292913108
+	attN = bottom,KzInterstageAdapter2_4292916838
+	attN = top,History.V2instruments_4292917880
+	attN = top1,proceduralNoseCone_4292913158
+	attN = connect01,KzProcFairingSide2ger_4292916954
+	attN = connect02,KzProcFairingSide2ger_4292917012
+	attN = connect03,KzProcFairingSide2ger_4292913108
+	attN = connect04,KzProcFairingSide2ger_4292916896
 	EVENTS
 	{
 	}
@@ -1812,7 +1812,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294609056
+	part = KzProcFairingSide2ger_4292917012
 	partName = Part
 	pos = 0.3909787,20.53436,0.8529297
 	rot = 0,0,0,1
@@ -1824,7 +1824,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4292917050
 	EVENTS
 	{
 	}
@@ -1937,7 +1937,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608998
+	part = KzProcFairingSide2ger_4292916954
 	partName = Part
 	pos = 1.240978,20.53436,0.002929006
 	rot = 0,0,0,1
@@ -1949,7 +1949,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4292917050
 	EVENTS
 	{
 	}
@@ -2062,7 +2062,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608940
+	part = KzProcFairingSide2ger_4292916896
 	partName = Part
 	pos = 0.3909788,20.53436,-0.8470712
 	rot = 0,0,0,1
@@ -2074,7 +2074,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4292917050
 	EVENTS
 	{
 	}
@@ -2187,247 +2187,7 @@ PART
 }
 PART
 {
-	part = proceduralNoseCone_4294608882
-	partName = Part
-	pos = 0.3909788,23.40297,0.002929006
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 2
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	attm = 0
-	modCost = 0.009143854
-	attN = bottom,KzInterstageAdapter2_4294609094
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralPart
-		isEnabled = True
-		textureSet = GreySide
-		shapeName = Smooth Cone
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Sharp #2
-		topDiameter = 0
-		bottomDiameter = 1.2
-		length = 2.25
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.25
-			incrementLarge = 1.25
-			incrementSmall = 0.25
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TankContentSwitcher
-		isEnabled = True
-		tankVolume = 0.9554706
-		mass = 0.1146565
-		tankType = Structural
-		tankType_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingSide2ger_4294608832
-	partName = Part
-	pos = -0.4590213,20.53437,0.002929006
-	rot = 0,-0.7071068,0,0.7071068
-	attRot = 0,-0.7071068,0,0.7071068
-	mir = 1,1,1
-	istg = 0
-	dstg = 3
-	sidx = 4
-	sqor = 0
-	attm = 0
-	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.782
-		maxRad = 0.782
-		cylStart = 0
-		cylEnd = 0.3128
-		topRad = 0.532
-		inlineHeight = 1.4
-		sideThickness = 0.068
-		meshPos = (3.72529E-08, 0.3436003, -0.85)
-		meshRot = (0, -0.7071068, 0, 0.7071068)
-		shapeLock = True
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzInterstageAdapter2_4294608774
+	part = KzInterstageAdapter2_4292916838
 	partName = Part
 	pos = 0.3909788,14.67797,0.002929006
 	rot = 0,0.3826835,0,0.9238796
@@ -2435,23 +2195,23 @@ PART
 	mir = 1,1,1
 	istg = 0
 	dstg = 3
-	sidx = 5
+	sidx = 4
 	sqor = 0
 	attm = 0
 	modCost = 80.94353
-	link = KzInterstageAdapter2_4294608736
-	link = proceduralTankRealFuels_4294607204
-	link = KzProcFairingSide2ger_4294607076
-	link = KzProcFairingSide2ger_4294607018
-	link = KzProcFairingSide2ger_4294606960
-	link = KzProcFairingSide2ger_4294606902
-	attN = bottom,KzInterstageAdapter2_4294608736
-	attN = top,proceduralTankRealFuels_4294607204
-	attN = top1,KzInterstageAdapter2_4294609094
-	attN = connect01,KzProcFairingSide2ger_4294606960
-	attN = connect02,KzProcFairingSide2ger_4294607018
-	attN = connect03,KzProcFairingSide2ger_4294607076
-	attN = connect04,KzProcFairingSide2ger_4294606902
+	link = KzInterstageAdapter2_4292916800
+	link = proceduralTankRealFuels_4292915384
+	link = KzProcFairingSide2ger_4292913274
+	link = KzProcFairingSide2ger_4292913216
+	link = KzProcFairingSide2ger_4292913050
+	link = KzProcFairingSide2ger_4292912992
+	attN = bottom,KzInterstageAdapter2_4292916800
+	attN = top,proceduralTankRealFuels_4292915384
+	attN = top1,KzInterstageAdapter2_4292917050
+	attN = connect01,KzProcFairingSide2ger_4292913274
+	attN = connect02,KzProcFairingSide2ger_4292913216
+	attN = connect03,KzProcFairingSide2ger_4292912992
+	attN = connect04,KzProcFairingSide2ger_4292913050
 	EVENTS
 	{
 	}
@@ -2655,7 +2415,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4294608736
+	part = KzInterstageAdapter2_4292916800
 	partName = Part
 	pos = 0.3909788,14.67797,0.002929006
 	rot = 0.3826834,0,0.9238796,0
@@ -2663,21 +2423,21 @@ PART
 	mir = 1,1,1
 	istg = 0
 	dstg = 5
-	sidx = 6
+	sidx = 5
 	sqor = 0
 	attm = 0
 	modCost = 80.94353
-	link = KzProcFairingSide2ger_4294608698
-	link = KzProcFairingSide2ger_4294608640
-	link = KzProcFairingSide2ger_4294608582
-	link = History.V2instruments_4294608524
-	link = KzProcFairingSide2ger_4294607262
-	attN = bottom,KzInterstageAdapter2_4294608774
-	attN = top,History.V2instruments_4294608524
-	attN = connect01,KzProcFairingSide2ger_4294607262
-	attN = connect02,KzProcFairingSide2ger_4294608698
-	attN = connect03,KzProcFairingSide2ger_4294608640
-	attN = connect04,KzProcFairingSide2ger_4294608582
+	link = KzProcFairingSide2ger_4292916762
+	link = KzProcFairingSide2ger_4292916704
+	link = History.V2instruments_4292916646
+	link = KzProcFairingSide2ger_4292912934
+	link = KzProcFairingSide2ger_4292912876
+	attN = bottom,KzInterstageAdapter2_4292916838
+	attN = top,History.V2instruments_4292916646
+	attN = connect01,KzProcFairingSide2ger_4292912934
+	attN = connect02,KzProcFairingSide2ger_4292916762
+	attN = connect03,KzProcFairingSide2ger_4292916704
+	attN = connect04,KzProcFairingSide2ger_4292912876
 	EVENTS
 	{
 	}
@@ -2881,7 +2641,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608698
+	part = KzProcFairingSide2ger_4292916762
 	partName = Part
 	pos = 1.027374,14.01237,0.6393243
 	rot = 0,-0.9238796,0,0.3826834
@@ -2889,11 +2649,11 @@ PART
 	mir = 1,1,1
 	istg = 0
 	dstg = 7
-	sidx = 7
+	sidx = 6
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
+	attN = connect,KzInterstageAdapter2_4292916800
 	EVENTS
 	{
 	}
@@ -3006,7 +2766,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608640
+	part = KzProcFairingSide2ger_4292916704
 	partName = Part
 	pos = 1.027375,14.01237,-0.6334667
 	rot = 0,-0.3826834,0,0.9238796
@@ -3014,11 +2774,11 @@ PART
 	mir = 1,1,1
 	istg = 0
 	dstg = 7
-	sidx = 8
+	sidx = 7
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
+	attN = connect,KzInterstageAdapter2_4292916800
 	EVENTS
 	{
 	}
@@ -3131,132 +2891,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608582
-	partName = Part
-	pos = -0.2454172,14.01237,-0.6334666
-	rot = 0,0.3826834,0,0.9238796
-	attRot = 0,0,0,0.9999999
-	mir = 1,1,1
-	istg = 0
-	dstg = 7
-	sidx = 9
-	sqor = 0
-	attm = 0
-	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.828
-		maxRad = 0.828
-		cylStart = 0
-		cylEnd = 0.3312
-		topRad = 0.428
-		inlineHeight = 4
-		sideThickness = 0.072
-		meshPos = (2.980232E-08, 0.6655998, 0.9)
-		meshRot = (0.7071068, 0, -0.7071068, 0)
-		shapeLock = True
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = History.V2instruments_4294608524
+	part = History.V2instruments_4292916646
 	partName = Part
 	pos = 0.3909788,14.34578,0.0514871
 	rot = 0,7.787722E-08,0,1
@@ -3268,9 +2903,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = radialEngineBodysmall_4294608056
-	attN = top,KzInterstageAdapter2_4294608736
-	attN = bottom,radialEngineBodysmall_4294608056
+	link = radialEngineBodysmall_4292916178
+	attN = top,KzInterstageAdapter2_4292916800
+	attN = bottom,radialEngineBodysmall_4292916178
 	EVENTS
 	{
 	}
@@ -3371,7 +3006,7 @@ PART
 }
 PART
 {
-	part = radialEngineBodysmall_4294608056
+	part = radialEngineBodysmall_4292916178
 	partName = Part
 	pos = 0.3909788,13.20008,0.002929006
 	rot = 0,-2.753376E-08,0,1
@@ -3383,13 +3018,13 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 21159.61
-	link = History.V2fin_4294608014
-	link = History.V2fin_4294607850
-	link = History.V2fin_4294607686
-	link = History.V2fin_4294607522
-	link = History.V2engine_4294607358
-	attN = top,History.V2instruments_4294608524
-	attN = bottom,History.V2engine_4294607358
+	link = History.V2fin_4292916136
+	link = History.V2fin_4292915972
+	link = History.V2fin_4292915808
+	link = History.V2fin_4292915644
+	link = History.V2engine_4292915480
+	attN = top,History.V2instruments_4292916646
+	attN = bottom,History.V2engine_4292915480
 	EVENTS
 	{
 	}
@@ -3458,9 +3093,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294608014
+	part = History.V2fin_4292916136
 	partName = Part
-	pos = -0.4814551,11.84165,0.002930831
+	pos = -0.4814557,11.84165,0.0029318
 	rot = 0,-5.034347E-08,0,-1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3470,11 +3105,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607884
-	sym = History.V2fin_4294607850
-	sym = History.V2fin_4294607686
-	sym = History.V2fin_4294607522
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4292916006
+	sym = History.V2fin_4292915972
+	sym = History.V2fin_4292915808
+	sym = History.V2fin_4292915644
+	srfN = srfAttach,radialEngineBodysmall_4292916178
 	EVENTS
 	{
 	}
@@ -3495,9 +3130,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607884
+	part = StandardCtrlSrf_4292916006
 	partName = Part
-	pos = -0.7473149,10.34102,0.0029319
+	pos = -0.7473166,10.34102,0.002933376
 	rot = -0.229753,0.9732491,-1.419567E-07,-4.553418E-08
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3507,10 +3142,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607720
-	sym = StandardCtrlSrf_4294607556
-	sym = StandardCtrlSrf_4294607392
-	srfN = srfAttach,History.V2fin_4294608014
+	sym = StandardCtrlSrf_4292915842
+	sym = StandardCtrlSrf_4292915678
+	sym = StandardCtrlSrf_4292915514
+	srfN = srfAttach,History.V2fin_4292916136
 	EVENTS
 	{
 	}
@@ -3592,8 +3227,8 @@ PART
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
-		maxdeflectFlap = 15
+		maxdeflect = 2
+		maxdeflectFlap = 1
 		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
@@ -3680,9 +3315,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294607850
+	part = History.V2fin_4292915972
 	partName = Part
-	pos = 0.3909772,11.84165,0.8753618
+	pos = 0.3909764,11.84165,0.875362
 	rot = 0,-0.7071069,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3692,11 +3327,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607720
-	sym = History.V2fin_4294608014
-	sym = History.V2fin_4294607686
-	sym = History.V2fin_4294607522
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4292915842
+	sym = History.V2fin_4292916136
+	sym = History.V2fin_4292915808
+	sym = History.V2fin_4292915644
+	srfN = srfAttach,radialEngineBodysmall_4292916178
 	EVENTS
 	{
 	}
@@ -3717,9 +3352,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607720
+	part = StandardCtrlSrf_4292915842
 	partName = Part
-	pos = 0.3909768,10.34102,1.141221
+	pos = 0.3909754,10.34102,1.141221
 	rot = -0.16246,0.688191,0.1624598,-0.6881911
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3729,10 +3364,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607884
-	sym = StandardCtrlSrf_4294607556
-	sym = StandardCtrlSrf_4294607392
-	srfN = srfAttach,History.V2fin_4294607850
+	sym = StandardCtrlSrf_4292916006
+	sym = StandardCtrlSrf_4292915678
+	sym = StandardCtrlSrf_4292915514
+	srfN = srfAttach,History.V2fin_4292915972
 	EVENTS
 	{
 	}
@@ -3814,8 +3449,8 @@ PART
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
-		maxdeflectFlap = 15
+		maxdeflect = 2
+		maxdeflectFlap = 1
 		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
@@ -3902,9 +3537,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294607686
+	part = History.V2fin_4292915808
 	partName = Part
-	pos = 1.263412,11.84165,0.002927307
+	pos = 1.263412,11.84165,0.002926379
 	rot = 0,-1,0,7.787722E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3914,11 +3549,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607556
-	sym = History.V2fin_4294608014
-	sym = History.V2fin_4294607850
-	sym = History.V2fin_4294607522
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4292915678
+	sym = History.V2fin_4292916136
+	sym = History.V2fin_4292915972
+	sym = History.V2fin_4292915644
+	srfN = srfAttach,radialEngineBodysmall_4292916178
 	EVENTS
 	{
 	}
@@ -3939,9 +3574,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607556
+	part = StandardCtrlSrf_4292915678
 	partName = Part
-	pos = 1.529271,10.34102,0.002925985
+	pos = 1.529271,10.34102,0.002924804
 	rot = -1.350732E-07,-4.553418E-08,0.229753,-0.9732491
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3951,10 +3586,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607884
-	sym = StandardCtrlSrf_4294607720
-	sym = StandardCtrlSrf_4294607392
-	srfN = srfAttach,History.V2fin_4294607686
+	sym = StandardCtrlSrf_4292916006
+	sym = StandardCtrlSrf_4292915842
+	sym = StandardCtrlSrf_4292915514
+	srfN = srfAttach,History.V2fin_4292915808
 	EVENTS
 	{
 	}
@@ -4036,8 +3671,8 @@ PART
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
-		maxdeflectFlap = 15
+		maxdeflect = 2
+		maxdeflectFlap = 1
 		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
@@ -4124,9 +3759,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294607522
+	part = History.V2fin_4292915644
 	partName = Part
-	pos = 0.3909807,11.84165,-0.8695034
+	pos = 0.3909815,11.84165,-0.8695034
 	rot = 0,-0.7071068,0,0.7071069
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4136,11 +3771,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607392
-	sym = History.V2fin_4294608014
-	sym = History.V2fin_4294607850
-	sym = History.V2fin_4294607686
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4292915514
+	sym = History.V2fin_4292916136
+	sym = History.V2fin_4292915972
+	sym = History.V2fin_4292915808
+	srfN = srfAttach,radialEngineBodysmall_4292916178
 	EVENTS
 	{
 	}
@@ -4161,9 +3796,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607392
+	part = StandardCtrlSrf_4292915514
 	partName = Part
-	pos = 0.3909809,10.34102,-1.135363
+	pos = 0.3909824,10.34102,-1.135363
 	rot = 0.1624598,-0.6881911,0.16246,-0.688191
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -4173,10 +3808,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607884
-	sym = StandardCtrlSrf_4294607720
-	sym = StandardCtrlSrf_4294607556
-	srfN = srfAttach,History.V2fin_4294607522
+	sym = StandardCtrlSrf_4292916006
+	sym = StandardCtrlSrf_4292915842
+	sym = StandardCtrlSrf_4292915678
+	srfN = srfAttach,History.V2fin_4292915644
 	EVENTS
 	{
 	}
@@ -4258,8 +3893,8 @@ PART
 		isFlap = False
 		isSpoiler = False
 		flapDeflectionLevel = 2
-		maxdeflect = 20
-		maxdeflectFlap = 15
+		maxdeflect = 2
+		maxdeflectFlap = 1
 		massMultiplier = 1
 		pitchaxis_UIEditor
 		{
@@ -4346,7 +3981,7 @@ PART
 }
 PART
 {
-	part = History.V2engine_4294607358
+	part = History.V2engine_4292915480
 	partName = Part
 	pos = 0.3909788,11.57975,0.002929006
 	rot = 0,7.787722E-08,0,1
@@ -4358,9 +3993,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = History.V2tower_4294606844
-	attN = top,radialEngineBodysmall_4294608056
-	attN = bottom,History.V2tower_4294606844
+	link = History.V2tower_4292915256
+	attN = top,radialEngineBodysmall_4292916178
+	attN = bottom,History.V2tower_4292915256
 	EVENTS
 	{
 	}
@@ -4498,132 +4133,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294607262
-	partName = Part
-	pos = -0.2454181,14.01237,0.6393263
-	rot = 0,-0.9238796,0,-0.3826835
-	attRot = 0,-0.9238795,0,-0.3826835
-	mir = 1,1,1
-	istg = 0
-	dstg = 7
-	sidx = 10
-	sqor = 0
-	attm = 0
-	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.828
-		maxRad = 0.828
-		cylStart = 0
-		cylEnd = 0.3312
-		topRad = 0.428
-		inlineHeight = 4
-		sideThickness = 0.072
-		meshPos = (2.980232E-08, 0.6655998, 0.9)
-		meshRot = (0.7071068, 0, -0.7071068, 0)
-		shapeLock = True
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = proceduralTankRealFuels_4294607204
+	part = proceduralTankRealFuels_4292915384
 	partName = Part
 	pos = 0.3909788,16.44667,0.002929006
 	rot = 0,0,0,1
@@ -4635,9 +4145,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 44.00111
-	link = proceduralTankRealFuels_4294607140
-	attN = top,proceduralTankRealFuels_4294607140
-	attN = bottom,KzInterstageAdapter2_4294608774
+	link = proceduralTankRealFuels_4292915320
+	attN = top,proceduralTankRealFuels_4292915320
+	attN = bottom,KzInterstageAdapter2_4292916838
 	EVENTS
 	{
 	}
@@ -4821,7 +4331,7 @@ PART
 		type = Default
 		utilization = 90
 		mass = 0.130868
-		timestamp = 149.880000000004
+		timestamp = 539.3999999998
 		volume = 4373
 		type_UIEditor
 		{
@@ -4922,7 +4432,7 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4294607140
+	part = proceduralTankRealFuels_4292915320
 	partName = Part
 	pos = 0.3909788,19.38418,0.002929006
 	rot = 0,0,0,1
@@ -4934,7 +4444,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 46.3619
-	attN = bottom,proceduralTankRealFuels_4294607204
+	attN = bottom,proceduralTankRealFuels_4292915384
 	EVENTS
 	{
 	}
@@ -5118,7 +4628,7 @@ PART
 		type = Default
 		utilization = 90
 		mass = 0.13238
-		timestamp = 149.880000000004
+		timestamp = 539.3999999998
 		volume = 4572
 		type_UIEditor
 		{
@@ -5219,521 +4729,9 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294607076
+	part = History.V2tower_4292915256
 	partName = Part
-	pos = -0.2454175,14.34357,0.639325
-	rot = 0,-0.7071068,0,-0.7071068
-	attRot = 0,-0.7071067,0,-0.7071067
-	mir = 1,1,1
-	istg = 0
-	dstg = 5
-	sidx = 11
-	sqor = 0
-	attm = 0
-	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607018
-	sym = KzProcFairingSide2ger_4294606960
-	sym = KzProcFairingSide2ger_4294606902
-	attN = connect,KzInterstageAdapter2_4294608774
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.8279999
-		maxRad = 0.8279999
-		cylStart = 0
-		cylEnd = 0.3312
-		topRad = 0.778
-		inlineHeight = 6.2
-		sideThickness = 0.072
-		meshPos = (0.6363961, 0.3344002, 0.6363963)
-		meshRot = (0, -0.9238796, 0, -0.3826834)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingSide2ger_4294607018
-	partName = Part
-	pos = 1.027375,14.34357,0.639325
-	rot = 0,-1,0,0
-	attRot = 0,-0.7071067,0,-0.7071067
-	mir = 1,1,1
-	istg = 0
-	dstg = 5
-	sidx = 12
-	sqor = 0
-	attm = 0
-	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607076
-	sym = KzProcFairingSide2ger_4294606960
-	sym = KzProcFairingSide2ger_4294606902
-	attN = connect,KzInterstageAdapter2_4294608774
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.8279999
-		maxRad = 0.8279999
-		cylStart = 0
-		cylEnd = 0.3312
-		topRad = 0.778
-		inlineHeight = 6.2
-		sideThickness = 0.072
-		meshPos = (0.6363962, 0.3344002, 0.6363962)
-		meshRot = (0, 0.9238796, 0, 0.3826834)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingSide2ger_4294606960
-	partName = Part
-	pos = 1.027375,14.34357,-0.6334671
-	rot = 0,-0.7071068,0,0.7071068
-	attRot = 0,-0.7071067,0,-0.7071067
-	mir = 1,1,1
-	istg = 0
-	dstg = 5
-	sidx = 13
-	sqor = 0
-	attm = 0
-	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607076
-	sym = KzProcFairingSide2ger_4294607018
-	sym = KzProcFairingSide2ger_4294606902
-	attN = connect,KzInterstageAdapter2_4294608774
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.8279999
-		maxRad = 0.8279999
-		cylStart = 0
-		cylEnd = 0.3312
-		topRad = 0.778
-		inlineHeight = 6.2
-		sideThickness = 0.072
-		meshPos = (0.636396, 0.3344002, 0.6363962)
-		meshRot = (0, 0.9238796, 0, 0.3826834)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingSide2ger_4294606902
-	partName = Part
-	pos = -0.2454175,14.34357,-0.6334671
-	rot = 0,0,0,1
-	attRot = 0,-0.7071067,0,-0.7071067
-	mir = 1,1,1
-	istg = 0
-	dstg = 5
-	sidx = 14
-	sqor = 0
-	attm = 0
-	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607076
-	sym = KzProcFairingSide2ger_4294607018
-	sym = KzProcFairingSide2ger_4294606960
-	attN = connect,KzInterstageAdapter2_4294608774
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.8279999
-		maxRad = 0.8279999
-		cylStart = 0
-		cylEnd = 0.3312
-		topRad = 0.778
-		inlineHeight = 6.2
-		sideThickness = 0.072
-		meshPos = (0.6363963, 0.3344002, 0.6363961)
-		meshRot = (0, 0.9238796, 0, 0.3826834)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingDecoupler
-		isEnabled = True
-		ejectionPower = 0.3
-		torqueAmount = 0.01
-		decoupled = False
-		ejectionPower_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		torqueAmount_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Jettison
-			{
-				active = True
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionJettison
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = History.V2tower_4294606844
-	partName = Part
-	pos = 0.4067869,15.89306,4.400011
+	pos = 0.406781,15.89306,4.400012
 	rot = 0,2.280971E-08,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5743,9 +4741,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = IR.StrutDecoupler.Small_4294604942
-	link = IR.StrutDecoupler.Small_4294604902
-	attN = top,History.V2engine_4294607358
+	link = IR.StrutDecoupler.Small_4292913354
+	link = IR.StrutDecoupler.Small_4292913314
+	attN = top,History.V2engine_4292915480
 	EVENTS
 	{
 	}
@@ -5878,10 +4876,10 @@ PART
 }
 PART
 {
-	part = IR.StrutDecoupler.Small_4294604942
+	part = IR.StrutDecoupler.Small_4292913354
 	partName = StrutConnector
-	pos = 0.2872278,21.21057,3.461791
-	rot = 8.429354E-08,0.7071065,-8.429362E-08,-0.7071073
+	pos = 0.2872243,21.21057,3.461791
+	rot = 8.429355E-08,0.7071067,-8.429357E-08,-0.707107
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -5890,8 +4888,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	cData = tgt: KzInterstageAdapter2_11; pos: -2.749777,-0.01980907,0.04611098; dir: -0.9998335,-0.007203292,0.01676607
-	srfN = srfAttach,History.V2tower_4294606844
+	cData = tgt: KzInterstageAdapter2_11; pos: -2.749776,-0.01980907,0.04611052; dir: -0.9998335,-0.007203292,0.01676607
+	srfN = srfAttach,History.V2tower_4292915256
 	EVENTS
 	{
 	}
@@ -5944,10 +4942,10 @@ PART
 }
 PART
 {
-	part = IR.StrutDecoupler.Small_4294604902
+	part = IR.StrutDecoupler.Small_4292913314
 	partName = StrutConnector
-	pos = 0.4690682,21.23615,3.461791
-	rot = 8.429353E-08,0.7071064,-8.429362E-08,-0.7071073
+	pos = 0.4690647,21.23615,3.461791
+	rot = 8.429357E-08,0.7071067,-8.429359E-08,-0.7071071
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -5956,8 +4954,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	cData = tgt: History.V2instruments_0; pos: -2.818698,0.2350528,0.07472646; dir: -0.9961935,0.08307245,0.02641008
-	srfN = srfAttach,History.V2tower_4294606844
+	cData = tgt: History.V2instruments_0; pos: -2.818698,0.2350528,0.07472599; dir: -0.9961935,0.08307245,0.02641008
+	srfN = srfAttach,History.V2tower_4292915256
 	EVENTS
 	{
 	}
@@ -6000,6 +4998,996 @@ PART
 		{
 			controlEnabled = True
 		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292913274
+	partName = Part
+	pos = 1.027375,14.34357,-0.6334671
+	rot = 0,-0.7071068,0,-0.7071068
+	attRot = 0,-0.7071067,0,-0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 5
+	sidx = 8
+	sqor = 0
+	attm = 0
+	modCost = 282.0014
+	attN = connect,KzInterstageAdapter2_4292916838
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.8279999
+		maxRad = 0.8279999
+		cylStart = 0
+		cylEnd = 0.3312
+		topRad = 0.778
+		inlineHeight = 6.2
+		sideThickness = 0.072
+		meshPos = (-0.6363961, 0.3344002, -0.6363962)
+		meshRot = (0, 0.3826834, 0, -0.9238796)
+		shapeLock = False
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292913216
+	partName = Part
+	pos = 1.027375,14.34357,0.639325
+	rot = 0,-0.7071068,0,-0.7071068
+	attRot = 0,-0.7071067,0,-0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 5
+	sidx = 9
+	sqor = 0
+	attm = 0
+	modCost = 282.0014
+	attN = connect,KzInterstageAdapter2_4292916838
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.8279999
+		maxRad = 0.8279999
+		cylStart = 0
+		cylEnd = 0.3312
+		topRad = 0.778
+		inlineHeight = 6.2
+		sideThickness = 0.072
+		meshPos = (0.6363961, 0.3344002, -0.6363962)
+		meshRot = (0, 0.9238796, 0, -0.3826835)
+		shapeLock = False
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = proceduralNoseCone_4292913158
+	partName = Part
+	pos = 0.3909788,23.40297,0.002929006
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0.009143854
+	attN = bottom,KzInterstageAdapter2_4292917050
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralPart
+		isEnabled = True
+		textureSet = GreySide
+		shapeName = Smooth Cone
+		textureSet_UIEditor
+		{
+			controlEnabled = True
+		}
+		shapeName_UIEditor
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralShapeBezierCone
+		isEnabled = True
+		selectedShape = Sharp #2
+		topDiameter = 0
+		bottomDiameter = 1.2
+		length = 2.25
+		selectedShape_UIEditor
+		{
+			controlEnabled = True
+		}
+		topDiameter_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.25
+			incrementLarge = 1.25
+			incrementSmall = 0.25
+			incrementSlide = 0.001
+		}
+		bottomDiameter_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.1
+			incrementLarge = 1
+			incrementSmall = 0.1
+			incrementSlide = 0.001
+		}
+		length_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.01
+			incrementLarge = 1
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TankContentSwitcher
+		isEnabled = True
+		tankVolume = 0.9554706
+		mass = 0.1146565
+		tankType = Structural
+		tankType_UIEditor
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292913108
+	partName = Part
+	pos = -0.4590212,20.53436,0.002928931
+	rot = 0,-0.7071068,0,0.7071068
+	attRot = 0,-0.7071068,0,0.7071068
+	mir = 1,1,1
+	istg = 0
+	dstg = 3
+	sidx = 10
+	sqor = 0
+	attm = 0
+	modCost = 51.21204
+	attN = connect,KzInterstageAdapter2_4292917050
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.782
+		maxRad = 0.782
+		cylStart = 0
+		cylEnd = 0.3128
+		topRad = 0.532
+		inlineHeight = 1.4
+		sideThickness = 0.068
+		meshPos = (3.72529E-08, 0.3436003, -0.85)
+		meshRot = (0, -0.7071068, 0, 0.7071068)
+		shapeLock = True
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292913050
+	partName = Part
+	pos = -0.2454173,14.34357,-0.6334671
+	rot = 0,-0.7071068,0,-0.7071068
+	attRot = 0,-0.7071067,0,-0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 5
+	sidx = 11
+	sqor = 0
+	attm = 0
+	modCost = 282.0014
+	attN = connect,KzInterstageAdapter2_4292916838
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.8279999
+		maxRad = 0.8279999
+		cylStart = 0
+		cylEnd = 0.3312
+		topRad = 0.778
+		inlineHeight = 6.2
+		sideThickness = 0.072
+		meshPos = (-0.6363961, 0.3344002, 0.6363961)
+		meshRot = (0, -0.3826835, 0, -0.9238796)
+		shapeLock = False
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292912992
+	partName = Part
+	pos = -0.2454173,14.34357,0.639325
+	rot = 0,-0.7071068,0,-0.7071068
+	attRot = 0,-0.7071067,0,-0.7071067
+	mir = 1,1,1
+	istg = 0
+	dstg = 5
+	sidx = 12
+	sqor = 0
+	attm = 0
+	modCost = 282.0014
+	attN = connect,KzInterstageAdapter2_4292916838
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.8279999
+		maxRad = 0.8279999
+		cylStart = 0
+		cylEnd = 0.3312
+		topRad = 0.778
+		inlineHeight = 6.2
+		sideThickness = 0.072
+		meshPos = (0.6363961, 0.3344002, 0.6363961)
+		meshRot = (0, -0.9238796, 0, -0.3826834)
+		shapeLock = False
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292912934
+	partName = Part
+	pos = -0.2454177,14.01237,0.6393255
+	rot = 0,-0.9238796,0,-0.3826835
+	attRot = 0,-0.9238795,0,-0.3826835
+	mir = 1,1,1
+	istg = 0
+	dstg = 7
+	sidx = 13
+	sqor = 0
+	attm = 0
+	modCost = 145.796
+	attN = connect,KzInterstageAdapter2_4292916800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.828
+		maxRad = 0.828
+		cylStart = 0
+		cylEnd = 0.3312
+		topRad = 0.428
+		inlineHeight = 4
+		sideThickness = 0.072
+		meshPos = (2.980232E-08, 0.6655998, 0.9)
+		meshRot = (0.7071068, 0, -0.7071068, 0)
+		shapeLock = True
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingSide2ger_4292912876
+	partName = Part
+	pos = -0.2454172,14.01237,-0.6334672
+	rot = 0,0.3826835,0,0.9238796
+	attRot = 0,0.3826834,0,0.9238795
+	mir = 1,1,1
+	istg = 0
+	dstg = 7
+	sidx = 14
+	sqor = 0
+	attm = 0
+	modCost = 145.796
+	attN = connect,KzInterstageAdapter2_4292916800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 6
+		numSideParts = 4
+		baseRad = 0.828
+		maxRad = 0.828
+		cylStart = 0
+		cylEnd = 0.3312
+		topRad = 0.428
+		inlineHeight = 4
+		sideThickness = 0.072
+		meshPos = (2.980232E-08, 0.6655998, 0.9)
+		meshRot = (0.7071068, 0, -0.7071068, 0)
+		shapeLock = True
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.3
+		torqueAmount = 0.01
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
 		EVENTS
 		{
 		}

@@ -1,0 +1,8463 @@
+GAME
+{
+	version = 0.25.0
+	Title = default (SANDBOX)
+	Description = No description available.
+	linkURL = 
+	linkCaption = 
+	Mode = SANDBOX
+	Status = 1
+	scene = 7
+	flag = NASAmission/Flags/NASA
+	launchID = 2
+	PARAMETERS
+	{
+		preset = Normal
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			AutoHireCrews = True
+			MissingCrewsRespawn = True
+			BypassEntryPurchaseAfterResearch = True
+			AllowStockVessels = True
+			IndestructibleFacilities = False
+		}
+		CAREER
+		{
+			StartingFunds = 25000
+			StartingScience = 0
+			StartingReputation = 0
+			FundsGainMultiplier = 1
+			RepGainMultiplier = 1
+			ScienceGainMultiplier = 1
+			FundsLossMultiplier = 1
+			RepLossMultiplier = 1
+		}
+	}
+	SCENARIO
+	{
+		name = LastKSC
+		scene = 8
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6, 9
+	}
+	SCENARIO
+	{
+		name = ScenarioDestructibles
+		scene = 5, 7, 6, 9, 8
+		SpaceCenter/KSCAdminBuilding/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCCrewBuilding/building
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_launchPad
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_sphereTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/KSCFlagPoleLaunchPad
+		{
+			intact = True
+		}
+		SpaceCenter/KSCMissionControl/building
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/SmallLab
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/CentralBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/CornerLab
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/WindTunnel
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/Observatory
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/SideLab
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/End09
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/End27
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/dish_array/dish_south
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/dish_array/dish_north
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/dish_array/dish_east
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/PodMemorial
+		{
+			intact = True
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		 = 1838848250
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	SCENARIO
+	{
+		name = DeadlyReentryScenario
+		scene = 7, 5
+		difficultySetting = 0
+	}
+	SCENARIO
+	{
+		name = TacLifeSupport
+		scene = 5, 7, 6, 9
+		SavedGameSettings
+		{
+			IsNewSave = False
+			Enabled = True
+			HibernateInsteadOfKill = False
+			RespawnDelay = 9203545
+		}
+	}
+	SCENARIO
+	{
+		name = KerbalAlarmClockScenario
+		scene = 5, 7
+		KACAlarmListStorage
+		{
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 0.25.0
+		UT = 60054.8156445291
+		activeVessel = 5
+		mapViewFiltering = -1026
+		VESSEL
+		{
+			pid = 634880efe23e491f92e1101f9e0317d0
+			name = Ast. HSJ-227
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0.02
+			lct = 0.02
+			root = 0
+			lat = 22.6558121814808
+			lon = 100.627552271559
+			alt = 146276496798.859
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2984336,0.402898,-0.8173988,0.283672
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 153006104233.613
+				ECC = 0.0397074987429341
+				INC = 22.9165995689005
+				LPE = 105.451451312644
+				LAN = 1.49856276908048
+				MNA = 0.280122386679115
+				EPH = 2043585.75608398
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 559298752
+				mid = 559298752
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 0.02
+				lifetime = 586354.751586914
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 142539c80a0e4a219fd4c0d5ff4c6366
+			name = Ast. XUC-428
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 10.8599999999999
+			lct = 10.8599999999999
+			root = 0
+			lat = 23.2217451571613
+			lon = 101.072806847584
+			alt = 147434358193.881
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3234102,-0.4067379,0.8225092,0.23119
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 151795829521.632
+				ECC = 0.0289352550416589
+				INC = 23.6617157869314
+				LPE = 135.117400456186
+				LAN = 359.369774377339
+				MNA = 6.20397339743273
+				EPH = 2507456.563125
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1245471819
+				mid = 1245471819
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 10.8599999999999
+				lifetime = 126424.896240234
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 9423f27860be4b25965e91d9f1f87bd2
+			name = Ast. XWB-884
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 30.8799999999995
+			lct = 30.8799999999995
+			root = 0
+			lat = 23.2496149054348
+			lon = 101.077702809951
+			alt = 146960738170.8
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.779164,0.366654,0.4715566,0.1900068
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 457441199.834644
+				ECC = 0.954785615786116
+				INC = 66.753223240526
+				LPE = 252.021631007238
+				LAN = 42.5191069505816
+				MNA = 4.64600629299614
+				EPH = 30.8800000004465
+				REF = 1
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 281939589
+				mid = 281939589
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 30.8799999999995
+				lifetime = 150664.334106445
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1b7084b9cc734464b6dd3fd53d649d98
+			name = Ast. RUK-223
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 90.9199999999991
+			lct = 90.9199999999991
+			root = 0
+			lat = 22.9269175903417
+			lon = 100.790086894825
+			alt = 148264380765.771
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2719569,-0.4638882,0.7413514,0.4015535
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 157996052012.067
+				ECC = 0.0633577019424048
+				INC = 23.2232793993068
+				LPE = 126.017779435148
+				LAN = 1.18416351079566
+				MNA = 0.063793546784987
+				EPH = 2624742.5618457
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 575075063
+				mid = 575075063
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 90.9199999999991
+				lifetime = 914232.952880859
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = aa6430c24aa943548b136f818f8d8ca7
+			name = Ast. GGZ-269
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 105.919999999996
+			lct = 105.919999999996
+			root = 0
+			lat = 23.2963326166
+			lon = 99.8035808990338
+			alt = 146434273420.778
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.003555042,-0.5082144,0.7145274,0.4807869
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 154797377833.65
+				ECC = 0.0526132435416745
+				INC = 23.6231645899465
+				LPE = 120.032879919445
+				LAN = 359.791253542075
+				MNA = 0.545326284010843
+				EPH = 4608125.58552734
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 810312530
+				mid = 810312530
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 105.919999999996
+				lifetime = 1558521.44165039
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1eac211ca57f4c7e853b27df4709213b
+			name = V2
+			type = Probe
+			sit = PRELAUNCH
+			landed = True
+			landedAt = KSC_LaunchPad_Platform
+			splashed = False
+			met = 0
+			lct = 60054.7956445291
+			root = 0
+			lat = 28.6087828676181
+			lon = 279.40023552356
+			alt = 94.3178606396541
+			hgt = 11.56454
+			nrm = 2.19857E-06,0.9999532,-0.00968331
+			rot = -0.506089,-0.1134125,-0.01567985,0.8548484
+			CoM = 0.01363525,-5.514808,3.86912
+			stg = 7
+			prst = False
+			ref = 1794155764
+			ctrl = True
+			cPch = 0.23
+			cHdg = -1.304
+			cMod = 0
+			ORBIT
+			{
+				SMA = 3189785.12398991
+				ECC = 0.997341049064403
+				INC = 28.6088166870861
+				LPE = 270.000124092877
+				LAN = 180.496949006
+				MNA = 3.14159265358979
+				EPH = 60054.8156445291
+				REF = 1
+			}
+			PART
+			{
+				name = History.V2instruments
+				uid = 1246330051
+				mid = 3655782671
+				launchID = 1
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 1
+				attN = bottom, 11
+				mass = 0.2
+				temp = 14.50284
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2instruments (V2)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = False
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Wedge Locks Off
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 33
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = True
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Structure On
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = probeCoreOcto2
+				uid = 1794155764
+				mid = 3655782671
+				launchID = 1
+				parent = 0
+				position = 0,0.0558300018310547,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 0
+				attN = top, 2
+				mass = 0.05
+				temp = 14.45955
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = probeCoreOcto2
+				modCost = 1.292
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = ServiceModule
+					utilization = 86
+					mass = 0.05
+					timestamp = 2232.33999999826
+					volume = 50
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSPU
+					isEnabled = True
+					IsRTPowered = True
+					IsRTSignalProcessor = True
+					IsRTCommandStation = False
+					RTCommandMinCrew = 6
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntennaPassive
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = True
+					IsRTBroken = False
+					RTDishRadians = 1
+					RTOmniRange = 3000
+					RTDishRange = -1
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TrajectoriesVesselSettings
+					isEnabled = True
+					EntryAngle = 0
+					EntryHorizon = False
+					HighAngle = 0
+					HighHorizon = False
+					LowAngle = 0
+					LowHorizon = False
+					GroundAngle = 0
+					GroundHorizon = False
+					hasTarget = False
+					targetLocation = (0, 0, 0)
+					targetReferenceBody = 
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					MechJebLocalSettings
+					{
+						MechJebModuleJoke
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTargetController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSettings
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartASS
+						{
+							mode = ORBITAL
+							target = OFF
+							advReference = INERTIAL
+							advDirection = FORWARD
+							forceRol = False
+							unlockParts = 
+							unlockTechs = 
+							srfHdg
+							{
+								_val = 90
+								_text = 90
+							}
+							srfPit
+							{
+								_val = 90
+								_text = 90
+							}
+							srfRol
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelYaw
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelPit
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelRol
+							{
+								_val = 0
+								_text = 0
+							}
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleStageStats
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						ModExtensionDemo
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointHelpWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleJokeObscurePanel
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleManeuverPlanner
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomWindowEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleInfoItems
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeExecutor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRCSBalancerWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWarpController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustController
+						{
+							limitThrottle = False
+							unlockParts = 
+							unlockTechs = 
+							maxThrottle
+							{
+								_val = 1
+								_text = 100
+							}
+						}
+						MechJebModuleRCSController
+						{
+							unlockParts = 
+							unlockTechs = 
+							Tf
+							{
+								_val = 1
+								_text = 1
+							}
+						}
+						MechJebModuleRCSBalancer
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleStagingController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleFlightRecorder
+						{
+							markUT = 60054.8156445291
+							deltaVExpended = 0
+							dragLosses = 0
+							gravityLosses = 0
+							steeringLosses = 0
+							markLatitude = 28.6088170210283
+							markLongitude = -80.5997682490335
+							markAltitude = 88.7658463522792
+							markBodyIndex = 1
+							maxDragGees = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+					}
+					SubOrbited
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARControlSys
+					isEnabled = True
+					EVENTS
+					{
+						AerodynamicFailureStatus
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 15840
+					maxAmount = 15840
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = proceduralBattery
+				uid = 3623276186
+				mid = 3655782671
+				launchID = 1
+				parent = 1
+				position = 0,0.167190551757813,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 3
+				attN = bottom, 1
+				mass = 0.05089381
+				temp = 14.45212
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = proceduralBattery
+				modCost = 674.3434
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralPart
+					isEnabled = True
+					textureSet = StationSquareWhite
+					shapeName = Cylinder
+					textureSet_UIEditor
+					{
+						controlEnabled = True
+					}
+					shapeName_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCylinder
+					isEnabled = True
+					diameter = 0.6
+					length = 0.125
+					diameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.008
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCone
+					isEnabled = True
+					topDiameter = 0.3
+					bottomDiameter = 0.5
+					length = 0.375
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapePill
+					isEnabled = True
+					diameter = 0.4
+					length = 0.875
+					fillet = 0.3
+					diameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.008
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					fillet_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.4
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeBezierCone
+					isEnabled = True
+					selectedShape = Round #1
+					topDiameter = 0.5
+					bottomDiameter = 1
+					length = 0.625
+					selectedShape_UIEditor
+					{
+						controlEnabled = True
+					}
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TankContentSwitcher
+					isEnabled = True
+					tankVolume = 0.03534292
+					mass = 0.05089381
+					tankType = Electric
+					tankType_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 13486.86
+					maxAmount = 13486.86
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = sasModule
+				uid = 111706119
+				mid = 3655782671
+				launchID = 1
+				parent = 2
+				position = 0,0.32080078125,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 2
+				attN = top, 4
+				mass = 0.05
+				temp = 14.43539
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = sasModule
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1.25
+					currentScale = 1.25
+					defaultScale = 1.25
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (0.5, 0.5, 0.5)
+					dryCost = 600
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutOcto
+				uid = 2250690959
+				mid = 3655782671
+				launchID = 1
+				parent = 3
+				position = 0,0.540639877319336,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 5
+				attN = bottom, 3
+				mass = 0.01
+				temp = 14.43138
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = strutOcto
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 100
+					currentScale = 100
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 20
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutOcto
+				uid = 419953494
+				mid = 3655782671
+				launchID = 1
+				parent = 4
+				position = 0,0.798110961914063,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 6
+				attN = bottom, 4
+				mass = 0.01
+				temp = 14.43548
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = strutOcto
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 100
+					currentScale = 100
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 20
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutOcto
+				uid = 2291589227
+				mid = 3655782671
+				launchID = 1
+				parent = 5
+				position = 0,1.05558013916016,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 5
+				mass = 0.01
+				temp = 14.45178
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = strutOcto
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 100
+					currentScale = 100
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 20
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = xenonTankRadial
+				uid = 165499701
+				mid = 3655782671
+				launchID = 1
+				parent = 6
+				position = -0.140979617834091,0.973590850830078,-0.0485582053661346
+				rotation = 0,-0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 6
+				mass = 0.00269
+				temp = 14.40293
+				expt = 0.1715
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = xenonTankRadial
+				modCost = -1444.941
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.7
+					currentScale = 0.7
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 754.6
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Xenon
+					utilization = 86
+					mass = 0.00269
+					timestamp = 2232.33999999826
+					volume = 40
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LeadBallast
+					amount = 26
+					maxAmount = 26
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = xenonTankRadial
+				uid = 2006336467
+				mid = 3655782671
+				launchID = 1
+				parent = 6
+				position = 0.0704896748065948,0.973590850830078,0.0735335946083069
+				rotation = 0,-0.9659259,0,0.2588191
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 7
+				sym = 9
+				srfN = srfAttach, 6
+				mass = 0.00269
+				temp = 14.38564
+				expt = 0.1715
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = xenonTankRadial
+				modCost = -1444.941
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.7
+					currentScale = 0.7
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 754.6
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Xenon
+					utilization = 86
+					mass = 0.00269
+					timestamp = 2232.33999999826
+					volume = 40
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LeadBallast
+					amount = 26
+					maxAmount = 26
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = xenonTankRadial
+				uid = 27742042
+				mid = 3655782671
+				launchID = 1
+				parent = 6
+				position = 0.0704896748065948,0.973590850830078,-0.170649915933609
+				rotation = 0,-0.258819,0,0.9659259
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 6
+				mass = 0.00269
+				temp = 14.36855
+				expt = 0.1715
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = xenonTankRadial
+				modCost = -1444.941
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.7
+					currentScale = 0.7
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 754.6
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Xenon
+					utilization = 86
+					mass = 0.00269
+					timestamp = 2232.33999999826
+					volume = 40
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LeadBallast
+					amount = 26
+					maxAmount = 26
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = RTShortAntenna1
+				uid = 2006994012
+				mid = 3655782671
+				launchID = 1
+				parent = 2
+				position = -0.309596449136734,0.223621368408203,0.130181297659874
+				rotation = 0.002656226,-0.2587613,0.009914916,-0.9658868
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 2
+				mass = 0.005
+				temp = 14.38604
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = RTShortAntenna1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleRTAntenna
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = True
+					IsRTBroken = False
+					RTDishRadians = 1
+					RTOmniRange = 1000000
+					RTDishRange = -1
+					RTAntennaTarget = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+						EventToggle
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = Toggle
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Target
+							guiName = No Target
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorOpen
+						{
+							active = True
+							guiActive = False
+							guiIcon = Start deployed
+							guiName = Start deployed
+							category = Start deployed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorClose
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Start retracted
+							guiName = Start retracted
+							category = Start retracted
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiIcon = 
+							guiName = Deactivate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OverrideTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = [EVA] Set Target
+							guiName = [EVA] Set Target
+							category = [EVA] Set Target
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideOpen
+						{
+							active = True
+							guiActive = False
+							guiIcon = [EVA] Force Open
+							guiName = [EVA] Force Open
+							category = [EVA] Force Open
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideClose
+						{
+							active = True
+							guiActive = False
+							guiIcon = [EVA] Force Close
+							guiName = [EVA] Force Close
+							category = [EVA] Force Close
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionOpen
+						{
+							actionGroup = None
+						}
+						ActionClose
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSPUPassive
+					isEnabled = True
+					IsRTPowered = True
+					IsRTSignalProcessor = True
+					IsRTCommandStation = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzInterstageAdapter2
+				uid = 2786234265
+				mid = 3655782671
+				launchID = 1
+				parent = 0
+				position = 0,-0.733509063720703,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sidx = 12
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 17
+				attN = top, 0
+				attN = top1, 15
+				attN = connect01, 13
+				attN = connect02, 12
+				attN = connect03, 16
+				attN = connect04, 14
+				mass = 0.07161089
+				temp = 14.48864
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzInterstageAdapter2
+				modCost = 71.61089
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingAdapter
+					isEnabled = True
+					extraHeight = 0
+					baseSize = 1.7
+					topSize = 1.2
+					height = 1.4
+					extraHeight_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					baseSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					topSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					height_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingBase
+					isEnabled = True
+					extraRadius = 0
+					fuelCrossFeed = False
+					autoStrutSides = True
+					extraRadius_UIFlight
+					{
+						controlEnabled = True
+						minValue = -1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					autoStrutSides_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						ToggleCrossFeed
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle crossfeed
+							guiName = Toggle crossfeed
+							category = Toggle crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KzNodeNumberTweaker
+					isEnabled = True
+					numNodes = 4
+					radius = 0.85
+					radius_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 5
+						incrementLarge = 0.625
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+						IncrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = More nodes
+							guiName = More nodes
+							category = More nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DecrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Fewer nodes
+							guiName = Fewer nodes
+							category = Fewer nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 908284914
+				mid = 3655782671
+				launchID = 1
+				parent = 11
+				position = -1.19209289550781E-07,-1.07710838317871,0.801442503929138
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = connect, 11
+				mass = 0.01024241
+				temp = 14.42132
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 51.21204
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.782
+					maxRad = 0.782
+					cylStart = 0
+					cylEnd = 0.3128
+					topRad = 0.532
+					inlineHeight = 1.4
+					sideThickness = 0.068
+					meshPos = (3.72529E-08, 0.3436003, -0.85)
+					meshRot = (0, -0.7071068, 0, 0.7071068)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 2951999436
+				mid = 3655782671
+				launchID = 1
+				parent = 11
+				position = 0.849999189376831,-1.07710838317871,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 1
+				attm = 0
+				srfN = None, -1
+				attN = connect, 11
+				mass = 0.01024241
+				temp = 14.40498
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 51.21204
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.782
+					maxRad = 0.782
+					cylStart = 0
+					cylEnd = 0.3128
+					topRad = 0.532
+					inlineHeight = 1.4
+					sideThickness = 0.068
+					meshPos = (-0.85, 0.3436003, 0)
+					meshRot = (0, 0, 0, 1)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 3931129718
+				mid = 3655782671
+				launchID = 1
+				parent = 11
+				position = 0,-1.07710838317871,-0.898558378219604
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 2
+				attm = 0
+				srfN = None, -1
+				attN = connect, 11
+				mass = 0.01024241
+				temp = 14.38841
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 51.21204
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.782
+					maxRad = 0.782
+					cylStart = 0
+					cylEnd = 0.3128
+					topRad = 0.532
+					inlineHeight = 1.4
+					sideThickness = 0.068
+					meshPos = (-7.450581E-09, 0.3436003, 0.85)
+					meshRot = (0, 0.7071068, 0, 0.7071068)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = proceduralNoseCone
+				uid = 1802513505
+				mid = 3655782671
+				launchID = 1
+				parent = 11
+				position = 0,1.79150009155273,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 11
+				mass = 0.1146565
+				temp = 14.37771
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = proceduralNoseCone
+				modCost = 0.009143854
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralPart
+					isEnabled = True
+					textureSet = GreySide
+					shapeName = Smooth Cone
+					textureSet_UIEditor
+					{
+						controlEnabled = True
+					}
+					shapeName_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeBezierCone
+					isEnabled = True
+					selectedShape = Sharp #2
+					topDiameter = 0
+					bottomDiameter = 1.2
+					length = 2.25
+					selectedShape_UIEditor
+					{
+						controlEnabled = True
+					}
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.25
+						incrementLarge = 1.25
+						incrementSmall = 0.25
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TankContentSwitcher
+					isEnabled = True
+					tankVolume = 0.9554706
+					mass = 0.1146565
+					tankType = Structural
+					tankType_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 2594193938
+				mid = 3655782671
+				launchID = 1
+				parent = 11
+				position = -0.850000143051147,-1.07709884643555,-0.0485582053661346
+				rotation = 0,-0.7071068,0,0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 3
+				attm = 0
+				srfN = None, -1
+				attN = connect, 11
+				mass = 0.01024241
+				temp = 14.35948
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 51.21204
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.782
+					maxRad = 0.782
+					cylStart = 0
+					cylEnd = 0.3128
+					topRad = 0.532
+					inlineHeight = 1.4
+					sideThickness = 0.068
+					meshPos = (3.72529E-08, 0.3436003, -0.85)
+					meshRot = (0, -0.7071068, 0, 0.7071068)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzInterstageAdapter2
+				uid = 4254884942
+				mid = 3655782671
+				launchID = 1
+				parent = 11
+				position = 0,-6.93349933624268,-0.0485582053661346
+				rotation = 0,0.3826835,0,0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 13
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 18
+				attN = top, 37
+				attN = top1, 11
+				attN = connect01, 41
+				attN = connect02, 40
+				attN = connect03, 39
+				attN = connect04, 42
+				mass = 0.08094353
+				temp = 14.54574
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzInterstageAdapter2
+				modCost = 80.94353
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingAdapter
+					isEnabled = True
+					extraHeight = 0
+					baseSize = 1.8
+					topSize = 1.7
+					height = 6.2
+					extraHeight_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					baseSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					topSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					height_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingBase
+					isEnabled = True
+					extraRadius = 0
+					fuelCrossFeed = True
+					autoStrutSides = True
+					extraRadius_UIFlight
+					{
+						controlEnabled = True
+						minValue = -1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					autoStrutSides_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						ToggleCrossFeed
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle crossfeed
+							guiName = Toggle crossfeed
+							category = Toggle crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KzNodeNumberTweaker
+					isEnabled = True
+					numNodes = 4
+					radius = 0.9
+					radius_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 5
+						incrementLarge = 0.625
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+						IncrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = More nodes
+							guiName = More nodes
+							category = More nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DecrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Fewer nodes
+							guiName = Fewer nodes
+							category = Fewer nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzInterstageAdapter2
+				uid = 2186246634
+				mid = 3655782671
+				launchID = 1
+				parent = 17
+				position = 0,-6.93349933624268,-0.0485582053661346
+				rotation = 0.3826834,0,0.9238796,0
+				mirror = 1,1,1
+				istg = 0
+				dstg = 5
+				sqor = 0
+				sidx = 14
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 17
+				attN = top, 22
+				attN = None, -1
+				attN = connect01, 36
+				attN = connect02, 19
+				attN = connect03, 20
+				attN = connect04, 21
+				mass = 0.08094353
+				temp = 14.52117
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzInterstageAdapter2
+				modCost = 80.94353
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingAdapter
+					isEnabled = True
+					extraHeight = 0
+					baseSize = 1.8
+					topSize = 1
+					height = 4
+					extraHeight_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					baseSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					topSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					height_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingBase
+					isEnabled = True
+					extraRadius = 0
+					fuelCrossFeed = True
+					autoStrutSides = True
+					extraRadius_UIFlight
+					{
+						controlEnabled = True
+						minValue = -1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					autoStrutSides_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						ToggleCrossFeed
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle crossfeed
+							guiName = Toggle crossfeed
+							category = Toggle crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KzNodeNumberTweaker
+					isEnabled = True
+					numNodes = 4
+					radius = 0.9
+					radius_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 5
+						incrementLarge = 0.625
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+						IncrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = More nodes
+							guiName = More nodes
+							category = More nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DecrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Fewer nodes
+							guiName = Fewer nodes
+							category = Fewer nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 1650469094
+				mid = 3655782671
+				launchID = 1
+				parent = 18
+				position = 0.636395215988159,-7.59909915924072,0.587837100028992
+				rotation = 0,-0.9238796,0,0.3826834
+				mirror = 1,1,1
+				istg = 0
+				dstg = 7
+				sqor = 0
+				sidx = 4
+				attm = 0
+				srfN = None, -1
+				attN = connect, 18
+				mass = 0.02915921
+				temp = 14.43717
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 145.796
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.828
+					maxRad = 0.828
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.428
+					inlineHeight = 4
+					sideThickness = 0.072
+					meshPos = (2.980232E-08, 0.6655998, 0.9)
+					meshRot = (0.7071068, 0, -0.7071068, 0)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 3221929285
+				mid = 3655782671
+				launchID = 1
+				parent = 18
+				position = 0.636396169662476,-7.59909915924072,-0.684953927993774
+				rotation = 0,-0.3826834,0,0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 7
+				sqor = 0
+				sidx = 5
+				attm = 0
+				srfN = None, -1
+				attN = connect, 18
+				mass = 0.02915921
+				temp = 14.42099
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 145.796
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.828
+					maxRad = 0.828
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.428
+					inlineHeight = 4
+					sideThickness = 0.072
+					meshPos = (2.980232E-08, 0.6655998, 0.9)
+					meshRot = (0.7071068, 0, -0.7071068, 0)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 1862329749
+				mid = 3655782671
+				launchID = 1
+				parent = 18
+				position = -0.636395990848541,-7.59909915924072,-0.684953808784485
+				rotation = 0,0.3826834,0,0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 7
+				sqor = 0
+				sidx = 6
+				attm = 0
+				srfN = None, -1
+				attN = connect, 18
+				mass = 0.02915921
+				temp = 14.40506
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 145.796
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.828
+					maxRad = 0.828
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.428
+					inlineHeight = 4
+					sideThickness = 0.072
+					meshPos = (2.980232E-08, 0.6655998, 0.9)
+					meshRot = (0.7071068, 0, -0.7071068, 0)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2instruments
+				uid = 2184014139
+				mid = 3655782671
+				launchID = 1
+				parent = 18
+				position = 0,-7.2656888961792,-1.08033418655396E-07
+				rotation = 0,7.787722E-08,0,1
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 18
+				attN = bottom, 23
+				mass = 0.2
+				temp = 14.44452
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2instruments
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = False
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Wedge Locks Off
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 33
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = True
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Structure On
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = radialEngineBodysmall
+				uid = 924636903
+				mid = 3655782671
+				launchID = 1
+				parent = 22
+				position = 0,-8.41138935089111,-0.0485582053661346
+				rotation = 0,-2.753376E-08,0,1
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 22
+				attN = bottom, 32
+				mass = 0.9186049
+				temp = 14.49523
+				expt = 6.912001
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = radialEngineBodysmall
+				modCost = 21159.61
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 60
+					currentScale = 60
+					defaultScale = 25
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 22809.61
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableResourceIntake
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						DeactivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2fin
+				uid = 3597439207
+				mid = 3655782671
+				launchID = 1
+				parent = 23
+				position = -0.872434377670288,-9.76982021331787,-0.0485558733344078
+				rotation = 0,-5.034347E-08,0,-1
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 26
+				sym = 28
+				sym = 30
+				srfN = srfAttach, 23
+				mass = 0.02
+				temp = 14.43674
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2fin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = StandardCtrlSrf
+				uid = 3259269515
+				mid = 3655782671
+				launchID = 1
+				parent = 24
+				position = -1.13829469680786,-11.270450592041,-0.048554465174675
+				rotation = -0.229753,0.9732491,-1.419567E-07,-4.553418E-08
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 27
+				sym = 29
+				sym = 31
+				srfN = srfAttach, 24
+				mass = 0.04735875
+				temp = 14.39674
+				expt = 0.0015625
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = StandardCtrlSrf
+				modCost = -393.75
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleHeatShield
+					isEnabled = True
+					deployAnimationController = 0
+					direction = (0, 0, 0)
+					reflective = 0.25
+					ablative = 
+					area = 0
+					thickness = 0
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					loss
+					{
+					}
+					dissipation
+					{
+					}
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.25
+					currentScale = 0.25
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 6.25
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 2
+					maxdeflectFlap = 1
+					massMultiplier = 1
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					massMultiplier_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2fin
+				uid = 1185552756
+				mid = 3655782671
+				launchID = 1
+				parent = 23
+				position = -1.99675559997559E-06,-9.76982021331787,0.823874831199646
+				rotation = 0,-0.7071069,0,-0.7071068
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 24
+				sym = 28
+				sym = 30
+				srfN = srfAttach, 23
+				mass = 0.02
+				temp = 14.4251
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2fin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = StandardCtrlSrf
+				uid = 3480556406
+				mid = 3655782671
+				launchID = 1
+				parent = 26
+				position = -2.83122062683105E-06,-11.270450592041,1.08973383903503
+				rotation = -0.16246,0.688191,0.1624598,-0.6881911
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 25
+				sym = 29
+				sym = 31
+				srfN = srfAttach, 26
+				mass = 0.04735875
+				temp = 14.39119
+				expt = 0.0015625
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = StandardCtrlSrf
+				modCost = -393.75
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleHeatShield
+					isEnabled = True
+					deployAnimationController = 0
+					direction = (0, 0, 0)
+					reflective = 0.25
+					ablative = 
+					area = 0
+					thickness = 0
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					loss
+					{
+					}
+					dissipation
+					{
+					}
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.25
+					currentScale = 0.25
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 6.25
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 2
+					maxdeflectFlap = 1
+					massMultiplier = 1
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					massMultiplier_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2fin
+				uid = 2078973615
+				mid = 3655782671
+				launchID = 1
+				parent = 23
+				position = 0.872433304786682,-9.76982021331787,-0.0485604107379913
+				rotation = 0,-1,0,7.787722E-08
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 24
+				sym = 26
+				sym = 30
+				srfN = srfAttach, 23
+				mass = 0.02
+				temp = 14.41339
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2fin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = StandardCtrlSrf
+				uid = 3973849541
+				mid = 3655782671
+				launchID = 1
+				parent = 28
+				position = 1.13829243183136,-11.270450592041,-0.0485619008541107
+				rotation = -1.350732E-07,-4.553418E-08,0.229753,-0.9732491
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 25
+				sym = 27
+				sym = 31
+				srfN = srfAttach, 28
+				mass = 0.04735875
+				temp = 14.38564
+				expt = 0.0015625
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = StandardCtrlSrf
+				modCost = -393.75
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleHeatShield
+					isEnabled = True
+					deployAnimationController = 0
+					direction = (0, 0, 0)
+					reflective = 0.25
+					ablative = 
+					area = 0
+					thickness = 0
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					loss
+					{
+					}
+					dissipation
+					{
+					}
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.25
+					currentScale = 0.25
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 6.25
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 2
+					maxdeflectFlap = 1
+					massMultiplier = 1
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					massMultiplier_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2fin
+				uid = 2962562202
+				mid = 3655782671
+				launchID = 1
+				parent = 23
+				position = 2.29477882385254E-06,-9.76982021331787,-0.920990586280823
+				rotation = 0,-0.7071068,0,0.7071069
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 24
+				sym = 26
+				sym = 28
+				srfN = srfAttach, 23
+				mass = 0.02
+				temp = 14.4017
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2fin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = StandardCtrlSrf
+				uid = 1451999908
+				mid = 3655782671
+				launchID = 1
+				parent = 30
+				position = 2.92062759399414E-06,-11.270450592041,-1.18685030937195
+				rotation = 0.1624598,-0.6881911,0.16246,-0.688191
+				mirror = 1,1,1
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 25
+				sym = 27
+				sym = 29
+				srfN = srfAttach, 30
+				mass = 0.04735875
+				temp = 14.38009
+				expt = 0.0015625
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = StandardCtrlSrf
+				modCost = -393.75
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleHeatShield
+					isEnabled = True
+					deployAnimationController = 0
+					direction = (0, 0, 0)
+					reflective = 0.25
+					ablative = 
+					area = 0
+					thickness = 0
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					loss
+					{
+					}
+					dissipation
+					{
+					}
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 0.25
+					currentScale = 0.25
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 6.25
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 2
+					maxdeflectFlap = 1
+					massMultiplier = 1
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					massMultiplier_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2engine
+				uid = 2365489346
+				mid = 3655782671
+				launchID = 1
+				parent = 23
+				position = 0,-10.031720161438,-0.0485582053661346
+				rotation = 0,7.787722E-08,0,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 6
+				sqor = 1
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = top, 23
+				attN = None, -1
+				attN = bottom, 33
+				mass = 0.2
+				temp = 14.36582
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2engine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					staged = False
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0.0140296293161723
+					maxAmount = 0.0199999995529652
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = History.V2tower
+				uid = 112962429
+				mid = 3655782671
+				launchID = 1
+				parent = 32
+				position = 0.0158046782016754,-5.71840953826904,4.34852504730225
+				rotation = 0,2.280971E-08,0,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 6
+				sqor = 1
+				sidx = 1
+				attm = 0
+				srfN = None, -1
+				attN = top, 32
+				mass = 100
+				temp = 14.38881
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2tower
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleHeatShield
+					isEnabled = True
+					deployAnimationController = 0
+					direction = (0, 0, 0)
+					reflective = 0.25
+					ablative = 
+					area = 0
+					thickness = 0
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					loss
+					{
+					}
+					dissipation
+					{
+					}
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0.5
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = IR.StrutDecoupler.Small
+				uid = 2802574563
+				mid = 3655782671
+				launchID = 1
+				parent = 33
+				position = -0.10375303030014,-0.400897979736328,3.41030406951904
+				rotation = 8.429357E-08,0.7071067,-8.42936E-08,-0.7071072
+				mirror = 1,1,1
+				istg = 2
+				dstg = 7
+				sqor = 2
+				sidx = 0
+				attm = 1
+				cData = tgt: KzInterstageAdapter2_11; pos: -2.751981,-0.03443427,0.04565963; dir: -0.9998335,-0.007203292,0.01676607
+				srfN = srfAttach, 33
+				mass = 0.025
+				temp = 14.38881
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = IR.StrutDecoupler.Small
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleStagingToggle
+					isEnabled = True
+					stagingEnabled = True
+					stagingEnabled_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = IR.StrutDecoupler.Small
+				uid = 2860132451
+				mid = 3655782671
+				launchID = 1
+				parent = 33
+				position = 0.0780873894691467,-0.375316619873047,3.41030406951904
+				rotation = 8.429357E-08,0.7071066,-8.42936E-08,-0.7071072
+				mirror = 1,1,1
+				istg = 2
+				dstg = 7
+				sqor = 2
+				sidx = 1
+				attm = 1
+				cData = tgt: History.V2instruments_0; pos: -2.820995,0.2200352,0.07427562; dir: -0.9961935,0.08307245,0.02641008
+				srfN = srfAttach, 33
+				mass = 0.025
+				temp = 14.38881
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = IR.StrutDecoupler.Small
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleStagingToggle
+					isEnabled = True
+					stagingEnabled = True
+					stagingEnabled_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 3079483541
+				mid = 3655782671
+				launchID = 1
+				parent = 18
+				position = -0.636396944522858,-7.59909915924072,0.587839126586914
+				rotation = 0,-0.9238796,0,-0.3826835
+				mirror = 1,1,1
+				istg = 0
+				dstg = 7
+				sqor = 0
+				sidx = 7
+				attm = 0
+				srfN = None, -1
+				attN = connect, 18
+				mass = 0.02915921
+				temp = 14.37225
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 145.796
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.828
+					maxRad = 0.828
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.428
+					inlineHeight = 4
+					sideThickness = 0.072
+					meshPos = (2.980232E-08, 0.6655998, 0.9)
+					meshRot = (0.7071068, 0, -0.7071068, 0)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = proceduralTankRealFuels
+				uid = 555258437
+				mid = 3655782671
+				launchID = 1
+				parent = 17
+				position = 0,-5.16479873657227,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 4
+				dstg = 4
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 38
+				attN = bottom, 17
+				mass = 0.130868
+				temp = 14.43804
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = proceduralTankRealFuels
+				modCost = 44.00111
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralPart
+					isEnabled = True
+					textureSet = Atlas
+					shapeName = Fillet Cylinder
+					textureSet_UIEditor
+					{
+						controlEnabled = True
+					}
+					shapeName_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCylinder
+					isEnabled = True
+					diameter = 1
+					length = 1
+					diameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCone
+					isEnabled = True
+					topDiameter = 0.5
+					bottomDiameter = 1
+					length = 1
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapePill
+					isEnabled = True
+					diameter = 1.5
+					length = 2.875
+					fillet = 0.7
+					diameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					fillet_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1.5
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeBezierCone
+					isEnabled = True
+					selectedShape = Round #1
+					topDiameter = 0.5
+					bottomDiameter = 1
+					length = 1
+					selectedShape_UIEditor
+					{
+						controlEnabled = True
+					}
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Default
+					utilization = 90
+					mass = 0.130868
+					timestamp = 2232.33999999826
+					volume = 4373
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCrossFeed
+					isEnabled = True
+					crossFeedOverride = True
+					EVENTS
+					{
+						ToggleCrossFeed
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Crossfeed is On
+							guiName = Crossfeed is On
+							category = Crossfeed is On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LqdOxygen
+					amount = 3835.35459302189
+					maxAmount = 4350
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = LeadBallast
+					amount = 7.75
+					maxAmount = 23
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = proceduralTankRealFuels
+				uid = 3299346132
+				mid = 3655782671
+				launchID = 1
+				parent = 37
+				position = 0,-2.2272891998291,-0.0485582053661346
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 4
+				dstg = 4
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 37
+				mass = 0.13238
+				temp = 14.39951
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = proceduralTankRealFuels
+				modCost = 46.3619
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralPart
+					isEnabled = True
+					textureSet = Atlas
+					shapeName = Fillet Cylinder
+					textureSet_UIEditor
+					{
+						controlEnabled = True
+					}
+					shapeName_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCylinder
+					isEnabled = True
+					diameter = 1
+					length = 1
+					diameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCone
+					isEnabled = True
+					topDiameter = 0.5
+					bottomDiameter = 1
+					length = 1
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapePill
+					isEnabled = True
+					diameter = 1.5
+					length = 3
+					fillet = 0.7
+					diameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					fillet_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1.5
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeBezierCone
+					isEnabled = True
+					selectedShape = Round #1
+					topDiameter = 0.5
+					bottomDiameter = 1
+					length = 1
+					selectedShape_UIEditor
+					{
+						controlEnabled = True
+					}
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Default
+					utilization = 90
+					mass = 0.13238
+					timestamp = 2232.33999999826
+					volume = 4572
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCrossFeed
+					isEnabled = True
+					crossFeedOverride = True
+					EVENTS
+					{
+						ToggleCrossFeed
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Crossfeed is On
+							guiName = Crossfeed is On
+							category = Crossfeed is On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Ethanol75
+					amount = 4556
+					maxAmount = 4556
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = LeadBallast
+					amount = 7.7391
+					maxAmount = 16
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 2199601540
+				mid = 3655782671
+				launchID = 1
+				parent = 17
+				position = -0.636396288871765,-7.26789951324463,0.587837815284729
+				rotation = 0,-0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 5
+				sqor = 0
+				sidx = 8
+				attm = 0
+				sym = 40
+				sym = 41
+				sym = 42
+				srfN = None, -1
+				attN = connect, 17
+				mass = 0.05640028
+				temp = 14.41735
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 282.0014
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.8279999
+					maxRad = 0.8279999
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.778
+					inlineHeight = 6.2
+					sideThickness = 0.072
+					meshPos = (0.6363961, 0.3344002, 0.6363963)
+					meshRot = (0, -0.9238796, 0, -0.3826834)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 2444173627
+				mid = 3655782671
+				launchID = 1
+				parent = 17
+				position = 0.636396169662476,-7.26789951324463,0.587837815284729
+				rotation = 0,-1,0,0
+				mirror = 1,1,1
+				istg = 0
+				dstg = 5
+				sqor = 0
+				sidx = 9
+				attm = 0
+				sym = 39
+				sym = 41
+				sym = 42
+				srfN = None, -1
+				attN = connect, 17
+				mass = 0.05640028
+				temp = 14.4011
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 282.0014
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.8279999
+					maxRad = 0.8279999
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.778
+					inlineHeight = 6.2
+					sideThickness = 0.072
+					meshPos = (0.6363962, 0.3344002, 0.6363962)
+					meshRot = (0, 0.9238796, 0, 0.3826834)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 1396681046
+				mid = 3655782671
+				launchID = 1
+				parent = 17
+				position = 0.636396169662476,-7.26789951324463,-0.684954285621643
+				rotation = 0,-0.7071068,0,0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 5
+				sqor = 0
+				sidx = 10
+				attm = 0
+				sym = 39
+				sym = 40
+				sym = 42
+				srfN = None, -1
+				attN = connect, 17
+				mass = 0.05640028
+				temp = 14.38469
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 282.0014
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.8279999
+					maxRad = 0.8279999
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.778
+					inlineHeight = 6.2
+					sideThickness = 0.072
+					meshPos = (0.636396, 0.3344002, 0.6363962)
+					meshRot = (0, 0.9238796, 0, 0.3826834)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2ger
+				uid = 2588775880
+				mid = 3655782671
+				launchID = 1
+				parent = 17
+				position = -0.636396288871765,-7.26789951324463,-0.684954285621643
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 5
+				sqor = 0
+				sidx = 11
+				attm = 0
+				sym = 39
+				sym = 40
+				sym = 41
+				srfN = None, -1
+				attN = connect, 17
+				mass = 0.05640028
+				temp = 14.36837
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2ger
+				modCost = 282.0014
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 0.8279999
+					maxRad = 0.8279999
+					cylStart = 0
+					cylEnd = 0.3312
+					topRad = 0.778
+					inlineHeight = 6.2
+					sideThickness = 0.072
+					meshPos = (0.6363963, 0.3344002, 0.6363961)
+					meshRot = (0, 0.9238796, 0, 0.3826834)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0.5
+			}
+		}
+		VESSEL
+		{
+			pid = 521d681fedb249a58771eab9123dfe57
+			name = Ast. FZC-639
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 147.300000000002
+			lct = 147.300000000002
+			root = 0
+			lat = 23.1469271392138
+			lon = 100.884942655191
+			alt = 146615873867.078
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.1763954,0.6669338,0.5709479,0.4450871
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 195524299.551268
+				ECC = 0.979056886164826
+				INC = 110.589638836979
+				LPE = 237.960033582309
+				LAN = 71.5953015829297
+				MNA = 3.70820764883437
+				EPH = 147.300000000449
+				REF = 1
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1540435991
+				mid = 1540435991
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 147.300000000002
+				lifetime = 989643.603515625
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 4b20c2d161274cc8a8b02811b5dc2ad7
+			name = Ast. AGK-323
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 192.360000000025
+			lct = 192.360000000025
+			root = 0
+			lat = 22.7466960516018
+			lon = 100.448939423623
+			alt = 147018109295.512
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.02777691,0.6498427,-0.7593896,0.01613413
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 153555149787.386
+				ECC = 0.0414679499212298
+				INC = 23.0395335727561
+				LPE = 123.334264799793
+				LAN = 0.955557123651431
+				MNA = 0.442544858893289
+				EPH = 4364617.77503906
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1838848250
+				mid = 1838848250
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 192.360000000025
+				lifetime = 257690.354919434
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Jebediah Kerman
+			type = Crew
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			type = Crew
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			type = Crew
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = False
+	}
+}
