@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = NASAmission/Flags/NASA
-	launchID = 1
+	launchID = 2
 	PARAMETERS
 	{
 		preset = Normal
@@ -90,6 +90,48 @@ GAME
 		scene = 7, 8, 5
 		Progress
 		{
+			FirstLaunch
+			{
+				completed = 148.960000000004
+			}
+			FirstCrewToSurvive
+			{
+				completed = 75444.9085767285
+				crew
+				{
+					crews = Wan Hu
+				}
+			}
+			AltitudeRecord
+			{
+				reached = 75429.1885767253
+				record = 104.510311650112
+			}
+			Kerbin
+			{
+				reached = 149.640000000004
+				Landing
+				{
+					completed = 149.640000000004
+					vessel
+					{
+						name = Wan Hu Chair
+						flag = NASAmission/Flags/NASA
+					}
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
+				SurfaceEVA
+				{
+					completed = 181.42000000002
+					crew
+					{
+						crews = Wan Hu
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -262,7 +304,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		 = 810312530
+		 = 1969545302
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -287,12 +329,74 @@ GAME
 			Enabled = True
 			HibernateInsteadOfKill = False
 			RespawnDelay = 9203545
+			CrewMemberInfo
+			{
+				name = Wan Hu
+				lastUpdate = 75439.8285767275
+				lastFood = 75439.8285767275
+				lastWater = 75439.8285767275
+				vesselName = Wan Hu Chair Rover
+				vesselId = 7819a6a7-f19b-4359-933b-d06dc86ec94e
+				hibernating = False
+			}
+			VesselInfo
+			{
+				vesselName = Wan Hu Chair Lander
+				vesselType = Lander
+				numCrew = 0
+				numOccupiedParts = 0
+				lastUpdate = 75439.8285767275
+				lastFood = 75439.8285767275
+				lastWater = 75439.8285767275
+				lastOxygen = 75439.8285767275
+				lastElectricity = 75439.8285767275
+				remainingFood = 5.99812116946244
+				remainingWater = 3.39893648205014
+				remainingOxygen = 1259.999712
+				remainingElectricity = 14387.7399992561
+				remainingCO2 = 0
+				remainingWaste = 0.000950107648854019
+				remainingWasteWater = 0.00171019483957454
+				maxFood = 9
+				maxWater = 5.1
+				maxOxygen = 1890
+				maxElectricity = 43200
+				estimatedElectricityConsumptionRate = 0
+				hibernating = False
+				Guid = e9dc2743-47c2-410d-8acc-12f54aaef1b6
+			}
+			VesselInfo
+			{
+				vesselName = Wan Hu Chair Rover
+				vesselType = Rover
+				numCrew = 1
+				numOccupiedParts = 1
+				lastUpdate = 75439.8285767275
+				lastFood = 75439.8285767275
+				lastWater = 75439.8285767275
+				lastOxygen = 75439.8285767275
+				lastElectricity = 75439.8285767275
+				remainingFood = 0.387799650191993
+				remainingWater = 0.219752986226835
+				remainingOxygen = 630.000288
+				remainingElectricity = 4387.6619320344
+				remainingCO2 = 0
+				remainingWaste = 1.30608948252399
+				remainingWasteWater = 2.35096257318405
+				maxFood = 2.99999808
+				maxWater = 1.69999776
+				maxOxygen = 630.000288
+				maxElectricity = 28799.9712
+				estimatedElectricityConsumptionRate = 0.25
+				hibernating = False
+				Guid = 7819a6a7-f19b-4359-933b-d06dc86ec94e
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
-		scene = 5
+		scene = 5, 7
 		KACAlarmListStorage
 		{
 		}
@@ -300,9 +404,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 131.359999999994
+		UT = 75446.5885767289
 		activeVessel = 0
-		mapViewFiltering = 0
+		mapViewFiltering = -1026
 		VESSEL
 		{
 			pid = 634880efe23e491f92e1101f9e0317d0
@@ -640,13 +744,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 154797377833.65
-				ECC = 0.0526132435416745
-				INC = 23.6231645899465
-				LPE = 120.032879919445
-				LAN = 359.791253542075
-				MNA = 0.545326284010843
-				EPH = 4608125.58552734
+				SMA = 154867132003.36
+				ECC = 0.0592781632209118
+				INC = 23.5564900826892
+				LPE = 133.652703343427
+				LAN = 0.688269848801724
+				MNA = 5.74884378968714
+				EPH = 75100.8871753315
 				REF = 0
 			}
 			PART
@@ -693,6 +797,162 @@ GAME
 			{
 			}
 		}
+		VESSEL
+		{
+			pid = e99f026aac60402d9179e660b4f61e48
+			name = Ast. UII-332
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 17732.4240209961
+			lct = 17732.4240209961
+			root = 0
+			lat = 23.1133235000844
+			lon = 446.508468574781
+			alt = 147148081349.704
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.1434741,-0.777687,0.4398941,0.4255718
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 483340152.891021
+				ECC = 0.990975126491303
+				INC = 105.094118303964
+				LPE = 215.068679917149
+				LAN = 106.836139393799
+				MNA = 4.9198126316224
+				EPH = 74908.9785331475
+				REF = 1
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 2051618527
+				mid = 2051618527
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 17732.4240209961
+				lifetime = 1238120.97473145
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 58675b84bfff4438bb5394553023b7af
+			name = Ast. JPG-025
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 19932.4240209961
+			lct = 19932.4240209961
+			root = 0
+			lat = 23.0608524033776
+			lon = 445.102076661486
+			alt = 148227833342.336
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.7004211,0.1616609,0.154959,0.6776901
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 151382901767.246
+				ECC = 0.0218456178396812
+				INC = 23.5173659049679
+				LPE = 143.80569406132
+				LAN = 359.754020261361
+				MNA = 0.0388292440675258
+				EPH = 3888504.09150147
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1969545302
+				mid = 1969545302
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 19932.4240209961
+				lifetime = 578685.319519043
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
 	}
 	ROSTER
 	{
@@ -724,6 +984,17 @@ GAME
 			type = Crew
 			brave = 0.3
 			dumb = 0.1
+			badS = False
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+		KERBAL
+		{
+			name = Wan Hu
+			type = Crew
+			brave = 0.8072624
+			dumb = 0.9617554
 			badS = False
 			state = Available
 			ToD = 0

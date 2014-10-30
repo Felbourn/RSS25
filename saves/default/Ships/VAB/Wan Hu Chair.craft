@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = landerCabinSmall_4294447914
+	part = landerCabinSmall_4294361510
 	partName = Part
 	pos = 0.2028471,10.14312,3.501357
 	rot = 0,0,0,1
@@ -16,7 +16,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 5.81448
-	link = structuralPanel1_4294447798
+	link = structuralPanel1_4294361394
 	EVENTS
 	{
 	}
@@ -219,7 +219,7 @@ PART
 		type = ServiceModule
 		utilization = 86
 		mass = 0.6
-		timestamp = 75439.8085767275
+		timestamp = 75537.3885767474
 		volume = 150
 		type_UIEditor
 		{
@@ -347,12 +347,43 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleTargetController
+			MechJebModuleCustomWindowEditor
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleSettings
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -407,23 +438,12 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleThrustWindow
+			MechJebModuleSettings
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointWindow
+			MechJebModuleTargetController
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -433,37 +453,17 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleRendezvousGuidance
+			MechJebModuleWaypointWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleJokeObscurePanel
+			MechJebModuleThrustWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
+			ModExtensionDemo
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -646,7 +646,7 @@ PART
 }
 PART
 {
-	part = structuralPanel1_4294447798
+	part = structuralPanel1_4294361394
 	partName = Part
 	pos = 0.2028468,9.180929,2.002086
 	rot = -1.82232E-07,0.7071068,-1.398316E-07,0.7071068
@@ -658,8 +658,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = structuralPanel1_4294447776
-	srfN = srfAttach,landerCabinSmall_4294447914
+	link = structuralPanel1_4294361372
+	srfN = srfAttach,landerCabinSmall_4294361510
 	EVENTS
 	{
 	}
@@ -707,9 +707,9 @@ PART
 }
 PART
 {
-	part = structuralPanel1_4294447776
+	part = structuralPanel1_4294361372
 	partName = Part
-	pos = 0.2028466,9.176835,0.9995172
+	pos = 0.2028466,9.176835,0.9995167
 	rot = 1.956126E-14,0.7071068,1.852309E-14,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -719,8 +719,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = structuralPanel1_4294447754
-	srfN = srfAttach,structuralPanel1_4294447798
+	link = structuralPanel1_4294361350
+	srfN = srfAttach,structuralPanel1_4294361394
 	EVENTS
 	{
 	}
@@ -768,9 +768,9 @@ PART
 }
 PART
 {
-	part = structuralPanel1_4294447754
+	part = structuralPanel1_4294361350
 	partName = Part
-	pos = 0.2028464,9.1786,-0.002689123
+	pos = 0.2028464,9.1786,-0.002690077
 	rot = -5.359203E-16,0.7071068,-1.574093E-15,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -780,8 +780,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = structuralPanel1_4294447732
-	srfN = srfAttach,structuralPanel1_4294447776
+	link = structuralPanel1_4294361328
+	srfN = srfAttach,structuralPanel1_4294361372
 	EVENTS
 	{
 	}
@@ -829,9 +829,9 @@ PART
 }
 PART
 {
-	part = structuralPanel1_4294447732
+	part = structuralPanel1_4294361328
 	partName = Part
-	pos = 0.2028462,9.174507,-1.005259
+	pos = 0.2028462,9.174507,-1.005261
 	rot = 1.82232E-07,0.7071068,1.398316E-07,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -841,9 +841,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = strutOcto_4294434368
-	srfN = srfAttach,structuralPanel1_4294447754
-	attN = bottom,strutOcto_4294434368
+	link = strutOcto_4294361306
+	srfN = srfAttach,structuralPanel1_4294361350
+	attN = bottom,strutOcto_4294361306
 	EVENTS
 	{
 	}
@@ -891,7 +891,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294434368
+	part = strutOcto_4294361306
 	partName = Part
 	pos = 0.2028462,9.275742,-1.00526
 	rot = 0,0,0,1
@@ -903,9 +903,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = stackSeparatorMini_4294447710
-	attN = top,stackSeparatorMini_4294447710
-	attN = bottom,structuralPanel1_4294447732
+	link = stackSeparatorMini_4294361280
+	attN = top,stackSeparatorMini_4294361280
+	attN = bottom,structuralPanel1_4294361328
 	EVENTS
 	{
 	}
@@ -953,7 +953,7 @@ PART
 }
 PART
 {
-	part = stackSeparatorMini_4294447710
+	part = stackSeparatorMini_4294361280
 	partName = Part
 	pos = 0.2028462,9.480386,-1.00526
 	rot = 0,0,0,1
@@ -965,9 +965,9 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	link = IR.Adapter.0625ToTrussLarge_4294447680
-	attN = bottom,strutOcto_4294434368
-	attN = top,IR.Adapter.0625ToTrussLarge_4294447680
+	link = IR.Adapter.0625ToTrussLarge_4294361250
+	attN = bottom,strutOcto_4294361306
+	attN = top,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1064,7 +1064,7 @@ PART
 }
 PART
 {
-	part = IR.Adapter.0625ToTrussLarge_4294447680
+	part = IR.Adapter.0625ToTrussLarge_4294361250
 	partName = Part
 	pos = 0.2028462,9.556295,-1.005262
 	rot = 0,0,0,1
@@ -1076,16 +1076,16 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = seatExternalCmd_4294447648
-	link = History.chairBooster_4294447602
-	link = History.chairBooster_4294447562
-	link = History.chairBooster_4294447522
-	link = History.chairBooster_4294447482
-	link = History.chairBooster_4294447442
-	link = History.chairBooster_4294447402
-	link = History.chairBooster_4294447362
-	link = History.chairBooster_4294447322
-	attN = bottom,stackSeparatorMini_4294447710
+	link = seatExternalCmd_4294361218
+	link = History.chairBooster_4294361172
+	link = History.chairBooster_4294361132
+	link = History.chairBooster_4294361092
+	link = History.chairBooster_4294361052
+	link = History.chairBooster_4294361012
+	link = History.chairBooster_4294360972
+	link = History.chairBooster_4294360932
+	link = History.chairBooster_4294360892
+	attN = bottom,stackSeparatorMini_4294361280
 	EVENTS
 	{
 	}
@@ -1106,9 +1106,9 @@ PART
 }
 PART
 {
-	part = seatExternalCmd_4294447648
+	part = seatExternalCmd_4294361218
 	partName = Part
-	pos = 0.1773808,10.0563,-1.005262
+	pos = 0.1773808,10.0563,-1.005263
 	rot = -0.5000001,0.4999999,-0.5000002,-0.5000001
 	attRot = 0,0,0.9999999,0
 	mir = 1,1,1
@@ -1118,7 +1118,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1198,9 +1198,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447602
+	part = History.chairBooster_4294361172
 	partName = Part
-	pos = 0.2028462,9.646664,-1.257872
+	pos = 0.2028462,9.646664,-1.257874
 	rot = 5.606888E-09,0.9990968,0.0424981,-4.342101E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1210,14 +1210,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447362
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360932
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1329,9 +1329,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447562
+	part = History.chairBooster_4294361132
 	partName = Part
-	pos = 0.02422439,9.646664,-1.183884
+	pos = 0.02422433,9.646664,-1.183886
 	rot = 0.01626332,0.923045,0.03926313,-0.3823378
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1341,14 +1341,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447362
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360932
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1460,9 +1460,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447522
+	part = History.chairBooster_4294361092
 	partName = Part
-	pos = -0.04976317,9.646664,-1.005262
+	pos = -0.04976329,9.646664,-1.005262
 	rot = 0.0300507,0.706468,0.03005069,-0.7064682
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1472,14 +1472,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447362
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360932
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1591,9 +1591,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447482
+	part = History.chairBooster_4294361052
 	partName = Part
-	pos = 0.02422442,9.646664,-0.8266401
+	pos = 0.02422433,9.646664,-0.826642
 	rot = 0.03926313,0.3823377,0.01626332,-0.923045
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1603,14 +1603,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447362
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360932
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1722,10 +1722,10 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447442
+	part = History.chairBooster_4294361012
 	partName = Part
-	pos = 0.2028462,9.646664,-0.7526531
-	rot = 0.0424981,-8.301954E-08,-4.929814E-09,-0.9990967
+	pos = 0.2028462,9.646664,-0.7526541
+	rot = 0.0424981,-8.301954E-08,-3.612725E-09,-0.9990967
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1734,14 +1734,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447362
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360932
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1853,9 +1853,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447402
+	part = History.chairBooster_4294360972
 	partName = Part
-	pos = 0.3814681,9.646664,-0.8266401
+	pos = 0.3814681,9.646664,-0.8266411
 	rot = 0.03926312,-0.3823379,-0.01626333,-0.923045
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1865,14 +1865,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447362
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360932
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -1984,9 +1984,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447362
+	part = History.chairBooster_4294360932
 	partName = Part
-	pos = 0.4554555,9.646664,-1.005262
+	pos = 0.4554557,9.646664,-1.005263
 	rot = 0.03005069,-0.7064682,-0.0300507,-0.706468
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1996,14 +1996,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447322
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360892
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
@@ -2115,9 +2115,9 @@ PART
 }
 PART
 {
-	part = History.chairBooster_4294447322
+	part = History.chairBooster_4294360892
 	partName = Part
-	pos = 0.3814679,9.646664,-1.183884
+	pos = 0.3814679,9.646664,-1.183886
 	rot = 0.01626331,-0.9230451,-0.03926314,-0.3823375
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2127,14 +2127,14 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = 0
-	sym = History.chairBooster_4294447602
-	sym = History.chairBooster_4294447562
-	sym = History.chairBooster_4294447522
-	sym = History.chairBooster_4294447482
-	sym = History.chairBooster_4294447442
-	sym = History.chairBooster_4294447402
-	sym = History.chairBooster_4294447362
-	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294447680
+	sym = History.chairBooster_4294361172
+	sym = History.chairBooster_4294361132
+	sym = History.chairBooster_4294361092
+	sym = History.chairBooster_4294361052
+	sym = History.chairBooster_4294361012
+	sym = History.chairBooster_4294360972
+	sym = History.chairBooster_4294360932
+	srfN = srfAttach,IR.Adapter.0625ToTrussLarge_4294361250
 	EVENTS
 	{
 	}
