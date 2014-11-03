@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = Squad/Flags/kerbin
-	launchID = 1
+	launchID = 2
 	PARAMETERS
 	{
 		preset = Moderate
@@ -85,6 +85,104 @@ GAME
 		scene = 7, 8, 5
 		Progress
 		{
+			FirstLaunch
+			{
+				completed = 951.219999999424
+			}
+			FirstCrewToSurvive
+			{
+				completed = 44844.1552807493
+				crew
+				{
+					crews = Jebediah Kerman, Bill Kerman, Bob Kerman
+				}
+			}
+			AltitudeRecord
+			{
+				completed = 1207.29999999919
+				record = 70000
+			}
+			ReachedSpace
+			{
+				completed = 1207.29999999919
+				vessel
+				{
+					name = Stock Hydra Debris
+					flag = Squad/Flags/kerbin
+				}
+			}
+			Kerbin
+			{
+				reached = 1517.79502929585
+				Orbit
+				{
+					completed = 1517.79502929585
+					vessel
+					{
+						name = Stock Hydra
+						flag = Squad/Flags/kerbin
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman, Bob Kerman
+					}
+				}
+				Escape
+				{
+					completed = 21684.0237915023
+				}
+				Landing
+				{
+					completed = 44353.5152807387
+					vessel
+					{
+						name = Stock Hydra
+						flag = Squad/Flags/kerbin
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman, Bob Kerman
+					}
+				}
+				ReturnFromOrbit
+				{
+					completed = 44353.5152807387
+					vessel
+					{
+						name = Stock Hydra
+						flag = Squad/Flags/kerbin
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman, Bob Kerman
+					}
+				}
+			}
+			Mun
+			{
+				reached = 21684.0237915023
+				Flyby
+				{
+					completed = 21684.0237915023
+				}
+				Escape
+				{
+					completed = 31687.5008032303
+				}
+				ReturnFromFlyBy
+				{
+					completed = 44353.5152807387
+					vessel
+					{
+						name = Stock Hydra
+						flag = Squad/Flags/kerbin
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman, Bob Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -269,7 +367,7 @@ GAME
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
-		scene = 5
+		scene = 5, 7
 		KACAlarmListStorage
 		{
 		}
@@ -283,27 +381,27 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 42.6400000000011
+		UT = 44864.695280746
 		activeVessel = 0
-		mapViewFiltering = 0
+		mapViewFiltering = -1026
 		VESSEL
 		{
-			pid = aa36b0dd88114b83ba7f80ad2feac169
-			name = Ast. HSJ-227
+			pid = a219c3aee9f74c31838d7f9a855bd68b
+			name = Ast. MTU-593
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 0.02
-			lct = 0.02
+			met = 510.979999999825
+			lct = 510.979999999825
 			root = 0
-			lat = -2.83448050932825
-			lon = 181.081315066233
-			alt = 14594728255.0571
+			lat = 0.0437828586627168
+			lon = 189.716484152782
+			alt = 15049760038.9948
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.2984336,0.402898,-0.8173988,0.283672
+			rot = 0.7090668,-0.4155613,0.54615,0.1620286
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -311,20 +409,20 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 15240607796.703
-				ECC = 0.109160500140316
-				INC = 2.87223667476957
-				LPE = 2.11729112088327
-				LAN = 261.773338233754
-				MNA = 6.22770561673311
-				EPH = 2043585.75608398
+				SMA = 14505180002.4736
+				ECC = 0.0662638793184153
+				INC = 0.285456107047829
+				LPE = 320.198841076805
+				LAN = 18.9650020169168
+				MNA = 0.274995412881672
+				EPH = 4525779.5346875
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
-				uid = 559298752
-				mid = 559298752
+				uid = 225830808
+				mid = 225830808
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -352,10 +450,10 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 0.02
-				lifetime = 586354.751586914
+				lastObservedTime = 510.979999999825
+				lifetime = 1619796.47827148
 				refTime = 1728000
-				size = 4
+				size = 2
 			}
 			FLIGHTPLAN
 			{
@@ -366,19 +464,19 @@ GAME
 		}
 		VESSEL
 		{
-			pid = cef6682032c046e1a1d126858b3466f9
+			pid = a35b1633d2594409b8e98ecb3710217e
 			name = Ast. SFT-181
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 21.4399999999996
-			lct = 21.4399999999996
+			met = 511.339999999825
+			lct = 511.339999999825
 			root = 0
-			lat = -1.05606897038647
-			lon = 194.800632007352
-			alt = 16308289171.5448
+			lat = -1.08359888988277
+			lon = 195.488163622423
+			alt = 16467822629.2625
 			hgt = -1
 			nrm = 0,1,0
 			rot = 0.4079395,0.6538058,-0.5522798,0.3179785
@@ -389,13 +487,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 15383351356.4002
-				ECC = 0.117920459006063
-				INC = 1.93191946507244
-				LPE = 348.927408380189
-				LAN = 341.69147353371
-				MNA = 0.143121572141111
-				EPH = 4119491.06890625
+				SMA = 15478318041.5665
+				ECC = 0.123027499227572
+				INC = 1.92701595066029
+				LPE = 350.416122718445
+				LAN = 341.707960723112
+				MNA = 0.121342486129319
+				EPH = 4119980.96890625
 				REF = 0
 			}
 			PART
@@ -430,7 +528,7 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 21.4399999999996
+				lastObservedTime = 511.339999999825
 				lifetime = 1320878.5949707
 				refTime = 1728000
 				size = 3
@@ -444,19 +542,19 @@ GAME
 		}
 		VESSEL
 		{
-			pid = e95027d09cb44b1bb512e8144daada9c
+			pid = d55889b6d1be4760bec766d21975ab3e
 			name = Ast. RES-059
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 21.4399999999996
-			lct = 21.4399999999996
+			met = 511.339999999825
+			lct = 511.339999999825
 			root = 0
-			lat = -0.342072801966094
-			lon = 194.780079106166
-			alt = 16150048548.4284
+			lat = -0.344554170374622
+			lon = 194.800756386709
+			alt = 16134850238.4507
 			hgt = -1
 			nrm = 0,1,0
 			rot = 0.500819,-0.09655034,0.8220461,0.2531769
@@ -467,13 +565,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 15300775235.1091
-				ECC = 0.111681976970851
-				INC = 0.453636308167561
-				LPE = 4.19563682353025
-				LAN = 325.854505436457
-				MNA = 6.25612935225556
-				EPH = 3787213.09039062
+				SMA = 15264426833.4793
+				ECC = 0.109844436310073
+				INC = 0.454090986557254
+				LPE = 6.3097705186054
+				LAN = 325.870895590177
+				MNA = 6.22657144767943
+				EPH = 3787702.99039062
 				REF = 0
 			}
 			PART
@@ -508,7 +606,7 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 21.4399999999996
+				lastObservedTime = 511.339999999825
 				lifetime = 857391.47644043
 				refTime = 1728000
 				size = 0
@@ -522,19 +620,19 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 89e0173b65a543dc87d874dfafb905e9
+			pid = b5ffad03af194db2a7bea793a1b07189
 			name = Ast. LMG-447
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 21.4399999999996
-			lct = 21.4399999999996
+			met = 511.339999999825
+			lct = 511.339999999825
 			root = 0
-			lat = -0.923069133319151
-			lon = 189.417949803259
-			alt = 15243428427.1931
+			lat = -0.924036526017515
+			lon = 188.568142440366
+			alt = 15070076673.9038
 			hgt = -1
 			nrm = 0,1,0
 			rot = 0.7057784,0.3947993,0.577077,0.1139843
@@ -545,13 +643,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 14762021168.9069
-				ECC = 0.0835646920663179
-				INC = 0.996604682486279
-				LPE = 18.6222878587963
-				LAN = 301.585714426677
-				MNA = 5.9365188078248
-				EPH = 2988066.81353516
+				SMA = 14619593025.8422
+				ECC = 0.0751148000841272
+				INC = 1.0008732826925
+				LPE = 21.0301521214186
+				LAN = 301.593336740085
+				MNA = 5.89428409387381
+				EPH = 2988556.71353516
 				REF = 0
 			}
 			PART
@@ -586,7 +684,7 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 21.4399999999996
+				lastObservedTime = 511.339999999825
 				lifetime = 1119591.15600586
 				refTime = 1728000
 				size = 2
@@ -600,19 +698,19 @@ GAME
 		}
 		VESSEL
 		{
-			pid = b1b54f2d199841558b3290f16b2d155b
+			pid = 63234145b79e489b928f149f98bcf588
 			name = Ast. AYI-068
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 21.4399999999996
-			lct = 21.4399999999996
+			met = 511.339999999825
+			lct = 511.339999999825
 			root = 0
-			lat = -0.98057775732283
-			lon = 191.523076588575
-			alt = 15911630460.1439
+			lat = -0.988764312456247
+			lon = 191.639207807249
+			alt = 15948249719.8659
 			hgt = -1
 			nrm = 0,1,0
 			rot = -0.3827758,-0.5927495,0.5890238,0.3939312
@@ -623,13 +721,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 15275761951.6295
-				ECC = 0.110254172362974
-				INC = 1.38907865613292
-				LPE = 352.311069140747
-				LAN = 326.642678007463
-				MNA = 0.0283679882025086
-				EPH = 3605801.23736328
+				SMA = 15279596432.978
+				ECC = 0.110517266556495
+				INC = 1.38840807271073
+				LPE = 353.981513984069
+				LAN = 326.660258898844
+				MNA = 0.00509569514374666
+				EPH = 3606291.13736328
 				REF = 0
 			}
 			PART
@@ -664,7 +762,7 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 21.4399999999996
+				lastObservedTime = 511.339999999825
 				lifetime = 1578161.37084961
 				refTime = 1728000
 				size = 0
@@ -678,19 +776,19 @@ GAME
 		}
 		VESSEL
 		{
-			pid = bdcc181a8e9643bc9495eed281478825
+			pid = 3cf14667c9c44c638805f5d369a5b515
 			name = Ast. FUX-122
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 21.4399999999996
-			lct = 21.4399999999996
+			met = 511.339999999825
+			lct = 511.339999999825
 			root = 0
-			lat = -0.0929857631199999
-			lon = 183.917037088303
-			alt = 14268280168.9926
+			lat = -0.0931482528491523
+			lon = 183.326372996244
+			alt = 14187946625.7985
 			hgt = -1
 			nrm = 0,1,0
 			rot = 0.9318507,0.3439106,-0.009233973,0.1153013
@@ -701,13 +799,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 14263503936.8372
-				ECC = 0.0454429268442287
-				INC = 0.0930990198917942
-				LPE = 23.7914664207561
-				LAN = 276.76136964357
-				MNA = 6.0850913928559
-				EPH = 2760839.00591797
+				SMA = 14187515302.9853
+				ECC = 0.0410786527280798
+				INC = 0.0932812072508454
+				LPE = 25.7425873230159
+				LAN = 276.811956557743
+				MNA = 6.05166053662317
+				EPH = 2761328.90591797
 				REF = 0
 			}
 			PART
@@ -742,7 +840,7 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 21.4399999999996
+				lastObservedTime = 511.339999999825
 				lifetime = 692492.321777344
 				refTime = 1728000
 				size = 2
@@ -756,19 +854,19 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 74c8a1a6272649b881b443a66a46d884
+			pid = 69759e2cab154f258e7f7fe1976a3b41
 			name = Ast. RLC-987
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 40.9000000000009
-			lct = 40.9000000000009
+			met = 608.319999999736
+			lct = 608.319999999736
 			root = 0
-			lat = -0.318008370993838
-			lon = 218.382912033988
-			alt = 19416907467.9815
+			lat = -0.335416407376532
+			lon = 219.753768956698
+			alt = 19592683565.1979
 			hgt = -1
 			nrm = 0,1,0
 			rot = -0.09376758,-0.4774319,-0.4652993,0.7394343
@@ -779,13 +877,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 17037329495.9226
-				ECC = 0.202181667646254
-				INC = 0.652791651901529
-				LPE = 356.176727071454
-				LAN = 9.26452754946047
-				MNA = 0.0571259217083831
-				EPH = 4871653.33896484
+				SMA = 17126274840.1286
+				ECC = 0.2059719709416
+				INC = 0.651698089085738
+				LPE = 358.62283941797
+				LAN = 9.28568054533116
+				MNA = 0.0291255183339638
+				EPH = 4872220.75896484
 				REF = 0
 			}
 			PART
@@ -820,7 +918,7 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 40.9000000000009
+				lastObservedTime = 608.319999999736
 				lifetime = 193435.208129883
 				refTime = 1728000
 				size = 3
@@ -830,6 +928,1541 @@ GAME
 			}
 			CTRLSTATE
 			{
+			}
+		}
+		VESSEL
+		{
+			pid = d891f799f5a642959a227772cb62e44c
+			name = Stock Hydra Debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 42.6399999999612
+			lct = 2792.24722900268
+			root = 0
+			lat = -0.0710136346993529
+			lon = 218.445938137082
+			alt = 74586.2596869187
+			hgt = -1
+			nrm = 0.2958387,0.9552339,-0.002799032
+			rot = -0.217707,0.6799147,-0.6711194,-0.1997963
+			CoM = -6.25764E-05,-2.030132,1.31395E-05
+			stg = 4
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 758611.603497586
+				ECC = 0.11208430476016
+				INC = 0.228063184224678
+				LPE = 188.297797263927
+				LAN = 157.551798540104
+				MNA = 0.136515431138589
+				EPH = 2834.88722900265
+				REF = 1
+			}
+			PART
+			{
+				name = Fel.fairingBase
+				uid = 418325999
+				mid = 926162720
+				launchID = 1
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 3
+				dstg = 1
+				sqor = 3
+				sidx = 1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = None, -1
+				attN = bottom, 1
+				attN = None, -1
+				mass = 0.2
+				temp = -40.34199
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/kerbin
+				rTrf = Fel.fairingBase
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = True
+					EVENTS
+					{
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTank2-2
+				uid = 3481727679
+				mid = 926162720
+				launchID = 1
+				parent = 0
+				position = 0,-1.0575008392334,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 1
+				temp = -40.44994
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = fuelTank2-2
+				modCost = 0.0001125336
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 2.5
+					currentScale = 2.5
+					defaultScale = 2.5
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 2465.6
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 720
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 880
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine2-2
+				uid = 132442136
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = 0,-2.7219409942627,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 3
+				dstg = 2
+				sqor = 3
+				sidx = 2
+				attm = 0
+				srfN = None, -1
+				attN = top, 1
+				attN = None, -1
+				mass = 2
+				temp = -40.208
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = liquidEngine2-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 2.5
+					currentScale = 2.5
+					defaultScale = 2.5
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 1600
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.159999996423721
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = spotLight1
+				uid = 2186904105
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = -1.22687542438507,-1.05684089660645,6.98491930961609E-08
+				rotation = -0.4545195,-0.5416752,0.4545195,-0.5416752
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 1
+				mass = 0.0007910156
+				temp = -40.16908
+				expt = 0.02636719
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = spotLight1
+				modCost = -94.72656
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 37.5
+					currentScale = 37.5
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 5.273439
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = spotLight1
+				uid = 1315574404
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = -0.613437473773956,-1.05684089660645,1.062504529953
+				rotation = -0.1663657,-0.7399421,0.6208852,-0.1982669
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 1
+				mass = 0.0007910156
+				temp = -40.12527
+				expt = 0.02636719
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = spotLight1
+				modCost = -94.72656
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 37.5
+					currentScale = 37.5
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 5.273439
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = spotLight1
+				uid = 108487190
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = 0.613437712192535,-1.05684089660645,1.062504529953
+				rotation = 0.1663657,-0.7399421,0.6208851,0.1982669
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 1
+				mass = 0.0007910156
+				temp = -40.08155
+				expt = 0.02636719
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = spotLight1
+				modCost = -94.72656
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 37.5
+					currentScale = 37.5
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 5.273439
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = spotLight1
+				uid = 3083090209
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = 1.22687458992004,-1.05684089660645,-1.76951289176941E-07
+				rotation = 0.4545195,-0.5416752,0.4545195,0.5416752
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 1
+				mass = 0.0007910156
+				temp = -40.03794
+				expt = 0.02636719
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = spotLight1
+				modCost = -94.72656
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 37.5
+					currentScale = 37.5
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 5.273439
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = spotLight1
+				uid = 2362570594
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = 0.613437473773956,-1.05684089660645,-1.06250548362732
+				rotation = 0.6208853,-0.1982668,0.1663656,0.7399421
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 8
+				srfN = srfAttach, 1
+				mass = 0.0007910156
+				temp = -39.99441
+				expt = 0.02636719
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = spotLight1
+				modCost = -94.72656
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 37.5
+					currentScale = 37.5
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 5.273439
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = spotLight1
+				uid = 666863843
+				mid = 926162720
+				launchID = 1
+				parent = 1
+				position = -0.613437473773956,-1.05684089660645,-1.06250548362732
+				rotation = 0.6208853,0.1982668,-0.1663656,0.7399421
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 1
+				mass = 0.0007910156
+				temp = -39.951
+				expt = 0.02636719
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/kerbin
+				rTrf = spotLight1
+				modCost = -94.72656
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 37.5
+					currentScale = 37.5
+					defaultScale = 100
+					isFreeScale = True
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 5.273439
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 25
+						maxValue = 400
+						incrementLarge = 37.5
+						incrementSmall = 3.75
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 1187.67999999921
+				Gear = True, 0
+				Light = False, 0
+				RCS = True, 1612.39502929576
+				SAS = True, 1620.61502929575
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = True, 1199.1999999992
+				Custom02 = True, 1201.9799999992
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
 			}
 		}
 	}
@@ -844,7 +2477,7 @@ GAME
 			badS = True
 			state = Available
 			ToD = 0
-			idx = -1
+			idx = 0
 		}
 		KERBAL
 		{
@@ -855,7 +2488,7 @@ GAME
 			badS = False
 			state = Available
 			ToD = 0
-			idx = -1
+			idx = 1
 		}
 		KERBAL
 		{
@@ -866,7 +2499,7 @@ GAME
 			badS = False
 			state = Available
 			ToD = 0
-			idx = -1
+			idx = 2
 		}
 	}
 	MESSAGESYSTEM
