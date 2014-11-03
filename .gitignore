@@ -2,6 +2,7 @@
 *.log
 *.txt
 *.lnk
+TEMP/*
 KSP_Data/*
 saves/scenarios/*
 saves/training/*

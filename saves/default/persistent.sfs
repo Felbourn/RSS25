@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = NASAmission/Flags/NASA
-	launchID = 2
+	launchID = 3
 	PARAMETERS
 	{
 		preset = Normal
@@ -83,6 +83,7 @@ GAME
 	{
 		name = LastKSC
 		scene = 8
+		LastLaunchSite = 
 	}
 	SCENARIO
 	{
@@ -201,7 +202,7 @@ GAME
 		}
 		SpaceCenter/KSCRnDFacility/WindTunnel
 		{
-			intact = True
+			intact = False
 		}
 		SpaceCenter/KSCRnDFacility/Observatory
 		{
@@ -329,74 +330,12 @@ GAME
 			Enabled = True
 			HibernateInsteadOfKill = False
 			RespawnDelay = 9203545
-			CrewMemberInfo
-			{
-				name = Wan Hu
-				lastUpdate = 75439.8285767275
-				lastFood = 75439.8285767275
-				lastWater = 75439.8285767275
-				vesselName = Wan Hu Chair Rover
-				vesselId = 7819a6a7-f19b-4359-933b-d06dc86ec94e
-				hibernating = False
-			}
-			VesselInfo
-			{
-				vesselName = Wan Hu Chair Lander
-				vesselType = Lander
-				numCrew = 0
-				numOccupiedParts = 0
-				lastUpdate = 75439.8285767275
-				lastFood = 75439.8285767275
-				lastWater = 75439.8285767275
-				lastOxygen = 75439.8285767275
-				lastElectricity = 75439.8285767275
-				remainingFood = 5.99812116946244
-				remainingWater = 3.39893648205014
-				remainingOxygen = 1259.999712
-				remainingElectricity = 14387.7399992561
-				remainingCO2 = 0
-				remainingWaste = 0.000950107648854019
-				remainingWasteWater = 0.00171019483957454
-				maxFood = 9
-				maxWater = 5.1
-				maxOxygen = 1890
-				maxElectricity = 43200
-				estimatedElectricityConsumptionRate = 0
-				hibernating = False
-				Guid = e9dc2743-47c2-410d-8acc-12f54aaef1b6
-			}
-			VesselInfo
-			{
-				vesselName = Wan Hu Chair Rover
-				vesselType = Rover
-				numCrew = 1
-				numOccupiedParts = 1
-				lastUpdate = 75439.8285767275
-				lastFood = 75439.8285767275
-				lastWater = 75439.8285767275
-				lastOxygen = 75439.8285767275
-				lastElectricity = 75439.8285767275
-				remainingFood = 0.387799650191993
-				remainingWater = 0.219752986226835
-				remainingOxygen = 630.000288
-				remainingElectricity = 4387.6619320344
-				remainingCO2 = 0
-				remainingWaste = 1.30608948252399
-				remainingWasteWater = 2.35096257318405
-				maxFood = 2.99999808
-				maxWater = 1.69999776
-				maxOxygen = 630.000288
-				maxElectricity = 28799.9712
-				estimatedElectricityConsumptionRate = 0.25
-				hibernating = False
-				Guid = 7819a6a7-f19b-4359-933b-d06dc86ec94e
-			}
 		}
 	}
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
-		scene = 5, 7
+		scene = 5, 7, 8
 		KACAlarmListStorage
 		{
 		}
@@ -404,8 +343,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 75446.5885767289
-		activeVessel = 0
+		UT = 78647.108577381
+		activeVessel = -1
 		mapViewFiltering = -1026
 		VESSEL
 		{
