@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = History.V2instruments_4279360450
+	part = History.V2instruments_4293815782
 	partName = Part
 	pos = 0.3909788,21.61147,0.05148721
 	rot = 0,0,0,1
@@ -16,10 +16,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = probeCoreOcto2_4279359982
-	link = KzInterstageAdapter2_4279359618
-	attN = top,probeCoreOcto2_4279359982
-	attN = bottom,KzInterstageAdapter2_4279359618
+	link = probeCoreOcto2_4293815314
+	link = KzInterstageAdapter2_4293814952
+	attN = top,probeCoreOcto2_4293815314
+	attN = bottom,KzInterstageAdapter2_4293814952
 	EVENTS
 	{
 	}
@@ -120,7 +120,7 @@ PART
 }
 PART
 {
-	part = probeCoreOcto2_4279359982
+	part = probeCoreOcto2_4293815314
 	partName = Part
 	pos = 0.3909788,21.6673,0.002929006
 	rot = 0,0,0,1
@@ -132,9 +132,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 1.292
-	link = proceduralBattery_4279359928
-	attN = bottom,History.V2instruments_4279360450
-	attN = top,proceduralBattery_4279359928
+	link = proceduralBattery_4293815262
+	attN = bottom,History.V2instruments_4293815782
+	attN = top,proceduralBattery_4293815262
 	EVENTS
 	{
 	}
@@ -193,7 +193,7 @@ PART
 		type = ServiceModule
 		utilization = 86
 		mass = 0.05
-		timestamp = 76340.0485769109
+		timestamp = 81126.3766158405
 		volume = 50
 		type_UIEditor
 		{
@@ -314,43 +314,12 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleCustomWindowEditor
+			MechJebModuleTargetController
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleJokeObscurePanel
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousGuidance
+			MechJebModuleSettings
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -405,17 +374,18 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleSettings
+			MechJebModuleThrustWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleTargetController
+			MechJebModuleCustomInfoWindow
 			{
-				unlockParts = 
-				unlockTechs = 
 			}
-			MechJebModuleWaypointHelpWindow
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			ModExtensionDemo
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -425,12 +395,42 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleThrustWindow
+			MechJebModuleWaypointHelpWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			ModExtensionDemo
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -543,7 +543,7 @@ PART
 }
 PART
 {
-	part = proceduralBattery_4279359928
+	part = proceduralBattery_4293815262
 	partName = Part
 	pos = 0.3909788,21.77866,0.002929006
 	rot = 0,0,0,1
@@ -554,11 +554,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	modCost = 674.3434
-	link = sasModule_4279359870
-	link = RTShortAntenna1_4279359840
-	attN = top,sasModule_4279359870
-	attN = bottom,probeCoreOcto2_4279359982
+	modCost = 674.3454
+	link = sasModule_4293815204
+	link = RTShortAntenna1_4293815174
+	attN = top,sasModule_4293815204
+	attN = bottom,probeCoreOcto2_4293815314
 	EVENTS
 	{
 	}
@@ -767,8 +767,8 @@ PART
 	RESOURCE
 	{
 		name = ElectricCharge
-		amount = 13486.86
-		maxAmount = 13486.86
+		amount = 13486.9
+		maxAmount = 13486.8603515625
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -777,7 +777,7 @@ PART
 }
 PART
 {
-	part = sasModule_4279359870
+	part = sasModule_4293815204
 	partName = Part
 	pos = 0.3909788,21.93227,0.002929006
 	rot = 0,0,0,1
@@ -789,9 +789,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4279359798
-	attN = bottom,proceduralBattery_4279359928
-	attN = top,strutOcto_4279359798
+	link = strutOcto_4293815132
+	attN = bottom,proceduralBattery_4293815262
+	attN = top,strutOcto_4293815132
 	EVENTS
 	{
 	}
@@ -886,7 +886,7 @@ PART
 }
 PART
 {
-	part = RTShortAntenna1_4279359840
+	part = RTShortAntenna1_4293815174
 	partName = Part
 	pos = 0.08138236,21.83509,0.1816685
 	rot = 0.002656226,-0.2587613,0.009914916,-0.9658868
@@ -898,7 +898,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	srfN = srfAttach,proceduralBattery_4279359928
+	srfN = srfAttach,proceduralBattery_4293815262
 	EVENTS
 	{
 	}
@@ -1064,7 +1064,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4279359798
+	part = strutOcto_4293815132
 	partName = Part
 	pos = 0.3909788,22.15211,0.002929006
 	rot = 0,0,0,1
@@ -1076,9 +1076,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4279359772
-	attN = top,strutOcto_4279359772
-	attN = bottom,sasModule_4279359870
+	link = strutOcto_4293815106
+	attN = top,strutOcto_4293815106
+	attN = bottom,sasModule_4293815204
 	EVENTS
 	{
 	}
@@ -1126,7 +1126,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4279359772
+	part = strutOcto_4293815106
 	partName = Part
 	pos = 0.3909788,22.40958,0.002929006
 	rot = 0,0,0,1
@@ -1138,9 +1138,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4279359746
-	attN = top,strutOcto_4279359746
-	attN = bottom,strutOcto_4279359798
+	link = strutOcto_4293815080
+	attN = top,strutOcto_4293815080
+	attN = bottom,strutOcto_4293815132
 	EVENTS
 	{
 	}
@@ -1188,7 +1188,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4279359746
+	part = strutOcto_4293815080
 	partName = Part
 	pos = 0.3909788,22.66705,0.002929006
 	rot = 0,0,0,1
@@ -1200,10 +1200,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = xenonTankRadial_4279359720
-	link = xenonTankRadial_4279359686
-	link = xenonTankRadial_4279359652
-	attN = bottom,strutOcto_4279359772
+	link = xenonTankRadial_4293815054
+	link = xenonTankRadial_4293815020
+	link = xenonTankRadial_4293814986
+	attN = bottom,strutOcto_4293815106
 	EVENTS
 	{
 	}
@@ -1251,7 +1251,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4279359720
+	part = xenonTankRadial_4293815054
 	partName = Part
 	pos = 0.2499992,22.58506,0.002929006
 	rot = 0,-0.7071068,0,-0.7071068
@@ -1263,9 +1263,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4279359686
-	sym = xenonTankRadial_4279359652
-	srfN = srfAttach,strutOcto_4279359746
+	sym = xenonTankRadial_4293815020
+	sym = xenonTankRadial_4293814986
+	srfN = srfAttach,strutOcto_4293815080
 	EVENTS
 	{
 	}
@@ -1306,7 +1306,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 76340.0485769109
+		timestamp = 81126.3766158405
 		volume = 40
 		type_UIEditor
 		{
@@ -1362,7 +1362,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4279359686
+	part = xenonTankRadial_4293815020
 	partName = Part
 	pos = 0.4614685,22.58506,0.1250208
 	rot = 0,-0.9659259,0,0.2588191
@@ -1374,9 +1374,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4279359720
-	sym = xenonTankRadial_4279359652
-	srfN = srfAttach,strutOcto_4279359746
+	sym = xenonTankRadial_4293815054
+	sym = xenonTankRadial_4293814986
+	srfN = srfAttach,strutOcto_4293815080
 	EVENTS
 	{
 	}
@@ -1417,7 +1417,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 76340.0485769109
+		timestamp = 81126.3766158405
 		volume = 40
 		type_UIEditor
 		{
@@ -1473,7 +1473,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4279359652
+	part = xenonTankRadial_4293814986
 	partName = Part
 	pos = 0.4614685,22.58506,-0.1191627
 	rot = 0,-0.258819,0,0.9659259
@@ -1485,9 +1485,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4279359720
-	sym = xenonTankRadial_4279359686
-	srfN = srfAttach,strutOcto_4279359746
+	sym = xenonTankRadial_4293815054
+	sym = xenonTankRadial_4293815020
+	srfN = srfAttach,strutOcto_4293815080
 	EVENTS
 	{
 	}
@@ -1528,7 +1528,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 76340.0485769109
+		timestamp = 81126.3766158405
 		volume = 40
 		type_UIEditor
 		{
@@ -1584,7 +1584,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4279359618
+	part = KzInterstageAdapter2_4293814952
 	partName = Part
 	pos = 0.3909788,20.87796,0.002929006
 	rot = 0,0,0,1
@@ -1596,19 +1596,19 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 71.61089
-	link = KzProcFairingSide2ger_4279359580
-	link = KzProcFairingSide2ger_4279359522
-	link = KzProcFairingSide2ger_4279359464
-	link = proceduralNoseCone_4279359406
-	link = KzProcFairingSide2ger_4279359356
-	link = KzInterstageAdapter2_4279359298
-	attN = bottom,KzInterstageAdapter2_4279359298
-	attN = top,History.V2instruments_4279360450
-	attN = top1,proceduralNoseCone_4279359406
-	attN = connect01,KzProcFairingSide2ger_4279359522
-	attN = connect02,KzProcFairingSide2ger_4279359580
-	attN = connect03,KzProcFairingSide2ger_4279359356
-	attN = connect04,KzProcFairingSide2ger_4279359464
+	link = KzProcFairingSide2ger_4293814914
+	link = KzProcFairingSide2ger_4293814856
+	link = KzProcFairingSide2ger_4293814798
+	link = proceduralNoseCone_4293814740
+	link = KzProcFairingSide2ger_4293814690
+	link = KzInterstageAdapter2_4293814632
+	attN = bottom,KzInterstageAdapter2_4293814632
+	attN = top,History.V2instruments_4293815782
+	attN = top1,proceduralNoseCone_4293814740
+	attN = connect01,KzProcFairingSide2ger_4293814856
+	attN = connect02,KzProcFairingSide2ger_4293814914
+	attN = connect03,KzProcFairingSide2ger_4293814690
+	attN = connect04,KzProcFairingSide2ger_4293814798
 	EVENTS
 	{
 	}
@@ -1812,7 +1812,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359580
+	part = KzProcFairingSide2ger_4293814914
 	partName = Part
 	pos = 0.3909787,20.53436,0.8529297
 	rot = 0,0,0,1
@@ -1824,7 +1824,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4279359618
+	attN = connect,KzInterstageAdapter2_4293814952
 	EVENTS
 	{
 	}
@@ -1937,7 +1937,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359522
+	part = KzProcFairingSide2ger_4293814856
 	partName = Part
 	pos = 1.240978,20.53436,0.002929006
 	rot = 0,0,0,1
@@ -1949,7 +1949,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4279359618
+	attN = connect,KzInterstageAdapter2_4293814952
 	EVENTS
 	{
 	}
@@ -2062,7 +2062,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359464
+	part = KzProcFairingSide2ger_4293814798
 	partName = Part
 	pos = 0.3909788,20.53436,-0.8470712
 	rot = 0,0,0,1
@@ -2074,7 +2074,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4279359618
+	attN = connect,KzInterstageAdapter2_4293814952
 	EVENTS
 	{
 	}
@@ -2187,7 +2187,7 @@ PART
 }
 PART
 {
-	part = proceduralNoseCone_4279359406
+	part = proceduralNoseCone_4293814740
 	partName = Part
 	pos = 0.3909788,23.40297,0.002929006
 	rot = 0,0,0,1
@@ -2199,7 +2199,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0.009143854
-	attN = bottom,KzInterstageAdapter2_4279359618
+	attN = bottom,KzInterstageAdapter2_4293814952
 	EVENTS
 	{
 	}
@@ -2302,7 +2302,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359356
+	part = KzProcFairingSide2ger_4293814690
 	partName = Part
 	pos = -0.4590213,20.53437,0.002929006
 	rot = 0,-0.7071068,0,0.7071068
@@ -2314,7 +2314,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4279359618
+	attN = connect,KzInterstageAdapter2_4293814952
 	EVENTS
 	{
 	}
@@ -2427,7 +2427,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4279359298
+	part = KzInterstageAdapter2_4293814632
 	partName = Part
 	pos = 0.3909788,14.67797,0.002929006
 	rot = 0,0.3826835,0,0.9238796
@@ -2439,19 +2439,19 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 80.94353
-	link = KzInterstageAdapter2_4279359260
-	link = proceduralTankRealFuels_4279357728
-	link = KzProcFairingSide2ger_4279357600
-	link = KzProcFairingSide2ger_4279357542
-	link = KzProcFairingSide2ger_4279357484
-	link = KzProcFairingSide2ger_4279357426
-	attN = bottom,KzInterstageAdapter2_4279359260
-	attN = top,proceduralTankRealFuels_4279357728
-	attN = top1,KzInterstageAdapter2_4279359618
-	attN = connect01,KzProcFairingSide2ger_4279357484
-	attN = connect02,KzProcFairingSide2ger_4279357542
-	attN = connect03,KzProcFairingSide2ger_4279357600
-	attN = connect04,KzProcFairingSide2ger_4279357426
+	link = KzInterstageAdapter2_4293814594
+	link = proceduralTankRealFuels_4293813062
+	link = KzProcFairingSide2ger_4293812934
+	link = KzProcFairingSide2ger_4293812876
+	link = KzProcFairingSide2ger_4293812818
+	link = KzProcFairingSide2ger_4293812760
+	attN = bottom,KzInterstageAdapter2_4293814594
+	attN = top,proceduralTankRealFuels_4293813062
+	attN = top1,KzInterstageAdapter2_4293814952
+	attN = connect01,KzProcFairingSide2ger_4293812818
+	attN = connect02,KzProcFairingSide2ger_4293812876
+	attN = connect03,KzProcFairingSide2ger_4293812934
+	attN = connect04,KzProcFairingSide2ger_4293812760
 	EVENTS
 	{
 	}
@@ -2655,7 +2655,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4279359260
+	part = KzInterstageAdapter2_4293814594
 	partName = Part
 	pos = 0.3909788,14.67797,0.002929006
 	rot = 0.3826834,0,0.9238796,0
@@ -2667,17 +2667,17 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 80.94353
-	link = KzProcFairingSide2ger_4279359222
-	link = KzProcFairingSide2ger_4279359164
-	link = KzProcFairingSide2ger_4279359106
-	link = History.V2instruments_4279359048
-	link = KzProcFairingSide2ger_4279357786
-	attN = bottom,KzInterstageAdapter2_4279359298
-	attN = top,History.V2instruments_4279359048
-	attN = connect01,KzProcFairingSide2ger_4279357786
-	attN = connect02,KzProcFairingSide2ger_4279359222
-	attN = connect03,KzProcFairingSide2ger_4279359164
-	attN = connect04,KzProcFairingSide2ger_4279359106
+	link = KzProcFairingSide2ger_4293814556
+	link = KzProcFairingSide2ger_4293814498
+	link = KzProcFairingSide2ger_4293814440
+	link = History.V2instruments_4293814382
+	link = KzProcFairingSide2ger_4293813120
+	attN = bottom,KzInterstageAdapter2_4293814632
+	attN = top,History.V2instruments_4293814382
+	attN = connect01,KzProcFairingSide2ger_4293813120
+	attN = connect02,KzProcFairingSide2ger_4293814556
+	attN = connect03,KzProcFairingSide2ger_4293814498
+	attN = connect04,KzProcFairingSide2ger_4293814440
 	EVENTS
 	{
 	}
@@ -2881,7 +2881,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359222
+	part = KzProcFairingSide2ger_4293814556
 	partName = Part
 	pos = 1.027374,14.01237,0.6393243
 	rot = 0,-0.9238796,0,0.3826834
@@ -2893,7 +2893,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4279359260
+	attN = connect,KzInterstageAdapter2_4293814594
 	EVENTS
 	{
 	}
@@ -3006,7 +3006,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359164
+	part = KzProcFairingSide2ger_4293814498
 	partName = Part
 	pos = 1.027375,14.01237,-0.6334667
 	rot = 0,-0.3826834,0,0.9238796
@@ -3018,7 +3018,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4279359260
+	attN = connect,KzInterstageAdapter2_4293814594
 	EVENTS
 	{
 	}
@@ -3131,7 +3131,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279359106
+	part = KzProcFairingSide2ger_4293814440
 	partName = Part
 	pos = -0.2454172,14.01237,-0.6334666
 	rot = 0,0.3826834,0,0.9238796
@@ -3143,7 +3143,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4279359260
+	attN = connect,KzInterstageAdapter2_4293814594
 	EVENTS
 	{
 	}
@@ -3256,7 +3256,7 @@ PART
 }
 PART
 {
-	part = History.V2instruments_4279359048
+	part = History.V2instruments_4293814382
 	partName = Part
 	pos = 0.3909788,14.34578,0.0514871
 	rot = 0,7.787722E-08,0,1
@@ -3268,9 +3268,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = radialEngineBodysmall_4279358580
-	attN = top,KzInterstageAdapter2_4279359260
-	attN = bottom,radialEngineBodysmall_4279358580
+	link = radialEngineBodysmall_4293813914
+	attN = top,KzInterstageAdapter2_4293814594
+	attN = bottom,radialEngineBodysmall_4293813914
 	EVENTS
 	{
 	}
@@ -3371,7 +3371,7 @@ PART
 }
 PART
 {
-	part = radialEngineBodysmall_4279358580
+	part = radialEngineBodysmall_4293813914
 	partName = Part
 	pos = 0.3909788,13.20008,0.002929006
 	rot = 0,-2.753376E-08,0,1
@@ -3383,13 +3383,13 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 21159.61
-	link = History.V2fin_4279358538
-	link = History.V2fin_4279358374
-	link = History.V2fin_4279358210
-	link = History.V2fin_4279358046
-	link = History.V2engine_4279357882
-	attN = top,History.V2instruments_4279359048
-	attN = bottom,History.V2engine_4279357882
+	link = History.V2fin_4293813872
+	link = History.V2fin_4293813708
+	link = History.V2fin_4293813544
+	link = History.V2fin_4293813380
+	link = History.V2engine_4293813216
+	attN = top,History.V2instruments_4293814382
+	attN = bottom,History.V2engine_4293813216
 	EVENTS
 	{
 	}
@@ -3458,9 +3458,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4279358538
+	part = History.V2fin_4293813872
 	partName = Part
-	pos = -0.4814553,11.84165,0.002931084
+	pos = -0.4814552,11.84165,0.002930958
 	rot = 0,-5.034347E-08,0,-1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3470,11 +3470,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4279358408
-	sym = History.V2fin_4279358374
-	sym = History.V2fin_4279358210
-	sym = History.V2fin_4279358046
-	srfN = srfAttach,radialEngineBodysmall_4279358580
+	link = StandardCtrlSrf_4293813742
+	sym = History.V2fin_4293813708
+	sym = History.V2fin_4293813544
+	sym = History.V2fin_4293813380
+	srfN = srfAttach,radialEngineBodysmall_4293813914
 	EVENTS
 	{
 	}
@@ -3495,9 +3495,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4279358408
+	part = StandardCtrlSrf_4293813742
 	partName = Part
-	pos = -0.7473154,10.34102,0.002932321
+	pos = -0.7473152,10.34102,0.002932113
 	rot = -0.229753,0.9732491,-1.419567E-07,-4.553418E-08
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3507,10 +3507,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4279358244
-	sym = StandardCtrlSrf_4279358080
-	sym = StandardCtrlSrf_4279357916
-	srfN = srfAttach,History.V2fin_4279358538
+	sym = StandardCtrlSrf_4293813578
+	sym = StandardCtrlSrf_4293813414
+	sym = StandardCtrlSrf_4293813250
+	srfN = srfAttach,History.V2fin_4293813872
 	EVENTS
 	{
 	}
@@ -3680,9 +3680,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4279358374
+	part = History.V2fin_4293813708
 	partName = Part
-	pos = 0.390977,11.84165,0.875362
+	pos = 0.3909771,11.84165,0.8753619
 	rot = 0,-0.7071069,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3692,11 +3692,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4279358244
-	sym = History.V2fin_4279358538
-	sym = History.V2fin_4279358210
-	sym = History.V2fin_4279358046
-	srfN = srfAttach,radialEngineBodysmall_4279358580
+	link = StandardCtrlSrf_4293813578
+	sym = History.V2fin_4293813872
+	sym = History.V2fin_4293813544
+	sym = History.V2fin_4293813380
+	srfN = srfAttach,radialEngineBodysmall_4293813914
 	EVENTS
 	{
 	}
@@ -3717,9 +3717,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4279358244
+	part = StandardCtrlSrf_4293813578
 	partName = Part
-	pos = 0.3909764,10.34102,1.141221
+	pos = 0.3909766,10.34102,1.141221
 	rot = -0.16246,0.688191,0.1624598,-0.6881911
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3729,10 +3729,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4279358408
-	sym = StandardCtrlSrf_4279358080
-	sym = StandardCtrlSrf_4279357916
-	srfN = srfAttach,History.V2fin_4279358374
+	sym = StandardCtrlSrf_4293813742
+	sym = StandardCtrlSrf_4293813414
+	sym = StandardCtrlSrf_4293813250
+	srfN = srfAttach,History.V2fin_4293813708
 	EVENTS
 	{
 	}
@@ -3902,9 +3902,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4279358210
+	part = History.V2fin_4293813544
 	partName = Part
-	pos = 1.263412,11.84165,0.002927054
+	pos = 1.263412,11.84165,0.00292718
 	rot = 0,-1,0,7.787722E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3914,11 +3914,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4279358080
-	sym = History.V2fin_4279358538
-	sym = History.V2fin_4279358374
-	sym = History.V2fin_4279358046
-	srfN = srfAttach,radialEngineBodysmall_4279358580
+	link = StandardCtrlSrf_4293813414
+	sym = History.V2fin_4293813872
+	sym = History.V2fin_4293813708
+	sym = History.V2fin_4293813380
+	srfN = srfAttach,radialEngineBodysmall_4293813914
 	EVENTS
 	{
 	}
@@ -3939,9 +3939,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4279358080
+	part = StandardCtrlSrf_4293813414
 	partName = Part
-	pos = 1.529271,10.34102,0.002925646
+	pos = 1.529271,10.34102,0.002925813
 	rot = -1.350732E-07,-4.553418E-08,0.229753,-0.9732491
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3951,10 +3951,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4279358408
-	sym = StandardCtrlSrf_4279358244
-	sym = StandardCtrlSrf_4279357916
-	srfN = srfAttach,History.V2fin_4279358210
+	sym = StandardCtrlSrf_4293813742
+	sym = StandardCtrlSrf_4293813578
+	sym = StandardCtrlSrf_4293813250
+	srfN = srfAttach,History.V2fin_4293813544
 	EVENTS
 	{
 	}
@@ -4124,9 +4124,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4279358046
+	part = History.V2fin_4293813380
 	partName = Part
-	pos = 0.3909809,11.84165,-0.8695034
+	pos = 0.3909808,11.84165,-0.8695034
 	rot = 0,-0.7071068,0,0.7071069
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4136,11 +4136,11 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4279357916
-	sym = History.V2fin_4279358538
-	sym = History.V2fin_4279358374
-	sym = History.V2fin_4279358210
-	srfN = srfAttach,radialEngineBodysmall_4279358580
+	link = StandardCtrlSrf_4293813250
+	sym = History.V2fin_4293813872
+	sym = History.V2fin_4293813708
+	sym = History.V2fin_4293813544
+	srfN = srfAttach,radialEngineBodysmall_4293813914
 	EVENTS
 	{
 	}
@@ -4161,9 +4161,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4279357916
+	part = StandardCtrlSrf_4293813250
 	partName = Part
-	pos = 0.3909813,10.34102,-1.135363
+	pos = 0.3909811,10.34102,-1.135363
 	rot = 0.1624598,-0.6881911,0.16246,-0.688191
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -4173,10 +4173,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4279358408
-	sym = StandardCtrlSrf_4279358244
-	sym = StandardCtrlSrf_4279358080
-	srfN = srfAttach,History.V2fin_4279358046
+	sym = StandardCtrlSrf_4293813742
+	sym = StandardCtrlSrf_4293813578
+	sym = StandardCtrlSrf_4293813414
+	srfN = srfAttach,History.V2fin_4293813380
 	EVENTS
 	{
 	}
@@ -4346,7 +4346,7 @@ PART
 }
 PART
 {
-	part = History.V2engine_4279357882
+	part = History.V2engine_4293813216
 	partName = Part
 	pos = 0.3909788,11.57975,0.002929006
 	rot = 0,7.787722E-08,0,1
@@ -4358,9 +4358,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = History.V2tower_4279357368
-	attN = top,radialEngineBodysmall_4279358580
-	attN = bottom,History.V2tower_4279357368
+	link = History.V2tower_4293812702
+	attN = top,radialEngineBodysmall_4293813914
+	attN = bottom,History.V2tower_4293812702
 	EVENTS
 	{
 	}
@@ -4498,7 +4498,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279357786
+	part = KzProcFairingSide2ger_4293813120
 	partName = Part
 	pos = -0.2454181,14.01237,0.6393263
 	rot = 0,-0.9238796,0,-0.3826835
@@ -4510,7 +4510,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4279359260
+	attN = connect,KzInterstageAdapter2_4293814594
 	EVENTS
 	{
 	}
@@ -4623,7 +4623,7 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4279357728
+	part = proceduralTankRealFuels_4293813062
 	partName = Part
 	pos = 0.3909788,16.44667,0.002929006
 	rot = 0,0,0,1
@@ -4635,9 +4635,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 44.00111
-	link = proceduralTankRealFuels_4279357664
-	attN = top,proceduralTankRealFuels_4279357664
-	attN = bottom,KzInterstageAdapter2_4279359298
+	link = proceduralTankRealFuels_4293812998
+	attN = top,proceduralTankRealFuels_4293812998
+	attN = bottom,KzInterstageAdapter2_4293814632
 	EVENTS
 	{
 	}
@@ -4821,7 +4821,7 @@ PART
 		type = Default
 		utilization = 90
 		mass = 0.130868
-		timestamp = 76340.0485769109
+		timestamp = 81126.3766158405
 		volume = 4373
 		type_UIEditor
 		{
@@ -4922,7 +4922,7 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4279357664
+	part = proceduralTankRealFuels_4293812998
 	partName = Part
 	pos = 0.3909788,19.38418,0.002929006
 	rot = 0,0,0,1
@@ -4934,7 +4934,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 46.3619
-	attN = bottom,proceduralTankRealFuels_4279357728
+	attN = bottom,proceduralTankRealFuels_4293813062
 	EVENTS
 	{
 	}
@@ -5118,7 +5118,7 @@ PART
 		type = Default
 		utilization = 90
 		mass = 0.13238
-		timestamp = 76340.0485769109
+		timestamp = 81126.3766158405
 		volume = 4572
 		type_UIEditor
 		{
@@ -5219,7 +5219,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279357600
+	part = KzProcFairingSide2ger_4293812934
 	partName = Part
 	pos = -0.2454175,14.34357,0.639325
 	rot = 0,-0.7071068,0,-0.7071068
@@ -5231,10 +5231,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4279357542
-	sym = KzProcFairingSide2ger_4279357484
-	sym = KzProcFairingSide2ger_4279357426
-	attN = connect,KzInterstageAdapter2_4279359298
+	sym = KzProcFairingSide2ger_4293812876
+	sym = KzProcFairingSide2ger_4293812818
+	sym = KzProcFairingSide2ger_4293812760
+	attN = connect,KzInterstageAdapter2_4293814632
 	EVENTS
 	{
 	}
@@ -5347,7 +5347,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279357542
+	part = KzProcFairingSide2ger_4293812876
 	partName = Part
 	pos = 1.027375,14.34357,0.639325
 	rot = 0,-1,0,0
@@ -5359,10 +5359,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4279357600
-	sym = KzProcFairingSide2ger_4279357484
-	sym = KzProcFairingSide2ger_4279357426
-	attN = connect,KzInterstageAdapter2_4279359298
+	sym = KzProcFairingSide2ger_4293812934
+	sym = KzProcFairingSide2ger_4293812818
+	sym = KzProcFairingSide2ger_4293812760
+	attN = connect,KzInterstageAdapter2_4293814632
 	EVENTS
 	{
 	}
@@ -5475,7 +5475,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279357484
+	part = KzProcFairingSide2ger_4293812818
 	partName = Part
 	pos = 1.027375,14.34357,-0.6334671
 	rot = 0,-0.7071068,0,0.7071068
@@ -5487,10 +5487,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4279357600
-	sym = KzProcFairingSide2ger_4279357542
-	sym = KzProcFairingSide2ger_4279357426
-	attN = connect,KzInterstageAdapter2_4279359298
+	sym = KzProcFairingSide2ger_4293812934
+	sym = KzProcFairingSide2ger_4293812876
+	sym = KzProcFairingSide2ger_4293812760
+	attN = connect,KzInterstageAdapter2_4293814632
 	EVENTS
 	{
 	}
@@ -5603,7 +5603,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4279357426
+	part = KzProcFairingSide2ger_4293812760
 	partName = Part
 	pos = -0.2454175,14.34357,-0.6334671
 	rot = 0,0,0,1
@@ -5615,10 +5615,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4279357600
-	sym = KzProcFairingSide2ger_4279357542
-	sym = KzProcFairingSide2ger_4279357484
-	attN = connect,KzInterstageAdapter2_4279359298
+	sym = KzProcFairingSide2ger_4293812934
+	sym = KzProcFairingSide2ger_4293812876
+	sym = KzProcFairingSide2ger_4293812818
+	attN = connect,KzInterstageAdapter2_4293814632
 	EVENTS
 	{
 	}
@@ -5731,9 +5731,9 @@ PART
 }
 PART
 {
-	part = History.V2tower_4279357368
+	part = History.V2tower_4293812702
 	partName = Part
-	pos = 0.4067852,15.89306,4.400012
+	pos = 0.406786,15.89306,4.400012
 	rot = 0,2.280971E-08,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5743,9 +5743,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = IR.StrutDecoupler.Small_4279355466
-	link = IR.StrutDecoupler.Small_4279355426
-	attN = top,History.V2engine_4279357882
+	link = IR.StrutDecoupler.Small_4293810800
+	link = IR.StrutDecoupler.Small_4293810760
+	attN = top,History.V2engine_4293813216
 	EVENTS
 	{
 	}
@@ -5878,10 +5878,10 @@ PART
 }
 PART
 {
-	part = IR.StrutDecoupler.Small_4279355466
+	part = IR.StrutDecoupler.Small_4293810800
 	partName = StrutConnector
-	pos = 0.2872268,21.21057,3.461791
-	rot = 8.429355E-08,0.7071065,-8.42936E-08,-0.7071072
+	pos = 0.2872273,21.21057,3.461791
+	rot = 8.429355E-08,0.7071066,-8.429362E-08,-0.7071073
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -5890,8 +5890,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	cData = tgt: KzInterstageAdapter2_11; pos: -2.749776,-0.01980907,0.04611167; dir: -0.9998335,-0.007203292,0.01676607
-	srfN = srfAttach,History.V2tower_4279357368
+	cData = tgt: KzInterstageAdapter2_11; pos: -2.749779,-0.01980907,0.04611107; dir: -0.9998335,-0.007203292,0.01676607
+	srfN = srfAttach,History.V2tower_4293812702
 	EVENTS
 	{
 	}
@@ -5944,10 +5944,10 @@ PART
 }
 PART
 {
-	part = IR.StrutDecoupler.Small_4279355426
+	part = IR.StrutDecoupler.Small_4293810760
 	partName = StrutConnector
-	pos = 0.4690672,21.23615,3.461791
-	rot = 8.429355E-08,0.7071066,-8.429362E-08,-0.7071073
+	pos = 0.4690677,21.23615,3.461791
+	rot = 8.429354E-08,0.7071065,-8.429362E-08,-0.7071073
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -5957,7 +5957,7 @@ PART
 	attm = 1
 	modCost = 0
 	cData = tgt: History.V2instruments_0; pos: -2.818699,0.2350528,0.07472599; dir: -0.9961935,0.08307245,0.02641008
-	srfN = srfAttach,History.V2tower_4279357368
+	srfN = srfAttach,History.V2tower_4293812702
 	EVENTS
 	{
 	}
