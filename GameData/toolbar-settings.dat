@@ -91,7 +91,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels
+			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels,SmokeScreen.main
 		}
 		toolbar_999066674
 		{
@@ -119,15 +119,15 @@ toolbars
 		}
 		toolbar_52115996
 		{
-			x = 300
-			y = 300
+			x = 156
+			y = -3
 			width = 250
-			height = 38
+			height = 81
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,CrewManifest.CrewManifest,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,MechJeb2.Rendezvous_Planner,MechJeb2.Flight_Computer,MechJeb2.Smart_A_S_S_,MechJeb2.Maneuver_Planner,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
 		}
 		toolbar_237132762
 		{
@@ -178,7 +178,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels
+			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels,SmokeScreen.main
 		}
 		toolbar_999066674
 		{
@@ -232,7 +232,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,sirkut2.IREditorGroupButton,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
 		}
 	}
 }

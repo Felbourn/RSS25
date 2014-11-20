@@ -2,13 +2,17 @@
 *.log
 *.txt
 *.lnk
+*.dll
 TEMP/*
 KSP_Data/*
+Screenshots/*
+saves/default/Ships/VAB/x *
 saves/scenarios/*
 saves/training/*
 GameData/*.dll
 GameData/000_Toolbar/*
 GameData/AJE/*
+GameData/AIES_Aerospace/*
 GameData/blackheart/*
 GameData/blizzy/*
 GameData/CIT/*
@@ -21,13 +25,18 @@ GameData/EngineIgnitor/*
 GameData/EnhancedNavBall/*
 GameData/FerramAerospaceResearch/*
 GameData/DistantObject/*
+GameData/FASA/*
 GameData/Firespitter/*
 GameData/Fusebox/*
 GameData/KerbalJointReinforcement/*
+GameData/HGR/*
 GameData/HullCameraVDS/*
+GameData/JSI/*
 GameData/KerbCam/*
 GameData/KerbalTek/*
+GameData/KWRocketry/*
 GameData/MechJeb2/*
+GameData/MP_Nazari/*
 GameData/MEPS/*
 GameData/MagicSmokeIndustries/*
 GameData/ModuleRCSFX/*
@@ -45,6 +54,8 @@ GameData/RealismOverhaul/*
 GameData/RemoteTech/*
 GameData/ResourceConverter/*
 GameData/ResourceOverview_1.0.1.1/*
+GameData/RN_R7/*
+GameData/RN_Soviet_Probes/*
 GameData/sceneJumper/*
 GameData/SelectRoot/*
 GameData/SimplePartOrganizer/*
@@ -52,6 +63,7 @@ GameData/SmokeScreen/*
 GameData/StretchyTanks/*
 GameData/Squad/*
 GameData/TacFuelBalancer/*
+GameData/Tantares/*
 GameData/TextureReplacer/*
 GameData/ThunderAerospace/*
 GameData/ToadicusTools/*
