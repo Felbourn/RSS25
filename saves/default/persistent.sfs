@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = NASAmission/Flags/NASA
-	launchID = 18
+	launchID = 33
 	PARAMETERS
 	{
 		preset = Normal
@@ -105,8 +105,17 @@ GAME
 			}
 			AltitudeRecord
 			{
-				reached = 75429.1885767253
-				record = 104.510311650112
+				completed = 161015.75332824
+				record = 130000
+			}
+			ReachedSpace
+			{
+				completed = 161015.75332824
+				vessel
+				{
+					name = Jupiter-C
+					flag = NASAmission/Flags/NASA
+				}
 			}
 			Kerbin
 			{
@@ -347,7 +356,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 160812.308572482
+		UT = 164418.388883413
 		activeVessel = 0
 		mapViewFiltering = -1026
 		VESSEL
@@ -898,47 +907,47 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 683996f74e434361bb0566c4dccf73c8
+			pid = 4ac0988bd5fc4f6d958ca28d0e36a4d9
 			name = Jupiter-C
 			type = Probe
-			sit = PRELAUNCH
-			landed = True
-			landedAt = LaunchPad
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
 			splashed = False
-			met = 0
-			lct = 160684.708572549
+			met = 598.211025144003
+			lct = 163432.017858471
 			root = 0
-			lat = 28.6087841373118
-			lon = 279.400227160425
-			alt = 107.33930819761
-			hgt = 24.61613
-			nrm = 7.010488E-05,1,5.729171E-09
-			rot = -0.5102006,-0.1122382,-0.01688648,0.8525332
-			CoM = 3.089627E-07,-11.35211,-5.835319E-07
-			stg = 11
+			lat = 31.7361335015779
+			lon = 270.533302061854
+			alt = 425709.830028592
+			hgt = -1
+			nrm = -0.8630449,0.2415747,0.443616
+			rot = -0.5498676,-0.3882132,-0.4554152,0.5826948
+			CoM = 7.482223E-06,-0.4535542,1.759445E-06
+			stg = 0
 			prst = False
-			ref = 919809402
+			ref = 67386
 			ctrl = True
 			cPch = 
 			cHdg = 
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = NaN
-				LPE = 40.7926986755006
-				LAN = 181.702219908374
-				MNA = -8.40714670366795
-				EPH = 160768.288572505
+				SMA = 6549637.18841841
+				ECC = 0.0542406417851651
+				INC = 33.2956893547674
+				LPE = 330.368249498472
+				LAN = 226.387211942814
+				MNA = 2.30092829031315
+				EPH = 164030.228883615
 				REF = 1
 			}
 			PART
 			{
 				name = Fel.FASAExplorerProbe
-				uid = 919809402
-				mid = 1361063864
-				launchID = 17
+				uid = 67386
+				mid = 1806538493
+				launchID = 27
 				parent = 0
 				position = 0,0,0
 				rotation = 0,0,0,1
@@ -952,9 +961,9 @@ GAME
 				attN = None, -1
 				attN = bottom, 1
 				mass = 0.014
-				temp = 12.66196
+				temp = -1.152045
 				expt = 0.25
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = NASAmission/Flags/NASA
@@ -1015,7 +1024,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Operational
+					stateString = Not enough ElectricCharge
 					WheelState = Active
 					EVENTS
 					{
@@ -1052,8 +1061,8 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					status = Locked
-					animSwitch = True
-					animTime = 0
+					animSwitch = False
+					animTime = 1
 					animSpeed = 1
 					EVENTS
 					{
@@ -1063,7 +1072,7 @@ GAME
 							guiActive = True
 							guiActiveEditor = True
 							guiIcon = Toggle
-							guiName = Extend Antenna
+							guiName = Retract Antenna
 							category = Toggle
 							guiActiveUnfocused = True
 							unfocusedRange = 5
@@ -1456,16 +1465,16 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 160684.708572549
-							deltaVExpended = 0
-							dragLosses = 0
-							gravityLosses = 0
-							steeringLosses = 0
-							markLatitude = 28.6087844719557
-							markLongitude = -80.5997710704647
-							markAltitude = 95.987197516486
+							markUT = 163432.017858471
+							deltaVExpended = 11090.6588949056
+							dragLosses = 0.4684516425947
+							gravityLosses = 2439.74315958302
+							steeringLosses = 162.152147177283
+							markLatitude = 33.2405864546026
+							markLongitude = -106.342267866581
+							markAltitude = 1332.03452921966
 							markBodyIndex = 1
-							maxDragGees = 0
+							maxDragGees = 0.00298322754035623
 							unlockParts = 
 							unlockTechs = 
 						}
@@ -1486,6 +1495,7 @@ GAME
 					}
 					Flew
 					{
+						at = Kerbin
 					}
 					FlewBy
 					{
@@ -1495,12 +1505,68 @@ GAME
 					}
 					SubOrbited
 					{
+						at = Kerbin
+					}
+				}
+				MODULE
+				{
+					name = FARControlSys
+					isEnabled = True
+					EVENTS
+					{
+						AerodynamicFailureStatus
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 26999.9970320002
+					amount = 26997.2828985382
 					maxAmount = 27000
 					flowState = True
 					isTweakable = True
@@ -1511,9 +1577,9 @@ GAME
 			PART
 			{
 				name = Fel.FASAExplorerSgt
-				uid = 867499582
-				mid = 1361063864
-				launchID = 17
+				uid = 3962224678
+				mid = 1806538493
+				launchID = 27
 				parent = 0
 				position = 0,-1.20053100585938,0
 				rotation = 0,0,0,1
@@ -1525,11 +1591,11 @@ GAME
 				attm = 0
 				srfN = None, -1
 				attN = top, 0
-				attN = bottom, 2
+				attN = None, -1
 				mass = 0.0085
-				temp = 12.66409
+				temp = -1.149439
 				expt = 0.75
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = NASAmission/Flags/NASA
@@ -1545,11 +1611,11 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
-					flameout = False
+					staged = True
+					flameout = True
 					EngineIgnited = False
 					engineShutdown = False
-					currentThrottle = 0.9876297
+					currentThrottle = 0.01
 					thrustPercentage = 100
 					manuallyOverridden = False
 					thrustPercentage_UIFlight
@@ -1607,7 +1673,7 @@ GAME
 					canAdjustAtAnytime = False
 					gp = 0
 					initialThrust = 1
-					thrustPercent = 1
+					thrustPercent = 0.01
 					EVENTS
 					{
 						Group1
@@ -1683,7 +1749,7 @@ GAME
 				{
 					name = ModuleEngineIgnitor
 					isEnabled = True
-					ignitionsRemained = 1
+					ignitionsRemained = 0
 					EVENTS
 					{
 						ReloadIgnitor
@@ -1691,7 +1757,7 @@ GAME
 							active = True
 							guiActive = False
 							guiIcon = Reload Ignitor
-							guiName = Reload Ignitor (SolidElectric - 1/1)
+							guiName = Reload Ignitor (SolidElectric - 0/1)
 							category = Reload Ignitor
 							guiActiveUnfocused = False
 							unfocusedRange = 3
@@ -1741,7 +1807,7 @@ GAME
 					{
 						Jettison
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Jettison
 							guiName = Jettison
@@ -1770,7 +1836,18 @@ GAME
 					BreakTorque = 250
 					Torque = 0
 					Decouple = 0
-					Mass = 0.03164
+					Mass = 0.0085
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
 					EVENTS
 					{
 					}
@@ -1781,7 +1858,7 @@ GAME
 				RESOURCE
 				{
 					name = SolidFuel
-					amount = 13
+					amount = 0
 					maxAmount = 13
 					flowState = True
 					isTweakable = True
@@ -1789,2046 +1866,13 @@ GAME
 					flowMode = Both
 				}
 			}
-			PART
-			{
-				name = Fel.FASAExplorerSgt3Dec
-				uid = 1359899245
-				mid = 1361063864
-				launchID = 17
-				parent = 1
-				position = 0,-1.69949150085449,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 1
-				attN = bottom, 3
-				mass = 0.01
-				temp = 12.66473
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerSgt3Dec
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					isDecoupled = False
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 1
-					Mass = 0.01
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAExplorerSgt3
-				uid = 305344725
-				mid = 1361063864
-				launchID = 17
-				parent = 2
-				position = 0,-2.60496139526367,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 2
-				dstg = 5
-				sqor = 2
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 4
-				attN = None, -1
-				attN = connect1, 2
-				mass = 0.0255
-				temp = 12.67102
-				expt = 0.75
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerSgt3
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					staged = False
-					flameout = False
-					EngineIgnited = False
-					engineShutdown = False
-					currentThrottle = 0.9876297
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleEngineThrustController
-					isEnabled = True
-					canAdjustAtAnytime = False
-					gp = 0
-					initialThrust = 1
-					thrustPercent = 1
-					EVENTS
-					{
-						Group1
-						{
-							active = True
-							guiActive = False
-							guiIcon = Set Group 1
-							guiName = Set Group 1
-							category = Set Group 1
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Group2
-						{
-							active = True
-							guiActive = False
-							guiIcon = Set Group 1
-							guiName = Set Group 2
-							category = Set Group 1
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ContextMenuIncreaseThrust
-						{
-							active = False
-							guiActive = False
-							guiIcon = Increase Thrust
-							guiName = Increase Thrust
-							category = Increase Thrust
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ContextMenuDecreaseThrust
-						{
-							active = False
-							guiActive = False
-							guiIcon = Decrease Thrust
-							guiName = Decrease Thrust
-							category = Decrease Thrust
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionGroupIncreaseThrust
-						{
-							actionGroup = None
-						}
-						ActionGroupDecreaseThrust
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSRBThrust
-					isEnabled = True
-					ignitionStartTime = 0
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleEngineIgnitor
-					isEnabled = True
-					ignitionsRemained = 1
-					EVENTS
-					{
-						ReloadIgnitor
-						{
-							active = True
-							guiActive = False
-							guiIcon = Reload Ignitor
-							guiName = Reload Ignitor (SolidElectric - 1/1)
-							category = Reload Ignitor
-							guiActiveUnfocused = False
-							unfocusedRange = 3
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					IGNITOR_RESOURCE
-					{
-						name = ElectricCharge
-						amount = 0.5
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.09492
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = SolidFuel
-					amount = 39
-					maxAmount = 39
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = Fel.FASAExplorerSgt11Dec
-				uid = 2766961273
-				mid = 1361063864
-				launchID = 17
-				parent = 3
-				position = 0,-1.75392150878906,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 3
-				dstg = 7
-				sqor = 3
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 3
-				attN = bottom, 5
-				mass = 0.005
-				temp = 12.66571
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerSgt11Dec
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					isDecoupled = False
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0.01
-					Mass = 0.005
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAExplorerSgt11
-				uid = 4071577665
-				mid = 1361063864
-				launchID = 17
-				parent = 4
-				position = 0,-2.67307090759277,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 4
-				dstg = 9
-				sqor = 4
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 4
-				attN = bottom, 6
-				mass = 0.0935
-				temp = 12.67195
-				expt = 0.75
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerSgt11
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					staged = False
-					flameout = False
-					EngineIgnited = False
-					engineShutdown = False
-					currentThrottle = 0.9876297
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleEngineThrustController
-					isEnabled = True
-					canAdjustAtAnytime = False
-					gp = 0
-					initialThrust = 1
-					thrustPercent = 1
-					EVENTS
-					{
-						Group1
-						{
-							active = True
-							guiActive = False
-							guiIcon = Set Group 1
-							guiName = Set Group 1
-							category = Set Group 1
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Group2
-						{
-							active = True
-							guiActive = False
-							guiIcon = Set Group 1
-							guiName = Set Group 2
-							category = Set Group 1
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ContextMenuIncreaseThrust
-						{
-							active = False
-							guiActive = False
-							guiIcon = Increase Thrust
-							guiName = Increase Thrust
-							category = Increase Thrust
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ContextMenuDecreaseThrust
-						{
-							active = False
-							guiActive = False
-							guiIcon = Decrease Thrust
-							guiName = Decrease Thrust
-							category = Decrease Thrust
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionGroupIncreaseThrust
-						{
-							actionGroup = None
-						}
-						ActionGroupDecreaseThrust
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSRBThrust
-					isEnabled = True
-					ignitionStartTime = 0
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleEngineIgnitor
-					isEnabled = True
-					ignitionsRemained = 1
-					EVENTS
-					{
-						ReloadIgnitor
-						{
-							active = True
-							guiActive = False
-							guiIcon = Reload Ignitor
-							guiName = Reload Ignitor (SolidElectric - 1/1)
-							category = Reload Ignitor
-							guiActiveUnfocused = False
-							unfocusedRange = 3
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					IGNITOR_RESOURCE
-					{
-						name = ElectricCharge
-						amount = 0.5
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.34804
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = SolidFuel
-					amount = 143
-					maxAmount = 143
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = Fel.FASAExplorerNosecone
-				uid = 787654092
-				mid = 1361063864
-				launchID = 17
-				parent = 5
-				position = 0,-4.04827117919922,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 5
-				dstg = 10
-				sqor = 5
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 5
-				attN = bottom, 7
-				attN = None, -1
-				attN = None, -1
-				attN = None, -1
-				mass = 0.1
-				temp = 12.6739
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerNosecone
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					isDecoupled = False
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 5
-					Mass = 0.1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAExplorerLFTLong
-				uid = 2444365317
-				mid = 1361063864
-				launchID = 17
-				parent = 6
-				position = 0,-9.98827075958252,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 10
-				dstg = 10
-				sqor = -1
-				sidx = -1
-				attm = 0
-				srfN = None, -1
-				attN = top, 6
-				attN = bottom, 8
-				mass = 2.06153
-				temp = 12.70932
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerLFTLong
-				modCost = 164.235
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleFuelTanks
-					isEnabled = True
-					type = Cryogenic
-					utilization = 86
-					mass = 2.06153
-					timestamp = 160910.048572431
-					volume = 15557
-					type_UIEditor
-					{
-						controlEnabled = True
-					}
-					utilization_UIEditor
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						incrementSlide = 1
-					}
-					EVENTS
-					{
-						Empty
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Remove All Tanks
-							guiName = Remove All Tanks
-							category = Remove All Tanks
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 16.33216
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LqdOxygen
-					amount = 3172.99998903537
-					maxAmount = 3173
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Hydyne
-					amount = 12384
-					maxAmount = 12384
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = Fel.FASAExplorerLFTMed
-				uid = 1718816403
-				mid = 1361063864
-				launchID = 17
-				parent = 7
-				position = 0,-17.1882724761963,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 10
-				dstg = 10
-				sqor = -1
-				sidx = -1
-				attm = 0
-				srfN = None, -1
-				attN = top, 7
-				attN = bottom, 9
-				mass = 0.5008
-				temp = 12.75644
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAExplorerLFTMed
-				modCost = 90.41076
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleFuelTanks
-					isEnabled = True
-					type = Cryogenic
-					utilization = 86
-					mass = 0.5008
-					timestamp = 160910.048572431
-					volume = 9000
-					type_UIEditor
-					{
-						controlEnabled = True
-					}
-					utilization_UIEditor
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						incrementSlide = 1
-					}
-					EVENTS
-					{
-						Empty
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Remove All Tanks
-							guiName = Remove All Tanks
-							category = Remove All Tanks
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 800
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 10.7698
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LqdOxygen
-					amount = 8999.99996889202
-					maxAmount = 9000
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = Fel.FASA.Mercury.Redstone.Eng
-				uid = 3747609695
-				mid = 1361063864
-				launchID = 17
-				parent = 8
-				position = 0,-21.1582698822021,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 7
-				dstg = 10
-				sqor = 7
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 8
-				attN = bottom, 14
-				mass = 0.698
-				temp = 12.82114
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASA.Mercury.Redstone.Eng
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					staged = False
-					flameout = False
-					EngineIgnited = False
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleEngineIgnitor
-					isEnabled = True
-					ignitionsRemained = 1
-					EVENTS
-					{
-						ReloadIgnitor
-						{
-							active = True
-							guiActive = False
-							guiIcon = Reload Ignitor
-							guiName = Reload Ignitor (Electric - 1/1)
-							category = Reload Ignitor
-							guiActiveUnfocused = False
-							unfocusedRange = 3
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					IGNITOR_RESOURCE
-					{
-						name = ElectricCharge
-						amount = 0.5
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAlternator
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleEngineConfigs
-					isEnabled = True
-					configuration = Hydyne+LqdOxygen
-					techLevel = -1
-					thrustRating = maxThrust
-					modded = False
-					EVENTS
-					{
-						NextEngine
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Current Configuration
-							guiName = Hydyne+LqdOxygen
-							category = Current Configuration
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						NextTech
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Tech Level
-							guiName = Tech Level
-							category = Tech Level
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 370
-					MaxTemp = 2200
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.698
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAMercuryRedstoneFin
-				uid = 2366563063
-				mid = 1361063864
-				launchID = 17
-				parent = 9
-				position = -1.31392753124237,-21.1696949005127,0
-				rotation = -3.62199E-10,0,-8.744268E-10,-1
-				mirror = 1,1,1
-				istg = 10
-				dstg = 10
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 11
-				sym = 12
-				sym = 13
-				srfN = srfAttach, 9
-				mass = 0.02
-				temp = 12.77252
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAMercuryRedstoneFin
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					tweakScale = 1
-					currentScale = 1
-					defaultScale = 1
-					isFreeScale = False
-					version = 1.44.0.0
-					defaultTransformScale = (1, 1, 1)
-					dryCost = 50
-					tweakScale_UIEditor
-					{
-						controlEnabled = True
-						minValue = 0.625
-						maxValue = 5
-						incrementLarge = 1.25
-						incrementSmall = 0.125
-						incrementSlide = 0.001
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 1500
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.02
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAMercuryRedstoneFin
-				uid = 1220749731
-				mid = 1361063864
-				launchID = 17
-				parent = 9
-				position = 1.02445483207703E-08,-21.1696949005127,1.31392681598663
-				rotation = -8.744266E-10,-0.7071068,-3.621997E-10,-0.7071068
-				mirror = 1,1,1
-				istg = 10
-				dstg = 10
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 10
-				sym = 12
-				sym = 13
-				srfN = srfAttach, 9
-				mass = 0.02
-				temp = 12.76944
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAMercuryRedstoneFin
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					tweakScale = 1
-					currentScale = 1
-					defaultScale = 1
-					isFreeScale = False
-					version = 1.44.0.0
-					defaultTransformScale = (1, 1, 1)
-					dryCost = 50
-					tweakScale_UIEditor
-					{
-						controlEnabled = True
-						minValue = 0.625
-						maxValue = 5
-						incrementLarge = 1.25
-						incrementSmall = 0.125
-						incrementSlide = 0.001
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 1500
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.02
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAMercuryRedstoneFin
-				uid = 491678052
-				mid = 1361063864
-				launchID = 17
-				parent = 9
-				position = 1.31392741203308,-21.1696949005127,-2.38418579101563E-07
-				rotation = -8.744268E-10,-1,3.621991E-10,4.371139E-08
-				mirror = 1,1,1
-				istg = 10
-				dstg = 10
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 10
-				sym = 11
-				sym = 13
-				srfN = srfAttach, 9
-				mass = 0.02
-				temp = 12.76894
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAMercuryRedstoneFin
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					tweakScale = 1
-					currentScale = 1
-					defaultScale = 1
-					isFreeScale = False
-					version = 1.44.0.0
-					defaultTransformScale = (1, 1, 1)
-					dryCost = 50
-					tweakScale_UIEditor
-					{
-						controlEnabled = True
-						minValue = 0.625
-						maxValue = 5
-						incrementLarge = 1.25
-						incrementSmall = 0.125
-						incrementSlide = 0.001
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 1500
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.02
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = Fel.FASAMercuryRedstoneFin
-				uid = 1745890476
-				mid = 1361063864
-				launchID = 17
-				parent = 9
-				position = -1.70432031154633E-07,-21.1696949005127,-1.31392729282379
-				rotation = -3.621997E-10,-0.7071068,8.744266E-10,0.7071068
-				mirror = 1,1,1
-				istg = 10
-				dstg = 10
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 10
-				sym = 11
-				sym = 12
-				srfN = srfAttach, 9
-				mass = 0.02
-				temp = 12.76588
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = Fel.FASAMercuryRedstoneFin
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					tweakScale = 1
-					currentScale = 1
-					defaultScale = 1
-					isFreeScale = False
-					version = 1.44.0.0
-					defaultTransformScale = (1, 1, 1)
-					dryCost = 50
-					tweakScale_UIEditor
-					{
-						controlEnabled = True
-						minValue = 0.625
-						maxValue = 5
-						incrementLarge = 1.25
-						incrementSmall = 0.125
-						incrementSlide = 0.001
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 1500
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.02
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = FASAlaunchClamp125
-				uid = 3093014998
-				mid = 1361063864
-				launchID = 17
-				parent = 9
-				position = 0,-23.28782081604,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 6
-				dstg = 10
-				sqor = 6
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				attN = top, 9
-				mass = 0.1
-				temp = 12.77499
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = NASAmission/Flags/NASA
-				rTrf = FASAlaunchClamp125
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = LaunchClamp
-					isEnabled = True
-					scaleFactor = 2.07485
-					height = 2.564121
-					towerRot = 0,0,0,1
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ExtendedPartInfo
-					isEnabled = True
-					Thrust = 0
-					MaxTemp = 1700
-					CrashTol = 12
-					BreakForce = 250
-					BreakTorque = 250
-					Torque = 0
-					Decouple = 0
-					Mass = 0.1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleExternalIgnitor
-					isEnabled = True
-					ignitionsRemained = -1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					IGNITOR_RESOURCE
-					{
-						name = ElectricCharge
-						amount = 250
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					adjustCollider = 0
-					crashTolerance = 8
-					damage = 0
-					dead = False
-					EVENTS
-					{
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
 			ACTIONGROUPS
 			{
-				Stage = False, 0
+				Stage = False, 163929.828883668
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = False, 0
+				SAS = True, 163428.777858473
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -3855,9 +1899,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0
-				yaw = 0
-				roll = 0
+				pitch = -0.02259426
+				yaw = -0.3406529
+				roll = 0.1250926
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0

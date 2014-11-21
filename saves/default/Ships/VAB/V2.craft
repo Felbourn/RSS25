@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = History.V2instruments_4294609924
+	part = History.V2instruments_4294061546
 	partName = Part
 	pos = 0.3909788,21.61147,0.05148721
 	rot = 0,0,0,1
@@ -16,10 +16,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = probeCoreOcto2_4294609456
-	link = KzInterstageAdapter2_4294609094
-	attN = top,probeCoreOcto2_4294609456
-	attN = bottom,KzInterstageAdapter2_4294609094
+	link = probeCoreOcto2_4294061076
+	link = KzInterstageAdapter2_4294060702
+	attN = top,probeCoreOcto2_4294061076
+	attN = bottom,KzInterstageAdapter2_4294060702
 	EVENTS
 	{
 	}
@@ -108,6 +108,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -120,7 +139,7 @@ PART
 }
 PART
 {
-	part = probeCoreOcto2_4294609456
+	part = probeCoreOcto2_4294061076
 	partName = Part
 	pos = 0.3909788,21.6673,0.002929006
 	rot = 0,0,0,1
@@ -132,9 +151,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 1.292
-	link = proceduralBattery_4294609404
-	attN = bottom,History.V2instruments_4294609924
-	attN = top,proceduralBattery_4294609404
+	link = proceduralBattery_4294061026
+	attN = bottom,History.V2instruments_4294061546
+	attN = top,proceduralBattery_4294061026
 	EVENTS
 	{
 	}
@@ -188,12 +207,31 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleFuelTanks
 		isEnabled = True
 		type = ServiceModule
 		utilization = 86
 		mass = 0.05
-		timestamp = 149.880000000004
+		timestamp = 164181.748883536
 		volume = 50
 		type_UIEditor
 		{
@@ -232,39 +270,6 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSPU
-		isEnabled = True
-		IsRTPowered = True
-		IsRTSignalProcessor = True
-		IsRTCommandStation = False
-		RTCommandMinCrew = 6
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRTAntennaPassive
-		isEnabled = True
-		IsRTAntenna = True
-		IsRTActive = True
-		IsRTPowered = True
-		IsRTBroken = False
-		RTDishRadians = 1
-		RTOmniRange = 3000
-		RTDishRange = -1
-		EVENTS
-		{
 		}
 		ACTIONS
 		{
@@ -543,7 +548,7 @@ PART
 }
 PART
 {
-	part = proceduralBattery_4294609404
+	part = proceduralBattery_4294061026
 	partName = Part
 	pos = 0.3909788,21.77866,0.002929006
 	rot = 0,0,0,1
@@ -555,10 +560,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 674.3454
-	link = sasModule_4294609346
-	link = RTShortAntenna1_4294609316
-	attN = top,sasModule_4294609346
-	attN = bottom,probeCoreOcto2_4294609456
+	link = sasModule_4294060966
+	link = RTShortAntenna1_4294060934
+	attN = top,sasModule_4294060966
+	attN = bottom,probeCoreOcto2_4294061076
 	EVENTS
 	{
 	}
@@ -755,6 +760,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05089381
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -777,7 +801,7 @@ PART
 }
 PART
 {
-	part = sasModule_4294609346
+	part = sasModule_4294060966
 	partName = Part
 	pos = 0.3909788,21.93227,0.002929006
 	rot = 0,0,0,1
@@ -789,9 +813,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4294609274
-	attN = bottom,proceduralBattery_4294609404
-	attN = top,strutOcto_4294609274
+	link = strutOcto_4294060894
+	attN = bottom,proceduralBattery_4294061026
+	attN = top,strutOcto_4294060894
 	EVENTS
 	{
 	}
@@ -847,6 +871,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0.5
+		Decouple = 0
+		Mass = 0.05
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = TweakScale
 		isEnabled = True
 		tweakScale = 1.25
@@ -886,7 +929,7 @@ PART
 }
 PART
 {
-	part = RTShortAntenna1_4294609316
+	part = RTShortAntenna1_4294060934
 	partName = Part
 	pos = 0.08138236,21.83509,0.1816685
 	rot = 0.002656226,-0.2587613,0.009914916,-0.9658868
@@ -898,7 +941,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	srfN = srfAttach,proceduralBattery_4294609404
+	srfN = srfAttach,proceduralBattery_4294061026
 	EVENTS
 	{
 	}
@@ -907,142 +950,16 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleRTAntenna
+		name = ExtendedPartInfo
 		isEnabled = True
-		IsRTAntenna = True
-		IsRTActive = True
-		IsRTPowered = True
-		IsRTBroken = False
-		RTDishRadians = 1
-		RTOmniRange = 1000000
-		RTDishRange = -1
-		RTAntennaTarget = 00000000-0000-0000-0000-000000000000
-		EVENTS
-		{
-			EventToggle
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = Toggle
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EventTarget
-			{
-				active = False
-				guiActive = False
-				guiIcon = Target
-				guiName = Unknown Target
-				category = Target
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EventEditorOpen
-			{
-				active = True
-				guiActive = False
-				guiIcon = Start deployed
-				guiName = Start deployed
-				category = Start deployed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EventEditorClose
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Start retracted
-				guiName = Start retracted
-				category = Start retracted
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EventOpen
-			{
-				active = False
-				guiActive = False
-				guiIcon = 
-				guiName = Activate
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EventClose
-			{
-				active = True
-				guiActive = True
-				guiIcon = 
-				guiName = Deactivate
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OverrideTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = [EVA] Set Target
-				guiName = [EVA] Set Target
-				category = [EVA] Set Target
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			OverrideOpen
-			{
-				active = True
-				guiActive = False
-				guiIcon = [EVA] Force Open
-				guiName = [EVA] Force Open
-				category = [EVA] Force Open
-				guiActiveUnfocused = False
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			OverrideClose
-			{
-				active = True
-				guiActive = False
-				guiIcon = [EVA] Force Close
-				guiName = [EVA] Force Close
-				category = [EVA] Force Close
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionOpen
-			{
-				actionGroup = None
-			}
-			ActionClose
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleSPUPassive
-		isEnabled = True
-		IsRTPowered = False
-		IsRTSignalProcessor = True
-		IsRTCommandStation = False
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.005
 		EVENTS
 		{
 		}
@@ -1064,7 +981,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294609274
+	part = strutOcto_4294060894
 	partName = Part
 	pos = 0.3909788,22.15211,0.002929006
 	rot = 0,0,0,1
@@ -1076,14 +993,33 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4294609248
-	attN = top,strutOcto_4294609248
-	attN = bottom,sasModule_4294609346
+	link = strutOcto_4294060866
+	attN = top,strutOcto_4294060866
+	attN = bottom,sasModule_4294060966
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1126,7 +1062,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294609248
+	part = strutOcto_4294060866
 	partName = Part
 	pos = 0.3909788,22.40958,0.002929006
 	rot = 0,0,0,1
@@ -1138,14 +1074,33 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = strutOcto_4294609222
-	attN = top,strutOcto_4294609222
-	attN = bottom,strutOcto_4294609274
+	link = strutOcto_4294060838
+	attN = top,strutOcto_4294060838
+	attN = bottom,strutOcto_4294060894
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1188,7 +1143,7 @@ PART
 }
 PART
 {
-	part = strutOcto_4294609222
+	part = strutOcto_4294060838
 	partName = Part
 	pos = 0.3909788,22.66705,0.002929006
 	rot = 0,0,0,1
@@ -1200,15 +1155,34 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = xenonTankRadial_4294609196
-	link = xenonTankRadial_4294609162
-	link = xenonTankRadial_4294609128
-	attN = bottom,strutOcto_4294609248
+	link = xenonTankRadial_4294060810
+	link = xenonTankRadial_4294060774
+	link = xenonTankRadial_4294060738
+	attN = bottom,strutOcto_4294060866
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1251,7 +1225,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4294609196
+	part = xenonTankRadial_4294060810
 	partName = Part
 	pos = 0.2499992,22.58506,0.002929006
 	rot = 0,-0.7071068,0,-0.7071068
@@ -1263,14 +1237,33 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4294609162
-	sym = xenonTankRadial_4294609128
-	srfN = srfAttach,strutOcto_4294609222
+	sym = xenonTankRadial_4294060774
+	sym = xenonTankRadial_4294060738
+	srfN = srfAttach,strutOcto_4294060838
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 560
+		CrashTol = 8.4
+		BreakForce = 122.5
+		BreakTorque = 122.5
+		Torque = 0
+		Decouple = 0
+		Mass = 0.29753
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1306,7 +1299,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 149.880000000004
+		timestamp = 164181.748883536
 		volume = 40
 		type_UIEditor
 		{
@@ -1362,7 +1355,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4294609162
+	part = xenonTankRadial_4294060774
 	partName = Part
 	pos = 0.4614685,22.58506,0.1250208
 	rot = 0,-0.9659259,0,0.2588191
@@ -1374,14 +1367,33 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4294609196
-	sym = xenonTankRadial_4294609128
-	srfN = srfAttach,strutOcto_4294609222
+	sym = xenonTankRadial_4294060810
+	sym = xenonTankRadial_4294060738
+	srfN = srfAttach,strutOcto_4294060838
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 560
+		CrashTol = 8.4
+		BreakForce = 122.5
+		BreakTorque = 122.5
+		Torque = 0
+		Decouple = 0
+		Mass = 0.29753
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1417,7 +1429,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 149.880000000004
+		timestamp = 164181.748883536
 		volume = 40
 		type_UIEditor
 		{
@@ -1473,7 +1485,7 @@ PART
 }
 PART
 {
-	part = xenonTankRadial_4294609128
+	part = xenonTankRadial_4294060738
 	partName = Part
 	pos = 0.4614685,22.58506,-0.1191627
 	rot = 0,-0.258819,0,0.9659259
@@ -1485,14 +1497,33 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -1444.941
-	sym = xenonTankRadial_4294609196
-	sym = xenonTankRadial_4294609162
-	srfN = srfAttach,strutOcto_4294609222
+	sym = xenonTankRadial_4294060810
+	sym = xenonTankRadial_4294060774
+	srfN = srfAttach,strutOcto_4294060838
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 560
+		CrashTol = 8.4
+		BreakForce = 122.5
+		BreakTorque = 122.5
+		Torque = 0
+		Decouple = 0
+		Mass = 0.29753
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1528,7 +1559,7 @@ PART
 		type = Xenon
 		utilization = 86
 		mass = 0.00269
-		timestamp = 149.880000000004
+		timestamp = 164181.748883536
 		volume = 40
 		type_UIEditor
 		{
@@ -1584,7 +1615,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4294609094
+	part = KzInterstageAdapter2_4294060702
 	partName = Part
 	pos = 0.3909788,20.87796,0.002929006
 	rot = 0,0,0,1
@@ -1596,19 +1627,19 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 71.61089
-	link = KzProcFairingSide2ger_4294609056
-	link = KzProcFairingSide2ger_4294608998
-	link = KzProcFairingSide2ger_4294608940
-	link = proceduralNoseCone_4294608882
-	link = KzProcFairingSide2ger_4294608832
-	link = KzInterstageAdapter2_4294608774
-	attN = bottom,KzInterstageAdapter2_4294608774
-	attN = top,History.V2instruments_4294609924
-	attN = top1,proceduralNoseCone_4294608882
-	attN = connect01,KzProcFairingSide2ger_4294608998
-	attN = connect02,KzProcFairingSide2ger_4294609056
-	attN = connect03,KzProcFairingSide2ger_4294608832
-	attN = connect04,KzProcFairingSide2ger_4294608940
+	link = KzProcFairingSide2ger_4294060662
+	link = KzProcFairingSide2ger_4294060602
+	link = KzProcFairingSide2ger_4294060542
+	link = proceduralNoseCone_4294060482
+	link = KzProcFairingSide2ger_4294060430
+	link = KzInterstageAdapter2_4294060370
+	attN = bottom,KzInterstageAdapter2_4294060370
+	attN = top,History.V2instruments_4294061546
+	attN = top1,proceduralNoseCone_4294060482
+	attN = connect01,KzProcFairingSide2ger_4294060602
+	attN = connect02,KzProcFairingSide2ger_4294060662
+	attN = connect03,KzProcFairingSide2ger_4294060430
+	attN = connect04,KzProcFairingSide2ger_4294060542
 	EVENTS
 	{
 	}
@@ -1778,6 +1809,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -1812,7 +1862,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294609056
+	part = KzProcFairingSide2ger_4294060662
 	partName = Part
 	pos = 0.3909787,20.53436,0.8529297
 	rot = 0,0,0,1
@@ -1824,7 +1874,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4294060702
 	EVENTS
 	{
 	}
@@ -1903,6 +1953,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 20.48482
+		BreakTorque = 20.48482
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01024241
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -1937,7 +2006,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608998
+	part = KzProcFairingSide2ger_4294060602
 	partName = Part
 	pos = 1.240978,20.53436,0.002929006
 	rot = 0,0,0,1
@@ -1949,7 +2018,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4294060702
 	EVENTS
 	{
 	}
@@ -2028,6 +2097,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 20.48482
+		BreakTorque = 20.48482
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01024241
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -2062,7 +2150,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608940
+	part = KzProcFairingSide2ger_4294060542
 	partName = Part
 	pos = 0.3909788,20.53436,-0.8470712
 	rot = 0,0,0,1
@@ -2074,7 +2162,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4294060702
 	EVENTS
 	{
 	}
@@ -2153,6 +2241,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 20.48482
+		BreakTorque = 20.48482
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01024241
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -2187,7 +2294,7 @@ PART
 }
 PART
 {
-	part = proceduralNoseCone_4294608882
+	part = proceduralNoseCone_4294060482
 	partName = Part
 	pos = 0.3909788,23.40297,0.002929006
 	rot = 0,0,0,1
@@ -2199,7 +2306,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0.009143854
-	attN = bottom,KzInterstageAdapter2_4294609094
+	attN = bottom,KzInterstageAdapter2_4294060702
 	EVENTS
 	{
 	}
@@ -2290,6 +2397,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.1146565
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -2302,7 +2428,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608832
+	part = KzProcFairingSide2ger_4294060430
 	partName = Part
 	pos = -0.4590213,20.53437,0.002929006
 	rot = 0,-0.7071068,0,0.7071068
@@ -2314,7 +2440,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 51.21204
-	attN = connect,KzInterstageAdapter2_4294609094
+	attN = connect,KzInterstageAdapter2_4294060702
 	EVENTS
 	{
 	}
@@ -2393,6 +2519,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 20.48482
+		BreakTorque = 20.48482
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01024241
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -2427,7 +2572,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4294608774
+	part = KzInterstageAdapter2_4294060370
 	partName = Part
 	pos = 0.3909788,14.67797,0.002929006
 	rot = 0,0.3826835,0,0.9238796
@@ -2439,19 +2584,19 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 80.94353
-	link = KzInterstageAdapter2_4294608736
-	link = proceduralTankRealFuels_4294607204
-	link = KzProcFairingSide2ger_4294607076
-	link = KzProcFairingSide2ger_4294607018
-	link = KzProcFairingSide2ger_4294606960
-	link = KzProcFairingSide2ger_4294606902
-	attN = bottom,KzInterstageAdapter2_4294608736
-	attN = top,proceduralTankRealFuels_4294607204
-	attN = top1,KzInterstageAdapter2_4294609094
-	attN = connect01,KzProcFairingSide2ger_4294606960
-	attN = connect02,KzProcFairingSide2ger_4294607018
-	attN = connect03,KzProcFairingSide2ger_4294607076
-	attN = connect04,KzProcFairingSide2ger_4294606902
+	link = KzInterstageAdapter2_4294060330
+	link = proceduralTankRealFuels_4294058766
+	link = KzProcFairingSide2ger_4294058634
+	link = KzProcFairingSide2ger_4294058574
+	link = KzProcFairingSide2ger_4294058514
+	link = KzProcFairingSide2ger_4294058454
+	attN = bottom,KzInterstageAdapter2_4294060330
+	attN = top,proceduralTankRealFuels_4294058766
+	attN = top1,KzInterstageAdapter2_4294060702
+	attN = connect01,KzProcFairingSide2ger_4294058514
+	attN = connect02,KzProcFairingSide2ger_4294058574
+	attN = connect03,KzProcFairingSide2ger_4294058634
+	attN = connect04,KzProcFairingSide2ger_4294058454
 	EVENTS
 	{
 	}
@@ -2621,6 +2766,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -2655,7 +2819,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4294608736
+	part = KzInterstageAdapter2_4294060330
 	partName = Part
 	pos = 0.3909788,14.67797,0.002929006
 	rot = 0.3826834,0,0.9238796,0
@@ -2667,17 +2831,17 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 80.94353
-	link = KzProcFairingSide2ger_4294608698
-	link = KzProcFairingSide2ger_4294608640
-	link = KzProcFairingSide2ger_4294608582
-	link = History.V2instruments_4294608524
-	link = KzProcFairingSide2ger_4294607262
-	attN = bottom,KzInterstageAdapter2_4294608774
-	attN = top,History.V2instruments_4294608524
-	attN = connect01,KzProcFairingSide2ger_4294607262
-	attN = connect02,KzProcFairingSide2ger_4294608698
-	attN = connect03,KzProcFairingSide2ger_4294608640
-	attN = connect04,KzProcFairingSide2ger_4294608582
+	link = KzProcFairingSide2ger_4294060290
+	link = KzProcFairingSide2ger_4294060230
+	link = KzProcFairingSide2ger_4294060170
+	link = History.V2instruments_4294060110
+	link = KzProcFairingSide2ger_4294058826
+	attN = bottom,KzInterstageAdapter2_4294060370
+	attN = top,History.V2instruments_4294060110
+	attN = connect01,KzProcFairingSide2ger_4294058826
+	attN = connect02,KzProcFairingSide2ger_4294060290
+	attN = connect03,KzProcFairingSide2ger_4294060230
+	attN = connect04,KzProcFairingSide2ger_4294060170
 	EVENTS
 	{
 	}
@@ -2847,6 +3011,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -2881,7 +3064,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608698
+	part = KzProcFairingSide2ger_4294060290
 	partName = Part
 	pos = 1.027374,14.01237,0.6393243
 	rot = 0,-0.9238796,0,0.3826834
@@ -2893,7 +3076,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
+	attN = connect,KzInterstageAdapter2_4294060330
 	EVENTS
 	{
 	}
@@ -2972,6 +3155,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 58.31841
+		BreakTorque = 58.31841
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02915921
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -3006,7 +3208,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608640
+	part = KzProcFairingSide2ger_4294060230
 	partName = Part
 	pos = 1.027375,14.01237,-0.6334667
 	rot = 0,-0.3826834,0,0.9238796
@@ -3018,7 +3220,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
+	attN = connect,KzInterstageAdapter2_4294060330
 	EVENTS
 	{
 	}
@@ -3097,6 +3299,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 58.31841
+		BreakTorque = 58.31841
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02915921
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -3131,7 +3352,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294608582
+	part = KzProcFairingSide2ger_4294060170
 	partName = Part
 	pos = -0.2454172,14.01237,-0.6334666
 	rot = 0,0.3826834,0,0.9238796
@@ -3143,7 +3364,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
+	attN = connect,KzInterstageAdapter2_4294060330
 	EVENTS
 	{
 	}
@@ -3222,6 +3443,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 58.31841
+		BreakTorque = 58.31841
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02915921
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -3256,7 +3496,7 @@ PART
 }
 PART
 {
-	part = History.V2instruments_4294608524
+	part = History.V2instruments_4294060110
 	partName = Part
 	pos = 0.3909788,14.34578,0.0514871
 	rot = 0,7.787722E-08,0,1
@@ -3268,9 +3508,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = radialEngineBodysmall_4294608056
-	attN = top,KzInterstageAdapter2_4294608736
-	attN = bottom,radialEngineBodysmall_4294608056
+	link = radialEngineBodysmall_4294059640
+	attN = top,KzInterstageAdapter2_4294060330
+	attN = bottom,radialEngineBodysmall_4294059640
 	EVENTS
 	{
 	}
@@ -3359,6 +3599,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -3371,7 +3630,7 @@ PART
 }
 PART
 {
-	part = radialEngineBodysmall_4294608056
+	part = radialEngineBodysmall_4294059640
 	partName = Part
 	pos = 0.3909788,13.20008,0.002929006
 	rot = 0,-2.753376E-08,0,1
@@ -3383,18 +3642,37 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 21159.61
-	link = History.V2fin_4294608014
-	link = History.V2fin_4294607850
-	link = History.V2fin_4294607686
-	link = History.V2fin_4294607522
-	link = History.V2engine_4294607358
-	attN = top,History.V2instruments_4294608524
-	attN = bottom,History.V2engine_4294607358
+	link = History.V2fin_4294059596
+	link = History.V2fin_4294059428
+	link = History.V2fin_4294059260
+	link = History.V2fin_4294059092
+	link = History.V2engine_4294058924
+	attN = top,History.V2instruments_4294060110
+	attN = bottom,History.V2engine_4294058924
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 1920
+		CrashTol = 28.8
+		BreakForce = 1440
+		BreakTorque = 1440
+		Torque = 0
+		Decouple = 0
+		Mass = 0.9186049
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -3458,9 +3736,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294608014
+	part = History.V2fin_4294059596
 	partName = Part
-	pos = -0.4814551,11.84165,0.002930831
+	pos = -0.4814552,11.84165,0.002930958
 	rot = 0,-5.034347E-08,0,-1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3470,16 +3748,35 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607884
-	sym = History.V2fin_4294607850
-	sym = History.V2fin_4294607686
-	sym = History.V2fin_4294607522
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4294059464
+	sym = History.V2fin_4294059428
+	sym = History.V2fin_4294059260
+	sym = History.V2fin_4294059092
+	srfN = srfAttach,radialEngineBodysmall_4294059640
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -3495,9 +3792,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607884
+	part = StandardCtrlSrf_4294059464
 	partName = Part
-	pos = -0.7473149,10.34102,0.0029319
+	pos = -0.7473152,10.34102,0.002932113
 	rot = -0.229753,0.9732491,-1.419567E-07,-4.553418E-08
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3507,15 +3804,34 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607720
-	sym = StandardCtrlSrf_4294607556
-	sym = StandardCtrlSrf_4294607392
-	srfN = srfAttach,History.V2fin_4294608014
+	sym = StandardCtrlSrf_4294059296
+	sym = StandardCtrlSrf_4294059128
+	sym = StandardCtrlSrf_4294058960
+	srfN = srfAttach,History.V2fin_4294059596
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 500
+		CrashTol = 3
+		BreakForce = 15.625
+		BreakTorque = 15.625
+		Torque = 0
+		Decouple = 0
+		Mass = 0.0003125
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -3680,9 +3996,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294607850
+	part = History.V2fin_4294059428
 	partName = Part
-	pos = 0.3909772,11.84165,0.8753618
+	pos = 0.3909771,11.84165,0.8753619
 	rot = 0,-0.7071069,0,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3692,16 +4008,35 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607720
-	sym = History.V2fin_4294608014
-	sym = History.V2fin_4294607686
-	sym = History.V2fin_4294607522
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4294059296
+	sym = History.V2fin_4294059596
+	sym = History.V2fin_4294059260
+	sym = History.V2fin_4294059092
+	srfN = srfAttach,radialEngineBodysmall_4294059640
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -3717,9 +4052,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607720
+	part = StandardCtrlSrf_4294059296
 	partName = Part
-	pos = 0.3909768,10.34102,1.141221
+	pos = 0.3909766,10.34102,1.141221
 	rot = -0.16246,0.688191,0.1624598,-0.6881911
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3729,15 +4064,34 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607884
-	sym = StandardCtrlSrf_4294607556
-	sym = StandardCtrlSrf_4294607392
-	srfN = srfAttach,History.V2fin_4294607850
+	sym = StandardCtrlSrf_4294059464
+	sym = StandardCtrlSrf_4294059128
+	sym = StandardCtrlSrf_4294058960
+	srfN = srfAttach,History.V2fin_4294059428
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 500
+		CrashTol = 3
+		BreakForce = 15.625
+		BreakTorque = 15.625
+		Torque = 0
+		Decouple = 0
+		Mass = 0.0003125
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -3902,9 +4256,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294607686
+	part = History.V2fin_4294059260
 	partName = Part
-	pos = 1.263412,11.84165,0.002927307
+	pos = 1.263412,11.84165,0.00292718
 	rot = 0,-1,0,7.787722E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3914,16 +4268,35 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607556
-	sym = History.V2fin_4294608014
-	sym = History.V2fin_4294607850
-	sym = History.V2fin_4294607522
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4294059128
+	sym = History.V2fin_4294059596
+	sym = History.V2fin_4294059428
+	sym = History.V2fin_4294059092
+	srfN = srfAttach,radialEngineBodysmall_4294059640
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -3939,9 +4312,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607556
+	part = StandardCtrlSrf_4294059128
 	partName = Part
-	pos = 1.529271,10.34102,0.002925985
+	pos = 1.529271,10.34102,0.002925813
 	rot = -1.350732E-07,-4.553418E-08,0.229753,-0.9732491
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3951,15 +4324,34 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607884
-	sym = StandardCtrlSrf_4294607720
-	sym = StandardCtrlSrf_4294607392
-	srfN = srfAttach,History.V2fin_4294607686
+	sym = StandardCtrlSrf_4294059464
+	sym = StandardCtrlSrf_4294059296
+	sym = StandardCtrlSrf_4294058960
+	srfN = srfAttach,History.V2fin_4294059260
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 500
+		CrashTol = 3
+		BreakForce = 15.625
+		BreakTorque = 15.625
+		Torque = 0
+		Decouple = 0
+		Mass = 0.0003125
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -4124,9 +4516,9 @@ PART
 }
 PART
 {
-	part = History.V2fin_4294607522
+	part = History.V2fin_4294059092
 	partName = Part
-	pos = 0.3909807,11.84165,-0.8695034
+	pos = 0.3909808,11.84165,-0.8695034
 	rot = 0,-0.7071068,0,0.7071069
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4136,16 +4528,35 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = StandardCtrlSrf_4294607392
-	sym = History.V2fin_4294608014
-	sym = History.V2fin_4294607850
-	sym = History.V2fin_4294607686
-	srfN = srfAttach,radialEngineBodysmall_4294608056
+	link = StandardCtrlSrf_4294058960
+	sym = History.V2fin_4294059596
+	sym = History.V2fin_4294059428
+	sym = History.V2fin_4294059260
+	srfN = srfAttach,radialEngineBodysmall_4294059640
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -4161,9 +4572,9 @@ PART
 }
 PART
 {
-	part = StandardCtrlSrf_4294607392
+	part = StandardCtrlSrf_4294058960
 	partName = Part
-	pos = 0.3909809,10.34102,-1.135363
+	pos = 0.3909811,10.34102,-1.135363
 	rot = 0.1624598,-0.6881911,0.16246,-0.688191
 	attRot = 0,0,0.7071068,0.7071068
 	mir = 1,1,1
@@ -4173,15 +4584,34 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -393.75
-	sym = StandardCtrlSrf_4294607884
-	sym = StandardCtrlSrf_4294607720
-	sym = StandardCtrlSrf_4294607556
-	srfN = srfAttach,History.V2fin_4294607522
+	sym = StandardCtrlSrf_4294059464
+	sym = StandardCtrlSrf_4294059296
+	sym = StandardCtrlSrf_4294059128
+	srfN = srfAttach,History.V2fin_4294059092
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 500
+		CrashTol = 3
+		BreakForce = 15.625
+		BreakTorque = 15.625
+		Torque = 0
+		Decouple = 0
+		Mass = 0.0003125
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -4346,7 +4776,7 @@ PART
 }
 PART
 {
-	part = History.V2engine_4294607358
+	part = History.V2engine_4294058924
 	partName = Part
 	pos = 0.3909788,11.57975,0.002929006
 	rot = 0,7.787722E-08,0,1
@@ -4358,9 +4788,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = History.V2tower_4294606844
-	attN = top,radialEngineBodysmall_4294608056
-	attN = bottom,History.V2tower_4294606844
+	link = History.V2tower_4294058394
+	attN = top,radialEngineBodysmall_4294059640
+	attN = bottom,History.V2tower_4294058394
 	EVENTS
 	{
 	}
@@ -4476,6 +4906,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -4498,7 +4947,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294607262
+	part = KzProcFairingSide2ger_4294058826
 	partName = Part
 	pos = -0.2454181,14.01237,0.6393263
 	rot = 0,-0.9238796,0,-0.3826835
@@ -4510,7 +4959,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 145.796
-	attN = connect,KzInterstageAdapter2_4294608736
+	attN = connect,KzInterstageAdapter2_4294060330
 	EVENTS
 	{
 	}
@@ -4589,6 +5038,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 58.31841
+		BreakTorque = 58.31841
+		Torque = 0
+		Decouple = 0
+		Mass = 0.02915921
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -4623,7 +5091,7 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4294607204
+	part = proceduralTankRealFuels_4294058766
 	partName = Part
 	pos = 0.3909788,16.44667,0.002929006
 	rot = 0,0,0,1
@@ -4635,9 +5103,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 44.00111
-	link = proceduralTankRealFuels_4294607140
-	attN = top,proceduralTankRealFuels_4294607140
-	attN = bottom,KzInterstageAdapter2_4294608774
+	link = proceduralTankRealFuels_4294058700
+	attN = top,proceduralTankRealFuels_4294058700
+	attN = bottom,KzInterstageAdapter2_4294060370
 	EVENTS
 	{
 	}
@@ -4821,7 +5289,7 @@ PART
 		type = Default
 		utilization = 90
 		mass = 0.130868
-		timestamp = 149.880000000004
+		timestamp = 164181.748883536
 		volume = 4373
 		type_UIEditor
 		{
@@ -4859,6 +5327,25 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 5.182103
+		EVENTS
+		{
 		}
 		ACTIONS
 		{
@@ -4922,7 +5409,7 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4294607140
+	part = proceduralTankRealFuels_4294058700
 	partName = Part
 	pos = 0.3909788,19.38418,0.002929006
 	rot = 0,0,0,1
@@ -4934,7 +5421,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 46.3619
-	attN = bottom,proceduralTankRealFuels_4294607204
+	attN = bottom,proceduralTankRealFuels_4294058766
 	EVENTS
 	{
 	}
@@ -5118,7 +5605,7 @@ PART
 		type = Default
 		utilization = 90
 		mass = 0.13238
-		timestamp = 149.880000000004
+		timestamp = 164181.748883536
 		volume = 4572
 		type_UIEditor
 		{
@@ -5156,6 +5643,25 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 4.055154
+		EVENTS
+		{
 		}
 		ACTIONS
 		{
@@ -5219,7 +5725,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294607076
+	part = KzProcFairingSide2ger_4294058634
 	partName = Part
 	pos = -0.2454175,14.34357,0.639325
 	rot = 0,-0.7071068,0,-0.7071068
@@ -5231,10 +5737,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607018
-	sym = KzProcFairingSide2ger_4294606960
-	sym = KzProcFairingSide2ger_4294606902
-	attN = connect,KzInterstageAdapter2_4294608774
+	sym = KzProcFairingSide2ger_4294058574
+	sym = KzProcFairingSide2ger_4294058514
+	sym = KzProcFairingSide2ger_4294058454
+	attN = connect,KzInterstageAdapter2_4294060370
 	EVENTS
 	{
 	}
@@ -5313,6 +5819,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 112.8006
+		BreakTorque = 112.8006
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05640028
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -5347,7 +5872,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294607018
+	part = KzProcFairingSide2ger_4294058574
 	partName = Part
 	pos = 1.027375,14.34357,0.639325
 	rot = 0,-1,0,0
@@ -5359,10 +5884,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607076
-	sym = KzProcFairingSide2ger_4294606960
-	sym = KzProcFairingSide2ger_4294606902
-	attN = connect,KzInterstageAdapter2_4294608774
+	sym = KzProcFairingSide2ger_4294058634
+	sym = KzProcFairingSide2ger_4294058514
+	sym = KzProcFairingSide2ger_4294058454
+	attN = connect,KzInterstageAdapter2_4294060370
 	EVENTS
 	{
 	}
@@ -5441,6 +5966,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 112.8006
+		BreakTorque = 112.8006
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05640028
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -5475,7 +6019,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294606960
+	part = KzProcFairingSide2ger_4294058514
 	partName = Part
 	pos = 1.027375,14.34357,-0.6334671
 	rot = 0,-0.7071068,0,0.7071068
@@ -5487,10 +6031,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607076
-	sym = KzProcFairingSide2ger_4294607018
-	sym = KzProcFairingSide2ger_4294606902
-	attN = connect,KzInterstageAdapter2_4294608774
+	sym = KzProcFairingSide2ger_4294058634
+	sym = KzProcFairingSide2ger_4294058574
+	sym = KzProcFairingSide2ger_4294058454
+	attN = connect,KzInterstageAdapter2_4294060370
 	EVENTS
 	{
 	}
@@ -5569,6 +6113,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 112.8006
+		BreakTorque = 112.8006
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05640028
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -5603,7 +6166,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2ger_4294606902
+	part = KzProcFairingSide2ger_4294058454
 	partName = Part
 	pos = -0.2454175,14.34357,-0.6334671
 	rot = 0,0,0,1
@@ -5615,10 +6178,10 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 282.0014
-	sym = KzProcFairingSide2ger_4294607076
-	sym = KzProcFairingSide2ger_4294607018
-	sym = KzProcFairingSide2ger_4294606960
-	attN = connect,KzInterstageAdapter2_4294608774
+	sym = KzProcFairingSide2ger_4294058634
+	sym = KzProcFairingSide2ger_4294058574
+	sym = KzProcFairingSide2ger_4294058514
+	attN = connect,KzInterstageAdapter2_4294060370
 	EVENTS
 	{
 	}
@@ -5697,6 +6260,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 112.8006
+		BreakTorque = 112.8006
+		Torque = 0
+		Decouple = 0
+		Mass = 0.05640028
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARPayloadFairingModule
 		isEnabled = True
 		EVENTS
@@ -5731,9 +6313,9 @@ PART
 }
 PART
 {
-	part = History.V2tower_4294606844
+	part = History.V2tower_4294058394
 	partName = Part
-	pos = 0.4067869,15.89306,4.400011
+	pos = 0.406786,15.89306,4.400012
 	rot = 0,2.280971E-08,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5743,9 +6325,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = IR.StrutDecoupler.Small_4294604942
-	link = IR.StrutDecoupler.Small_4294604902
-	attN = top,History.V2engine_4294607358
+	link = IR.StrutDecoupler.Small_4294056490
+	link = IR.StrutDecoupler.Small_4294056448
+	attN = top,History.V2engine_4294058924
 	EVENTS
 	{
 	}
@@ -5866,6 +6448,25 @@ PART
 	}
 	MODULE
 	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 100
+		Mass = 100
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -5878,10 +6479,10 @@ PART
 }
 PART
 {
-	part = IR.StrutDecoupler.Small_4294604942
+	part = IR.StrutDecoupler.Small_4294056490
 	partName = StrutConnector
-	pos = 0.2872278,21.21057,3.461791
-	rot = 8.429354E-08,0.7071065,-8.429362E-08,-0.7071073
+	pos = 0.2872273,21.21057,3.461791
+	rot = 8.429355E-08,0.7071066,-8.429362E-08,-0.7071073
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -5890,8 +6491,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	cData = tgt: KzInterstageAdapter2_11; pos: -2.749777,-0.01980907,0.04611098; dir: -0.9998335,-0.007203292,0.01676607
-	srfN = srfAttach,History.V2tower_4294606844
+	cData = tgt: KzInterstageAdapter2_11; pos: -2.749779,-0.01980907,0.04611107; dir: -0.9998335,-0.007203292,0.01676607
+	srfN = srfAttach,History.V2tower_4294058394
 	EVENTS
 	{
 	}
@@ -5934,6 +6535,25 @@ PART
 		{
 			controlEnabled = True
 		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.025
 		EVENTS
 		{
 		}
@@ -5944,10 +6564,10 @@ PART
 }
 PART
 {
-	part = IR.StrutDecoupler.Small_4294604902
+	part = IR.StrutDecoupler.Small_4294056448
 	partName = StrutConnector
-	pos = 0.4690682,21.23615,3.461791
-	rot = 8.429353E-08,0.7071064,-8.429362E-08,-0.7071073
+	pos = 0.4690677,21.23615,3.461791
+	rot = 8.429354E-08,0.7071065,-8.429362E-08,-0.7071073
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -5956,8 +6576,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	cData = tgt: History.V2instruments_0; pos: -2.818698,0.2350528,0.07472646; dir: -0.9961935,0.08307245,0.02641008
-	srfN = srfAttach,History.V2tower_4294606844
+	cData = tgt: History.V2instruments_0; pos: -2.818699,0.2350528,0.07472599; dir: -0.9961935,0.08307245,0.02641008
+	srfN = srfAttach,History.V2tower_4294058394
 	EVENTS
 	{
 	}
@@ -6000,6 +6620,25 @@ PART
 		{
 			controlEnabled = True
 		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.025
 		EVENTS
 		{
 		}

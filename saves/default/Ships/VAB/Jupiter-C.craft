@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = Fel.FASAExplorerProbe_4294320420
+	part = Fel.FASAExplorerProbe_4293778544
 	partName = Part
 	pos = 0.01498859,24.61613,0.5312352
 	rot = 0,0,0,1
@@ -16,8 +16,8 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt_4294315562
-	attN = bottom,Fel.FASAExplorerSgt_4294315562
+	link = Fel.FASAExplorerSgt_4293778422
+	attN = bottom,Fel.FASAExplorerSgt_4293778422
 	EVENTS
 	{
 	}
@@ -73,7 +73,7 @@ PART
 	{
 		name = ModuleReactionWheel
 		isEnabled = True
-		stateString = 
+		stateString = Active
 		WheelState = Active
 		EVENTS
 		{
@@ -600,7 +600,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt_4294315562
+	part = Fel.FASAExplorerSgt_4293778422
 	partName = Part
 	pos = 0.01498859,23.4156,0.5312352
 	rot = 0,0,0,1
@@ -612,9 +612,9 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt3Dec_4294300332
-	attN = top,Fel.FASAExplorerProbe_4294320420
-	attN = bottom,Fel.FASAExplorerSgt3Dec_4294300332
+	link = Fel.FASAExplorerSgt3Dec_4293778342
+	attN = top,Fel.FASAExplorerProbe_4293778544
+	attN = bottom,Fel.FASAExplorerSgt3Dec_4293778342
 	EVENTS
 	{
 	}
@@ -872,7 +872,7 @@ PART
 	RESOURCE
 	{
 		name = SolidFuel
-		amount = 0
+		amount = 13
 		maxAmount = 13
 		flowState = True
 		isTweakable = True
@@ -882,7 +882,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt3Dec_4294300332
+	part = Fel.FASAExplorerSgt3Dec_4293778342
 	partName = Part
 	pos = 0.01498859,22.91664,0.5312352
 	rot = 0,0,0,1
@@ -894,9 +894,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt3_4294297998
-	attN = top,Fel.FASAExplorerSgt_4294315562
-	attN = bottom,Fel.FASAExplorerSgt3_4294297998
+	link = Fel.FASAExplorerSgt3_4293778296
+	attN = top,Fel.FASAExplorerSgt_4293778422
+	attN = bottom,Fel.FASAExplorerSgt3_4293778296
 	EVENTS
 	{
 	}
@@ -966,7 +966,7 @@ PART
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
-		Decouple = 1
+		Decouple = 5
 		Mass = 0.01
 		EVENTS
 		{
@@ -989,7 +989,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt3_4294297998
+	part = Fel.FASAExplorerSgt3_4293778296
 	partName = Part
 	pos = 0.01498859,22.01117,0.5312352
 	rot = 0,0,0,1
@@ -1001,9 +1001,9 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt11Dec_4294289950
-	attN = top,Fel.FASAExplorerSgt11Dec_4294289950
-	attN = connect1,Fel.FASAExplorerSgt3Dec_4294300332
+	link = Fel.FASAExplorerSgt11Dec_4293778214
+	attN = top,Fel.FASAExplorerSgt11Dec_4293778214
+	attN = connect1,Fel.FASAExplorerSgt3Dec_4293778342
 	EVENTS
 	{
 	}
@@ -1245,7 +1245,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt11Dec_4294289950
+	part = Fel.FASAExplorerSgt11Dec_4293778214
 	partName = Part
 	pos = 0.01498859,22.86221,0.5312352
 	rot = 0,0,0,1
@@ -1257,9 +1257,9 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt11_4294288362
-	attN = top,Fel.FASAExplorerSgt3_4294297998
-	attN = bottom,Fel.FASAExplorerSgt11_4294288362
+	link = Fel.FASAExplorerSgt11_4293778168
+	attN = top,Fel.FASAExplorerSgt3_4293778296
+	attN = bottom,Fel.FASAExplorerSgt11_4293778168
 	EVENTS
 	{
 	}
@@ -1329,7 +1329,7 @@ PART
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
-		Decouple = 0.01
+		Decouple = -15
 		Mass = 0.005
 		EVENTS
 		{
@@ -1352,7 +1352,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt11_4294288362
+	part = Fel.FASAExplorerSgt11_4293778168
 	partName = Part
 	pos = 0.01498859,21.94306,0.5312352
 	rot = 0,0,0,1
@@ -1364,9 +1364,9 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerNosecone_4294264624
-	attN = top,Fel.FASAExplorerSgt11Dec_4294289950
-	attN = bottom,Fel.FASAExplorerNosecone_4294264624
+	link = Fel.FASAExplorerNosecone_4293778074
+	attN = top,Fel.FASAExplorerSgt11Dec_4293778214
+	attN = bottom,Fel.FASAExplorerNosecone_4293778074
 	EVENTS
 	{
 	}
@@ -1634,7 +1634,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerNosecone_4294264624
+	part = Fel.FASAExplorerNosecone_4293778074
 	partName = Part
 	pos = 0.01498859,20.56786,0.5312352
 	rot = 0,0,0,1
@@ -1646,9 +1646,9 @@ PART
 	sqor = 5
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerLFTLong_4294278678
-	attN = top,Fel.FASAExplorerSgt11_4294288362
-	attN = bottom,Fel.FASAExplorerLFTLong_4294278678
+	link = Fel.FASAExplorerLFTLong_4293750686
+	attN = top,Fel.FASAExplorerSgt11_4293778168
+	attN = bottom,Fel.FASAExplorerLFTLong_4293750686
 	EVENTS
 	{
 	}
@@ -1718,7 +1718,7 @@ PART
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
-		Decouple = 5
+		Decouple = 20
 		Mass = 0.1
 		EVENTS
 		{
@@ -1763,7 +1763,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerLFTLong_4294278678
+	part = Fel.FASAExplorerLFTLong_4293750686
 	partName = Part
 	pos = 0.01498859,14.62786,0.5312352
 	rot = 0,0,0,1
@@ -1774,10 +1774,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	modCost = 164.235
-	link = Fel.FASAExplorerLFTMed_4294254916
-	attN = top,Fel.FASAExplorerNosecone_4294264624
-	attN = bottom,Fel.FASAExplorerLFTMed_4294254916
+	modCost = 161.6399
+	link = Fel.FASAExplorerLFTMed_4293777992
+	attN = top,Fel.FASAExplorerNosecone_4293778074
+	attN = bottom,Fel.FASAExplorerLFTMed_4293777992
 	EVENTS
 	{
 	}
@@ -1790,9 +1790,9 @@ PART
 		isEnabled = True
 		type = Cryogenic
 		utilization = 86
-		mass = 0.4921126
-		timestamp = 0
-		volume = 15557
+		mass = 2.041698
+		timestamp = 163411.277858482
+		volume = 15413
 		type_UIEditor
 		{
 			controlEnabled = True
@@ -1845,7 +1845,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.295583
+		Mass = 1.85
 		EVENTS
 		{
 		}
@@ -1867,8 +1867,8 @@ PART
 	RESOURCE
 	{
 		name = LqdOxygen
-		amount = 3173
-		maxAmount = 3173
+		amount = 4817
+		maxAmount = 4817
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1877,8 +1877,8 @@ PART
 	RESOURCE
 	{
 		name = Hydyne
-		amount = 12384
-		maxAmount = 12384
+		amount = 10596
+		maxAmount = 10596
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1887,9 +1887,9 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerLFTMed_4294254916
+	part = Fel.FASAExplorerLFTMed_4293777992
 	partName = Part
-	pos = 0.01498859,7.427858,0.5312352
+	pos = 0.01498859,7.42786,0.5312352
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1899,9 +1899,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 90.41076
-	link = Fel.FASA.Mercury.Redstone.Eng_4294249942
-	attN = top,Fel.FASAExplorerLFTLong_4294278678
-	attN = bottom,Fel.FASA.Mercury.Redstone.Eng_4294249942
+	link = Fel.FASA.Mercury.Redstone.Eng_4293777954
+	attN = top,Fel.FASAExplorerLFTLong_4293750686
+	attN = bottom,Fel.FASA.Mercury.Redstone.Eng_4293777954
 	EVENTS
 	{
 	}
@@ -1914,8 +1914,8 @@ PART
 		isEnabled = True
 		type = Cryogenic
 		utilization = 86
-		mass = 0.2718
-		timestamp = 0
+		mass = 0.5008
+		timestamp = 163411.277858482
 		volume = 9000
 		type_UIEditor
 		{
@@ -1969,7 +1969,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.171
+		Mass = 10.7698
 		EVENTS
 		{
 		}
@@ -2001,9 +2001,9 @@ PART
 }
 PART
 {
-	part = Fel.FASA.Mercury.Redstone.Eng_4294249942
+	part = Fel.FASA.Mercury.Redstone.Eng_4293777954
 	partName = Part
-	pos = 0.01498859,3.457861,0.5312352
+	pos = 0.01498859,3.457863,0.5312352
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2013,13 +2013,13 @@ PART
 	sqor = 7
 	attm = 0
 	modCost = 0
-	link = Fel.FASAMercuryRedstoneFin_4294264978
-	link = Fel.FASAMercuryRedstoneFin_4294249102
-	link = Fel.FASAMercuryRedstoneFin_4294249054
-	link = Fel.FASAMercuryRedstoneFin_4294249006
-	link = FASAlaunchClamp125_4294099268
-	attN = top,Fel.FASAExplorerLFTMed_4294254916
-	attN = bottom,FASAlaunchClamp125_4294099268
+	link = Fel.FASAMercuryRedstoneFin_4293777850
+	link = Fel.FASAMercuryRedstoneFin_4293777806
+	link = Fel.FASAMercuryRedstoneFin_4293777762
+	link = Fel.FASAMercuryRedstoneFin_4293777718
+	link = FASAlaunchClamp125_4293777674
+	attN = top,Fel.FASAExplorerLFTMed_4293777992
+	attN = bottom,FASAlaunchClamp125_4293777674
 	EVENTS
 	{
 	}
@@ -2203,7 +2203,7 @@ PART
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 350
+		Thrust = 370
 		MaxTemp = 2200
 		CrashTol = 12
 		BreakForce = 250
@@ -2232,9 +2232,9 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4294264978
+	part = Fel.FASAMercuryRedstoneFin_4293777850
 	partName = Part
-	pos = -1.298939,3.446436,0.5312352
+	pos = -1.298939,3.446438,0.5312352
 	rot = -3.62199E-10,0,-8.744268E-10,-1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2244,10 +2244,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4294249102
-	sym = Fel.FASAMercuryRedstoneFin_4294249054
-	sym = Fel.FASAMercuryRedstoneFin_4294249006
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4294249942
+	sym = Fel.FASAMercuryRedstoneFin_4293777806
+	sym = Fel.FASAMercuryRedstoneFin_4293777762
+	sym = Fel.FASAMercuryRedstoneFin_4293777718
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293777954
 	EVENTS
 	{
 	}
@@ -2329,9 +2329,9 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4294249102
+	part = Fel.FASAMercuryRedstoneFin_4293777806
 	partName = Part
-	pos = 0.0149886,3.446436,1.845162
+	pos = 0.0149886,3.446438,1.845162
 	rot = -8.744266E-10,-0.7071068,-3.621997E-10,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2341,10 +2341,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4294264978
-	sym = Fel.FASAMercuryRedstoneFin_4294249054
-	sym = Fel.FASAMercuryRedstoneFin_4294249006
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4294249942
+	sym = Fel.FASAMercuryRedstoneFin_4293777850
+	sym = Fel.FASAMercuryRedstoneFin_4293777762
+	sym = Fel.FASAMercuryRedstoneFin_4293777718
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293777954
 	EVENTS
 	{
 	}
@@ -2426,9 +2426,9 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4294249054
+	part = Fel.FASAMercuryRedstoneFin_4293777762
 	partName = Part
-	pos = 1.328916,3.446436,0.531235
+	pos = 1.328916,3.446438,0.531235
 	rot = -8.744268E-10,-1,3.621991E-10,4.371139E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2438,10 +2438,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4294264978
-	sym = Fel.FASAMercuryRedstoneFin_4294249102
-	sym = Fel.FASAMercuryRedstoneFin_4294249006
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4294249942
+	sym = Fel.FASAMercuryRedstoneFin_4293777850
+	sym = Fel.FASAMercuryRedstoneFin_4293777806
+	sym = Fel.FASAMercuryRedstoneFin_4293777718
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293777954
 	EVENTS
 	{
 	}
@@ -2523,9 +2523,9 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4294249006
+	part = Fel.FASAMercuryRedstoneFin_4293777718
 	partName = Part
-	pos = 0.01498842,3.446436,-0.7826921
+	pos = 0.01498842,3.446438,-0.7826921
 	rot = -3.621997E-10,-0.7071068,8.744266E-10,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2535,10 +2535,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4294264978
-	sym = Fel.FASAMercuryRedstoneFin_4294249102
-	sym = Fel.FASAMercuryRedstoneFin_4294249054
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4294249942
+	sym = Fel.FASAMercuryRedstoneFin_4293777850
+	sym = Fel.FASAMercuryRedstoneFin_4293777806
+	sym = Fel.FASAMercuryRedstoneFin_4293777762
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293777954
 	EVENTS
 	{
 	}
@@ -2620,9 +2620,9 @@ PART
 }
 PART
 {
-	part = FASAlaunchClamp125_4294099268
+	part = FASAlaunchClamp125_4293777674
 	partName = Part
-	pos = 0.01498859,1.32831,0.5312352
+	pos = 0.01498859,1.328312,0.5312352
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2632,7 +2632,7 @@ PART
 	sqor = 6
 	attm = 0
 	modCost = 0
-	attN = top,Fel.FASA.Mercury.Redstone.Eng_4294249942
+	attN = top,Fel.FASA.Mercury.Redstone.Eng_4293777954
 	EVENTS
 	{
 	}
@@ -2643,8 +2643,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.074847
-		height = 2.564119
+		scaleFactor = 2.074852
+		height = 2.564121
 		towerRot = 0,0,0,1
 		EVENTS
 		{
@@ -2697,6 +2697,11 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		IGNITOR_RESOURCE
+		{
+			name = ElectricCharge
+			amount = 250
 		}
 	}
 }

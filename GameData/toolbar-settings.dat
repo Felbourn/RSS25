@@ -151,7 +151,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,sirkut2.IREditorGroupButton,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
 		}
 		toolbar_603955183
 		{
