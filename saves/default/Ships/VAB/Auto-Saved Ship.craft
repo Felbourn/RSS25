@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = r7.blok.a.sput_4294311134
+	part = r7.blok.a.sput_4293935748
 	partName = Part
 	pos = -0.2930298,13.15853,0.4191309
 	rot = 0,0,0,1
@@ -16,16 +16,16 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 3.042555
-	link = r7.blok.a.engine_4294310958
-	link = r7.blok.bvgd.sput_4294310646
-	link = r7.blok.bvgd.sput_4294310564
-	link = r7.blok.bvgd.sput_4294310482
-	link = r7.blok.bvgd.sput_4294310400
-	link = Fel.probeCoreHex_4294308094
-	link = proceduralNoseCone_4294307566
-	attN = top,proceduralNoseCone_4294307566
-	attN = bottom,r7.blok.a.engine_4294310958
-	attN = warhead,Fel.probeCoreHex_4294308094
+	link = r7.blok.a.engine_4293935572
+	link = r7.blok.bvgd.sput_4293935260
+	link = r7.blok.bvgd.sput_4293935178
+	link = r7.blok.bvgd.sput_4293935096
+	link = r7.blok.bvgd.sput_4293935014
+	link = Fel.probeCoreHex_4293932708
+	link = proceduralNoseCone_4293932180
+	attN = top,proceduralNoseCone_4293932180
+	attN = bottom,r7.blok.a.engine_4293935572
+	attN = warhead,Fel.probeCoreHex_4293932708
 	EVENTS
 	{
 	}
@@ -112,7 +112,7 @@ PART
 }
 PART
 {
-	part = r7.blok.a.engine_4294310958
+	part = r7.blok.a.engine_4293935572
 	partName = Part
 	pos = -0.2930298,1.829947,0.4191309
 	rot = 0,0,0,1
@@ -124,15 +124,15 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = r7.vernier.engine.v.fg_4294308598
-	link = r7.vernier.engine.v.fg_4294308472
-	link = r7.vernier.engine.v.fg_4294308346
-	link = r7.vernier.engine.v.fg_4294308220
-	attN = top,r7.blok.a.sput_4294311134
-	attN = 1,r7.vernier.engine.v.fg_4294308220
-	attN = 2,r7.vernier.engine.v.fg_4294308346
-	attN = 3,r7.vernier.engine.v.fg_4294308598
-	attN = 4,r7.vernier.engine.v.fg_4294308472
+	link = r7.vernier.engine.v.fg_4293933212
+	link = r7.vernier.engine.v.fg_4293933086
+	link = r7.vernier.engine.v.fg_4293932960
+	link = r7.vernier.engine.v.fg_4293932834
+	attN = top,r7.blok.a.sput_4293935748
+	attN = 1,r7.vernier.engine.v.fg_4293932834
+	attN = 2,r7.vernier.engine.v.fg_4293932960
+	attN = 3,r7.vernier.engine.v.fg_4293933212
+	attN = 4,r7.vernier.engine.v.fg_4293933086
 	EVENTS
 	{
 	}
@@ -391,7 +391,7 @@ PART
 }
 PART
 {
-	part = r7.blok.bvgd.sput_4294310646
+	part = r7.blok.bvgd.sput_4293935260
 	partName = Part
 	pos = -1.317624,15.29522,0.419131
 	rot = -1.368567E-07,0,2.612301E-06,-1
@@ -403,13 +403,13 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = -1.022758
-	link = r7.bvgd.engine_4294310140
-	link = launchClamp1_4294307938
-	sym = r7.blok.bvgd.sput_4294310564
-	sym = r7.blok.bvgd.sput_4294310482
-	sym = r7.blok.bvgd.sput_4294310400
-	srfN = srfAttach,r7.blok.a.sput_4294311134
-	attN = top,r7.bvgd.engine_4294310140
+	link = r7.bvgd.engine_4293934754
+	link = launchClamp1_4293932552
+	sym = r7.blok.bvgd.sput_4293935178
+	sym = r7.blok.bvgd.sput_4293935096
+	sym = r7.blok.bvgd.sput_4293935014
+	srfN = srfAttach,r7.blok.a.sput_4293935748
+	attN = top,r7.bvgd.engine_4293934754
 	EVENTS
 	{
 	}
@@ -592,7 +592,7 @@ PART
 }
 PART
 {
-	part = r7.blok.bvgd.sput_4294310564
+	part = r7.blok.bvgd.sput_4293935178
 	partName = Part
 	pos = -0.2930297,15.29522,1.443725
 	rot = 1.750404E-06,-0.7071068,1.943948E-06,-0.7071068
@@ -604,13 +604,13 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = -1.022758
-	link = r7.bvgd.engine_4294310318
-	link = launchClamp1_4294308050
-	sym = r7.blok.bvgd.sput_4294310646
-	sym = r7.blok.bvgd.sput_4294310482
-	sym = r7.blok.bvgd.sput_4294310400
-	srfN = srfAttach,r7.blok.a.sput_4294311134
-	attN = top,r7.bvgd.engine_4294310318
+	link = r7.bvgd.engine_4293934932
+	link = launchClamp1_4293932664
+	sym = r7.blok.bvgd.sput_4293935260
+	sym = r7.blok.bvgd.sput_4293935096
+	sym = r7.blok.bvgd.sput_4293935014
+	srfN = srfAttach,r7.blok.a.sput_4293935748
+	attN = top,r7.bvgd.engine_4293934932
 	EVENTS
 	{
 	}
@@ -793,7 +793,7 @@ PART
 }
 PART
 {
-	part = r7.blok.bvgd.sput_4294310482
+	part = r7.blok.bvgd.sput_4293935096
 	partName = Part
 	pos = 0.7315644,15.29522,0.4191306
 	rot = 2.612301E-06,-1,1.368566E-07,4.371139E-08
@@ -805,13 +805,13 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = -1.022758
-	link = r7.bvgd.engine_4294309962
-	link = launchClamp1_4294307826
-	sym = r7.blok.bvgd.sput_4294310646
-	sym = r7.blok.bvgd.sput_4294310564
-	sym = r7.blok.bvgd.sput_4294310400
-	srfN = srfAttach,r7.blok.a.sput_4294311134
-	attN = top,r7.bvgd.engine_4294309962
+	link = r7.bvgd.engine_4293934576
+	link = launchClamp1_4293932440
+	sym = r7.blok.bvgd.sput_4293935260
+	sym = r7.blok.bvgd.sput_4293935178
+	sym = r7.blok.bvgd.sput_4293935014
+	srfN = srfAttach,r7.blok.a.sput_4293935748
+	attN = top,r7.bvgd.engine_4293934576
 	EVENTS
 	{
 	}
@@ -994,7 +994,7 @@ PART
 }
 PART
 {
-	part = r7.blok.bvgd.sput_4294310400
+	part = r7.blok.bvgd.sput_4293935014
 	partName = Part
 	pos = -0.29303,15.29522,-0.605463
 	rot = 1.943948E-06,-0.7071068,-1.750404E-06,0.7071068
@@ -1006,13 +1006,13 @@ PART
 	sqor = 0
 	attm = 1
 	modCost = -1.022758
-	link = r7.bvgd.engine_4294309784
-	link = launchClamp1_4294307714
-	sym = r7.blok.bvgd.sput_4294310646
-	sym = r7.blok.bvgd.sput_4294310564
-	sym = r7.blok.bvgd.sput_4294310482
-	srfN = srfAttach,r7.blok.a.sput_4294311134
-	attN = top,r7.bvgd.engine_4294309784
+	link = r7.bvgd.engine_4293934398
+	link = launchClamp1_4293932328
+	sym = r7.blok.bvgd.sput_4293935260
+	sym = r7.blok.bvgd.sput_4293935178
+	sym = r7.blok.bvgd.sput_4293935096
+	srfN = srfAttach,r7.blok.a.sput_4293935748
+	attN = top,r7.bvgd.engine_4293934398
 	EVENTS
 	{
 	}
@@ -1195,7 +1195,7 @@ PART
 }
 PART
 {
-	part = r7.bvgd.engine_4294310318
+	part = r7.bvgd.engine_4293934932
 	partName = Part
 	pos = -0.2930333,2.16522,1.866971
 	rot = 0,0,0,1
@@ -1207,14 +1207,14 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = r7.vernier.engine.v.fg_4294309606
-	link = r7.vernier.engine.v.fg_4294309102
-	sym = r7.bvgd.engine_4294310140
-	sym = r7.bvgd.engine_4294309962
-	sym = r7.bvgd.engine_4294309784
-	attN = top,r7.blok.bvgd.sput_4294310564
-	attN = 1,r7.vernier.engine.v.fg_4294309606
-	attN = 2,r7.vernier.engine.v.fg_4294309102
+	link = r7.vernier.engine.v.fg_4293934220
+	link = r7.vernier.engine.v.fg_4293933716
+	sym = r7.bvgd.engine_4293934754
+	sym = r7.bvgd.engine_4293934576
+	sym = r7.bvgd.engine_4293934398
+	attN = top,r7.blok.bvgd.sput_4293935178
+	attN = 1,r7.vernier.engine.v.fg_4293934220
+	attN = 2,r7.vernier.engine.v.fg_4293933716
 	EVENTS
 	{
 	}
@@ -1473,7 +1473,7 @@ PART
 }
 PART
 {
-	part = r7.bvgd.engine_4294310140
+	part = r7.bvgd.engine_4293934754
 	partName = Part
 	pos = -1.74087,2.16522,0.4191274
 	rot = -1.367124E-13,-0.7071068,-6.97692E-14,0.7071068
@@ -1485,14 +1485,14 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = r7.vernier.engine.v.fg_4294309480
-	link = r7.vernier.engine.v.fg_4294308976
-	sym = r7.bvgd.engine_4294310318
-	sym = r7.bvgd.engine_4294309962
-	sym = r7.bvgd.engine_4294309784
-	attN = top,r7.blok.bvgd.sput_4294310646
-	attN = 1,r7.vernier.engine.v.fg_4294309480
-	attN = 2,r7.vernier.engine.v.fg_4294308976
+	link = r7.vernier.engine.v.fg_4293934094
+	link = r7.vernier.engine.v.fg_4293933590
+	sym = r7.bvgd.engine_4293934932
+	sym = r7.bvgd.engine_4293934576
+	sym = r7.bvgd.engine_4293934398
+	attN = top,r7.blok.bvgd.sput_4293935260
+	attN = 1,r7.vernier.engine.v.fg_4293934094
+	attN = 2,r7.vernier.engine.v.fg_4293933590
 	EVENTS
 	{
 	}
@@ -1751,10 +1751,10 @@ PART
 }
 PART
 {
-	part = r7.bvgd.engine_4294309962
+	part = r7.bvgd.engine_4293934576
 	partName = Part
 	pos = 1.154811,2.16522,0.4191342
-	rot = 7.160636E-14,0.7071068,2.859425E-13,0.7071068
+	rot = 7.160637E-14,0.7071068,5.133162E-13,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -1763,14 +1763,14 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = r7.vernier.engine.v.fg_4294309354
-	link = r7.vernier.engine.v.fg_4294308850
-	sym = r7.bvgd.engine_4294310318
-	sym = r7.bvgd.engine_4294310140
-	sym = r7.bvgd.engine_4294309784
-	attN = top,r7.blok.bvgd.sput_4294310482
-	attN = 1,r7.vernier.engine.v.fg_4294309354
-	attN = 2,r7.vernier.engine.v.fg_4294308850
+	link = r7.vernier.engine.v.fg_4293933968
+	link = r7.vernier.engine.v.fg_4293933464
+	sym = r7.bvgd.engine_4293934932
+	sym = r7.bvgd.engine_4293934754
+	sym = r7.bvgd.engine_4293934398
+	attN = top,r7.blok.bvgd.sput_4293935096
+	attN = 1,r7.vernier.engine.v.fg_4293933968
+	attN = 2,r7.vernier.engine.v.fg_4293933464
 	EVENTS
 	{
 	}
@@ -2029,7 +2029,7 @@ PART
 }
 PART
 {
-	part = r7.bvgd.engine_4294309784
+	part = r7.bvgd.engine_4293934398
 	partName = Part
 	pos = -0.2930263,2.16522,-1.02871
 	rot = 0,1,0,2.817212E-17
@@ -2041,14 +2041,14 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = r7.vernier.engine.v.fg_4294309228
-	link = r7.vernier.engine.v.fg_4294308724
-	sym = r7.bvgd.engine_4294310318
-	sym = r7.bvgd.engine_4294310140
-	sym = r7.bvgd.engine_4294309962
-	attN = top,r7.blok.bvgd.sput_4294310400
-	attN = 1,r7.vernier.engine.v.fg_4294309228
-	attN = 2,r7.vernier.engine.v.fg_4294308724
+	link = r7.vernier.engine.v.fg_4293933842
+	link = r7.vernier.engine.v.fg_4293933338
+	sym = r7.bvgd.engine_4293934932
+	sym = r7.bvgd.engine_4293934754
+	sym = r7.bvgd.engine_4293934576
+	attN = top,r7.blok.bvgd.sput_4293935014
+	attN = 1,r7.vernier.engine.v.fg_4293933842
+	attN = 2,r7.vernier.engine.v.fg_4293933338
 	EVENTS
 	{
 	}
@@ -2307,9 +2307,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294309606
+	part = r7.vernier.engine.v.fg_4293934220
 	partName = Part
-	pos = 0.2539436,1.300599,3.920928
+	pos = 0.2539438,1.300599,3.92093
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2319,10 +2319,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309480
-	sym = r7.vernier.engine.v.fg_4294309354
-	sym = r7.vernier.engine.v.fg_4294309228
-	attN = top,r7.bvgd.engine_4294310318
+	sym = r7.vernier.engine.v.fg_4293934094
+	sym = r7.vernier.engine.v.fg_4293933968
+	sym = r7.vernier.engine.v.fg_4293933842
+	attN = top,r7.bvgd.engine_4293934932
 	EVENTS
 	{
 	}
@@ -2651,9 +2651,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294309480
+	part = r7.vernier.engine.v.fg_4293934094
 	partName = Part
-	pos = -3.794827,1.300599,0.9661039
+	pos = -3.794827,1.300599,0.9661041
 	rot = -1.367124E-13,-0.7071068,-6.97692E-14,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2663,10 +2663,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309606
-	sym = r7.vernier.engine.v.fg_4294309354
-	sym = r7.vernier.engine.v.fg_4294309228
-	attN = top,r7.bvgd.engine_4294310140
+	sym = r7.vernier.engine.v.fg_4293934220
+	sym = r7.vernier.engine.v.fg_4293933968
+	sym = r7.vernier.engine.v.fg_4293933842
+	attN = top,r7.bvgd.engine_4293934754
 	EVENTS
 	{
 	}
@@ -2995,9 +2995,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294309354
+	part = r7.vernier.engine.v.fg_4293933968
 	partName = Part
-	pos = 3.208766,1.300599,-0.1278425
+	pos = 3.208766,1.300599,-0.1278427
 	rot = 7.160636E-14,0.7071068,2.859425E-13,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3007,10 +3007,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309606
-	sym = r7.vernier.engine.v.fg_4294309480
-	sym = r7.vernier.engine.v.fg_4294309228
-	attN = top,r7.bvgd.engine_4294309962
+	sym = r7.vernier.engine.v.fg_4293934220
+	sym = r7.vernier.engine.v.fg_4293934094
+	sym = r7.vernier.engine.v.fg_4293933842
+	attN = top,r7.bvgd.engine_4293934576
 	EVENTS
 	{
 	}
@@ -3339,9 +3339,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294309228
+	part = r7.vernier.engine.v.fg_4293933842
 	partName = Part
-	pos = -0.8400025,1.300599,-3.082664
+	pos = -0.8400029,1.300599,-3.082664
 	rot = 0,1,0,2.817212E-17
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3351,10 +3351,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309606
-	sym = r7.vernier.engine.v.fg_4294309480
-	sym = r7.vernier.engine.v.fg_4294309354
-	attN = top,r7.bvgd.engine_4294309784
+	sym = r7.vernier.engine.v.fg_4293934220
+	sym = r7.vernier.engine.v.fg_4293934094
+	sym = r7.vernier.engine.v.fg_4293933968
+	attN = top,r7.bvgd.engine_4293934398
 	EVENTS
 	{
 	}
@@ -3683,9 +3683,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294309102
+	part = r7.vernier.engine.v.fg_4293933716
 	partName = Part
-	pos = -0.8363875,1.300599,3.920928
+	pos = -0.8363876,1.300599,3.920928
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3695,10 +3695,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294308976
-	sym = r7.vernier.engine.v.fg_4294308850
-	sym = r7.vernier.engine.v.fg_4294308724
-	attN = top,r7.bvgd.engine_4294310318
+	sym = r7.vernier.engine.v.fg_4293933590
+	sym = r7.vernier.engine.v.fg_4293933464
+	sym = r7.vernier.engine.v.fg_4293933338
+	attN = top,r7.bvgd.engine_4293934932
 	EVENTS
 	{
 	}
@@ -4027,9 +4027,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308976
+	part = r7.vernier.engine.v.fg_4293933590
 	partName = Part
-	pos = -3.794827,1.300599,-0.1242272
+	pos = -3.794827,1.300599,-0.1242274
 	rot = -1.367124E-13,-0.7071068,-6.97692E-14,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4039,10 +4039,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309102
-	sym = r7.vernier.engine.v.fg_4294308850
-	sym = r7.vernier.engine.v.fg_4294308724
-	attN = top,r7.bvgd.engine_4294310140
+	sym = r7.vernier.engine.v.fg_4293933716
+	sym = r7.vernier.engine.v.fg_4293933464
+	sym = r7.vernier.engine.v.fg_4293933338
+	attN = top,r7.bvgd.engine_4293934754
 	EVENTS
 	{
 	}
@@ -4371,9 +4371,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308850
+	part = r7.vernier.engine.v.fg_4293933464
 	partName = Part
-	pos = 3.208766,1.300599,0.9624887
+	pos = 3.208766,1.300599,0.962489
 	rot = 7.160636E-14,0.7071068,2.859425E-13,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4383,10 +4383,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309102
-	sym = r7.vernier.engine.v.fg_4294308976
-	sym = r7.vernier.engine.v.fg_4294308724
-	attN = top,r7.bvgd.engine_4294309962
+	sym = r7.vernier.engine.v.fg_4293933716
+	sym = r7.vernier.engine.v.fg_4293933590
+	sym = r7.vernier.engine.v.fg_4293933338
+	attN = top,r7.bvgd.engine_4293934576
 	EVENTS
 	{
 	}
@@ -4715,9 +4715,9 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308724
+	part = r7.vernier.engine.v.fg_4293933338
 	partName = Part
-	pos = 0.2503284,1.300599,-3.082666
+	pos = 0.2503287,1.300599,-3.082668
 	rot = 0,1,0,2.817212E-17
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4727,10 +4727,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294309102
-	sym = r7.vernier.engine.v.fg_4294308976
-	sym = r7.vernier.engine.v.fg_4294308850
-	attN = top,r7.bvgd.engine_4294309784
+	sym = r7.vernier.engine.v.fg_4293933716
+	sym = r7.vernier.engine.v.fg_4293933590
+	sym = r7.vernier.engine.v.fg_4293933464
+	attN = top,r7.bvgd.engine_4293934398
 	EVENTS
 	{
 	}
@@ -5059,7 +5059,7 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308598
+	part = r7.vernier.engine.v.fg_4293933212
 	partName = Part
 	pos = -0.2930298,1.260283,-0.6821482
 	rot = 0,0,0,1
@@ -5071,8 +5071,8 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294308472
-	attN = top,r7.blok.a.engine_4294310958
+	sym = r7.vernier.engine.v.fg_4293933086
+	attN = top,r7.blok.a.engine_4293935572
 	EVENTS
 	{
 	}
@@ -5401,7 +5401,7 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308472
+	part = r7.vernier.engine.v.fg_4293933086
 	partName = Part
 	pos = -0.2930298,1.260283,1.52041
 	rot = 0,1,0,-4.371139E-08
@@ -5413,8 +5413,8 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294308598
-	attN = top,r7.blok.a.engine_4294310958
+	sym = r7.vernier.engine.v.fg_4293933212
+	attN = top,r7.blok.a.engine_4293935572
 	EVENTS
 	{
 	}
@@ -5743,7 +5743,7 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308346
+	part = r7.vernier.engine.v.fg_4293932960
 	partName = Part
 	pos = -1.394309,1.260283,0.4191309
 	rot = 0,0,0,1
@@ -5755,8 +5755,8 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294308220
-	attN = top,r7.blok.a.engine_4294310958
+	sym = r7.vernier.engine.v.fg_4293932834
+	attN = top,r7.blok.a.engine_4293935572
 	EVENTS
 	{
 	}
@@ -6085,7 +6085,7 @@ PART
 }
 PART
 {
-	part = r7.vernier.engine.v.fg_4294308220
+	part = r7.vernier.engine.v.fg_4293932834
 	partName = Part
 	pos = 0.8082492,1.260283,0.4191309
 	rot = 0,1,0,-4.371139E-08
@@ -6097,8 +6097,8 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	sym = r7.vernier.engine.v.fg_4294308346
-	attN = top,r7.blok.a.engine_4294310958
+	sym = r7.vernier.engine.v.fg_4293932960
+	attN = top,r7.blok.a.engine_4293935572
 	EVENTS
 	{
 	}
@@ -6427,7 +6427,7 @@ PART
 }
 PART
 {
-	part = Fel.probeCoreHex_4294308094
+	part = Fel.probeCoreHex_4293932708
 	partName = Part
 	pos = -0.2930298,28.40603,0.4191309
 	rot = 0,0,0,1
@@ -6439,9 +6439,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = Fel.FASAICBMMIRV_4294307602
-	attN = bottom,r7.blok.a.sput_4294311134
-	attN = top,Fel.FASAICBMMIRV_4294307602
+	link = Fel.FASAICBMMIRV_4293932216
+	attN = bottom,r7.blok.a.sput_4293935748
+	attN = top,Fel.FASAICBMMIRV_4293932216
 	EVENTS
 	{
 	}
@@ -6556,12 +6556,43 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleTargetController
+			MechJebModuleCustomWindowEditor
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleSettings
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -6616,23 +6647,12 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleThrustWindow
+			MechJebModuleSettings
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointWindow
+			MechJebModuleTargetController
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -6642,37 +6662,17 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleRendezvousGuidance
+			MechJebModuleWaypointWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleJokeObscurePanel
+			MechJebModuleThrustWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
+			ModExtensionDemo
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -6785,9 +6785,9 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294308050
+	part = launchClamp1_4293932664
 	partName = Part
-	pos = -0.297241,1.842422,5.139509
+	pos = -0.297241,1.842422,5.139511
 	rot = -0.001554177,-0.9995465,0.0300778,-4.669866E-05
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -6797,10 +6797,10 @@ PART
 	sqor = 1
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294307938
-	sym = launchClamp1_4294307826
-	sym = launchClamp1_4294307714
-	srfN = srfAttach,r7.blok.bvgd.sput_4294310564
+	sym = launchClamp1_4293932552
+	sym = launchClamp1_4293932440
+	sym = launchClamp1_4293932328
+	srfN = srfAttach,r7.blok.bvgd.sput_4293935178
 	EVENTS
 	{
 	}
@@ -6813,7 +6813,7 @@ PART
 		isEnabled = True
 		scaleFactor = 1.013572
 		height = 2.557442
-		towerRot = 0.001554176,0.9995463,-0.0300778,-4.669865E-05
+		towerRot = 0.001554176,0.9995463,-0.03007779,-4.669865E-05
 		EVENTS
 		{
 			Release
@@ -6930,7 +6930,7 @@ PART
 		isEnabled = True
 		enablePump = False
 		pump_rate = 100
-		timestamp = 0
+		timestamp = 164465.968883388
 		EVENTS
 		{
 			TogglePump
@@ -6953,7 +6953,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294307938
+	part = launchClamp1_4293932552
 	partName = Part
 	pos = -5.013407,1.842422,0.4149192
 	rot = -0.02236719,-0.706753,0.02016925,-0.7068191
@@ -6965,10 +6965,10 @@ PART
 	sqor = 1
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294308050
-	sym = launchClamp1_4294307826
-	sym = launchClamp1_4294307714
-	srfN = srfAttach,r7.blok.bvgd.sput_4294310646
+	sym = launchClamp1_4293932664
+	sym = launchClamp1_4293932440
+	sym = launchClamp1_4293932328
+	srfN = srfAttach,r7.blok.bvgd.sput_4293935260
 	EVENTS
 	{
 	}
@@ -7098,7 +7098,7 @@ PART
 		isEnabled = True
 		enablePump = False
 		pump_rate = 100
-		timestamp = 0
+		timestamp = 164465.968883388
 		EVENTS
 		{
 			TogglePump
@@ -7121,7 +7121,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294307826
+	part = launchClamp1_4293932440
 	partName = Part
 	pos = 4.427347,1.842422,0.423342
 	rot = 0.02016925,-0.7068191,0.02236719,0.706753
@@ -7133,10 +7133,10 @@ PART
 	sqor = 1
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294308050
-	sym = launchClamp1_4294307938
-	sym = launchClamp1_4294307714
-	srfN = srfAttach,r7.blok.bvgd.sput_4294310482
+	sym = launchClamp1_4293932664
+	sym = launchClamp1_4293932552
+	sym = launchClamp1_4293932328
+	srfN = srfAttach,r7.blok.bvgd.sput_4293935096
 	EVENTS
 	{
 	}
@@ -7266,7 +7266,7 @@ PART
 		isEnabled = True
 		enablePump = False
 		pump_rate = 100
-		timestamp = 0
+		timestamp = 164465.968883388
 		EVENTS
 		{
 			TogglePump
@@ -7289,9 +7289,9 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294307714
+	part = launchClamp1_4293932328
 	partName = Part
-	pos = -0.2888178,1.842422,-4.301249
+	pos = -0.2888178,1.842422,-4.301251
 	rot = 0.03007781,-4.669866E-05,0.001554177,0.9995465
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -7301,10 +7301,10 @@ PART
 	sqor = 1
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294308050
-	sym = launchClamp1_4294307938
-	sym = launchClamp1_4294307826
-	srfN = srfAttach,r7.blok.bvgd.sput_4294310400
+	sym = launchClamp1_4293932664
+	sym = launchClamp1_4293932552
+	sym = launchClamp1_4293932440
+	srfN = srfAttach,r7.blok.bvgd.sput_4293935014
 	EVENTS
 	{
 	}
@@ -7434,7 +7434,7 @@ PART
 		isEnabled = True
 		enablePump = False
 		pump_rate = 100
-		timestamp = 0
+		timestamp = 164465.968883388
 		EVENTS
 		{
 			TogglePump
@@ -7457,7 +7457,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAICBMMIRV_4294307602
+	part = Fel.FASAICBMMIRV_4293932216
 	partName = Part
 	pos = -0.2930298,28.59106,0.4191309
 	rot = 0,0,0,1
@@ -7469,7 +7469,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 2.791935E+07
-	attN = bottom,Fel.probeCoreHex_4294308094
+	attN = bottom,Fel.probeCoreHex_4293932708
 	EVENTS
 	{
 	}
@@ -7574,7 +7574,7 @@ PART
 }
 PART
 {
-	part = proceduralNoseCone_4294307566
+	part = proceduralNoseCone_4293932180
 	partName = Part
 	pos = -0.2930298,29.95749,0.4191309
 	rot = 0,0,0,1
@@ -7586,7 +7586,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0.08832221
-	attN = bottom,r7.blok.a.sput_4294311134
+	attN = bottom,r7.blok.a.sput_4293935748
 	EVENTS
 	{
 	}

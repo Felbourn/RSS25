@@ -33,6 +33,7 @@ GameData/HGR/*
 GameData/HullCameraVDS/*
 GameData/JSI/*
 GameData/KerbCam/*
+GameData/KerbalIspDifficultyScaler/*
 GameData/KerbalTek/*
 GameData/KWRocketry/*
 GameData/MechJeb2/*
@@ -43,6 +44,7 @@ GameData/ModuleRCSFX/*
 GameData/NASAmission/*
 GameData/NavyFish/*
 GameData/PartHighlighter/*
+GameData/PlanetShine/*
 GameData/ProceduralFairings/*
 GameData/ProceduralParts/*
 GameData/RCSBuildAid/*
