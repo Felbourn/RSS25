@@ -165,6 +165,18 @@ toolbars
 			buttonOrder = 
 			visibleButtons = Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
 		}
+		toolbar_706182934
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
 	}
 	FLIGHT
 	{
@@ -233,6 +245,21 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = 
 			visibleButtons = AmbientLightAdjustment.adjustLevels,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,sirkut2.IREditorGroupButton,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
+		}
+	}
+	SPH
+	{
+		toolbar_706182934
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
 		}
 	}
 }

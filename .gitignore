@@ -30,6 +30,7 @@ GameData/Firespitter/*
 GameData/Fusebox/*
 GameData/KerbalJointReinforcement/*
 GameData/HGR/*
+GameData/History/Flags/*
 GameData/HullCameraVDS/*
 GameData/JSI/*
 GameData/KerbCam/*
@@ -63,6 +64,7 @@ GameData/SelectRoot/*
 GameData/SimplePartOrganizer/*
 GameData/SmokeScreen/*
 GameData/StretchyTanks/*
+GameData/SurfaceLights/*
 GameData/Squad/*
 GameData/TacFuelBalancer/*
 GameData/Tantares/*
