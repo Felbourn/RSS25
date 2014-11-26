@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = His.sputnik1_4294298848
+	part = His.sputnik1_4294246034
 	partName = Part
 	pos = -0.08763398,30.36998,0.2664039
 	rot = 0,0,0,1
@@ -16,8 +16,8 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 1.41561E-06
-	link = His.SputBase_4294298640
-	attN = bottom,His.SputBase_4294298640
+	link = His.SputBase_4294245826
+	attN = bottom,His.SputBase_4294245826
 	EVENTS
 	{
 	}
@@ -450,7 +450,7 @@ PART
 }
 PART
 {
-	part = His.SputBase_4294298640
+	part = His.SputBase_4294245826
 	partName = Part
 	pos = -0.08763398,29.26998,0.2664039
 	rot = 0,0,0,1
@@ -462,11 +462,11 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	link = His.SputCore_4294298586
-	link = His.SputNose_4294295456
-	attN = sputnik,His.sputnik1_4294298848
-	attN = top,His.SputNose_4294295456
-	attN = b1,His.SputCore_4294298586
+	link = His.SputCore_4294245772
+	link = His.SputNose_4294242642
+	attN = sputnik,His.sputnik1_4294246034
+	attN = top,His.SputNose_4294242642
+	attN = b1,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -560,7 +560,7 @@ PART
 }
 PART
 {
-	part = His.SputCore_4294298586
+	part = His.SputCore_4294245772
 	partName = Part
 	pos = -0.08763398,13.72852,0.2664039
 	rot = 0,0,0,1
@@ -572,37 +572,37 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = -0.05913592
-	link = His.Sput108_4294298410
-	link = His.SputBoost_4294297704
-	link = His.SputBoost_4294297606
-	link = His.SputBoost_4294297508
-	link = His.SputBoost_4294297410
-	link = W485.SurfaceOmniLight_4294295096
-	link = W485.SurfaceOmniLight_4294295060
-	link = W485.SurfaceOmniLight_4294295024
-	link = W485.SurfaceOmniLight_4294294988
-	link = W485.SurfaceOmniLight_4294294952
-	link = W485.SurfaceOmniLight_4294294916
-	link = W485.SurfaceOmniLight_4294294880
-	link = W485.SurfaceOmniLight_4294294844
-	link = W485.SurfaceOmniLight_4294294808
-	link = W485.SurfaceOmniLight_4294294772
-	link = W485.SurfaceOmniLight_4294294736
-	link = W485.SurfaceOmniLight_4294294700
-	link = W485.SurfaceOmniLight_4294293944
-	link = W485.SurfaceOmniLight_4294293908
-	link = W485.SurfaceOmniLight_4294293872
-	link = W485.SurfaceOmniLight_4294293836
-	link = W485.SurfaceOmniLight_4294293800
-	link = W485.SurfaceOmniLight_4294293764
-	link = W485.SurfaceOmniLight_4294293728
-	link = W485.SurfaceOmniLight_4294293692
-	link = W485.SurfaceOmniLight_4294293656
-	link = W485.SurfaceOmniLight_4294293620
-	link = W485.SurfaceOmniLight_4294293584
-	link = W485.SurfaceOmniLight_4294293548
-	attN = top,His.SputBase_4294298640
-	attN = bottom,His.Sput108_4294298410
+	link = His.Sput108_4294245596
+	link = His.SputBoost_4294244890
+	link = His.SputBoost_4294244792
+	link = His.SputBoost_4294244694
+	link = His.SputBoost_4294244596
+	link = W485.SurfaceOmniLight_4294242282
+	link = W485.SurfaceOmniLight_4294242246
+	link = W485.SurfaceOmniLight_4294242210
+	link = W485.SurfaceOmniLight_4294242174
+	link = W485.SurfaceOmniLight_4294242138
+	link = W485.SurfaceOmniLight_4294242102
+	link = W485.SurfaceOmniLight_4294242066
+	link = W485.SurfaceOmniLight_4294242030
+	link = W485.SurfaceOmniLight_4294241994
+	link = W485.SurfaceOmniLight_4294241958
+	link = W485.SurfaceOmniLight_4294241922
+	link = W485.SurfaceOmniLight_4294241886
+	link = W485.SurfaceOmniLight_4294241130
+	link = W485.SurfaceOmniLight_4294241094
+	link = W485.SurfaceOmniLight_4294241058
+	link = W485.SurfaceOmniLight_4294241022
+	link = W485.SurfaceOmniLight_4294240986
+	link = W485.SurfaceOmniLight_4294240950
+	link = W485.SurfaceOmniLight_4294240914
+	link = W485.SurfaceOmniLight_4294240878
+	link = W485.SurfaceOmniLight_4294240842
+	link = W485.SurfaceOmniLight_4294240806
+	link = W485.SurfaceOmniLight_4294240770
+	link = W485.SurfaceOmniLight_4294240734
+	attN = top,His.SputBase_4294245826
+	attN = bottom,His.Sput108_4294245596
 	EVENTS
 	{
 	}
@@ -620,7 +620,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 97.86991
+		Mass = 97.89288
 		EVENTS
 		{
 		}
@@ -689,7 +689,7 @@ PART
 }
 PART
 {
-	part = His.Sput108_4294298410
+	part = His.Sput108_4294245596
 	partName = Part
 	pos = -0.08763398,2.399933,0.2664039
 	rot = 0,0,0,1
@@ -701,15 +701,15 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294298144
-	link = His.SputVern_4294298034
-	link = His.SputVern_4294297924
-	link = His.SputVern_4294297814
-	attN = top,His.SputCore_4294298586
-	attN = 1,His.SputVern_4294297924
-	attN = 2,His.SputVern_4294297814
-	attN = 3,His.SputVern_4294298034
-	attN = 4,His.SputVern_4294298144
+	link = His.SputVern_4294245330
+	link = His.SputVern_4294245220
+	link = His.SputVern_4294245110
+	link = His.SputVern_4294245000
+	attN = top,His.SputCore_4294245772
+	attN = 1,His.SputVern_4294245110
+	attN = 2,His.SputVern_4294245000
+	attN = 3,His.SputVern_4294245220
+	attN = 4,His.SputVern_4294245330
 	EVENTS
 	{
 	}
@@ -879,7 +879,7 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294298144
+	part = His.SputVern_4294245330
 	partName = Part
 	pos = -0.08763398,1.830271,1.367683
 	rot = 0,0.7071068,0,-0.7071068
@@ -891,8 +891,8 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294298034
-	attN = top,His.Sput108_4294298410
+	sym = His.SputVern_4294245220
+	attN = top,His.Sput108_4294245596
 	EVENTS
 	{
 	}
@@ -1167,7 +1167,7 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294298034
+	part = His.SputVern_4294245220
 	partName = Part
 	pos = -0.08763398,1.830271,-0.8348751
 	rot = 0,-0.7071068,0,-0.7071068
@@ -1179,8 +1179,8 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294298144
-	attN = top,His.Sput108_4294298410
+	sym = His.SputVern_4294245330
+	attN = top,His.Sput108_4294245596
 	EVENTS
 	{
 	}
@@ -1455,7 +1455,7 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294297924
+	part = His.SputVern_4294245110
 	partName = Part
 	pos = 1.013645,1.830271,0.2664039
 	rot = 0,0,0,-1
@@ -1467,8 +1467,8 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294297814
-	attN = top,His.Sput108_4294298410
+	sym = His.SputVern_4294245000
+	attN = top,His.Sput108_4294245596
 	EVENTS
 	{
 	}
@@ -1743,7 +1743,7 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294297814
+	part = His.SputVern_4294245000
 	partName = Part
 	pos = -1.188913,1.830271,0.2664039
 	rot = 0,-1,0,4.371139E-08
@@ -1755,8 +1755,8 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294297924
-	attN = top,His.Sput108_4294298410
+	sym = His.SputVern_4294245110
+	attN = top,His.Sput108_4294245596
 	EVENTS
 	{
 	}
@@ -2031,7 +2031,7 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294297704
+	part = His.SputBoost_4294244890
 	partName = Part
 	pos = -1.113922,16.0666,0.266404
 	rot = -1.368567E-07,0,2.612301E-06,-1
@@ -2042,21 +2042,21 @@ PART
 	sidx = 0
 	sqor = 2
 	attm = 1
-	modCost = 2.785721
-	link = His.Sput107_4294297180
-	link = launchClamp1_4294295904
-	link = W485.SurfaceOmniLight_4294295384
-	link = W485.SurfaceOmniLight_4294295240
-	link = W485.SurfaceOmniLight_4294294664
-	link = W485.SurfaceOmniLight_4294294520
-	link = W485.SurfaceOmniLight_4294294376
-	link = W485.SurfaceOmniLight_4294294232
-	link = W485.SurfaceOmniLight_4294294088
-	sym = His.SputBoost_4294297606
-	sym = His.SputBoost_4294297508
-	sym = His.SputBoost_4294297410
-	srfN = srfAttach,His.SputCore_4294298586
-	attN = top,His.Sput107_4294297180
+	modCost = 5.989721
+	link = His.Sput107_4294244366
+	link = launchClamp1_4294243090
+	link = W485.SurfaceOmniLight_4294242570
+	link = W485.SurfaceOmniLight_4294242426
+	link = W485.SurfaceOmniLight_4294241850
+	link = W485.SurfaceOmniLight_4294241706
+	link = W485.SurfaceOmniLight_4294241562
+	link = W485.SurfaceOmniLight_4294241418
+	link = W485.SurfaceOmniLight_4294241274
+	sym = His.SputBoost_4294244792
+	sym = His.SputBoost_4294244694
+	sym = His.SputBoost_4294244596
+	srfN = srfAttach,His.SputCore_4294245772
+	attN = top,His.Sput107_4294244366
 	EVENTS
 	{
 	}
@@ -2239,7 +2239,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 100
-		Mass = 41.49191
+		Mass = 41.54314
 		EVENTS
 		{
 		}
@@ -2288,8 +2288,8 @@ PART
 	RESOURCE
 	{
 		name = SolidFuel
-		amount = 10
-		maxAmount = 10
+		amount = 18
+		maxAmount = 18
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2318,7 +2318,7 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294297606
+	part = His.SputBoost_4294244792
 	partName = Part
 	pos = -0.08763398,16.0666,1.292692
 	rot = 1.750404E-06,-0.7071068,1.943948E-06,-0.7071068
@@ -2329,21 +2329,21 @@ PART
 	sidx = 1
 	sqor = 2
 	attm = 1
-	modCost = 2.785721
-	link = His.Sput107_4294297312
-	link = launchClamp1_4294295792
-	link = W485.SurfaceOmniLight_4294295348
-	link = W485.SurfaceOmniLight_4294295204
-	link = W485.SurfaceOmniLight_4294294628
-	link = W485.SurfaceOmniLight_4294294484
-	link = W485.SurfaceOmniLight_4294294340
-	link = W485.SurfaceOmniLight_4294294196
-	link = W485.SurfaceOmniLight_4294294052
-	sym = His.SputBoost_4294297704
-	sym = His.SputBoost_4294297508
-	sym = His.SputBoost_4294297410
-	srfN = srfAttach,His.SputCore_4294298586
-	attN = top,His.Sput107_4294297312
+	modCost = 5.989721
+	link = His.Sput107_4294244498
+	link = launchClamp1_4294242978
+	link = W485.SurfaceOmniLight_4294242534
+	link = W485.SurfaceOmniLight_4294242390
+	link = W485.SurfaceOmniLight_4294241814
+	link = W485.SurfaceOmniLight_4294241670
+	link = W485.SurfaceOmniLight_4294241526
+	link = W485.SurfaceOmniLight_4294241382
+	link = W485.SurfaceOmniLight_4294241238
+	sym = His.SputBoost_4294244890
+	sym = His.SputBoost_4294244694
+	sym = His.SputBoost_4294244596
+	srfN = srfAttach,His.SputCore_4294245772
+	attN = top,His.Sput107_4294244498
 	EVENTS
 	{
 	}
@@ -2526,7 +2526,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 100
-		Mass = 41.49191
+		Mass = 41.54314
 		EVENTS
 		{
 		}
@@ -2575,8 +2575,8 @@ PART
 	RESOURCE
 	{
 		name = SolidFuel
-		amount = 10
-		maxAmount = 10
+		amount = 18
+		maxAmount = 18
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2605,7 +2605,7 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294297508
+	part = His.SputBoost_4294244694
 	partName = Part
 	pos = 0.9386544,16.0666,0.2664038
 	rot = 2.612301E-06,-1,1.368566E-07,4.371139E-08
@@ -2616,21 +2616,21 @@ PART
 	sidx = 2
 	sqor = 2
 	attm = 1
-	modCost = 2.785721
-	link = His.Sput107_4294297048
-	link = launchClamp1_4294295680
-	link = W485.SurfaceOmniLight_4294295312
-	link = W485.SurfaceOmniLight_4294295168
-	link = W485.SurfaceOmniLight_4294294592
-	link = W485.SurfaceOmniLight_4294294448
-	link = W485.SurfaceOmniLight_4294294304
-	link = W485.SurfaceOmniLight_4294294160
-	link = W485.SurfaceOmniLight_4294294016
-	sym = His.SputBoost_4294297704
-	sym = His.SputBoost_4294297606
-	sym = His.SputBoost_4294297410
-	srfN = srfAttach,His.SputCore_4294298586
-	attN = top,His.Sput107_4294297048
+	modCost = 5.989721
+	link = His.Sput107_4294244234
+	link = launchClamp1_4294242866
+	link = W485.SurfaceOmniLight_4294242498
+	link = W485.SurfaceOmniLight_4294242354
+	link = W485.SurfaceOmniLight_4294241778
+	link = W485.SurfaceOmniLight_4294241634
+	link = W485.SurfaceOmniLight_4294241490
+	link = W485.SurfaceOmniLight_4294241346
+	link = W485.SurfaceOmniLight_4294241202
+	sym = His.SputBoost_4294244890
+	sym = His.SputBoost_4294244792
+	sym = His.SputBoost_4294244596
+	srfN = srfAttach,His.SputCore_4294245772
+	attN = top,His.Sput107_4294244234
 	EVENTS
 	{
 	}
@@ -2813,7 +2813,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 100
-		Mass = 41.49191
+		Mass = 41.54314
 		EVENTS
 		{
 		}
@@ -2862,8 +2862,8 @@ PART
 	RESOURCE
 	{
 		name = SolidFuel
-		amount = 10
-		maxAmount = 10
+		amount = 18
+		maxAmount = 18
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2892,7 +2892,7 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294297410
+	part = His.SputBoost_4294244596
 	partName = Part
 	pos = -0.08763409,16.0666,-0.7598841
 	rot = 1.943948E-06,-0.7071068,-1.750404E-06,0.7071068
@@ -2903,21 +2903,21 @@ PART
 	sidx = 3
 	sqor = 2
 	attm = 1
-	modCost = 2.785721
-	link = His.Sput107_4294296916
-	link = launchClamp1_4294295568
-	link = W485.SurfaceOmniLight_4294295276
-	link = W485.SurfaceOmniLight_4294295132
-	link = W485.SurfaceOmniLight_4294294556
-	link = W485.SurfaceOmniLight_4294294412
-	link = W485.SurfaceOmniLight_4294294268
-	link = W485.SurfaceOmniLight_4294294124
-	link = W485.SurfaceOmniLight_4294293980
-	sym = His.SputBoost_4294297704
-	sym = His.SputBoost_4294297606
-	sym = His.SputBoost_4294297508
-	srfN = srfAttach,His.SputCore_4294298586
-	attN = top,His.Sput107_4294296916
+	modCost = 5.989721
+	link = His.Sput107_4294244102
+	link = launchClamp1_4294242754
+	link = W485.SurfaceOmniLight_4294242462
+	link = W485.SurfaceOmniLight_4294242318
+	link = W485.SurfaceOmniLight_4294241742
+	link = W485.SurfaceOmniLight_4294241598
+	link = W485.SurfaceOmniLight_4294241454
+	link = W485.SurfaceOmniLight_4294241310
+	link = W485.SurfaceOmniLight_4294241166
+	sym = His.SputBoost_4294244890
+	sym = His.SputBoost_4294244792
+	sym = His.SputBoost_4294244694
+	srfN = srfAttach,His.SputCore_4294245772
+	attN = top,His.Sput107_4294244102
 	EVENTS
 	{
 	}
@@ -3100,7 +3100,7 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 100
-		Mass = 41.49191
+		Mass = 41.54314
 		EVENTS
 		{
 		}
@@ -3149,8 +3149,8 @@ PART
 	RESOURCE
 	{
 		name = SolidFuel
-		amount = 10
-		maxAmount = 10
+		amount = 18
+		maxAmount = 18
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -3179,7 +3179,7 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294297312
+	part = His.Sput107_4294244498
 	partName = Part
 	pos = -0.08763748,2.937401,1.711936
 	rot = 0,0,0,1
@@ -3191,14 +3191,14 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294296784
-	link = His.SputVern_4294296344
-	sym = His.Sput107_4294297180
-	sym = His.Sput107_4294297048
-	sym = His.Sput107_4294296916
-	attN = top,His.SputBoost_4294297606
-	attN = 1,His.SputVern_4294296784
-	attN = 2,His.SputVern_4294296344
+	link = His.SputVern_4294243970
+	link = His.SputVern_4294243530
+	sym = His.Sput107_4294244366
+	sym = His.Sput107_4294244234
+	sym = His.Sput107_4294244102
+	attN = top,His.SputBoost_4294244792
+	attN = 1,His.SputVern_4294243970
+	attN = 2,His.SputVern_4294243530
 	EVENTS
 	{
 	}
@@ -3368,7 +3368,7 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294297180
+	part = His.Sput107_4294244366
 	partName = Part
 	pos = -1.533166,2.937401,0.2664004
 	rot = -1.367124E-13,-0.7071068,-6.97692E-14,0.7071068
@@ -3380,14 +3380,14 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294296674
-	link = His.SputVern_4294296234
-	sym = His.Sput107_4294297312
-	sym = His.Sput107_4294297048
-	sym = His.Sput107_4294296916
-	attN = top,His.SputBoost_4294297704
-	attN = 1,His.SputVern_4294296674
-	attN = 2,His.SputVern_4294296234
+	link = His.SputVern_4294243860
+	link = His.SputVern_4294243420
+	sym = His.Sput107_4294244498
+	sym = His.Sput107_4294244234
+	sym = His.Sput107_4294244102
+	attN = top,His.SputBoost_4294244890
+	attN = 1,His.SputVern_4294243860
+	attN = 2,His.SputVern_4294243420
 	EVENTS
 	{
 	}
@@ -3557,10 +3557,10 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294297048
+	part = His.Sput107_4294244234
 	partName = Part
 	pos = 1.357898,2.937401,0.2664073
-	rot = 7.160642E-14,0.7071068,1.650185E-12,0.7071068
+	rot = 7.160642E-14,0.7071068,1.763871E-12,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 4
@@ -3569,14 +3569,14 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294296564
-	link = His.SputVern_4294296124
-	sym = His.Sput107_4294297312
-	sym = His.Sput107_4294297180
-	sym = His.Sput107_4294296916
-	attN = top,His.SputBoost_4294297508
-	attN = 1,His.SputVern_4294296564
-	attN = 2,His.SputVern_4294296124
+	link = His.SputVern_4294243750
+	link = His.SputVern_4294243310
+	sym = His.Sput107_4294244498
+	sym = His.Sput107_4294244366
+	sym = His.Sput107_4294244102
+	attN = top,His.SputBoost_4294244694
+	attN = 1,His.SputVern_4294243750
+	attN = 2,His.SputVern_4294243310
 	EVENTS
 	{
 	}
@@ -3746,7 +3746,7 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294296916
+	part = His.Sput107_4294244102
 	partName = Part
 	pos = -0.08763048,2.937401,-1.179128
 	rot = 0,1,0,2.817212E-17
@@ -3758,14 +3758,14 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294296454
-	link = His.SputVern_4294296014
-	sym = His.Sput107_4294297312
-	sym = His.Sput107_4294297180
-	sym = His.Sput107_4294297048
-	attN = top,His.SputBoost_4294297410
-	attN = 1,His.SputVern_4294296454
-	attN = 2,His.SputVern_4294296014
+	link = His.SputVern_4294243640
+	link = His.SputVern_4294243200
+	sym = His.Sput107_4294244498
+	sym = His.Sput107_4294244366
+	sym = His.Sput107_4294244234
+	attN = top,His.SputBoost_4294244596
+	attN = 1,His.SputVern_4294243640
+	attN = 2,His.SputVern_4294243200
 	EVENTS
 	{
 	}
@@ -3935,9 +3935,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296784
+	part = His.SputVern_4294243970
 	partName = Part
-	pos = 0.4593408,2.072781,3.765904
+	pos = 0.4593409,2.072781,3.765905
 	rot = -8.924735E-14,0.7071069,7.30639E-14,-0.7071069
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -3947,10 +3947,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296674
-	sym = His.SputVern_4294296564
-	sym = His.SputVern_4294296454
-	attN = top,His.Sput107_4294297312
+	sym = His.SputVern_4294243860
+	sym = His.SputVern_4294243750
+	sym = His.SputVern_4294243640
+	attN = top,His.Sput107_4294244498
 	EVENTS
 	{
 	}
@@ -4225,9 +4225,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296674
+	part = His.SputVern_4294243860
 	partName = Part
-	pos = -3.587124,2.072781,0.8133788
+	pos = -3.587125,2.072781,0.8133789
 	rot = 8.403686E-14,1,-6.895054E-14,-2.470892E-19
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -4237,10 +4237,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296784
-	sym = His.SputVern_4294296564
-	sym = His.SputVern_4294296454
-	attN = top,His.Sput107_4294297180
+	sym = His.SputVern_4294243970
+	sym = His.SputVern_4294243750
+	sym = His.SputVern_4294243640
+	attN = top,His.Sput107_4294244366
 	EVENTS
 	{
 	}
@@ -4515,9 +4515,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296564
+	part = His.SputVern_4294243750
 	partName = Part
-	pos = 3.41186,2.072781,-0.280571
+	pos = 3.41186,2.072781,-0.2805711
 	rot = -1.395043E-13,-4.371139E-08,1.49319E-13,-1
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -4527,10 +4527,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296784
-	sym = His.SputVern_4294296674
-	sym = His.SputVern_4294296454
-	attN = top,His.Sput107_4294297048
+	sym = His.SputVern_4294243970
+	sym = His.SputVern_4294243860
+	sym = His.SputVern_4294243640
+	attN = top,His.Sput107_4294244234
 	EVENTS
 	{
 	}
@@ -4805,9 +4805,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296454
+	part = His.SputVern_4294243640
 	partName = Part
-	pos = -0.6346079,2.072781,-3.233083
+	pos = -0.634608,2.072781,-3.233083
 	rot = 7.30639E-14,-0.7071069,8.924735E-14,-0.7071069
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -4817,10 +4817,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296784
-	sym = His.SputVern_4294296674
-	sym = His.SputVern_4294296564
-	attN = top,His.Sput107_4294296916
+	sym = His.SputVern_4294243970
+	sym = His.SputVern_4294243860
+	sym = His.SputVern_4294243750
+	attN = top,His.Sput107_4294244102
 	EVENTS
 	{
 	}
@@ -5095,9 +5095,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296344
+	part = His.SputVern_4294243530
 	partName = Part
-	pos = -0.630993,2.072781,3.765891
+	pos = -0.6309931,2.072781,3.765892
 	rot = -8.924735E-14,0.7071069,7.30639E-14,-0.7071069
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -5107,10 +5107,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296234
-	sym = His.SputVern_4294296124
-	sym = His.SputVern_4294296014
-	attN = top,His.Sput107_4294297312
+	sym = His.SputVern_4294243420
+	sym = His.SputVern_4294243310
+	sym = His.SputVern_4294243200
+	attN = top,His.Sput107_4294244498
 	EVENTS
 	{
 	}
@@ -5385,9 +5385,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296234
+	part = His.SputVern_4294243420
 	partName = Part
-	pos = -3.587124,2.072781,-0.2769546
+	pos = -3.587125,2.072781,-0.2769547
 	rot = 8.403686E-14,1,-6.895054E-14,-2.470892E-19
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -5397,10 +5397,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296344
-	sym = His.SputVern_4294296124
-	sym = His.SputVern_4294296014
-	attN = top,His.Sput107_4294297180
+	sym = His.SputVern_4294243530
+	sym = His.SputVern_4294243310
+	sym = His.SputVern_4294243200
+	attN = top,His.Sput107_4294244366
 	EVENTS
 	{
 	}
@@ -5675,9 +5675,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296124
+	part = His.SputVern_4294243310
 	partName = Part
-	pos = 3.41186,2.072781,0.8097624
+	pos = 3.41186,2.072781,0.8097625
 	rot = -1.395043E-13,-4.371139E-08,1.49319E-13,-1
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -5687,10 +5687,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296344
-	sym = His.SputVern_4294296234
-	sym = His.SputVern_4294296014
-	attN = top,His.Sput107_4294297048
+	sym = His.SputVern_4294243530
+	sym = His.SputVern_4294243420
+	sym = His.SputVern_4294243200
+	attN = top,His.Sput107_4294244234
 	EVENTS
 	{
 	}
@@ -5965,9 +5965,9 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294296014
+	part = His.SputVern_4294243200
 	partName = Part
-	pos = 0.455726,2.072781,-3.233094
+	pos = 0.4557261,2.072781,-3.233095
 	rot = 7.30639E-14,-0.7071069,8.924735E-14,-0.7071069
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
@@ -5977,10 +5977,10 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294296344
-	sym = His.SputVern_4294296234
-	sym = His.SputVern_4294296124
-	attN = top,His.Sput107_4294296916
+	sym = His.SputVern_4294243530
+	sym = His.SputVern_4294243420
+	sym = His.SputVern_4294243310
+	attN = top,His.Sput107_4294244102
 	EVENTS
 	{
 	}
@@ -6255,7 +6255,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294295904
+	part = launchClamp1_4294243090
 	partName = Part
 	pos = -4.806613,2.564198,0.2623579
 	rot = 0.02236522,0.7068191,-0.02017122,0.706753
@@ -6267,10 +6267,10 @@ PART
 	sqor = 3
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294295792
-	sym = launchClamp1_4294295680
-	sym = launchClamp1_4294295568
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = launchClamp1_4294242978
+	sym = launchClamp1_4294242866
+	sym = launchClamp1_4294242754
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -6423,9 +6423,9 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294295792
+	part = launchClamp1_4294242978
 	partName = Part
-	pos = -0.09167959,2.564198,4.985388
+	pos = -0.09167959,2.564198,4.985389
 	rot = 0.001551398,0.9995465,-0.03007781,-4.669878E-05
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -6435,10 +6435,10 @@ PART
 	sqor = 3
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294295904
-	sym = launchClamp1_4294295680
-	sym = launchClamp1_4294295568
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = launchClamp1_4294243090
+	sym = launchClamp1_4294242866
+	sym = launchClamp1_4294242754
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -6591,7 +6591,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294295680
+	part = launchClamp1_4294242866
 	partName = Part
 	pos = 4.631347,2.564198,0.2704495
 	rot = -0.02017122,0.706753,-0.02236522,-0.7068191
@@ -6603,10 +6603,10 @@ PART
 	sqor = 3
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294295904
-	sym = launchClamp1_4294295792
-	sym = launchClamp1_4294295568
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = launchClamp1_4294243090
+	sym = launchClamp1_4294242978
+	sym = launchClamp1_4294242754
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -6759,9 +6759,9 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294295568
+	part = launchClamp1_4294242754
 	partName = Part
-	pos = -0.08358759,2.564198,-4.452593
+	pos = -0.08358759,2.564198,-4.452594
 	rot = -0.03007781,-4.669878E-05,-0.001551398,-0.9995465
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -6771,10 +6771,10 @@ PART
 	sqor = 3
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294295904
-	sym = launchClamp1_4294295792
-	sym = launchClamp1_4294295680
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = launchClamp1_4294243090
+	sym = launchClamp1_4294242978
+	sym = launchClamp1_4294242866
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -6927,7 +6927,7 @@ PART
 }
 PART
 {
-	part = His.SputNose_4294295456
+	part = His.SputNose_4294242642
 	partName = Part
 	pos = -0.08763398,30.63295,0.2664039
 	rot = 0,0,0,1
@@ -6939,7 +6939,7 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	attN = bottom,His.SputBase_4294298640
+	attN = bottom,His.SputBase_4294245826
 	EVENTS
 	{
 	}
@@ -7033,7 +7033,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295384
+	part = W485.SurfaceOmniLight_4294242570
 	partName = Part
 	pos = -3.7577,2.308985,0.974802
 	rot = -0.5475404,0.4435594,-0.4171606,-0.5739614
@@ -7045,10 +7045,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295348
-	sym = W485.SurfaceOmniLight_4294295312
-	sym = W485.SurfaceOmniLight_4294295276
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294242534
+	sym = W485.SurfaceOmniLight_4294242498
+	sym = W485.SurfaceOmniLight_4294242462
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -7132,8 +7132,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -7213,9 +7213,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295348
+	part = W485.SurfaceOmniLight_4294242534
 	partName = Part
-	pos = 0.6207658,2.308985,3.93647
+	pos = 0.620766,2.308985,3.936471
 	rot = -0.6821466,-0.09220812,0.09219245,-0.7194959
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -7225,10 +7225,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295384
-	sym = W485.SurfaceOmniLight_4294295312
-	sym = W485.SurfaceOmniLight_4294295276
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294242570
+	sym = W485.SurfaceOmniLight_4294242498
+	sym = W485.SurfaceOmniLight_4294242462
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -7312,8 +7312,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -7393,7 +7393,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295312
+	part = W485.SurfaceOmniLight_4294242498
 	partName = Part
 	pos = 3.582433,2.308985,-0.4419947
 	rot = -0.4171606,-0.5739614,0.5475404,-0.4435594
@@ -7405,10 +7405,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295384
-	sym = W485.SurfaceOmniLight_4294295348
-	sym = W485.SurfaceOmniLight_4294295276
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294242570
+	sym = W485.SurfaceOmniLight_4294242534
+	sym = W485.SurfaceOmniLight_4294242462
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -7492,8 +7492,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -7573,9 +7573,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295276
+	part = W485.SurfaceOmniLight_4294242462
 	partName = Part
-	pos = -0.7960333,2.308985,-3.403663
+	pos = -0.7960335,2.308985,-3.403663
 	rot = 0.09219245,-0.7194959,0.6821466,0.09220812
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -7585,10 +7585,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295384
-	sym = W485.SurfaceOmniLight_4294295348
-	sym = W485.SurfaceOmniLight_4294295312
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294242570
+	sym = W485.SurfaceOmniLight_4294242534
+	sym = W485.SurfaceOmniLight_4294242498
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -7672,8 +7672,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -7753,7 +7753,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295240
+	part = W485.SurfaceOmniLight_4294242426
 	partName = Part
 	pos = -3.760506,2.27437,-0.4427456
 	rot = 0.4171316,-0.5739466,0.5475556,0.443587
@@ -7765,10 +7765,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295204
-	sym = W485.SurfaceOmniLight_4294295168
-	sym = W485.SurfaceOmniLight_4294295132
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294242390
+	sym = W485.SurfaceOmniLight_4294242354
+	sym = W485.SurfaceOmniLight_4294242318
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -7852,8 +7852,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -7933,9 +7933,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295204
+	part = W485.SurfaceOmniLight_4294242390
 	partName = Part
-	pos = -0.796784,2.27437,3.939281
+	pos = -0.7967841,2.27437,3.939282
 	rot = 0.682137,-0.0921782,0.09222379,0.719505
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -7945,10 +7945,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295240
-	sym = W485.SurfaceOmniLight_4294295168
-	sym = W485.SurfaceOmniLight_4294295132
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294242426
+	sym = W485.SurfaceOmniLight_4294242354
+	sym = W485.SurfaceOmniLight_4294242318
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -8032,8 +8032,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -8113,7 +8113,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295168
+	part = W485.SurfaceOmniLight_4294242354
 	partName = Part
 	pos = 3.585238,2.27437,0.975553
 	rot = 0.5475557,0.443587,-0.4171316,0.5739465
@@ -8125,10 +8125,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295240
-	sym = W485.SurfaceOmniLight_4294295204
-	sym = W485.SurfaceOmniLight_4294295132
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294242426
+	sym = W485.SurfaceOmniLight_4294242390
+	sym = W485.SurfaceOmniLight_4294242318
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -8212,8 +8212,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -8293,9 +8293,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295132
+	part = W485.SurfaceOmniLight_4294242318
 	partName = Part
-	pos = 0.6215171,2.27437,-3.406467
+	pos = 0.6215173,2.27437,-3.406467
 	rot = 0.09222379,0.719505,-0.682137,0.0921782
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -8305,10 +8305,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294295240
-	sym = W485.SurfaceOmniLight_4294295204
-	sym = W485.SurfaceOmniLight_4294295168
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294242426
+	sym = W485.SurfaceOmniLight_4294242390
+	sym = W485.SurfaceOmniLight_4294242354
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -8392,8 +8392,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -8473,7 +8473,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295096
+	part = W485.SurfaceOmniLight_4294242282
 	partName = Part
 	pos = -0.8121804,4.591579,0.99095
 	rot = -0.6532705,0.2706023,-0.2705939,-0.6532925
@@ -8485,10 +8485,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294295060
-	sym = W485.SurfaceOmniLight_4294295024
-	sym = W485.SurfaceOmniLight_4294294988
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242246
+	sym = W485.SurfaceOmniLight_4294242210
+	sym = W485.SurfaceOmniLight_4294242174
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -8572,8 +8572,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -8653,7 +8653,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295060
+	part = W485.SurfaceOmniLight_4294242246
 	partName = Part
 	pos = 0.6369123,4.591579,0.99095
 	rot = -0.6532707,-0.2706028,0.2705932,-0.6532923
@@ -8665,10 +8665,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294295096
-	sym = W485.SurfaceOmniLight_4294295024
-	sym = W485.SurfaceOmniLight_4294294988
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242282
+	sym = W485.SurfaceOmniLight_4294242210
+	sym = W485.SurfaceOmniLight_4294242174
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -8752,8 +8752,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -8833,7 +8833,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294295024
+	part = W485.SurfaceOmniLight_4294242210
 	partName = Part
 	pos = 0.6369124,4.591579,-0.4581425
 	rot = -0.2705938,-0.6532925,0.6532705,-0.2706023
@@ -8845,10 +8845,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294295096
-	sym = W485.SurfaceOmniLight_4294295060
-	sym = W485.SurfaceOmniLight_4294294988
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242282
+	sym = W485.SurfaceOmniLight_4294242246
+	sym = W485.SurfaceOmniLight_4294242174
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -8932,8 +8932,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -9013,7 +9013,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294988
+	part = W485.SurfaceOmniLight_4294242174
 	partName = Part
 	pos = -0.8121803,4.591579,-0.4581425
 	rot = 0.2705932,-0.6532923,0.6532707,0.2706028
@@ -9025,10 +9025,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294295096
-	sym = W485.SurfaceOmniLight_4294295060
-	sym = W485.SurfaceOmniLight_4294295024
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242282
+	sym = W485.SurfaceOmniLight_4294242246
+	sym = W485.SurfaceOmniLight_4294242210
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -9112,8 +9112,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -9193,7 +9193,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294952
+	part = W485.SurfaceOmniLight_4294242138
 	partName = Part
 	pos = -0.8124136,9.475346,0.991183
 	rot = -0.6532705,0.2706023,-0.2705939,-0.6532925
@@ -9205,10 +9205,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294916
-	sym = W485.SurfaceOmniLight_4294294880
-	sym = W485.SurfaceOmniLight_4294294844
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242102
+	sym = W485.SurfaceOmniLight_4294242066
+	sym = W485.SurfaceOmniLight_4294242030
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -9292,8 +9292,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -9373,7 +9373,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294916
+	part = W485.SurfaceOmniLight_4294242102
 	partName = Part
 	pos = 0.6371454,9.475346,0.991184
 	rot = -0.6532707,-0.2706028,0.2705932,-0.6532923
@@ -9385,10 +9385,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294952
-	sym = W485.SurfaceOmniLight_4294294880
-	sym = W485.SurfaceOmniLight_4294294844
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242138
+	sym = W485.SurfaceOmniLight_4294242066
+	sym = W485.SurfaceOmniLight_4294242030
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -9472,8 +9472,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -9553,7 +9553,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294880
+	part = W485.SurfaceOmniLight_4294242066
 	partName = Part
 	pos = 0.6371456,9.475346,-0.4583756
 	rot = -0.2705938,-0.6532925,0.6532705,-0.2706023
@@ -9565,10 +9565,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294952
-	sym = W485.SurfaceOmniLight_4294294916
-	sym = W485.SurfaceOmniLight_4294294844
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242138
+	sym = W485.SurfaceOmniLight_4294242102
+	sym = W485.SurfaceOmniLight_4294242030
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -9652,8 +9652,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -9733,7 +9733,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294844
+	part = W485.SurfaceOmniLight_4294242030
 	partName = Part
 	pos = -0.8124135,9.475346,-0.4583756
 	rot = 0.2705932,-0.6532923,0.6532707,0.2706028
@@ -9745,10 +9745,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294952
-	sym = W485.SurfaceOmniLight_4294294916
-	sym = W485.SurfaceOmniLight_4294294880
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294242138
+	sym = W485.SurfaceOmniLight_4294242102
+	sym = W485.SurfaceOmniLight_4294242066
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -9832,8 +9832,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -9913,7 +9913,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294808
+	part = W485.SurfaceOmniLight_4294241994
 	partName = Part
 	pos = -0.81523,15.13724,0.994
 	rot = -0.6532705,0.2706023,-0.2705939,-0.6532925
@@ -9925,10 +9925,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294772
-	sym = W485.SurfaceOmniLight_4294294736
-	sym = W485.SurfaceOmniLight_4294294700
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241958
+	sym = W485.SurfaceOmniLight_4294241922
+	sym = W485.SurfaceOmniLight_4294241886
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -10012,8 +10012,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -10093,7 +10093,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294772
+	part = W485.SurfaceOmniLight_4294241958
 	partName = Part
 	pos = 0.6399618,15.13724,0.994
 	rot = -0.6532707,-0.2706028,0.2705932,-0.6532923
@@ -10105,10 +10105,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294808
-	sym = W485.SurfaceOmniLight_4294294736
-	sym = W485.SurfaceOmniLight_4294294700
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241994
+	sym = W485.SurfaceOmniLight_4294241922
+	sym = W485.SurfaceOmniLight_4294241886
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -10192,8 +10192,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -10273,7 +10273,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294736
+	part = W485.SurfaceOmniLight_4294241922
 	partName = Part
 	pos = 0.6399619,15.13724,-0.461192
 	rot = -0.2705938,-0.6532925,0.6532705,-0.2706023
@@ -10285,10 +10285,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294808
-	sym = W485.SurfaceOmniLight_4294294772
-	sym = W485.SurfaceOmniLight_4294294700
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241994
+	sym = W485.SurfaceOmniLight_4294241958
+	sym = W485.SurfaceOmniLight_4294241886
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -10372,8 +10372,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -10453,7 +10453,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294700
+	part = W485.SurfaceOmniLight_4294241886
 	partName = Part
 	pos = -0.8152298,15.13724,-0.461192
 	rot = 0.2705932,-0.6532923,0.6532707,0.2706028
@@ -10465,10 +10465,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4294294808
-	sym = W485.SurfaceOmniLight_4294294772
-	sym = W485.SurfaceOmniLight_4294294736
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241994
+	sym = W485.SurfaceOmniLight_4294241958
+	sym = W485.SurfaceOmniLight_4294241922
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -10552,8 +10552,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 560
-		CrashTol = 21
+		MaxTemp = 1470
+		CrashTol = 14
 		BreakForce = 122.5
 		BreakTorque = 122.5
 		Torque = 0
@@ -10633,7 +10633,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294664
+	part = W485.SurfaceOmniLight_4294241850
 	partName = Part
 	pos = -3.70939,6.604069,0.2664041
 	rot = -0.5000001,0.4999999,-0.5000001,-0.5
@@ -10645,10 +10645,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294628
-	sym = W485.SurfaceOmniLight_4294294592
-	sym = W485.SurfaceOmniLight_4294294556
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294241814
+	sym = W485.SurfaceOmniLight_4294241778
+	sym = W485.SurfaceOmniLight_4294241742
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -10732,8 +10732,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -10813,9 +10813,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294628
+	part = W485.SurfaceOmniLight_4294241814
 	partName = Part
-	pos = -0.08763349,6.604069,3.888164
+	pos = -0.08763349,6.604069,3.888165
 	rot = -0.7071069,-2.966857E-08,-2.966843E-08,-0.7071067
 	attRot = -0.7071068,0,0,0.7071068
 	mir = 1,1,1
@@ -10825,10 +10825,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294664
-	sym = W485.SurfaceOmniLight_4294294592
-	sym = W485.SurfaceOmniLight_4294294556
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294241850
+	sym = W485.SurfaceOmniLight_4294241778
+	sym = W485.SurfaceOmniLight_4294241742
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -10912,8 +10912,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -10993,7 +10993,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294592
+	part = W485.SurfaceOmniLight_4294241778
 	partName = Part
 	pos = 3.534122,6.604069,0.2664034
 	rot = -0.5000001,-0.5,0.5000001,-0.4999999
@@ -11005,10 +11005,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294664
-	sym = W485.SurfaceOmniLight_4294294628
-	sym = W485.SurfaceOmniLight_4294294556
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294241850
+	sym = W485.SurfaceOmniLight_4294241814
+	sym = W485.SurfaceOmniLight_4294241742
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -11092,8 +11092,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -11173,9 +11173,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294556
+	part = W485.SurfaceOmniLight_4294241742
 	partName = Part
-	pos = -0.08763389,6.604069,-3.355356
+	pos = -0.08763389,6.604069,-3.355357
 	rot = -2.966843E-08,-0.7071067,0.7071069,2.966857E-08
 	attRot = -0.7071068,0,0,0.7071068
 	mir = 1,1,1
@@ -11185,10 +11185,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294664
-	sym = W485.SurfaceOmniLight_4294294628
-	sym = W485.SurfaceOmniLight_4294294592
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294241850
+	sym = W485.SurfaceOmniLight_4294241814
+	sym = W485.SurfaceOmniLight_4294241778
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -11272,8 +11272,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -11353,7 +11353,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294520
+	part = W485.SurfaceOmniLight_4294241706
 	partName = Part
 	pos = -3.355165,9.58815,0.2664041
 	rot = 0.5,-0.5,0.5000001,0.5
@@ -11365,10 +11365,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294484
-	sym = W485.SurfaceOmniLight_4294294448
-	sym = W485.SurfaceOmniLight_4294294412
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294241670
+	sym = W485.SurfaceOmniLight_4294241634
+	sym = W485.SurfaceOmniLight_4294241598
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -11452,8 +11452,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -11533,9 +11533,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294484
+	part = W485.SurfaceOmniLight_4294241670
 	partName = Part
-	pos = -0.08763358,9.58815,3.533934
+	pos = -0.08763358,9.58815,3.533935
 	rot = 0.7071069,-1.247828E-08,2.966854E-08,0.7071068
 	attRot = 0,0,0,-0.9999999
 	mir = 1,1,1
@@ -11545,10 +11545,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294520
-	sym = W485.SurfaceOmniLight_4294294448
-	sym = W485.SurfaceOmniLight_4294294412
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294241706
+	sym = W485.SurfaceOmniLight_4294241634
+	sym = W485.SurfaceOmniLight_4294241598
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -11632,8 +11632,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -11713,7 +11713,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294448
+	part = W485.SurfaceOmniLight_4294241634
 	partName = Part
 	pos = 3.179895,9.58815,0.2664035
 	rot = 0.5000001,0.4999999,-0.5000001,0.4999999
@@ -11725,10 +11725,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294520
-	sym = W485.SurfaceOmniLight_4294294484
-	sym = W485.SurfaceOmniLight_4294294412
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294241706
+	sym = W485.SurfaceOmniLight_4294241670
+	sym = W485.SurfaceOmniLight_4294241598
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -11812,8 +11812,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -11893,7 +11893,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294412
+	part = W485.SurfaceOmniLight_4294241598
 	partName = Part
 	pos = -0.08763398,9.58815,-3.001127
 	rot = 2.966854E-08,0.7071068,-0.7071069,1.247828E-08
@@ -11905,10 +11905,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294520
-	sym = W485.SurfaceOmniLight_4294294484
-	sym = W485.SurfaceOmniLight_4294294448
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294241706
+	sym = W485.SurfaceOmniLight_4294241670
+	sym = W485.SurfaceOmniLight_4294241634
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -11992,8 +11992,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -12073,7 +12073,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294376
+	part = W485.SurfaceOmniLight_4294241562
 	partName = Part
 	pos = -2.982299,12.55592,0.2664041
 	rot = 0.4677718,-0.530225,0.4678263,0.5302731
@@ -12085,10 +12085,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294340
-	sym = W485.SurfaceOmniLight_4294294304
-	sym = W485.SurfaceOmniLight_4294294268
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294241526
+	sym = W485.SurfaceOmniLight_4294241490
+	sym = W485.SurfaceOmniLight_4294241454
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -12172,8 +12172,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -12253,7 +12253,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294340
+	part = W485.SurfaceOmniLight_4294241526
 	partName = Part
 	pos = -0.08763368,12.55592,3.161069
 	rot = 0.6615678,3.404851E-05,3.854595E-05,0.7498854
@@ -12265,10 +12265,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294376
-	sym = W485.SurfaceOmniLight_4294294304
-	sym = W485.SurfaceOmniLight_4294294268
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294241562
+	sym = W485.SurfaceOmniLight_4294241490
+	sym = W485.SurfaceOmniLight_4294241454
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -12352,8 +12352,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -12433,7 +12433,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294304
+	part = W485.SurfaceOmniLight_4294241490
 	partName = Part
 	pos = 2.80703,12.55592,0.2664035
 	rot = 0.4678263,0.5302731,-0.4677718,0.530225
@@ -12445,10 +12445,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294376
-	sym = W485.SurfaceOmniLight_4294294340
-	sym = W485.SurfaceOmniLight_4294294268
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294241562
+	sym = W485.SurfaceOmniLight_4294241526
+	sym = W485.SurfaceOmniLight_4294241454
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -12532,8 +12532,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -12613,7 +12613,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294268
+	part = W485.SurfaceOmniLight_4294241454
 	partName = Part
 	pos = -0.08763398,12.55592,-2.628263
 	rot = 3.854595E-05,0.7498854,-0.6615678,-3.404851E-05
@@ -12625,10 +12625,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294376
-	sym = W485.SurfaceOmniLight_4294294340
-	sym = W485.SurfaceOmniLight_4294294304
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294241562
+	sym = W485.SurfaceOmniLight_4294241526
+	sym = W485.SurfaceOmniLight_4294241490
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -12712,8 +12712,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -12793,7 +12793,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294232
+	part = W485.SurfaceOmniLight_4294241418
 	partName = Part
 	pos = -2.485545,16.51091,0.2664041
 	rot = 0.4677718,-0.530225,0.4678263,0.5302731
@@ -12805,10 +12805,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294196
-	sym = W485.SurfaceOmniLight_4294294160
-	sym = W485.SurfaceOmniLight_4294294124
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294241382
+	sym = W485.SurfaceOmniLight_4294241346
+	sym = W485.SurfaceOmniLight_4294241310
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -12892,8 +12892,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -12973,7 +12973,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294196
+	part = W485.SurfaceOmniLight_4294241382
 	partName = Part
 	pos = -0.08763368,16.51091,2.664316
 	rot = 0.6615678,3.404851E-05,3.854595E-05,0.7498854
@@ -12985,10 +12985,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294232
-	sym = W485.SurfaceOmniLight_4294294160
-	sym = W485.SurfaceOmniLight_4294294124
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294241418
+	sym = W485.SurfaceOmniLight_4294241346
+	sym = W485.SurfaceOmniLight_4294241310
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -13072,8 +13072,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -13153,7 +13153,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294160
+	part = W485.SurfaceOmniLight_4294241346
 	partName = Part
 	pos = 2.310277,16.51091,0.2664036
 	rot = 0.4678263,0.5302731,-0.4677718,0.530225
@@ -13165,10 +13165,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294232
-	sym = W485.SurfaceOmniLight_4294294196
-	sym = W485.SurfaceOmniLight_4294294124
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294241418
+	sym = W485.SurfaceOmniLight_4294241382
+	sym = W485.SurfaceOmniLight_4294241310
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -13252,8 +13252,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -13333,9 +13333,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294124
+	part = W485.SurfaceOmniLight_4294241310
 	partName = Part
-	pos = -0.08763398,16.51091,-2.131508
+	pos = -0.08763398,16.51091,-2.131509
 	rot = 3.854595E-05,0.7498854,-0.6615678,-3.404851E-05
 	attRot = 0,0,0,-0.9999999
 	mir = 1,1,1
@@ -13345,10 +13345,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294232
-	sym = W485.SurfaceOmniLight_4294294196
-	sym = W485.SurfaceOmniLight_4294294160
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294241418
+	sym = W485.SurfaceOmniLight_4294241382
+	sym = W485.SurfaceOmniLight_4294241346
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -13432,8 +13432,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -13513,7 +13513,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294088
+	part = W485.SurfaceOmniLight_4294241274
 	partName = Part
 	pos = -1.737022,20.2304,0.266404
 	rot = 0.4456071,-0.5489554,0.4456995,0.5490303
@@ -13525,10 +13525,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294052
-	sym = W485.SurfaceOmniLight_4294294016
-	sym = W485.SurfaceOmniLight_4294293980
-	srfN = srfAttach,His.SputBoost_4294297704
+	sym = W485.SurfaceOmniLight_4294241238
+	sym = W485.SurfaceOmniLight_4294241202
+	sym = W485.SurfaceOmniLight_4294241166
+	srfN = srfAttach,His.SputBoost_4294244890
 	EVENTS
 	{
 	}
@@ -13612,8 +13612,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -13693,7 +13693,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294052
+	part = W485.SurfaceOmniLight_4294241238
 	partName = Part
 	pos = -0.08763389,20.2304,1.915793
 	rot = 0.630249,5.293465E-05,6.530552E-05,0.7763932
@@ -13705,10 +13705,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294088
-	sym = W485.SurfaceOmniLight_4294294016
-	sym = W485.SurfaceOmniLight_4294293980
-	srfN = srfAttach,His.SputBoost_4294297606
+	sym = W485.SurfaceOmniLight_4294241274
+	sym = W485.SurfaceOmniLight_4294241202
+	sym = W485.SurfaceOmniLight_4294241166
+	srfN = srfAttach,His.SputBoost_4294244792
 	EVENTS
 	{
 	}
@@ -13792,8 +13792,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -13873,7 +13873,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294294016
+	part = W485.SurfaceOmniLight_4294241202
 	partName = Part
 	pos = 1.561755,20.2304,0.2664037
 	rot = 0.4456995,0.5490303,-0.4456072,0.5489554
@@ -13885,10 +13885,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294088
-	sym = W485.SurfaceOmniLight_4294294052
-	sym = W485.SurfaceOmniLight_4294293980
-	srfN = srfAttach,His.SputBoost_4294297508
+	sym = W485.SurfaceOmniLight_4294241274
+	sym = W485.SurfaceOmniLight_4294241238
+	sym = W485.SurfaceOmniLight_4294241166
+	srfN = srfAttach,His.SputBoost_4294244694
 	EVENTS
 	{
 	}
@@ -13972,8 +13972,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -14053,7 +14053,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293980
+	part = W485.SurfaceOmniLight_4294241166
 	partName = Part
 	pos = -0.08763409,20.2304,-1.382985
 	rot = 6.530552E-05,0.7763932,-0.630249,-5.293465E-05
@@ -14065,10 +14065,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294294088
-	sym = W485.SurfaceOmniLight_4294294052
-	sym = W485.SurfaceOmniLight_4294294016
-	srfN = srfAttach,His.SputBoost_4294297410
+	sym = W485.SurfaceOmniLight_4294241274
+	sym = W485.SurfaceOmniLight_4294241238
+	sym = W485.SurfaceOmniLight_4294241202
+	srfN = srfAttach,His.SputBoost_4294244596
 	EVENTS
 	{
 	}
@@ -14152,8 +14152,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -14233,7 +14233,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293944
+	part = W485.SurfaceOmniLight_4294241130
 	partName = Part
 	pos = -1.18501,27.92676,0.8999742
 	rot = 0.60233,-0.3593066,0.3478467,0.6221737
@@ -14245,12 +14245,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293908
-	sym = W485.SurfaceOmniLight_4294293872
-	sym = W485.SurfaceOmniLight_4294293836
-	sym = W485.SurfaceOmniLight_4294293800
-	sym = W485.SurfaceOmniLight_4294293764
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241094
+	sym = W485.SurfaceOmniLight_4294241058
+	sym = W485.SurfaceOmniLight_4294241022
+	sym = W485.SurfaceOmniLight_4294240986
+	sym = W485.SurfaceOmniLight_4294240950
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -14334,8 +14334,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -14415,7 +14415,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293908
+	part = W485.SurfaceOmniLight_4294241094
 	partName = Part
 	pos = -0.08763419,27.92676,1.533545
 	rot = 0.6955565,-8.180743E-05,7.90733E-05,0.7184715
@@ -14427,12 +14427,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293944
-	sym = W485.SurfaceOmniLight_4294293872
-	sym = W485.SurfaceOmniLight_4294293836
-	sym = W485.SurfaceOmniLight_4294293800
-	sym = W485.SurfaceOmniLight_4294293764
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241130
+	sym = W485.SurfaceOmniLight_4294241058
+	sym = W485.SurfaceOmniLight_4294241022
+	sym = W485.SurfaceOmniLight_4294240986
+	sym = W485.SurfaceOmniLight_4294240950
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -14516,8 +14516,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -14597,7 +14597,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293872
+	part = W485.SurfaceOmniLight_4294241058
 	partName = Part
 	pos = 1.009742,27.92676,0.8999746
 	rot = 0.6024092,0.3591649,-0.3477097,0.6222554
@@ -14609,12 +14609,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293944
-	sym = W485.SurfaceOmniLight_4294293908
-	sym = W485.SurfaceOmniLight_4294293836
-	sym = W485.SurfaceOmniLight_4294293800
-	sym = W485.SurfaceOmniLight_4294293764
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241130
+	sym = W485.SurfaceOmniLight_4294241094
+	sym = W485.SurfaceOmniLight_4294241022
+	sym = W485.SurfaceOmniLight_4294240986
+	sym = W485.SurfaceOmniLight_4294240950
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -14698,8 +14698,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -14779,7 +14779,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293836
+	part = W485.SurfaceOmniLight_4294241022
 	partName = Part
 	pos = 1.009743,27.92676,-0.3671666
 	rot = 0.3478467,0.6221737,-0.60233,0.3593066
@@ -14791,12 +14791,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293944
-	sym = W485.SurfaceOmniLight_4294293908
-	sym = W485.SurfaceOmniLight_4294293872
-	sym = W485.SurfaceOmniLight_4294293800
-	sym = W485.SurfaceOmniLight_4294293764
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241130
+	sym = W485.SurfaceOmniLight_4294241094
+	sym = W485.SurfaceOmniLight_4294241058
+	sym = W485.SurfaceOmniLight_4294240986
+	sym = W485.SurfaceOmniLight_4294240950
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -14880,8 +14880,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -14961,10 +14961,10 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293800
+	part = W485.SurfaceOmniLight_4294240986
 	partName = Part
 	pos = -0.08763389,27.92676,-1.000737
-	rot = 7.90374E-05,0.7184715,-0.6955565,8.177034E-05
+	rot = 7.90374E-05,0.7184715,-0.6955565,8.177033E-05
 	attRot = 0,0,0,-0.9999999
 	mir = 1,1,1
 	istg = 2
@@ -14973,12 +14973,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293944
-	sym = W485.SurfaceOmniLight_4294293908
-	sym = W485.SurfaceOmniLight_4294293872
-	sym = W485.SurfaceOmniLight_4294293836
-	sym = W485.SurfaceOmniLight_4294293764
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241130
+	sym = W485.SurfaceOmniLight_4294241094
+	sym = W485.SurfaceOmniLight_4294241058
+	sym = W485.SurfaceOmniLight_4294241022
+	sym = W485.SurfaceOmniLight_4294240950
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -15062,8 +15062,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -15143,7 +15143,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293764
+	part = W485.SurfaceOmniLight_4294240950
 	partName = Part
 	pos = -1.18501,27.92676,-0.3671671
 	rot = -0.3477097,0.6222555,-0.6024091,-0.3591649
@@ -15155,12 +15155,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293944
-	sym = W485.SurfaceOmniLight_4294293908
-	sym = W485.SurfaceOmniLight_4294293872
-	sym = W485.SurfaceOmniLight_4294293836
-	sym = W485.SurfaceOmniLight_4294293800
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294241130
+	sym = W485.SurfaceOmniLight_4294241094
+	sym = W485.SurfaceOmniLight_4294241058
+	sym = W485.SurfaceOmniLight_4294241022
+	sym = W485.SurfaceOmniLight_4294240986
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -15244,8 +15244,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -15325,7 +15325,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293728
+	part = W485.SurfaceOmniLight_4294240914
 	partName = Part
 	pos = -1.277302,24.57446,0.953259
 	rot = 0.6023301,-0.3593065,0.3478469,0.6221735
@@ -15337,12 +15337,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293692
-	sym = W485.SurfaceOmniLight_4294293656
-	sym = W485.SurfaceOmniLight_4294293620
-	sym = W485.SurfaceOmniLight_4294293584
-	sym = W485.SurfaceOmniLight_4294293548
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294240878
+	sym = W485.SurfaceOmniLight_4294240842
+	sym = W485.SurfaceOmniLight_4294240806
+	sym = W485.SurfaceOmniLight_4294240770
+	sym = W485.SurfaceOmniLight_4294240734
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -15426,8 +15426,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -15507,10 +15507,10 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293692
+	part = W485.SurfaceOmniLight_4294240878
 	partName = Part
 	pos = -0.08763428,24.57446,1.640115
-	rot = 0.6955566,-8.173806E-05,7.917262E-05,0.7184713
+	rot = 0.6955566,-8.173806E-05,7.917263E-05,0.7184713
 	attRot = 0,0,0,-0.9999999
 	mir = 1,1,1
 	istg = 2
@@ -15519,12 +15519,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293728
-	sym = W485.SurfaceOmniLight_4294293656
-	sym = W485.SurfaceOmniLight_4294293620
-	sym = W485.SurfaceOmniLight_4294293584
-	sym = W485.SurfaceOmniLight_4294293548
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294240914
+	sym = W485.SurfaceOmniLight_4294240842
+	sym = W485.SurfaceOmniLight_4294240806
+	sym = W485.SurfaceOmniLight_4294240770
+	sym = W485.SurfaceOmniLight_4294240734
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -15608,8 +15608,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -15689,7 +15689,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293656
+	part = W485.SurfaceOmniLight_4294240842
 	partName = Part
 	pos = 1.102035,24.57446,0.9532601
 	rot = 0.6024092,0.3591649,-0.3477098,0.6222553
@@ -15701,12 +15701,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293728
-	sym = W485.SurfaceOmniLight_4294293692
-	sym = W485.SurfaceOmniLight_4294293620
-	sym = W485.SurfaceOmniLight_4294293584
-	sym = W485.SurfaceOmniLight_4294293548
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294240914
+	sym = W485.SurfaceOmniLight_4294240878
+	sym = W485.SurfaceOmniLight_4294240806
+	sym = W485.SurfaceOmniLight_4294240770
+	sym = W485.SurfaceOmniLight_4294240734
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -15790,8 +15790,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -15871,7 +15871,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293620
+	part = W485.SurfaceOmniLight_4294240806
 	partName = Part
 	pos = 1.102035,24.57446,-0.4204516
 	rot = 0.3478468,0.6221735,-0.6023301,0.3593064
@@ -15883,12 +15883,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293728
-	sym = W485.SurfaceOmniLight_4294293692
-	sym = W485.SurfaceOmniLight_4294293656
-	sym = W485.SurfaceOmniLight_4294293584
-	sym = W485.SurfaceOmniLight_4294293548
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294240914
+	sym = W485.SurfaceOmniLight_4294240878
+	sym = W485.SurfaceOmniLight_4294240842
+	sym = W485.SurfaceOmniLight_4294240770
+	sym = W485.SurfaceOmniLight_4294240734
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -15972,8 +15972,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -16053,7 +16053,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293584
+	part = W485.SurfaceOmniLight_4294240770
 	partName = Part
 	pos = -0.08763379,24.57446,-1.107307
 	rot = 7.913668E-05,0.7184713,-0.6955566,8.170093E-05
@@ -16065,12 +16065,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293728
-	sym = W485.SurfaceOmniLight_4294293692
-	sym = W485.SurfaceOmniLight_4294293656
-	sym = W485.SurfaceOmniLight_4294293620
-	sym = W485.SurfaceOmniLight_4294293548
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294240914
+	sym = W485.SurfaceOmniLight_4294240878
+	sym = W485.SurfaceOmniLight_4294240842
+	sym = W485.SurfaceOmniLight_4294240806
+	sym = W485.SurfaceOmniLight_4294240734
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -16154,8 +16154,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
@@ -16235,7 +16235,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4294293548
+	part = W485.SurfaceOmniLight_4294240734
 	partName = Part
 	pos = -1.277302,24.57446,-0.4204521
 	rot = -0.3477097,0.6222553,-0.6024093,-0.3591648
@@ -16247,12 +16247,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4294293728
-	sym = W485.SurfaceOmniLight_4294293692
-	sym = W485.SurfaceOmniLight_4294293656
-	sym = W485.SurfaceOmniLight_4294293620
-	sym = W485.SurfaceOmniLight_4294293584
-	srfN = srfAttach,His.SputCore_4294298586
+	sym = W485.SurfaceOmniLight_4294240914
+	sym = W485.SurfaceOmniLight_4294240878
+	sym = W485.SurfaceOmniLight_4294240842
+	sym = W485.SurfaceOmniLight_4294240806
+	sym = W485.SurfaceOmniLight_4294240770
+	srfN = srfAttach,His.SputCore_4294245772
 	EVENTS
 	{
 	}
@@ -16336,8 +16336,8 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 30
+		MaxTemp = 2100
+		CrashTol = 20
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
