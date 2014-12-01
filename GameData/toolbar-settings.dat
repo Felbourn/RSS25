@@ -167,15 +167,27 @@ toolbars
 		}
 		toolbar_706182934
 		{
-			x = 300
-			y = 300
+			x = 369
+			y = 28
 			width = 250
 			height = 38
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = CIT_NodeHelper.NodeHelperButton,Fusebox.FBToggle,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Tac.LS,sirkut2.IREditorGroupButton,sirkut.IREditorButton,RCSBuildAid.mainButton
+		}
+		toolbar_664540194
+		{
+			x = 296
+			y = 843
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,PartOrganizer.sort,PartOrganizer.filter
+			visibleButtons = PartOrganizer.sort,PartOrganizer.filter
 		}
 	}
 	FLIGHT
@@ -239,7 +251,7 @@ toolbars
 			x = 212
 			y = 40
 			width = 250
-			height = 81
+			height = 38
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
