@@ -15,6 +15,7 @@ GameData/AJE/*
 GameData/AIES_Aerospace/*
 GameData/blackheart/*
 GameData/blizzy/*
+GameData/BoulderCo/*
 GameData/CIT/*
 GameData/CameraTools/*
 GameData/CrewManifest/*
@@ -60,6 +61,8 @@ GameData/ResourceConverter/*
 GameData/ResourceOverview_1.0.1.1/*
 GameData/RN_R7/*
 GameData/RN_Soviet_Probes/*
+GameData/RN_US_Probes/*
+GameData/RSSTextures/*
 GameData/sceneJumper/*
 GameData/SelectRoot/*
 GameData/SimplePartOrganizer/*
