@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = NASAmission/Flags/NASA
-	launchID = 87
+	launchID = 96
 	PARAMETERS
 	{
 		preset = Normal
@@ -398,9 +398,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 4761480.86249565
+		UT = 4833500.51838688
 		activeVessel = 0
-		mapViewFiltering = 40
+		mapViewFiltering = 8
 		VESSEL
 		{
 			pid = cad654d243844da9ae42e5d8eda2d698
@@ -11207,13 +11207,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 152417820066.185
-				ECC = 0.0462739429770251
-				INC = 22.2065065296337
-				LPE = 206.805607592762
-				LAN = 0.668854335217475
-				MNA = 5.45377040890941
-				EPH = 4760135.12532758
+				SMA = 152017069788.595
+				ECC = 0.0725937373611937
+				INC = 21.9794297441543
+				LPE = 227.21333194271
+				LAN = 0.92904611538512
+				MNA = 5.17033883234047
+				EPH = 4821621.38771082
 				REF = 0
 			}
 			PART
@@ -11363,13 +11363,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 152435484648.659
-				ECC = 0.0463141941679856
-				INC = 23.12413316907
-				LPE = 213.519344242814
-				LAN = 0.118565457950297
-				MNA = 5.3499515145982
-				EPH = 4760115.12532758
+				SMA = 152062605614.993
+				ECC = 0.0728349369548854
+				INC = 22.9124810397369
+				LPE = 230.963242556835
+				LAN = 0.359079016180317
+				MNA = 5.11591795106318
+				EPH = 4821631.38771082
 				REF = 0
 			}
 			PART
@@ -11675,13 +11675,13 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 149660439097.217
-				ECC = 0.0299636476428319
-				INC = 22.9517598906493
-				LPE = 218.430068290083
-				LAN = 0.40846409269659
-				MNA = 5.2360774420809
-				EPH = 4760215.12532758
+				SMA = 149401968541.287
+				ECC = 0.0582008220821218
+				INC = 22.7243067877071
+				LPE = 236.579441120583
+				LAN = 0.649517538198324
+				MNA = 4.98881167129928
+				EPH = 4820579.03224248
 				REF = 0
 			}
 			PART
@@ -11726,6 +11726,5887 @@ GAME
 			}
 			CTRLSTATE
 			{
+			}
+		}
+		VESSEL
+		{
+			pid = 7b39713706e248fa842ea840da6bb48c
+			name = Atlas B - SCORE
+			type = Probe
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 6511.4102686746
+			lct = 4825719.22814658
+			root = 0
+			lat = 31.7111600899516
+			lon = 267.945368981966
+			alt = 317322.386531099
+			hgt = -1
+			nrm = 0.529649,0.7932677,0.3003303
+			rot = -0.1530762,0.8239064,-0.1171298,0.5329415
+			CoM = 0.0008521529,-5.466729,-0.001730098
+			stg = 1
+			prst = False
+			ref = 971551633
+			ctrl = False
+			cPch = 
+			cHdg = 
+			cMod = 1
+			ORBIT
+			{
+				SMA = 7205533.88135402
+				ECC = 0.0900251476323983
+				INC = 32.2999932265898
+				LPE = 60.0039472167115
+				LAN = 295.34026384072
+				MNA = 0.593614096915014
+				EPH = 4832230.63841526
+				REF = 1
+			}
+			PART
+			{
+				name = His.FASA.Atlas.LFT.Cone2
+				uid = 2301135235
+				mid = 3008460052
+				launchID = 94
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 1
+				attN = bottom, 8
+				mass = 0.1
+				temp = -202.1821
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = His.FASA.Atlas.LFT.Cone2 (Atlas B - SCORE)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 1200
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.1
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Kerosene
+					amount = 0
+					maxAmount = 270
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = LqdOxygen
+					amount = 0
+					maxAmount = 330
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KzInterstageAdapter2
+				uid = 2018123525
+				mid = 3008460052
+				launchID = 94
+				parent = 0
+				position = 0,3.14100074768066,0
+				rotation = 0,1,0,0
+				mirror = 1,1,1
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sidx = 3
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 0
+				attN = top, 5
+				attN = top1, 4
+				attN = connect01, 7
+				attN = connect02, 3
+				attN = connect03, 2
+				mass = 0.04786368
+				temp = -202.2402
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzInterstageAdapter2
+				modCost = 47.86368
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingAdapter
+					isEnabled = True
+					extraHeight = 0
+					baseSize = 1.4
+					topSize = 1.4
+					height = 1.2
+					extraHeight_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					baseSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					topSize_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					height_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 50
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingBase
+					isEnabled = True
+					extraRadius = 0
+					fuelCrossFeed = False
+					autoStrutSides = True
+					extraRadius_UIFlight
+					{
+						controlEnabled = True
+						minValue = -1
+						maxValue = 2
+						stepIncrement = 0.01
+					}
+					autoStrutSides_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						ToggleCrossFeed
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle crossfeed
+							guiName = Toggle crossfeed
+							category = Toggle crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KzNodeNumberTweaker
+					isEnabled = True
+					numNodes = 3
+					radius = 0.7
+					radius_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						maxValue = 5
+						incrementLarge = 0.625
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+						IncrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = More nodes
+							guiName = More nodes
+							category = More nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DecrementNodes
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Fewer nodes
+							guiName = Fewer nodes
+							category = Fewer nodes
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 2509.153
+					BreakTorque = 2509.153
+					Torque = 0
+					Decouple = 0
+					Mass = 0.04786368
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				uid = 386108815
+				mid = 3008460052
+				launchID = 94
+				parent = 1
+				position = 0.349999994039536,2.76980018615723,0.606217861175537
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = connect, 1
+				mass = 0.009063874
+				temp = -201.4654
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2
+				modCost = 45.31937
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 8
+					numSideParts = 3
+					baseRad = 0.6440001
+					maxRad = 0.6440001
+					cylStart = 0
+					cylEnd = 1.2
+					topRad = 0.6440001
+					inlineHeight = 1.2
+					sideThickness = 0.056
+					meshPos = (-0.35, 0.3712006, -0.6062179)
+					meshRot = (0, 0.5000001, 0, -0.8660254)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 18.12775
+					BreakTorque = 18.12775
+					Torque = 0
+					Decouple = 0
+					Mass = 0.009063874
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				uid = 1639063468
+				mid = 3008460052
+				launchID = 94
+				parent = 1
+				position = 0.350000113248825,2.76980018615723,-0.606217741966248
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 1
+				attm = 0
+				srfN = None, -1
+				attN = connect, 1
+				mass = 0.009063874
+				temp = -201.03
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2
+				modCost = 45.31937
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 8
+					numSideParts = 3
+					baseRad = 0.6440001
+					maxRad = 0.6440001
+					cylStart = 0
+					cylEnd = 1.2
+					topRad = 0.6440001
+					inlineHeight = 1.2
+					sideThickness = 0.056
+					meshPos = (-0.35, 0.3712006, 0.6062178)
+					meshRot = (0, 0.5, 0, 0.8660254)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 18.12775
+					BreakTorque = 18.12775
+					Torque = 0
+					Decouple = 0
+					Mass = 0.009063874
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = proceduralNoseCone
+				uid = 358550025
+				mid = 3008460052
+				launchID = 94
+				parent = 1
+				position = 0,5.52850151062012,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				mass = 0.1590284
+				temp = -200.6028
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = proceduralNoseCone
+				modCost = 0.01268252
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralPart
+					isEnabled = True
+					textureSet = Atlas
+					shapeName = Smooth Cone
+					textureSet_UIEditor
+					{
+						controlEnabled = True
+					}
+					shapeName_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeBezierCone
+					isEnabled = True
+					selectedShape = Sharp #1
+					topDiameter = 0
+					bottomDiameter = 1.4
+					length = 2.375
+					selectedShape_UIEditor
+					{
+						controlEnabled = True
+					}
+					topDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.25
+						incrementLarge = 1.25
+						incrementSmall = 0.25
+						incrementSlide = 0.001
+					}
+					bottomDiameter_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.1
+						incrementLarge = 1
+						incrementSmall = 0.1
+						incrementSlide = 0.001
+					}
+					length_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.01
+						incrementLarge = 1
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TankContentSwitcher
+					isEnabled = True
+					tankVolume = 1.325237
+					mass = 0.1590284
+					tankType = Structural
+					tankType_UIEditor
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.1590284
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = History.V2instruments
+				uid = 2540646911
+				mid = 3008460052
+				launchID = 94
+				parent = 1
+				position = 0,3.81930160522461,-0.0485579967498779
+				rotation = 0,1,0,0
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 6
+				attN = bottom, 1
+				mass = 0.2
+				temp = -200.6189
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = History.V2instruments
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = False
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Wedge Locks Off
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 33
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = True
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Structure On
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.2
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.vanguardInstruments
+				uid = 971551633
+				mid = 3008460052
+				launchID = 94
+				parent = 5
+				position = 0,3.96029090881348,1.04308128356934E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 5
+				mass = 0.075
+				temp = -199.9367
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = His.vanguardInstruments
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = True
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Wedge Locks On
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 33
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimator
+					isEnabled = True
+					enabled = True
+					played = True
+					EVENTS
+					{
+						GUIToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Structure On
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionEnable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionDisable
+						{
+							actionGroup = None
+							active = False
+						}
+						ActionToggle
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.075
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Not Enough ElectricCharge (0.0/0.0)
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					MechJebLocalSettings
+					{
+						MechJebModuleJoke
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRoverController
+						{
+							ControlHeading = False
+							ControlSpeed = False
+							BrakeOnEject = False
+							BrakeOnEnergyDepletion = False
+							WarpToDaylight = True
+							StabilityControl = False
+							LimitAcceleration = False
+							unlockParts = 
+							unlockTechs = 
+							heading
+							{
+								_val = 0
+								_text = 0
+							}
+							speed
+							{
+								_val = 10
+								_text = 10
+							}
+						}
+						MechJebModuleRoverWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointHelpWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRCSBalancerWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousAutopilotWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousAutopilot
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSettings
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTargetController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWarpHelper
+						{
+							unlockParts = 
+							unlockTechs = 
+							phaseAngle
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleTranslatron
+						{
+							trans_spd = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSpaceplaneAutopilot
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartASS
+						{
+							mode = ORBITAL
+							target = OFF
+							advReference = INERTIAL
+							advDirection = FORWARD
+							forceRol = False
+							unlockParts = 
+							unlockTechs = 
+							srfHdg
+							{
+								_val = 90
+								_text = 90
+							}
+							srfPit
+							{
+								_val = 90
+								_text = 90
+							}
+							srfRol
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelYaw
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelPit
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelRol
+							{
+								_val = 0
+								_text = 0
+							}
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleStageStats
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSpaceplaneGuidance
+						{
+							runwayIndex = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						ModExtensionDemo
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomWindowEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleDockingGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleDockingAutopilot
+						{
+							forceRol = False
+							overrideSafeDistance = False
+							unlockParts = 
+							unlockTechs = 
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleAscentGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentAutopilot
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeAdjustment
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentPathEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleManeuverPlanner
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingPredictions
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeExecutor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleJokeObscurePanel
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleInfoItems
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingAutopilot
+						{
+							deployGears = True
+							deployChutes = True
+							unlockParts = 
+							unlockTechs = 
+							touchdownSpeed
+							{
+								_val = 0.5
+								_text = 0.5
+							}
+							limitGearsStage
+							{
+								val = 0
+								_text = 0
+							}
+							limitChutesStage
+							{
+								val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleLandingGuidance
+						{
+							landingSiteIdx = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWarpController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustController
+						{
+							limitThrottle = False
+							unlockParts = 
+							unlockTechs = 
+							maxThrottle
+							{
+								_val = 1
+								_text = 100
+							}
+						}
+						MechJebModuleRCSController
+						{
+							unlockParts = 
+							unlockTechs = 
+							Tf
+							{
+								_val = 1
+								_text = 1
+							}
+						}
+						MechJebModuleRCSBalancer
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleStagingController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleFlightRecorder
+						{
+							markUT = 4825719.22814658
+							deltaVExpended = 9397.20012091104
+							dragLosses = 0
+							gravityLosses = 1145.48683585755
+							steeringLosses = 61.2752704880733
+							markLatitude = 28.608784930987
+							markLongitude = -80.5997636601677
+							markAltitude = 95.7409452755004
+							markBodyIndex = 1
+							maxDragGees = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARControlSys
+					isEnabled = True
+					EVENTS
+					{
+						AerodynamicFailureStatus
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 1000
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				uid = 2172328811
+				mid = 3008460052
+				launchID = 94
+				parent = 1
+				position = -0.700000047683716,2.76980018615723,0
+				rotation = 0,1,0,0
+				mirror = 1,1,1
+				istg = 0
+				dstg = 3
+				sqor = 0
+				sidx = 2
+				attm = 0
+				srfN = None, -1
+				attN = connect, 1
+				mass = 0.009063874
+				temp = -199.8271
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = KzProcFairingSide2
+				modCost = 45.31937
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 8
+					numSideParts = 3
+					baseRad = 0.6440001
+					maxRad = 0.6440001
+					cylStart = 0
+					cylEnd = 1.2
+					topRad = 0.6440001
+					inlineHeight = 1.2
+					sideThickness = 0.056
+					meshPos = (-0.7, 0.3712006, 0)
+					meshRot = (0, 0, 0, 1)
+					shapeLock = True
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.3
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 800
+					CrashTol = 12
+					BreakForce = 18.12775
+					BreakTorque = 18.12775
+					Torque = 0
+					Decouple = 0
+					Mass = 0.009063874
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARPayloadFairingModule
+					isEnabled = True
+					EVENTS
+					{
+						FairingShapeChanged
+						{
+							active = True
+							guiActive = False
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAMercuryAtlasLFTLong
+				uid = 1489492424
+				mid = 3008460052
+				launchID = 94
+				parent = 0
+				position = 0,-6.23099899291992,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 0
+				attN = bottom, 9
+				mass = 1
+				temp = -202.4986
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = His.FASAMercuryAtlasLFTLong
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 1400
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 2.636556
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Kerosene
+					amount = 659.069297635324
+					maxAmount = 39127
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = LqdOxygen
+					amount = 960.665622933318
+					maxAmount = 62706
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = His.FASAMercuryAtlasEng
+				uid = 2432633726
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 0,-12.3509998321533,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 0
+				sqor = 1
+				sidx = 3
+				attm = 0
+				srfN = None, -1
+				attN = top, 8
+				attN = None, -1
+				mass = 0.46
+				temp = -199.9992
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = His.FASAMercuryAtlasEng
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleEngineConfigs
+					isEnabled = True
+					configuration = Atlas B
+					techLevel = -1
+					thrustRating = maxThrust
+					modded = False
+					EVENTS
+					{
+						NextEngine
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Current Configuration
+							guiName = Current Configuration
+							category = Current Configuration
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						NextTech
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Tech Level
+							guiName = Tech Level
+							category = Tech Level
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleEngineIgnitor
+					isEnabled = True
+					ignitionsRemained = 0
+					EVENTS
+					{
+						ReloadIgnitor
+						{
+							active = True
+							guiActive = False
+							guiIcon = Reload Ignitor
+							guiName = Reload Ignitor (type0 - 0/1)
+							category = Reload Ignitor
+							guiActiveUnfocused = False
+							unfocusedRange = 3
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					IGNITOR_RESOURCE
+					{
+						name = Kerosene
+						amount = 0.76
+					}
+					IGNITOR_RESOURCE
+					{
+						name = LqdOxygen
+						amount = 1.22
+					}
+					IGNITOR_RESOURCE
+					{
+						name = ElectricCharge
+						amount = 1
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 245
+					MaxTemp = 2000
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.46
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAMercuryAtlasVernierEngine
+				uid = 3998192165
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 3.05473804473877E-07,-12.5274791717529,1.52403485774994
+				rotation = 8.742278E-08,-1,0,0
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 1
+				attm = 1
+				sym = 11
+				srfN = srfAttach, 8
+				mass = 0.0241
+				temp = -199.9992
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = His.FASAMercuryAtlasVernierEngine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleEngineIgnitor
+					isEnabled = True
+					ignitionsRemained = -1
+					EVENTS
+					{
+						ReloadIgnitor
+						{
+							active = True
+							guiActive = False
+							guiIcon = Reload Ignitor
+							guiName = Reload Ignitor (Electic - Infinite)
+							category = Reload Ignitor
+							guiActiveUnfocused = False
+							unfocusedRange = 3
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					IGNITOR_RESOURCE
+					{
+						name = Kerosene
+						amount = 0.15
+					}
+					IGNITOR_RESOURCE
+					{
+						name = LqdOxygen
+						amount = 0.3
+					}
+					IGNITOR_RESOURCE
+					{
+						name = ElectricCharge
+						amount = 0.05
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 5.56809
+					MaxTemp = 1900
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.0241
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableGimbal
+					isEnabled = True
+					gimbalRange = 65
+					reverseGimbalControl = False
+					gimbalRange_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 130
+						stepIncrement = 10
+					}
+					reverseGimbalControl_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionGimbalFlip
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAMercuryAtlasVernierEngine
+				uid = 2439346850
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -3.94880771636963E-07,-12.5274791717529,-1.52403509616852
+				rotation = -3.821371E-15,4.371139E-08,-8.742278E-08,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 2
+				attm = 1
+				sym = 10
+				srfN = srfAttach, 8
+				mass = 0.0241
+				temp = -199.9992
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = His.FASAMercuryAtlasVernierEngine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleEngineIgnitor
+					isEnabled = True
+					ignitionsRemained = -1
+					EVENTS
+					{
+						ReloadIgnitor
+						{
+							active = True
+							guiActive = False
+							guiIcon = Reload Ignitor
+							guiName = Reload Ignitor (Electic - Infinite)
+							category = Reload Ignitor
+							guiActiveUnfocused = False
+							unfocusedRange = 3
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					IGNITOR_RESOURCE
+					{
+						name = Kerosene
+						amount = 0.15
+					}
+					IGNITOR_RESOURCE
+					{
+						name = LqdOxygen
+						amount = 0.3
+					}
+					IGNITOR_RESOURCE
+					{
+						name = ElectricCharge
+						amount = 0.05
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 5.56809
+					MaxTemp = 1900
+					CrashTol = 12
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 0.0241
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableGimbal
+					isEnabled = True
+					gimbalRange = 65
+					reverseGimbalControl = False
+					gimbalRange_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 130
+						stepIncrement = 10
+					}
+					reverseGimbalControl_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionGimbalFlip
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 1260879946
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -1.18191587924957,-12.1097621917725,0.682379245758057
+				rotation = -0.6123724,0.3535535,-0.3535534,-0.6123725
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 13
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 4267260866
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.18191611766815,-12.1097621917725,-0.682379245758057
+				rotation = -0.3535534,-0.6123725,0.6123724,-0.3535534
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 12
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 2662998213
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.19238913059235,-12.0266227722168,0.688425898551941
+				rotation = 0.6123725,0.3535534,-0.3535534,0.6123725
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 15
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 39327290
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -1.19238889217377,-12.0266227722168,-0.688425779342651
+				rotation = -0.3535534,0.6123725,-0.6123724,-0.3535534
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 14
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 3160184301
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -1.18248891830444,-0.15308952331543,0.68271005153656
+				rotation = -0.6123724,0.3535534,-0.3535534,-0.6123725
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 17
+				sym = 18
+				sym = 19
+				sym = 20
+				sym = 21
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 1310091593
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -2.98023223876953E-07,-0.15308952331543,1.36542081832886
+				rotation = -0.7071068,2.974082E-08,-3.373358E-08,-0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 16
+				sym = 18
+				sym = 19
+				sym = 20
+				sym = 21
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 1407620428
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.18248915672302,-0.15308952331543,0.682710409164429
+				rotation = -0.6123725,-0.3535534,0.3535534,-0.6123725
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 16
+				sym = 17
+				sym = 19
+				sym = 20
+				sym = 21
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 2915660147
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.18248915672302,-0.15308952331543,-0.68271005153656
+				rotation = -0.3535534,-0.6123725,0.6123724,-0.3535534
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 16
+				sym = 17
+				sym = 18
+				sym = 20
+				sym = 21
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 1411182274
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 2.01165676116943E-07,-0.15308952331543,-1.36542117595673
+				rotation = 2.766662E-09,-0.7071068,0.7071068,6.75942E-09
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 16
+				sym = 17
+				sym = 18
+				sym = 19
+				sym = 21
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 1681673002
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -1.18248891830444,-0.15308952331543,-0.682710647583008
+				rotation = 0.3535533,-0.6123725,0.6123725,0.3535534
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 16
+				sym = 17
+				sym = 18
+				sym = 19
+				sym = 20
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.9992
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 2168850427
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -1.18142485618591,-5.88840866088867,0.682095646858215
+				rotation = -0.6123724,0.3535534,-0.3535534,-0.6123725
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 23
+				sym = 24
+				sym = 25
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -201.7506
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 2214926086
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -2.01165676116943E-07,-5.88840866088867,1.36419188976288
+				rotation = -0.7071068,2.974082E-08,-3.373358E-08,-0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				sym = 24
+				sym = 25
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -201.343
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 1586557360
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.18142414093018,-5.88840866088867,0.682095885276794
+				rotation = -0.6123725,-0.3535534,0.3535534,-0.6123725
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				sym = 23
+				sym = 25
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -200.938
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 3972935690
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.18142414093018,-5.88840866088867,-0.682095646858215
+				rotation = -0.3535534,-0.6123725,0.6123724,-0.3535534
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				sym = 23
+				sym = 24
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -200.5353
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 3771358675
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = 1.04308128356934E-07,-5.88840866088867,-1.36419212818146
+				rotation = 2.766662E-09,-0.7071068,0.7071068,6.75942E-09
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				sym = 23
+				sym = 24
+				sym = 25
+				sym = 27
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -200.1355
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = W485.SurfaceOmniLight
+				uid = 3237049381
+				mid = 3008460052
+				launchID = 94
+				parent = 8
+				position = -1.18142485618591,-5.88840866088867,-0.682096242904663
+				rotation = 0.3535533,-0.6123725,0.6123725,0.3535534
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				sym = 23
+				sym = 24
+				sym = 25
+				sym = 26
+				srfN = srfAttach, 8
+				mass = 1E-05
+				temp = -199.7377
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = NASAmission/Flags/NASA
+				rTrf = W485.SurfaceOmniLight
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ExtendedPartInfo
+					isEnabled = True
+					Thrust = 0
+					MaxTemp = 2100
+					CrashTol = 20
+					BreakForce = 250
+					BreakTorque = 250
+					Torque = 0
+					Decouple = 0
+					Mass = 1E-05
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					tweakScale = 1
+					currentScale = 1
+					defaultScale = 1
+					isFreeScale = False
+					version = 1.44.0.0
+					defaultTransformScale = (1, 1, 1)
+					dryCost = 100
+					tweakScale_UIEditor
+					{
+						controlEnabled = True
+						minValue = 0.625
+						maxValue = 5
+						incrementLarge = 1.25
+						incrementSmall = 0.125
+						incrementSlide = 0.001
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAeroReentry
+					isEnabled = True
+					adjustCollider = 0
+					crashTolerance = 8
+					damage = 0
+					dead = False
+					EVENTS
+					{
+						RepairDamage
+						{
+							active = True
+							guiActive = False
+							guiIcon = No Damage
+							guiName = No Damage
+							category = No Damage
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 4825868.98814324
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 4825708.06814683
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = True, 4825867.56814327
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
 			}
 		}
 	}

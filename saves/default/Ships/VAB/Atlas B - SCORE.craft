@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = His.FASA.Atlas.LFT.Cone2_4292564792
+	part = His.FASA.Atlas.LFT.Cone2_4293886242
 	partName = Part
 	pos = 0.1234279,19.34867,-0.1200439
 	rot = 0,0,0,1
@@ -16,10 +16,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = KzInterstageAdapter2_4292564754
-	link = His.FASAMercuryAtlasLFTLong_4292563534
-	attN = top,KzInterstageAdapter2_4292564754
-	attN = bottom,His.FASAMercuryAtlasLFTLong_4292563534
+	link = KzInterstageAdapter2_4293886204
+	link = His.FASAMercuryAtlasLFTLong_4293885992
+	attN = top,KzInterstageAdapter2_4293886204
+	attN = bottom,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -90,7 +90,7 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4292564754
+	part = KzInterstageAdapter2_4293886204
 	partName = Part
 	pos = 0.1234279,22.48967,-0.1200439
 	rot = 0,1,0,0
@@ -102,17 +102,17 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 47.86368
-	link = KzProcFairingSide2_4292564714
-	link = KzProcFairingSide2_4292564654
-	link = proceduralNoseCone_4292564594
-	link = History.V2instruments_4292564542
-	link = KzProcFairingSide2_4292563594
-	attN = bottom,His.FASA.Atlas.LFT.Cone2_4292564792
-	attN = top,History.V2instruments_4292564542
-	attN = top1,proceduralNoseCone_4292564594
-	attN = connect01,KzProcFairingSide2_4292563594
-	attN = connect02,KzProcFairingSide2_4292564654
-	attN = connect03,KzProcFairingSide2_4292564714
+	link = KzProcFairingSide2_4293886164
+	link = KzProcFairingSide2_4293886104
+	link = proceduralNoseCone_4293886044
+	link = History.V2instruments_4293884956
+	link = KzProcFairingSide2_4293884008
+	attN = bottom,His.FASA.Atlas.LFT.Cone2_4293886242
+	attN = top,History.V2instruments_4293884956
+	attN = top1,proceduralNoseCone_4293886044
+	attN = connect01,KzProcFairingSide2_4293884008
+	attN = connect02,KzProcFairingSide2_4293886104
+	attN = connect03,KzProcFairingSide2_4293886164
 	EVENTS
 	{
 	}
@@ -335,7 +335,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2_4292564714
+	part = KzProcFairingSide2_4293886164
 	partName = Part
 	pos = 0.4734279,22.11847,0.486174
 	rot = 0,0,0,1
@@ -347,7 +347,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 45.31937
-	attN = connect,KzInterstageAdapter2_4292564754
+	attN = connect,KzInterstageAdapter2_4293886204
 	EVENTS
 	{
 	}
@@ -479,7 +479,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2_4292564654
+	part = KzProcFairingSide2_4293886104
 	partName = Part
 	pos = 0.473428,22.11847,-0.7262616
 	rot = 0,0,0,1
@@ -491,7 +491,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 45.31937
-	attN = connect,KzInterstageAdapter2_4292564754
+	attN = connect,KzInterstageAdapter2_4293886204
 	EVENTS
 	{
 	}
@@ -623,7 +623,7 @@ PART
 }
 PART
 {
-	part = proceduralNoseCone_4292564594
+	part = proceduralNoseCone_4293886044
 	partName = Part
 	pos = 0.1234279,24.87717,-0.1200439
 	rot = 0,0,0,1
@@ -635,7 +635,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0.01268252
-	attN = bottom,KzInterstageAdapter2_4292564754
+	attN = bottom,KzInterstageAdapter2_4293886204
 	EVENTS
 	{
 	}
@@ -757,7 +757,7 @@ PART
 }
 PART
 {
-	part = History.V2instruments_4292564542
+	part = History.V2instruments_4293884956
 	partName = Part
 	pos = 0.1234279,23.16797,-0.1686019
 	rot = 0,1,0,0
@@ -769,9 +769,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = His.vanguardInstruments_4292564072
-	attN = top,His.vanguardInstruments_4292564072
-	attN = bottom,KzInterstageAdapter2_4292564754
+	link = His.vanguardInstruments_4293884486
+	attN = top,His.vanguardInstruments_4293884486
+	attN = bottom,KzInterstageAdapter2_4293886204
 	EVENTS
 	{
 	}
@@ -891,7 +891,7 @@ PART
 }
 PART
 {
-	part = His.vanguardInstruments_4292564072
+	part = His.vanguardInstruments_4293884486
 	partName = Part
 	pos = 0.1234279,23.30896,-0.1200438
 	rot = 0,0,0,1
@@ -903,7 +903,7 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	attN = bottom,History.V2instruments_4292564542
+	attN = bottom,History.V2instruments_4293884956
 	EVENTS
 	{
 	}
@@ -1065,7 +1065,133 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleRendezvousGuidance
+			MechJebModuleAttitudeAdjustment
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentPathEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDockingGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDockingAutopilot
+			{
+				forceRol = False
+				overrideSafeDistance = False
+				unlockParts = 
+				unlockTechs = 
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleLandingPredictions
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingGuidance
+			{
+				landingSiteIdx = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingAutopilot
+			{
+				deployGears = True
+				deployChutes = True
+				unlockParts = 
+				unlockTechs = 
+				touchdownSpeed
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				limitGearsStage
+				{
+					val = 0
+					_text = 0
+				}
+				limitChutesStage
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleNodeEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilotWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilot
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -1092,7 +1218,7 @@ PART
 					_text = 10
 				}
 			}
-			MechJebModuleRoverWindow
+			MechJebModuleRendezvousGuidance
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -1102,58 +1228,12 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleRCSBalancerWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousAutopilotWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSettings
+			MechJebModuleRoverWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
 			MechJebModuleThrustWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleTargetController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWarpHelper
-			{
-				unlockParts = 
-				unlockTechs = 
-				phaseAngle
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleTranslatron
-			{
-				trans_spd = 0
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSpaceplaneAutopilot
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -1203,6 +1283,11 @@ PART
 					_text = 0
 				}
 			}
+			MechJebModuleSpaceplaneAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
 			MechJebModuleStageStats
 			{
 				unlockParts = 
@@ -1214,114 +1299,29 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			ModExtensionDemo
+			MechJebModuleTargetController
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleCustomWindowEditor
+			MechJebModuleWarpHelper
 			{
 				unlockParts = 
 				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleDockingGuidance
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleDockingAutopilot
-			{
-				forceRol = False
-				overrideSafeDistance = False
-				unlockParts = 
-				unlockTechs = 
-				rol
+				phaseAngle
 				{
 					_val = 0
 					_text = 0
 				}
 			}
-			MechJebModuleAscentGuidance
+			MechJebModuleWaypointWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleAscentAutopilot
+			MechJebModuleTranslatron
 			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeAdjustment
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentPathEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleLandingPredictions
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleJokeObscurePanel
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleLandingAutopilot
-			{
-				deployGears = True
-				deployChutes = True
-				unlockParts = 
-				unlockTechs = 
-				touchdownSpeed
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				limitGearsStage
-				{
-					val = 0
-					_text = 0
-				}
-				limitChutesStage
-				{
-					val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleLandingGuidance
-			{
-				landingSiteIdx = 0
+				trans_spd = 0
 				unlockParts = 
 				unlockTechs = 
 			}
@@ -1407,7 +1407,7 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide2_4292563594
+	part = KzProcFairingSide2_4293884008
 	partName = Part
 	pos = -0.5765722,22.11847,-0.1200439
 	rot = 0,1,0,0
@@ -1419,7 +1419,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 45.31937
-	attN = connect,KzInterstageAdapter2_4292564754
+	attN = connect,KzInterstageAdapter2_4293886204
 	EVENTS
 	{
 	}
@@ -1551,7 +1551,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryAtlasLFTLong_4292563534
+	part = His.FASAMercuryAtlasLFTLong_4293885992
 	partName = Part
 	pos = 0.1234279,13.11767,-0.1200439
 	rot = 0,0,0,1
@@ -1563,28 +1563,28 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = His.FASAMercuryAtlasEng_4292563428
-	link = His.FASAMercuryAtlasVernierEngine_4292562620
-	link = His.FASAMercuryAtlasVernierEngine_4292562554
-	link = FASAUmbilicalTower_4292562488
-	link = W485.SurfaceOmniLight_4292562354
-	link = W485.SurfaceOmniLight_4292562318
-	link = W485.SurfaceOmniLight_4292562282
-	link = W485.SurfaceOmniLight_4292562246
-	link = W485.SurfaceOmniLight_4292562210
-	link = W485.SurfaceOmniLight_4292562174
-	link = W485.SurfaceOmniLight_4292562138
-	link = W485.SurfaceOmniLight_4292562102
-	link = W485.SurfaceOmniLight_4292562066
-	link = W485.SurfaceOmniLight_4292562030
-	link = W485.SurfaceOmniLight_4292561994
-	link = W485.SurfaceOmniLight_4292561958
-	link = W485.SurfaceOmniLight_4292561922
-	link = W485.SurfaceOmniLight_4292561886
-	link = W485.SurfaceOmniLight_4292561850
-	link = W485.SurfaceOmniLight_4292561814
-	attN = top,His.FASA.Atlas.LFT.Cone2_4292564792
-	attN = bottom,His.FASAMercuryAtlasEng_4292563428
+	link = His.FASAMercuryAtlasEng_4293885886
+	link = His.FASAMercuryAtlasVernierEngine_4293885598
+	link = His.FASAMercuryAtlasVernierEngine_4293885532
+	link = FASAUmbilicalTower_4293885090
+	link = W485.SurfaceOmniLight_4293835174
+	link = W485.SurfaceOmniLight_4293835030
+	link = W485.SurfaceOmniLight_4293834782
+	link = W485.SurfaceOmniLight_4293834548
+	link = W485.SurfaceOmniLight_4293833518
+	link = W485.SurfaceOmniLight_4293832822
+	link = W485.SurfaceOmniLight_4293832778
+	link = W485.SurfaceOmniLight_4293832734
+	link = W485.SurfaceOmniLight_4293832690
+	link = W485.SurfaceOmniLight_4293832646
+	link = W485.SurfaceOmniLight_4293832388
+	link = W485.SurfaceOmniLight_4293832342
+	link = W485.SurfaceOmniLight_4293832298
+	link = W485.SurfaceOmniLight_4293832254
+	link = W485.SurfaceOmniLight_4293832210
+	link = W485.SurfaceOmniLight_4293832166
+	attN = top,His.FASA.Atlas.LFT.Cone2_4293886242
+	attN = bottom,His.FASAMercuryAtlasEng_4293885886
 	EVENTS
 	{
 	}
@@ -1655,7 +1655,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryAtlasEng_4292563428
+	part = His.FASAMercuryAtlasEng_4293885886
 	partName = Part
 	pos = 0.1234279,6.997669,-0.1200439
 	rot = 0,0,0,1
@@ -1667,9 +1667,9 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	link = His.FASAMercuryFairing_4292563350
-	attN = top,His.FASAMercuryAtlasLFTLong_4292563534
-	attN = bottom,His.FASAMercuryFairing_4292563350
+	link = His.FASAMercuryFairing_4293885808
+	attN = top,His.FASAMercuryAtlasLFTLong_4293885992
+	attN = bottom,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -1865,7 +1865,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryFairing_4292563350
+	part = His.FASAMercuryFairing_4293885808
 	partName = Part
 	pos = 0.1234279,6.897671,-0.1200439
 	rot = 0,0,0,1
@@ -1877,19 +1877,19 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = His.FASAMercuryAtlasEngBooster_4292563280
-	link = His.FASAMercuryAtlasEngBooster_4292563210
-	link = FASAlaunchClampAtlas_4292563140
-	link = FASAlaunchClampAtlas_4292563046
-	link = FASAlaunchClampAtlas_4292562952
-	link = FASAlaunchClampAtlas_4292562858
-	link = W485.SurfaceOmniLight_4292562764
-	link = W485.SurfaceOmniLight_4292562728
-	link = W485.SurfaceOmniLight_4292562692
-	link = W485.SurfaceOmniLight_4292562656
-	attN = top,His.FASAMercuryAtlasEng_4292563428
-	attN = bottom1,His.FASAMercuryAtlasEngBooster_4292563280
-	attN = bottom2,His.FASAMercuryAtlasEngBooster_4292563210
+	link = His.FASAMercuryAtlasEngBooster_4293885738
+	link = His.FASAMercuryAtlasEngBooster_4293885668
+	link = FASAlaunchClampAtlas_4293885466
+	link = FASAlaunchClampAtlas_4293885372
+	link = FASAlaunchClampAtlas_4293885278
+	link = FASAlaunchClampAtlas_4293885184
+	link = W485.SurfaceOmniLight_4293837806
+	link = W485.SurfaceOmniLight_4293836146
+	link = W485.SurfaceOmniLight_4293835928
+	link = W485.SurfaceOmniLight_4293835312
+	attN = top,His.FASAMercuryAtlasEng_4293885886
+	attN = bottom1,His.FASAMercuryAtlasEngBooster_4293885738
+	attN = bottom2,His.FASAMercuryAtlasEngBooster_4293885668
 	EVENTS
 	{
 	}
@@ -2005,7 +2005,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryAtlasEngBooster_4292563280
+	part = His.FASAMercuryAtlasEngBooster_4293885738
 	partName = Part
 	pos = 1.591728,2.97167,-0.1200439
 	rot = 0,0,0,1
@@ -2017,8 +2017,8 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	sym = His.FASAMercuryAtlasEngBooster_4292563210
-	attN = top,His.FASAMercuryFairing_4292563350
+	sym = His.FASAMercuryAtlasEngBooster_4293885668
+	attN = top,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2229,7 +2229,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryAtlasEngBooster_4292563210
+	part = His.FASAMercuryAtlasEngBooster_4293885668
 	partName = Part
 	pos = -1.344872,2.97167,-0.1200439
 	rot = 0,1,0,-4.371139E-08
@@ -2241,8 +2241,8 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	sym = His.FASAMercuryAtlasEngBooster_4292563280
-	attN = top,His.FASAMercuryFairing_4292563350
+	sym = His.FASAMercuryAtlasEngBooster_4293885738
+	attN = top,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2453,7 +2453,7 @@ PART
 }
 PART
 {
-	part = FASAlaunchClampAtlas_4292563140
+	part = FASAlaunchClampAtlas_4293885466
 	partName = Strut
 	pos = -3.15536,0.9510536,-0.1200437
 	rot = 0.0492373,0.7053905,-0.04923733,0.7053905
@@ -2465,8 +2465,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	sym = FASAlaunchClampAtlas_4292563046
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = FASAlaunchClampAtlas_4293885372
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2524,7 +2524,7 @@ PART
 }
 PART
 {
-	part = FASAlaunchClampAtlas_4292563046
+	part = FASAlaunchClampAtlas_4293885372
 	partName = Strut
 	pos = 3.402215,0.9510536,-0.1200443
 	rot = -0.04923733,0.7053905,-0.04923729,-0.7053905
@@ -2536,8 +2536,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	sym = FASAlaunchClampAtlas_4292563140
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = FASAlaunchClampAtlas_4293885466
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2595,7 +2595,7 @@ PART
 }
 PART
 {
-	part = FASAlaunchClampAtlas_4292562952
+	part = FASAlaunchClampAtlas_4293885278
 	partName = Strut
 	pos = 0.1234282,0.964632,1.802651
 	rot = 0,-1,0,8.742278E-08
@@ -2607,8 +2607,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	sym = FASAlaunchClampAtlas_4292562858
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = FASAlaunchClampAtlas_4293885184
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2666,7 +2666,7 @@ PART
 }
 PART
 {
-	part = FASAlaunchClampAtlas_4292562858
+	part = FASAlaunchClampAtlas_4293885184
 	partName = Strut
 	pos = 0.1234274,0.964632,-2.042739
 	rot = 0,1.311342E-07,0,1
@@ -2678,8 +2678,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	sym = FASAlaunchClampAtlas_4292562952
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = FASAlaunchClampAtlas_4293885278
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2737,7 +2737,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562764
+	part = W485.SurfaceOmniLight_4293837806
 	partName = Part
 	pos = -0.8363718,2.798136,0.8397555
 	rot = -0.6532815,0.2705981,-0.2705981,-0.6532815
@@ -2749,8 +2749,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562728
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = W485.SurfaceOmniLight_4293836146
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -2915,7 +2915,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562728
+	part = W485.SurfaceOmniLight_4293836146
 	partName = Part
 	pos = 1.083228,2.798136,-1.079843
 	rot = -0.2705981,-0.6532815,0.6532815,-0.2705981
@@ -2927,8 +2927,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562764
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = W485.SurfaceOmniLight_4293837806
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -3093,9 +3093,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562692
+	part = W485.SurfaceOmniLight_4293835928
 	partName = Part
-	pos = 1.083316,2.818369,0.8398439
+	pos = 1.083316,2.818369,0.8398438
 	rot = 0.6532815,0.2705981,-0.2705981,0.6532815
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3105,8 +3105,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562656
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = W485.SurfaceOmniLight_4293835312
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -3271,7 +3271,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562656
+	part = W485.SurfaceOmniLight_4293835312
 	partName = Part
 	pos = -0.83646,2.818369,-1.079931
 	rot = -0.2705981,0.6532815,-0.6532815,-0.2705981
@@ -3283,8 +3283,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562692
-	srfN = srfAttach,His.FASAMercuryFairing_4292563350
+	sym = W485.SurfaceOmniLight_4293835928
+	srfN = srfAttach,His.FASAMercuryFairing_4293885808
 	EVENTS
 	{
 	}
@@ -3449,7 +3449,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryAtlasVernierEngine_4292562620
+	part = His.FASAMercuryAtlasVernierEngine_4293885598
 	partName = Part
 	pos = 0.1234282,6.82119,1.403991
 	rot = 8.742278E-08,-1,0,0
@@ -3461,8 +3461,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	sym = His.FASAMercuryAtlasVernierEngine_4292562554
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = His.FASAMercuryAtlasVernierEngine_4293885532
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -3667,7 +3667,7 @@ PART
 }
 PART
 {
-	part = His.FASAMercuryAtlasVernierEngine_4292562554
+	part = His.FASAMercuryAtlasVernierEngine_4293885532
 	partName = Part
 	pos = 0.1234275,6.82119,-1.644079
 	rot = -3.821371E-15,4.371139E-08,-8.742278E-08,1
@@ -3679,8 +3679,8 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	sym = His.FASAMercuryAtlasVernierEngine_4292562620
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = His.FASAMercuryAtlasVernierEngine_4293885598
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -3885,7 +3885,7 @@ PART
 }
 PART
 {
-	part = FASAUmbilicalTower_4292562488
+	part = FASAUmbilicalTower_4293885090
 	partName = Strut
 	pos = 0.173429,16.01658,6.138634
 	rot = 0,-1,0,8.742278E-08
@@ -3897,7 +3897,7 @@ PART
 	sqor = 2
 	attm = 1
 	modCost = 0
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -3958,7 +3958,7 @@ PART
 		isEnabled = True
 		enablePump = False
 		pump_rate = 100
-		timestamp = 4802573.57670599
+		timestamp = 4773941.94221712
 		EVENTS
 		{
 			TogglePump
@@ -4055,9 +4055,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562354
+	part = W485.SurfaceOmniLight_4293835174
 	partName = Part
-	pos = -1.058488,7.238907,0.5623354
+	pos = -1.058488,7.238907,0.5623353
 	rot = -0.6123724,0.3535535,-0.3535534,-0.6123725
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4067,8 +4067,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562318
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293835030
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -4233,7 +4233,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562318
+	part = W485.SurfaceOmniLight_4293835030
 	partName = Part
 	pos = 1.305344,7.238907,-0.8024231
 	rot = -0.3535534,-0.6123725,0.6123724,-0.3535534
@@ -4245,8 +4245,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562354
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293835174
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -4411,7 +4411,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562282
+	part = W485.SurfaceOmniLight_4293834782
 	partName = Part
 	pos = 1.315817,7.322046,0.568382
 	rot = 0.6123725,0.3535534,-0.3535534,0.6123725
@@ -4423,8 +4423,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562246
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293834548
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -4589,7 +4589,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562246
+	part = W485.SurfaceOmniLight_4293834548
 	partName = Part
 	pos = -1.068961,7.322046,-0.8084697
 	rot = -0.3535534,0.6123725,-0.6123724,-0.3535534
@@ -4601,8 +4601,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562282
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293834782
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -4767,7 +4767,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562210
+	part = W485.SurfaceOmniLight_4293833518
 	partName = Part
 	pos = -1.059061,19.19558,0.5626662
 	rot = -0.6123724,0.3535534,-0.3535534,-0.6123725
@@ -4779,12 +4779,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562174
-	sym = W485.SurfaceOmniLight_4292562138
-	sym = W485.SurfaceOmniLight_4292562102
-	sym = W485.SurfaceOmniLight_4292562066
-	sym = W485.SurfaceOmniLight_4292562030
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832822
+	sym = W485.SurfaceOmniLight_4293832778
+	sym = W485.SurfaceOmniLight_4293832734
+	sym = W485.SurfaceOmniLight_4293832690
+	sym = W485.SurfaceOmniLight_4293832646
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -4949,7 +4949,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562174
+	part = W485.SurfaceOmniLight_4293832822
 	partName = Part
 	pos = 0.1234276,19.19558,1.245377
 	rot = -0.7071068,2.974082E-08,-3.373358E-08,-0.7071068
@@ -4961,12 +4961,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562210
-	sym = W485.SurfaceOmniLight_4292562138
-	sym = W485.SurfaceOmniLight_4292562102
-	sym = W485.SurfaceOmniLight_4292562066
-	sym = W485.SurfaceOmniLight_4292562030
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293833518
+	sym = W485.SurfaceOmniLight_4293832778
+	sym = W485.SurfaceOmniLight_4293832734
+	sym = W485.SurfaceOmniLight_4293832690
+	sym = W485.SurfaceOmniLight_4293832646
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -5131,7 +5131,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562138
+	part = W485.SurfaceOmniLight_4293832778
 	partName = Part
 	pos = 1.305917,19.19558,0.5626665
 	rot = -0.6123725,-0.3535534,0.3535534,-0.6123725
@@ -5143,12 +5143,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562210
-	sym = W485.SurfaceOmniLight_4292562174
-	sym = W485.SurfaceOmniLight_4292562102
-	sym = W485.SurfaceOmniLight_4292562066
-	sym = W485.SurfaceOmniLight_4292562030
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293833518
+	sym = W485.SurfaceOmniLight_4293832822
+	sym = W485.SurfaceOmniLight_4293832734
+	sym = W485.SurfaceOmniLight_4293832690
+	sym = W485.SurfaceOmniLight_4293832646
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -5313,9 +5313,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562102
+	part = W485.SurfaceOmniLight_4293832734
 	partName = Part
-	pos = 1.305917,19.19558,-0.8027539
+	pos = 1.305917,19.19558,-0.802754
 	rot = -0.3535534,-0.6123725,0.6123724,-0.3535534
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5325,12 +5325,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562210
-	sym = W485.SurfaceOmniLight_4292562174
-	sym = W485.SurfaceOmniLight_4292562138
-	sym = W485.SurfaceOmniLight_4292562066
-	sym = W485.SurfaceOmniLight_4292562030
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293833518
+	sym = W485.SurfaceOmniLight_4293832822
+	sym = W485.SurfaceOmniLight_4293832778
+	sym = W485.SurfaceOmniLight_4293832690
+	sym = W485.SurfaceOmniLight_4293832646
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -5495,7 +5495,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562066
+	part = W485.SurfaceOmniLight_4293832690
 	partName = Part
 	pos = 0.1234281,19.19558,-1.485465
 	rot = 2.766662E-09,-0.7071068,0.7071068,6.75942E-09
@@ -5507,12 +5507,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562210
-	sym = W485.SurfaceOmniLight_4292562174
-	sym = W485.SurfaceOmniLight_4292562138
-	sym = W485.SurfaceOmniLight_4292562102
-	sym = W485.SurfaceOmniLight_4292562030
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293833518
+	sym = W485.SurfaceOmniLight_4293832822
+	sym = W485.SurfaceOmniLight_4293832778
+	sym = W485.SurfaceOmniLight_4293832734
+	sym = W485.SurfaceOmniLight_4293832646
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -5677,9 +5677,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292562030
+	part = W485.SurfaceOmniLight_4293832646
 	partName = Part
-	pos = -1.059061,19.19558,-0.8027545
+	pos = -1.059061,19.19558,-0.8027546
 	rot = 0.3535533,-0.6123725,0.6123725,0.3535534
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5689,12 +5689,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292562210
-	sym = W485.SurfaceOmniLight_4292562174
-	sym = W485.SurfaceOmniLight_4292562138
-	sym = W485.SurfaceOmniLight_4292562102
-	sym = W485.SurfaceOmniLight_4292562066
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293833518
+	sym = W485.SurfaceOmniLight_4293832822
+	sym = W485.SurfaceOmniLight_4293832778
+	sym = W485.SurfaceOmniLight_4293832734
+	sym = W485.SurfaceOmniLight_4293832690
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -5859,7 +5859,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292561994
+	part = W485.SurfaceOmniLight_4293832388
 	partName = Part
 	pos = -1.057997,13.46026,0.5620518
 	rot = -0.6123724,0.3535534,-0.3535534,-0.6123725
@@ -5871,12 +5871,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292561958
-	sym = W485.SurfaceOmniLight_4292561922
-	sym = W485.SurfaceOmniLight_4292561886
-	sym = W485.SurfaceOmniLight_4292561850
-	sym = W485.SurfaceOmniLight_4292561814
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832342
+	sym = W485.SurfaceOmniLight_4293832298
+	sym = W485.SurfaceOmniLight_4293832254
+	sym = W485.SurfaceOmniLight_4293832210
+	sym = W485.SurfaceOmniLight_4293832166
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -6041,7 +6041,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292561958
+	part = W485.SurfaceOmniLight_4293832342
 	partName = Part
 	pos = 0.1234277,13.46026,1.244148
 	rot = -0.7071068,2.974082E-08,-3.373358E-08,-0.7071068
@@ -6053,12 +6053,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292561994
-	sym = W485.SurfaceOmniLight_4292561922
-	sym = W485.SurfaceOmniLight_4292561886
-	sym = W485.SurfaceOmniLight_4292561850
-	sym = W485.SurfaceOmniLight_4292561814
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832388
+	sym = W485.SurfaceOmniLight_4293832298
+	sym = W485.SurfaceOmniLight_4293832254
+	sym = W485.SurfaceOmniLight_4293832210
+	sym = W485.SurfaceOmniLight_4293832166
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -6223,7 +6223,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292561922
+	part = W485.SurfaceOmniLight_4293832298
 	partName = Part
 	pos = 1.304852,13.46026,0.562052
 	rot = -0.6123725,-0.3535534,0.3535534,-0.6123725
@@ -6235,12 +6235,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292561994
-	sym = W485.SurfaceOmniLight_4292561958
-	sym = W485.SurfaceOmniLight_4292561886
-	sym = W485.SurfaceOmniLight_4292561850
-	sym = W485.SurfaceOmniLight_4292561814
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832388
+	sym = W485.SurfaceOmniLight_4293832342
+	sym = W485.SurfaceOmniLight_4293832254
+	sym = W485.SurfaceOmniLight_4293832210
+	sym = W485.SurfaceOmniLight_4293832166
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -6405,9 +6405,9 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292561886
+	part = W485.SurfaceOmniLight_4293832254
 	partName = Part
-	pos = 1.304852,13.46026,-0.8021395
+	pos = 1.304852,13.46026,-0.8021396
 	rot = -0.3535534,-0.6123725,0.6123724,-0.3535534
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -6417,12 +6417,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292561994
-	sym = W485.SurfaceOmniLight_4292561958
-	sym = W485.SurfaceOmniLight_4292561922
-	sym = W485.SurfaceOmniLight_4292561850
-	sym = W485.SurfaceOmniLight_4292561814
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832388
+	sym = W485.SurfaceOmniLight_4293832342
+	sym = W485.SurfaceOmniLight_4293832298
+	sym = W485.SurfaceOmniLight_4293832210
+	sym = W485.SurfaceOmniLight_4293832166
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -6587,7 +6587,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292561850
+	part = W485.SurfaceOmniLight_4293832210
 	partName = Part
 	pos = 0.123428,13.46026,-1.484236
 	rot = 2.766662E-09,-0.7071068,0.7071068,6.75942E-09
@@ -6599,12 +6599,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292561994
-	sym = W485.SurfaceOmniLight_4292561958
-	sym = W485.SurfaceOmniLight_4292561922
-	sym = W485.SurfaceOmniLight_4292561886
-	sym = W485.SurfaceOmniLight_4292561814
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832388
+	sym = W485.SurfaceOmniLight_4293832342
+	sym = W485.SurfaceOmniLight_4293832298
+	sym = W485.SurfaceOmniLight_4293832254
+	sym = W485.SurfaceOmniLight_4293832166
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
@@ -6769,7 +6769,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4292561814
+	part = W485.SurfaceOmniLight_4293832166
 	partName = Part
 	pos = -1.057997,13.46026,-0.8021401
 	rot = 0.3535533,-0.6123725,0.6123725,0.3535534
@@ -6781,12 +6781,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = W485.SurfaceOmniLight_4292561994
-	sym = W485.SurfaceOmniLight_4292561958
-	sym = W485.SurfaceOmniLight_4292561922
-	sym = W485.SurfaceOmniLight_4292561886
-	sym = W485.SurfaceOmniLight_4292561850
-	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4292563534
+	sym = W485.SurfaceOmniLight_4293832388
+	sym = W485.SurfaceOmniLight_4293832342
+	sym = W485.SurfaceOmniLight_4293832298
+	sym = W485.SurfaceOmniLight_4293832254
+	sym = W485.SurfaceOmniLight_4293832210
+	srfN = srfAttach,His.FASAMercuryAtlasLFTLong_4293885992
 	EVENTS
 	{
 	}
