@@ -360,7 +360,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		 = 808421537
+		 = 1214499137
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -398,7 +398,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 4833500.51838688
+		UT = 252288083.940045
 		activeVessel = 0
 		mapViewFiltering = 8
 		VESSEL
@@ -11184,552 +11184,6 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 115cc7d1bb004e3dbcb22606e362a88f
-			name = Ast. SQB-830
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 3573029.12493651
-			lct = 3573029.12493651
-			root = 0
-			lat = 13.7882794402031
-			lon = 46.5158966287773
-			alt = 147058073827.536
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.6231365,-0.6525279,0.1056318,0.4180312
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 152017069788.595
-				ECC = 0.0725937373611937
-				INC = 21.9794297441543
-				LPE = 227.21333194271
-				LAN = 0.92904611538512
-				MNA = 5.17033883234047
-				EPH = 4821621.38771082
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 1293849394
-				mid = 1293849394
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 3573029.12493651
-				lifetime = 1479530.78613281
-				refTime = 1728000
-				size = 1
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 4fa2f0ce07e0439cbd14b5a917c78086
-			name = Ast. FUE-328
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 3851029.12493651
-			lct = 3851029.12493651
-			root = 0
-			lat = 13.2881617204561
-			lon = -181.493580654031
-			alt = 147334213703.455
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.5237151,0.656518,0.4948744,0.2231723
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 421679039.77077
-				ECC = 0.451365627688608
-				INC = 69.5683777066248
-				LPE = 306.122182246799
-				LAN = 35.509588461913
-				MNA = 3.1211632237241
-				EPH = 4714919.17317965
-				REF = 1
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 1828692810
-				mid = 1828692810
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 3851029.12493651
-				lifetime = 1675222.94311523
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 1e6a0f47fbe64bed8f1bed2adf62fd83
-			name = Ast. DZK-926
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4330726.14642088
-			lct = 4330726.14642088
-			root = 0
-			lat = 11.14605000566
-			lon = 143.794629634135
-			alt = 147711299766.896
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.6222731,-0.3096637,-0.04365245,0.7176204
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 152062605614.993
-				ECC = 0.0728349369548854
-				INC = 22.9124810397369
-				LPE = 230.963242556835
-				LAN = 0.359079016180317
-				MNA = 5.11591795106318
-				EPH = 4821631.38771082
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 783418875
-				mid = 783418875
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4330726.14642088
-				lifetime = 1055943.73168945
-				refTime = 1728000
-				size = 4
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 8742114d0af842ee899440f38d8e11c4
-			name = Ast. POU-500
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4339198.21681151
-			lct = 4339198.21681151
-			root = 0
-			lat = 11.1843226569147
-			lon = 496.817394803442
-			alt = 148935116005.036
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.493285,-0.7003255,0.4521558,0.2485341
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 158864708114.601
-				ECC = 0.0614033676902193
-				INC = 23.6602119528516
-				LPE = 171.087927397487
-				LAN = 359.641243381094
-				MNA = 0.0649931762626196
-				EPH = 6392768.8772119
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 2013066879
-				mid = 2013066879
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4339198.21681151
-				lifetime = 1591480.75561523
-				refTime = 1728000
-				size = 1
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 18b7eda9b79f43e5ba0e1476dbfedb73
-			name = Ast. HZU-251
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4384291.72267088
-			lct = 4384291.72267088
-			root = 0
-			lat = 10.747267753415
-			lon = 100.046697365721
-			alt = 147355350874.257
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.008437785,0.9072945,0.1888597,0.3756029
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 226770404.997131
-				ECC = 0.952134716326254
-				INC = 145.343087292652
-				LPE = 74.1110789734352
-				LAN = 352.437678925148
-				MNA = 3.5773606151862
-				EPH = 4713469.24154047
-				REF = 1
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 165179269
-				mid = 165179269
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4384291.72267088
-				lifetime = 1584321.89941406
-				refTime = 1728000
-				size = 1
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = e7f7173078c34ef781ad5d4b1709acec
-			name = Ast. KTW-078
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4618809.95935057
-			lct = 4618809.95935057
-			root = 0
-			lat = 9.95678382083398
-			lon = -92.4883316072749
-			alt = 147728728959.867
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.3963658,-0.3171583,0.619473,0.5987972
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 364590100.578206
-				ECC = 0.918750441127267
-				INC = 30.304958989351
-				LPE = 301.905206339055
-				LAN = 76.7135858683719
-				MNA = 3.88162125105068
-				EPH = 4715114.93001518
-				REF = 1
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 2103598798
-				mid = 2103598798
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4618809.95935057
-				lifetime = 253476.857757568
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = fe1da9c0252c474992135cbedf827c03
-			name = Ast. XUZ-866
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4646973.33821776
-			lct = 4646973.33821776
-			root = 0
-			lat = 9.82723964661523
-			lon = -116.168861827837
-			alt = 146754743936.142
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.7168385,0.575224,0.07312424,0.3871856
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 149401968541.287
-				ECC = 0.0582008220821218
-				INC = 22.7243067877071
-				LPE = 236.579441120583
-				LAN = 0.649517538198324
-				MNA = 4.98881167129928
-				EPH = 4820579.03224248
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				uid = 808421537
-				mid = 808421537
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4646973.33821776
-				lifetime = 212825.143432617
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
 			pid = 7b39713706e248fa842ea840da6bb48c
 			name = Atlas B - SCORE
 			type = Probe
@@ -11737,32 +11191,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 6511.4102686746
+			met = 247462337.731884
 			lct = 4825719.22814658
 			root = 0
-			lat = 31.7111600899516
-			lon = 267.945368981966
-			alt = 317322.386531099
+			lat = -32.1792690350358
+			lon = 112.463070927897
+			alt = 1347568.77923878
 			hgt = -1
-			nrm = 0.529649,0.7932677,0.3003303
-			rot = -0.1530762,0.8239064,-0.1171298,0.5329415
-			CoM = 0.0008521529,-5.466729,-0.001730098
+			nrm = 0.4752479,-0.3554707,0.804848
+			rot = 0.08519674,-0.3620201,-0.1731955,0.9119684
+			CoM = -8.362426E-06,-5.466802,-0.002583085
 			stg = 1
 			prst = False
 			ref = 971551633
 			ctrl = False
 			cPch = 
 			cHdg = 
-			cMod = 1
+			cMod = 0
 			ORBIT
 			{
-				SMA = 7205533.88135402
-				ECC = 0.0900251476323983
-				INC = 32.2999932265898
-				LPE = 60.0039472167115
-				LAN = 295.34026384072
-				MNA = 0.593614096915014
-				EPH = 4832230.63841526
+				SMA = 7205532.14210532
+				ECC = 0.0900240596073326
+				INC = 32.2999932083296
+				LPE = 60.0035971779867
+				LAN = 295.340265000647
+				MNA = 3.85520901951606
+				EPH = 252288056.960031
 				REF = 1
 			}
 			PART
@@ -11784,7 +11238,7 @@ GAME
 				attN = top, 1
 				attN = bottom, 8
 				mass = 0.1
-				temp = -202.1821
+				temp = -38.93237
 				expt = 0.5
 				state = 0
 				connected = True
@@ -11909,7 +11363,7 @@ GAME
 				attN = connect02, 3
 				attN = connect03, 2
 				mass = 0.04786368
-				temp = -202.2402
+				temp = -39.02716
 				expt = 0
 				state = 0
 				connected = True
@@ -12192,7 +11646,7 @@ GAME
 				srfN = None, -1
 				attN = connect, 1
 				mass = 0.009063874
-				temp = -201.4654
+				temp = -38.9096
 				expt = 0.5
 				state = 0
 				connected = True
@@ -12373,7 +11827,7 @@ GAME
 				srfN = None, -1
 				attN = connect, 1
 				mass = 0.009063874
-				temp = -201.03
+				temp = -38.89633
 				expt = 0.5
 				state = 0
 				connected = True
@@ -12554,7 +12008,7 @@ GAME
 				srfN = None, -1
 				attN = bottom, 1
 				mass = 0.1590284
-				temp = -200.6028
+				temp = -38.88759
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12726,7 +12180,7 @@ GAME
 				attN = top, 6
 				attN = bottom, 1
 				mass = 0.2
-				temp = -200.6189
+				temp = -38.89291
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12896,7 +12350,7 @@ GAME
 				attN = None, -1
 				attN = bottom, 5
 				mass = 0.075
-				temp = -199.9367
+				temp = -38.88115
 				expt = 0.5
 				state = 1
 				connected = True
@@ -13371,7 +12825,7 @@ GAME
 							markUT = 4825719.22814658
 							deltaVExpended = 9397.20012091104
 							dragLosses = 0
-							gravityLosses = 1145.48683585755
+							gravityLosses = 1125.18633747574
 							steeringLosses = 61.2752704880733
 							markLatitude = 28.608784930987
 							markLongitude = -80.5997636601677
@@ -13471,7 +12925,7 @@ GAME
 				srfN = None, -1
 				attN = connect, 1
 				mass = 0.009063874
-				temp = -199.8271
+				temp = -38.8594
 				expt = 0.5
 				state = 0
 				connected = True
@@ -13653,7 +13107,7 @@ GAME
 				attN = top, 0
 				attN = bottom, 9
 				mass = 1
-				temp = -202.4986
+				temp = -39.06303
 				expt = 0.5
 				state = 0
 				connected = True
@@ -13768,13 +13222,13 @@ GAME
 				istg = 1
 				dstg = 0
 				sqor = 1
-				sidx = 3
+				sidx = 0
 				attm = 0
 				srfN = None, -1
 				attN = top, 8
 				attN = None, -1
 				mass = 0.46
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 1
 				connected = True
@@ -14021,7 +13475,7 @@ GAME
 				sym = 11
 				srfN = srfAttach, 8
 				mass = 0.0241
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 1
 				connected = True
@@ -14275,7 +13729,7 @@ GAME
 				sym = 10
 				srfN = srfAttach, 8
 				mass = 0.0241
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 1
 				connected = True
@@ -14529,7 +13983,7 @@ GAME
 				sym = 13
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14717,7 +14171,7 @@ GAME
 				sym = 12
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14905,7 +14359,7 @@ GAME
 				sym = 15
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15093,7 +14547,7 @@ GAME
 				sym = 14
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15285,7 +14739,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15477,7 +14931,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15669,7 +15123,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15861,7 +15315,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16053,7 +15507,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16245,7 +15699,7 @@ GAME
 				sym = 20
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.9992
+				temp = -38.88791
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16437,7 +15891,7 @@ GAME
 				sym = 27
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -201.7506
+				temp = -38.91574
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16629,7 +16083,7 @@ GAME
 				sym = 27
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -201.343
+				temp = -38.90363
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16821,7 +16275,7 @@ GAME
 				sym = 27
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -200.938
+				temp = -38.89157
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17013,7 +16467,7 @@ GAME
 				sym = 27
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -200.5353
+				temp = -38.8795
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17205,7 +16659,7 @@ GAME
 				sym = 27
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -200.1355
+				temp = -38.86749
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17397,7 +16851,7 @@ GAME
 				sym = 26
 				srfN = srfAttach, 8
 				mass = 1E-05
-				temp = -199.7377
+				temp = -38.8555
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17607,6 +17061,552 @@ GAME
 				trimYaw = 0
 				trimRoll = 0
 				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 07ffda5985084efc96838628bbbf1496
+			name = Ast. EPO-697
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 23.1391432310638
+			lon = 102.488525910479
+			alt = 147322965657.036
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.6530997,0.5996317,-0.4405506,0.140775
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 152232447530.993
+				ECC = 0.030815030163937
+				INC = 23.6271849803233
+				LPE = 128.210684500887
+				LAN = 0.21443395355584
+				MNA = 0.429912867602213
+				EPH = 256781678.229107
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1164397644
+				mid = 1164397644
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 1492629.84008789
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1a54473baa8b4e6b8124a703dd40b711
+			name = Ast. TRP-756
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 22.6070211938316
+			lon = 102.701507959479
+			alt = 148467896872.866
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.09966639,0.6075892,-0.04693344,0.7865743
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 152467342977.931
+				ECC = 0.0299199237048105
+				INC = 23.0860434741722
+				LPE = 146.180219239735
+				LAN = 0.431748897336888
+				MNA = 0.13524361265094
+				EPH = 256812920.709576
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 896145897
+				mid = 896145897
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 1664942.87109375
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 4f3a08f181e4441c82a6950fcc583822
+			name = Ast. ZMV-927
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 22.9983436250784
+			lon = 102.426491045425
+			alt = 147389411681.156
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.5002531,-0.6523171,0.06082143,0.5661538
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 157006257985.908
+				ECC = 0.058581634813282
+				INC = 23.4713320659517
+				LPE = 116.144464333862
+				LAN = 0.313241771855701
+				MNA = 0.158644539206595
+				EPH = 254396559.961285
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1124148804
+				mid = 1124148804
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 1369784.28955078
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 0ae8394581cc4c45aae065a223160f88
+			name = Ast. SNB-842
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 22.8465887827538
+			lon = 102.413293041919
+			alt = 147782097591.367
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.5384904,-0.8290974,-0.02461882,0.1483899
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 154565716441.699
+				ECC = 0.0449951983570621
+				INC = 23.2846535758574
+				LPE = 131.020303686877
+				LAN = 0.722210562509076
+				MNA = 6.17768259758967
+				EPH = 254279222.845806
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1544477255
+				mid = 1544477255
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 1491251.33056641
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = ab86c7a2b14b4a9a8dbce137ab669ad3
+			name = Ast. PRK-379
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 22.8891231560111
+			lon = 102.741520594626
+			alt = 145930093979.155
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.662525,0.4553826,0.3415541,0.4868552
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 311071450.145936
+				ECC = 0.938655691225088
+				INC = 149.6347075069
+				LPE = 108.510804247073
+				LAN = 168.182372902776
+				MNA = 2.72974154766652
+				EPH = 252288081.960044
+				REF = 1
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1575486062
+				mid = 1575486062
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 949990.155029297
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = de3a2ace489d4d6d8e8268dc64669ad3
+			name = Ast. VCE-845
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 22.9351340194548
+			lon = 101.745314114974
+			alt = 147373837918.787
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.543511,-0.5732806,0.5431452,0.2844968
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 157411079555.961
+				ECC = 0.0651683640551138
+				INC = 23.3405705334869
+				LPE = 126.405472111876
+				LAN = 0.511260725365389
+				MNA = 0.245893961765341
+				EPH = 255784654.44981
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 424976300
+				mid = 424976300
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 752495.80078125
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 71a9de3685084327b265e7eef928d27c
+			name = Ast. ISB-435
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 252288081.940044
+			lct = 252288081.940044
+			root = 0
+			lat = 22.8156284398315
+			lon = 102.033339830499
+			alt = 146830032590.243
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.304329,0.4073743,-0.03427662,0.8603808
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 153255742509.531
+				ECC = 0.0394685709026872
+				INC = 23.192175363033
+				LPE = 119.497781998867
+				LAN = 1.18253002103302
+				MNA = 0.192285796520519
+				EPH = 254923232.336773
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1214499137
+				mid = 1214499137
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 252288081.940044
+				lifetime = 1011783.47167969
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
 			}
 		}
 	}
