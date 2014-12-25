@@ -1,10 +1,10 @@
-ship = Explorer 1
+ship = Explorer 1 - Redstone
 version = 0.25.0
 description = 
 type = VAB
 PART
 {
-	part = Fel.FASAExplorerProbe_4293403734
+	part = Fel.FASAExplorerProbe_4288821502
 	partName = Part
 	pos = 0.07102793,24.83884,-0.03787547
 	rot = 0,0,0,1
@@ -16,13 +16,13 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt_4293403610
-	link = W485.SurfaceOmniLight_4293403260
-	link = W485.SurfaceOmniLight_4293403224
-	link = W485.SurfaceOmniLight_4293403188
-	link = W485.SurfaceOmniLight_4293403152
-	link = W485.SurfaceOmniLight_4293403116
-	attN = bottom,Fel.FASAExplorerSgt_4293403610
+	link = Fel.FASAExplorerSgt_4288821378
+	link = W485.SurfaceOmniLight_4288821028
+	link = W485.SurfaceOmniLight_4288820992
+	link = W485.SurfaceOmniLight_4288820956
+	link = W485.SurfaceOmniLight_4288820920
+	link = W485.SurfaceOmniLight_4288820884
+	attN = bottom,Fel.FASAExplorerSgt_4288821378
 	EVENTS
 	{
 	}
@@ -280,10 +280,10 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 1200
+		CrashTol = 20
+		BreakForce = 200
+		BreakTorque = 200
 		Torque = 0.075
 		Decouple = 0
 		Mass = 0.0083
@@ -620,7 +620,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt_4293403610
+	part = Fel.FASAExplorerSgt_4288821378
 	partName = Part
 	pos = 0.07102793,23.63832,-0.03787547
 	rot = 0,0,0,1
@@ -632,9 +632,9 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt3Dec_4293403530
-	attN = top,Fel.FASAExplorerProbe_4293403734
-	attN = bottom,Fel.FASAExplorerSgt3Dec_4293403530
+	link = Fel.FASAExplorerSgt3Dec_4288821298
+	attN = top,Fel.FASAExplorerProbe_4288821502
+	attN = bottom,Fel.FASAExplorerSgt3Dec_4288821298
 	EVENTS
 	{
 	}
@@ -864,13 +864,13 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 2200
+		CrashTol = 20
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 0
-		Mass = 0.027494
+		Mass = 0.028894
 		EVENTS
 		{
 		}
@@ -902,7 +902,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt3Dec_4293403530
+	part = Fel.FASAExplorerSgt3Dec_4288821298
 	partName = Part
 	pos = 0.07102793,23.13936,-0.03787547
 	rot = 0,0,0,1
@@ -914,9 +914,9 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt3_4293403484
-	attN = top,Fel.FASAExplorerSgt_4293403610
-	attN = bottom,Fel.FASAExplorerSgt3_4293403484
+	link = Fel.FASAExplorerSgt3_4288821252
+	attN = top,Fel.FASAExplorerSgt_4288821378
+	attN = bottom,Fel.FASAExplorerSgt3_4288821252
 	EVENTS
 	{
 	}
@@ -981,13 +981,13 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 1600
+		CrashTol = 20
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 5
-		Mass = 0.009
+		Mass = 0.005
 		EVENTS
 		{
 		}
@@ -1009,7 +1009,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt3_4293403484
+	part = Fel.FASAExplorerSgt3_4288821252
 	partName = Part
 	pos = 0.07102793,22.23388,-0.03787547
 	rot = 0,0,0,1
@@ -1021,9 +1021,9 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt11Dec_4293403402
-	attN = top,Fel.FASAExplorerSgt11Dec_4293403402
-	attN = connect1,Fel.FASAExplorerSgt3Dec_4293403530
+	link = Fel.FASAExplorerSgt11Dec_4288821170
+	attN = top,Fel.FASAExplorerSgt11Dec_4288821170
+	attN = connect1,Fel.FASAExplorerSgt3Dec_4288821298
 	EVENTS
 	{
 	}
@@ -1227,13 +1227,13 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 2200
+		CrashTol = 20
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 0
-		Mass = 0.082482
+		Mass = 0.086682
 		EVENTS
 		{
 		}
@@ -1265,7 +1265,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt11Dec_4293403402
+	part = Fel.FASAExplorerSgt11Dec_4288821170
 	partName = Part
 	pos = 0.07102793,23.08492,-0.03787547
 	rot = 0,0,0,1
@@ -1277,9 +1277,9 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerSgt11_4293403354
-	attN = top,Fel.FASAExplorerSgt3_4293403484
-	attN = bottom,Fel.FASAExplorerSgt11_4293403354
+	link = Fel.FASAExplorerSgt11_4288821122
+	attN = top,Fel.FASAExplorerSgt3_4288821252
+	attN = bottom,Fel.FASAExplorerSgt11_4288821122
 	EVENTS
 	{
 	}
@@ -1380,13 +1380,13 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 1600
+		CrashTol = 20
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = -15
-		Mass = 0.033
+		Mass = 0.015
 		EVENTS
 		{
 		}
@@ -1408,7 +1408,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerSgt11_4293403354
+	part = Fel.FASAExplorerSgt11_4288821122
 	partName = Part
 	pos = 0.07102793,22.16577,-0.03787547
 	rot = 0,0,0,1
@@ -1420,9 +1420,9 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerNosecone_4293403080
-	attN = top,Fel.FASAExplorerSgt11Dec_4293403402
-	attN = bottom,Fel.FASAExplorerNosecone_4293403080
+	link = Fel.FASAExplorerNosecone_4288820848
+	attN = top,Fel.FASAExplorerSgt11Dec_4288821170
+	attN = bottom,Fel.FASAExplorerNosecone_4288820848
 	EVENTS
 	{
 	}
@@ -1652,13 +1652,13 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 1600
+		CrashTol = 20
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 0
-		Mass = 0.302434
+		Mass = 0.317834
 		EVENTS
 		{
 		}
@@ -1690,7 +1690,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293403260
+	part = W485.SurfaceOmniLight_4288821028
 	partName = Part
 	pos = 0.06793024,25.43086,-0.0387055
 	rot = -1.053671E-07,-0.7071068,1.053671E-07,0.7071068
@@ -1702,7 +1702,7 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -98.4375
-	srfN = srfAttach,Fel.FASAExplorerProbe_4293403734
+	srfN = srfAttach,Fel.FASAExplorerProbe_4288821502
 	EVENTS
 	{
 	}
@@ -1867,7 +1867,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293403224
+	part = W485.SurfaceOmniLight_4288820992
 	partName = Part
 	pos = 0.01100268,24.50344,-0.09790075
 	rot = -0.270598,0.6532815,-0.6532815,-0.270598
@@ -1879,10 +1879,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -98.4375
-	sym = W485.SurfaceOmniLight_4293403188
-	sym = W485.SurfaceOmniLight_4293403152
-	sym = W485.SurfaceOmniLight_4293403116
-	srfN = srfAttach,Fel.FASAExplorerProbe_4293403734
+	sym = W485.SurfaceOmniLight_4288820956
+	sym = W485.SurfaceOmniLight_4288820920
+	sym = W485.SurfaceOmniLight_4288820884
+	srfN = srfAttach,Fel.FASAExplorerProbe_4288821502
 	EVENTS
 	{
 	}
@@ -2047,7 +2047,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293403188
+	part = W485.SurfaceOmniLight_4288820956
 	partName = Part
 	pos = 0.01100266,24.50344,0.02214977
 	rot = -0.6532815,0.2705981,-0.2705981,-0.6532815
@@ -2059,10 +2059,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -98.4375
-	sym = W485.SurfaceOmniLight_4293403224
-	sym = W485.SurfaceOmniLight_4293403152
-	sym = W485.SurfaceOmniLight_4293403116
-	srfN = srfAttach,Fel.FASAExplorerProbe_4293403734
+	sym = W485.SurfaceOmniLight_4288820992
+	sym = W485.SurfaceOmniLight_4288820920
+	sym = W485.SurfaceOmniLight_4288820884
+	srfN = srfAttach,Fel.FASAExplorerProbe_4288821502
 	EVENTS
 	{
 	}
@@ -2227,7 +2227,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293403152
+	part = W485.SurfaceOmniLight_4288820920
 	partName = Part
 	pos = 0.1310532,24.50344,0.0221498
 	rot = -0.6532815,-0.2705981,0.2705981,-0.6532815
@@ -2239,10 +2239,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -98.4375
-	sym = W485.SurfaceOmniLight_4293403224
-	sym = W485.SurfaceOmniLight_4293403188
-	sym = W485.SurfaceOmniLight_4293403116
-	srfN = srfAttach,Fel.FASAExplorerProbe_4293403734
+	sym = W485.SurfaceOmniLight_4288820992
+	sym = W485.SurfaceOmniLight_4288820956
+	sym = W485.SurfaceOmniLight_4288820884
+	srfN = srfAttach,Fel.FASAExplorerProbe_4288821502
 	EVENTS
 	{
 	}
@@ -2407,7 +2407,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293403116
+	part = W485.SurfaceOmniLight_4288820884
 	partName = Part
 	pos = 0.1310532,24.50344,-0.09790072
 	rot = -0.2705981,-0.6532815,0.6532815,-0.2705981
@@ -2419,10 +2419,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -98.4375
-	sym = W485.SurfaceOmniLight_4293403224
-	sym = W485.SurfaceOmniLight_4293403188
-	sym = W485.SurfaceOmniLight_4293403152
-	srfN = srfAttach,Fel.FASAExplorerProbe_4293403734
+	sym = W485.SurfaceOmniLight_4288820992
+	sym = W485.SurfaceOmniLight_4288820956
+	sym = W485.SurfaceOmniLight_4288820920
+	srfN = srfAttach,Fel.FASAExplorerProbe_4288821502
 	EVENTS
 	{
 	}
@@ -2587,7 +2587,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerNosecone_4293403080
+	part = Fel.FASAExplorerNosecone_4288820848
 	partName = Part
 	pos = 0.07102793,20.79057,-0.03787547
 	rot = 0,0,0,1
@@ -2599,9 +2599,9 @@ PART
 	sqor = 5
 	attm = 0
 	modCost = 0
-	link = Fel.FASAExplorerLFTLong_4293403044
-	attN = top,Fel.FASAExplorerSgt11_4293403354
-	attN = bottom,Fel.FASAExplorerLFTLong_4293403044
+	link = Fel.FASAExplorerLFTLong_4288820812
+	attN = top,Fel.FASAExplorerSgt11_4288821122
+	attN = bottom,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -2666,10 +2666,10 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		MaxTemp = 1700
+		CrashTol = 20
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 20
 		Mass = 0.075
@@ -2716,7 +2716,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerLFTLong_4293403044
+	part = Fel.FASAExplorerLFTLong_4288820812
 	partName = Part
 	pos = 0.07102793,14.85057,-0.03787547
 	rot = 0,0,0,1
@@ -2728,27 +2728,27 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 151.6908
-	link = Fel.FASAExplorerLFTMed_4293402994
-	link = W485.SurfaceOmniLight_4293402530
-	link = W485.SurfaceOmniLight_4293402494
-	link = W485.SurfaceOmniLight_4293402458
-	link = W485.SurfaceOmniLight_4293402422
-	link = W485.SurfaceOmniLight_4293402386
-	link = W485.SurfaceOmniLight_4293402350
-	link = W485.SurfaceOmniLight_4293402314
-	link = W485.SurfaceOmniLight_4293402278
-	link = W485.SurfaceOmniLight_4293402242
-	link = W485.SurfaceOmniLight_4293402206
-	link = W485.SurfaceOmniLight_4293402170
-	link = W485.SurfaceOmniLight_4293402134
-	link = W485.SurfaceOmniLight_4293402098
-	link = W485.SurfaceOmniLight_4293402062
-	link = W485.SurfaceOmniLight_4293402026
-	link = W485.SurfaceOmniLight_4293401990
-	link = W485.SurfaceOmniLight_4293401954
-	link = W485.SurfaceOmniLight_4293401918
-	attN = top,Fel.FASAExplorerNosecone_4293403080
-	attN = bottom,Fel.FASAExplorerLFTMed_4293402994
+	link = Fel.FASAExplorerLFTMed_4288820762
+	link = W485.SurfaceOmniLight_4288820294
+	link = W485.SurfaceOmniLight_4288820258
+	link = W485.SurfaceOmniLight_4288820222
+	link = W485.SurfaceOmniLight_4288820186
+	link = W485.SurfaceOmniLight_4288820150
+	link = W485.SurfaceOmniLight_4288820114
+	link = W485.SurfaceOmniLight_4288820078
+	link = W485.SurfaceOmniLight_4288820042
+	link = W485.SurfaceOmniLight_4288820006
+	link = W485.SurfaceOmniLight_4288819970
+	link = W485.SurfaceOmniLight_4288819934
+	link = W485.SurfaceOmniLight_4288819898
+	link = W485.SurfaceOmniLight_4288819862
+	link = W485.SurfaceOmniLight_4288819826
+	link = W485.SurfaceOmniLight_4288819790
+	link = W485.SurfaceOmniLight_4288819754
+	link = W485.SurfaceOmniLight_4288819718
+	link = W485.SurfaceOmniLight_4288819682
+	attN = top,Fel.FASAExplorerNosecone_4288820848
+	attN = bottom,Fel.FASAExplorerLFTMed_4288820762
 	EVENTS
 	{
 	}
@@ -2762,7 +2762,7 @@ PART
 		type = Cryogenic
 		utilization = 86
 		mass = 2.31989
-		timestamp = 562437.167775164
+		timestamp = 255276036.408683
 		volume = 14442
 		type_UIEditor
 		{
@@ -2810,10 +2810,10 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
+		MaxTemp = 1400
 		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 0
 		Mass = 16.17993
@@ -2858,7 +2858,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAExplorerLFTMed_4293402994
+	part = Fel.FASAExplorerLFTMed_4288820762
 	partName = Part
 	pos = 0.07102793,7.650574,-0.03787547
 	rot = 0,0,0,1
@@ -2870,9 +2870,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 90.41076
-	link = Fel.FASA.Mercury.Redstone.Eng_4293402954
-	attN = top,Fel.FASAExplorerLFTLong_4293403044
-	attN = bottom,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	link = Fel.FASA.Mercury.Redstone.Eng_4288820722
+	attN = top,Fel.FASAExplorerLFTLong_4288820812
+	attN = bottom,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -2886,7 +2886,7 @@ PART
 		type = Cryogenic
 		utilization = 86
 		mass = 1.0628
-		timestamp = 562437.167775164
+		timestamp = 255276036.408683
 		volume = 9000
 		type_UIEditor
 		{
@@ -2934,10 +2934,10 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 800
+		MaxTemp = 1400
 		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
+		BreakForce = 2000
+		BreakTorque = 2000
 		Torque = 0
 		Decouple = 0
 		Mass = 11.3318
@@ -2972,7 +2972,7 @@ PART
 }
 PART
 {
-	part = Fel.FASA.Mercury.Redstone.Eng_4293402954
+	part = Fel.FASA.Mercury.Redstone.Eng_4288820722
 	partName = Part
 	pos = 0.07102793,3.680574,-0.03787547
 	rot = 0,0,0,1
@@ -2984,17 +2984,17 @@ PART
 	sqor = 7
 	attm = 0
 	modCost = 0
-	link = Fel.FASAMercuryRedstoneFin_4293402850
-	link = Fel.FASAMercuryRedstoneFin_4293402806
-	link = Fel.FASAMercuryRedstoneFin_4293402762
-	link = Fel.FASAMercuryRedstoneFin_4293402718
-	link = W485.SurfaceOmniLight_4293402674
-	link = W485.SurfaceOmniLight_4293402638
-	link = W485.SurfaceOmniLight_4293402602
-	link = W485.SurfaceOmniLight_4293402566
-	link = FASAlaunchClamp125_4293401882
-	attN = top,Fel.FASAExplorerLFTMed_4293402994
-	attN = bottom,FASAlaunchClamp125_4293401882
+	link = Fel.FASAMercuryRedstoneFin_4288820614
+	link = Fel.FASAMercuryRedstoneFin_4288820570
+	link = Fel.FASAMercuryRedstoneFin_4288820526
+	link = Fel.FASAMercuryRedstoneFin_4288820482
+	link = W485.SurfaceOmniLight_4288820438
+	link = W485.SurfaceOmniLight_4288820402
+	link = W485.SurfaceOmniLight_4288820366
+	link = W485.SurfaceOmniLight_4288820330
+	link = FASAlaunchClamp125_4288819646
+	attN = top,Fel.FASAExplorerLFTMed_4288820762
+	attN = bottom,FASAlaunchClamp125_4288819646
 	EVENTS
 	{
 	}
@@ -3176,6 +3176,46 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 370
@@ -3195,6 +3235,34 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleTweakableGimbal
+		isEnabled = True
+		gimbalRange = 0.5
+		reverseGimbalControl = False
+		gimbalRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 0.1
+		}
+		reverseGimbalControl_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionGimbalFlip
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -3207,7 +3275,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4293402850
+	part = Fel.FASAMercuryRedstoneFin_4288820614
 	partName = Part
 	pos = -1.247763,3.669706,-0.0378754
 	rot = -3.67301E-10,0,-8.867437E-10,-1
@@ -3219,10 +3287,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4293402806
-	sym = Fel.FASAMercuryRedstoneFin_4293402762
-	sym = Fel.FASAMercuryRedstoneFin_4293402718
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = Fel.FASAMercuryRedstoneFin_4288820570
+	sym = Fel.FASAMercuryRedstoneFin_4288820526
+	sym = Fel.FASAMercuryRedstoneFin_4288820482
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -3304,7 +3372,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4293402806
+	part = Fel.FASAMercuryRedstoneFin_4288820570
 	partName = Part
 	pos = 0.07102793,3.669706,1.280916
 	rot = -8.867436E-10,-0.7071068,-3.673015E-10,-0.7071068
@@ -3316,10 +3384,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4293402850
-	sym = Fel.FASAMercuryRedstoneFin_4293402762
-	sym = Fel.FASAMercuryRedstoneFin_4293402718
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = Fel.FASAMercuryRedstoneFin_4288820614
+	sym = Fel.FASAMercuryRedstoneFin_4288820526
+	sym = Fel.FASAMercuryRedstoneFin_4288820482
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -3401,7 +3469,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4293402762
+	part = Fel.FASAMercuryRedstoneFin_4288820526
 	partName = Part
 	pos = 1.389819,3.669706,-0.03787567
 	rot = -8.867437E-10,-1,3.67301E-10,4.371139E-08
@@ -3413,10 +3481,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4293402850
-	sym = Fel.FASAMercuryRedstoneFin_4293402806
-	sym = Fel.FASAMercuryRedstoneFin_4293402718
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = Fel.FASAMercuryRedstoneFin_4288820614
+	sym = Fel.FASAMercuryRedstoneFin_4288820570
+	sym = Fel.FASAMercuryRedstoneFin_4288820482
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -3498,7 +3566,7 @@ PART
 }
 PART
 {
-	part = Fel.FASAMercuryRedstoneFin_4293402718
+	part = Fel.FASAMercuryRedstoneFin_4288820482
 	partName = Part
 	pos = 0.07102778,3.669706,-1.356667
 	rot = -3.673015E-10,-0.7071068,8.867436E-10,0.7071068
@@ -3510,10 +3578,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = Fel.FASAMercuryRedstoneFin_4293402850
-	sym = Fel.FASAMercuryRedstoneFin_4293402806
-	sym = Fel.FASAMercuryRedstoneFin_4293402762
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = Fel.FASAMercuryRedstoneFin_4288820614
+	sym = Fel.FASAMercuryRedstoneFin_4288820570
+	sym = Fel.FASAMercuryRedstoneFin_4288820526
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -3595,7 +3663,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402674
+	part = W485.SurfaceOmniLight_4288820438
 	partName = Part
 	pos = -1.247886,4.227736,-0.0378754
 	rot = -0.5,0.5,-0.5,-0.5
@@ -3607,10 +3675,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402638
-	sym = W485.SurfaceOmniLight_4293402602
-	sym = W485.SurfaceOmniLight_4293402566
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = W485.SurfaceOmniLight_4288820402
+	sym = W485.SurfaceOmniLight_4288820366
+	sym = W485.SurfaceOmniLight_4288820330
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -3775,7 +3843,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402638
+	part = W485.SurfaceOmniLight_4288820402
 	partName = Part
 	pos = 0.07102793,4.227736,1.281039
 	rot = -0.7071068,0,0,-0.7071068
@@ -3787,10 +3855,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402674
-	sym = W485.SurfaceOmniLight_4293402602
-	sym = W485.SurfaceOmniLight_4293402566
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = W485.SurfaceOmniLight_4288820438
+	sym = W485.SurfaceOmniLight_4288820366
+	sym = W485.SurfaceOmniLight_4288820330
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -3955,7 +4023,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402602
+	part = W485.SurfaceOmniLight_4288820366
 	partName = Part
 	pos = 1.389942,4.227736,-0.03787567
 	rot = -0.4999999,-0.5000001,0.5000001,-0.4999999
@@ -3967,10 +4035,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402674
-	sym = W485.SurfaceOmniLight_4293402638
-	sym = W485.SurfaceOmniLight_4293402566
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = W485.SurfaceOmniLight_4288820438
+	sym = W485.SurfaceOmniLight_4288820402
+	sym = W485.SurfaceOmniLight_4288820330
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -4135,7 +4203,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402566
+	part = W485.SurfaceOmniLight_4288820330
 	partName = Part
 	pos = 0.07102778,4.227736,-1.35679
 	rot = 0,-0.7071068,0.7071068,0
@@ -4147,10 +4215,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402674
-	sym = W485.SurfaceOmniLight_4293402638
-	sym = W485.SurfaceOmniLight_4293402602
-	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	sym = W485.SurfaceOmniLight_4288820438
+	sym = W485.SurfaceOmniLight_4288820402
+	sym = W485.SurfaceOmniLight_4288820366
+	srfN = srfAttach,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -4315,7 +4383,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402530
+	part = W485.SurfaceOmniLight_4288820294
 	partName = Part
 	pos = 0.07102785,15.12858,-0.934205
 	rot = -3.090862E-08,0.7071068,-0.7071068,-3.090862E-08
@@ -4327,12 +4395,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402494
-	sym = W485.SurfaceOmniLight_4293402458
-	sym = W485.SurfaceOmniLight_4293402422
-	sym = W485.SurfaceOmniLight_4293402386
-	sym = W485.SurfaceOmniLight_4293402350
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820258
+	sym = W485.SurfaceOmniLight_4288820222
+	sym = W485.SurfaceOmniLight_4288820186
+	sym = W485.SurfaceOmniLight_4288820150
+	sym = W485.SurfaceOmniLight_4288820114
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -4497,7 +4565,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402494
+	part = W485.SurfaceOmniLight_4288820258
 	partName = Part
 	pos = -0.7052162,15.12858,-0.4860402
 	rot = -0.3535534,0.6123725,-0.6123725,-0.3535534
@@ -4509,12 +4577,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402530
-	sym = W485.SurfaceOmniLight_4293402458
-	sym = W485.SurfaceOmniLight_4293402422
-	sym = W485.SurfaceOmniLight_4293402386
-	sym = W485.SurfaceOmniLight_4293402350
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820294
+	sym = W485.SurfaceOmniLight_4288820222
+	sym = W485.SurfaceOmniLight_4288820186
+	sym = W485.SurfaceOmniLight_4288820150
+	sym = W485.SurfaceOmniLight_4288820114
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -4679,7 +4747,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402458
+	part = W485.SurfaceOmniLight_4288820222
 	partName = Part
 	pos = -0.7052162,15.12858,0.4102895
 	rot = -0.6123725,0.3535534,-0.3535534,-0.6123725
@@ -4691,12 +4759,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402530
-	sym = W485.SurfaceOmniLight_4293402494
-	sym = W485.SurfaceOmniLight_4293402422
-	sym = W485.SurfaceOmniLight_4293402386
-	sym = W485.SurfaceOmniLight_4293402350
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820294
+	sym = W485.SurfaceOmniLight_4288820258
+	sym = W485.SurfaceOmniLight_4288820186
+	sym = W485.SurfaceOmniLight_4288820150
+	sym = W485.SurfaceOmniLight_4288820114
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -4861,7 +4929,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402422
+	part = W485.SurfaceOmniLight_4288820186
 	partName = Part
 	pos = 0.0710281,15.12858,0.858454
 	rot = -0.7071068,-6.181724E-08,6.181724E-08,-0.7071068
@@ -4873,12 +4941,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402530
-	sym = W485.SurfaceOmniLight_4293402494
-	sym = W485.SurfaceOmniLight_4293402458
-	sym = W485.SurfaceOmniLight_4293402386
-	sym = W485.SurfaceOmniLight_4293402350
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820294
+	sym = W485.SurfaceOmniLight_4288820258
+	sym = W485.SurfaceOmniLight_4288820222
+	sym = W485.SurfaceOmniLight_4288820150
+	sym = W485.SurfaceOmniLight_4288820114
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -5043,7 +5111,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402386
+	part = W485.SurfaceOmniLight_4288820150
 	partName = Part
 	pos = 0.8472722,15.12858,0.4102892
 	rot = -0.6123725,-0.3535535,0.3535535,-0.6123725
@@ -5055,12 +5123,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402530
-	sym = W485.SurfaceOmniLight_4293402494
-	sym = W485.SurfaceOmniLight_4293402458
-	sym = W485.SurfaceOmniLight_4293402422
-	sym = W485.SurfaceOmniLight_4293402350
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820294
+	sym = W485.SurfaceOmniLight_4288820258
+	sym = W485.SurfaceOmniLight_4288820222
+	sym = W485.SurfaceOmniLight_4288820186
+	sym = W485.SurfaceOmniLight_4288820114
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -5225,7 +5293,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402350
+	part = W485.SurfaceOmniLight_4288820114
 	partName = Part
 	pos = 0.8472721,15.12858,-0.4860402
 	rot = -0.3535534,-0.6123725,0.6123725,-0.3535534
@@ -5237,12 +5305,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402530
-	sym = W485.SurfaceOmniLight_4293402494
-	sym = W485.SurfaceOmniLight_4293402458
-	sym = W485.SurfaceOmniLight_4293402422
-	sym = W485.SurfaceOmniLight_4293402386
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820294
+	sym = W485.SurfaceOmniLight_4288820258
+	sym = W485.SurfaceOmniLight_4288820222
+	sym = W485.SurfaceOmniLight_4288820186
+	sym = W485.SurfaceOmniLight_4288820150
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -5407,7 +5475,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402314
+	part = W485.SurfaceOmniLight_4288820078
 	partName = Part
 	pos = 0.07102809,18.54506,0.8584339
 	rot = -0.7071068,-6.181724E-08,6.181724E-08,-0.7071068
@@ -5419,12 +5487,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402278
-	sym = W485.SurfaceOmniLight_4293402242
-	sym = W485.SurfaceOmniLight_4293402206
-	sym = W485.SurfaceOmniLight_4293402170
-	sym = W485.SurfaceOmniLight_4293402134
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820042
+	sym = W485.SurfaceOmniLight_4288820006
+	sym = W485.SurfaceOmniLight_4288819970
+	sym = W485.SurfaceOmniLight_4288819934
+	sym = W485.SurfaceOmniLight_4288819898
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -5589,7 +5657,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402278
+	part = W485.SurfaceOmniLight_4288820042
 	partName = Part
 	pos = 0.8472547,18.54506,0.4102791
 	rot = -0.6123725,-0.3535535,0.3535535,-0.6123725
@@ -5601,12 +5669,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402314
-	sym = W485.SurfaceOmniLight_4293402242
-	sym = W485.SurfaceOmniLight_4293402206
-	sym = W485.SurfaceOmniLight_4293402170
-	sym = W485.SurfaceOmniLight_4293402134
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820078
+	sym = W485.SurfaceOmniLight_4288820006
+	sym = W485.SurfaceOmniLight_4288819970
+	sym = W485.SurfaceOmniLight_4288819934
+	sym = W485.SurfaceOmniLight_4288819898
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -5771,7 +5839,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402242
+	part = W485.SurfaceOmniLight_4288820006
 	partName = Part
 	pos = 0.8472545,18.54506,-0.4860304
 	rot = -0.3535533,-0.6123725,0.6123725,-0.3535533
@@ -5783,12 +5851,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402314
-	sym = W485.SurfaceOmniLight_4293402278
-	sym = W485.SurfaceOmniLight_4293402206
-	sym = W485.SurfaceOmniLight_4293402170
-	sym = W485.SurfaceOmniLight_4293402134
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820078
+	sym = W485.SurfaceOmniLight_4288820042
+	sym = W485.SurfaceOmniLight_4288819970
+	sym = W485.SurfaceOmniLight_4288819934
+	sym = W485.SurfaceOmniLight_4288819898
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -5953,7 +6021,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402206
+	part = W485.SurfaceOmniLight_4288819970
 	partName = Part
 	pos = 0.0710277,18.54506,-0.9341848
 	rot = 9.272586E-08,-0.7071068,0.7071068,9.272586E-08
@@ -5965,12 +6033,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402314
-	sym = W485.SurfaceOmniLight_4293402278
-	sym = W485.SurfaceOmniLight_4293402242
-	sym = W485.SurfaceOmniLight_4293402170
-	sym = W485.SurfaceOmniLight_4293402134
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820078
+	sym = W485.SurfaceOmniLight_4288820042
+	sym = W485.SurfaceOmniLight_4288820006
+	sym = W485.SurfaceOmniLight_4288819934
+	sym = W485.SurfaceOmniLight_4288819898
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -6135,7 +6203,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402170
+	part = W485.SurfaceOmniLight_4288819934
 	partName = Part
 	pos = -0.7051989,18.54506,-0.48603
 	rot = 0.3535535,-0.6123724,0.6123724,0.3535535
@@ -6147,12 +6215,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402314
-	sym = W485.SurfaceOmniLight_4293402278
-	sym = W485.SurfaceOmniLight_4293402242
-	sym = W485.SurfaceOmniLight_4293402206
-	sym = W485.SurfaceOmniLight_4293402134
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820078
+	sym = W485.SurfaceOmniLight_4288820042
+	sym = W485.SurfaceOmniLight_4288820006
+	sym = W485.SurfaceOmniLight_4288819970
+	sym = W485.SurfaceOmniLight_4288819898
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -6317,7 +6385,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402134
+	part = W485.SurfaceOmniLight_4288819898
 	partName = Part
 	pos = -0.7051988,18.54506,0.4102792
 	rot = 0.6123725,-0.3535534,0.3535534,0.6123725
@@ -6329,12 +6397,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402314
-	sym = W485.SurfaceOmniLight_4293402278
-	sym = W485.SurfaceOmniLight_4293402242
-	sym = W485.SurfaceOmniLight_4293402206
-	sym = W485.SurfaceOmniLight_4293402170
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288820078
+	sym = W485.SurfaceOmniLight_4288820042
+	sym = W485.SurfaceOmniLight_4288820006
+	sym = W485.SurfaceOmniLight_4288819970
+	sym = W485.SurfaceOmniLight_4288819934
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -6499,7 +6567,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402098
+	part = W485.SurfaceOmniLight_4288819862
 	partName = Part
 	pos = -0.7136909,9.848076,0.415182
 	rot = -0.6123724,0.3535535,-0.3535534,-0.6123725
@@ -6511,12 +6579,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402062
-	sym = W485.SurfaceOmniLight_4293402026
-	sym = W485.SurfaceOmniLight_4293401990
-	sym = W485.SurfaceOmniLight_4293401954
-	sym = W485.SurfaceOmniLight_4293401918
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288819826
+	sym = W485.SurfaceOmniLight_4288819790
+	sym = W485.SurfaceOmniLight_4288819754
+	sym = W485.SurfaceOmniLight_4288819718
+	sym = W485.SurfaceOmniLight_4288819682
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -6681,7 +6749,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402062
+	part = W485.SurfaceOmniLight_4288819826
 	partName = Part
 	pos = 0.07102777,9.848076,0.8682397
 	rot = -0.7071068,2.574807E-08,-5.954314E-08,-0.7071068
@@ -6693,12 +6761,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402098
-	sym = W485.SurfaceOmniLight_4293402026
-	sym = W485.SurfaceOmniLight_4293401990
-	sym = W485.SurfaceOmniLight_4293401954
-	sym = W485.SurfaceOmniLight_4293401918
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288819862
+	sym = W485.SurfaceOmniLight_4288819790
+	sym = W485.SurfaceOmniLight_4288819754
+	sym = W485.SurfaceOmniLight_4288819718
+	sym = W485.SurfaceOmniLight_4288819682
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -6863,7 +6931,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293402026
+	part = W485.SurfaceOmniLight_4288819790
 	partName = Part
 	pos = 0.8557467,9.848076,0.4151822
 	rot = -0.6123725,-0.3535534,0.3535534,-0.6123725
@@ -6875,12 +6943,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402098
-	sym = W485.SurfaceOmniLight_4293402062
-	sym = W485.SurfaceOmniLight_4293401990
-	sym = W485.SurfaceOmniLight_4293401954
-	sym = W485.SurfaceOmniLight_4293401918
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288819862
+	sym = W485.SurfaceOmniLight_4288819826
+	sym = W485.SurfaceOmniLight_4288819754
+	sym = W485.SurfaceOmniLight_4288819718
+	sym = W485.SurfaceOmniLight_4288819682
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -7045,7 +7113,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293401990
+	part = W485.SurfaceOmniLight_4288819754
 	partName = Part
 	pos = 0.8557467,9.848076,-0.490933
 	rot = -0.3535534,-0.6123725,0.6123724,-0.3535534
@@ -7057,12 +7125,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402098
-	sym = W485.SurfaceOmniLight_4293402062
-	sym = W485.SurfaceOmniLight_4293402026
-	sym = W485.SurfaceOmniLight_4293401954
-	sym = W485.SurfaceOmniLight_4293401918
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288819862
+	sym = W485.SurfaceOmniLight_4288819826
+	sym = W485.SurfaceOmniLight_4288819790
+	sym = W485.SurfaceOmniLight_4288819718
+	sym = W485.SurfaceOmniLight_4288819682
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -7227,7 +7295,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293401954
+	part = W485.SurfaceOmniLight_4288819718
 	partName = Part
 	pos = 0.07102805,9.848076,-0.9439908
 	rot = -2.304291E-08,-0.7071068,0.7071068,1.075218E-08
@@ -7239,12 +7307,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402098
-	sym = W485.SurfaceOmniLight_4293402062
-	sym = W485.SurfaceOmniLight_4293402026
-	sym = W485.SurfaceOmniLight_4293401990
-	sym = W485.SurfaceOmniLight_4293401918
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288819862
+	sym = W485.SurfaceOmniLight_4288819826
+	sym = W485.SurfaceOmniLight_4288819790
+	sym = W485.SurfaceOmniLight_4288819754
+	sym = W485.SurfaceOmniLight_4288819682
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -7409,7 +7477,7 @@ PART
 }
 PART
 {
-	part = W485.SurfaceOmniLight_4293401918
+	part = W485.SurfaceOmniLight_4288819682
 	partName = Part
 	pos = -0.7136908,9.848076,-0.4909334
 	rot = 0.3535533,-0.6123725,0.6123725,0.3535534
@@ -7421,12 +7489,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = -65.7
-	sym = W485.SurfaceOmniLight_4293402098
-	sym = W485.SurfaceOmniLight_4293402062
-	sym = W485.SurfaceOmniLight_4293402026
-	sym = W485.SurfaceOmniLight_4293401990
-	sym = W485.SurfaceOmniLight_4293401954
-	srfN = srfAttach,Fel.FASAExplorerLFTLong_4293403044
+	sym = W485.SurfaceOmniLight_4288819862
+	sym = W485.SurfaceOmniLight_4288819826
+	sym = W485.SurfaceOmniLight_4288819790
+	sym = W485.SurfaceOmniLight_4288819754
+	sym = W485.SurfaceOmniLight_4288819718
+	srfN = srfAttach,Fel.FASAExplorerLFTLong_4288820812
 	EVENTS
 	{
 	}
@@ -7591,7 +7659,7 @@ PART
 }
 PART
 {
-	part = FASAlaunchClamp125_4293401882
+	part = FASAlaunchClamp125_4288819646
 	partName = Part
 	pos = 0.07102793,1.551025,-0.03787547
 	rot = 0,0,0,1
@@ -7603,7 +7671,7 @@ PART
 	sqor = 6
 	attm = 0
 	modCost = 0
-	attN = top,Fel.FASA.Mercury.Redstone.Eng_4293402954
+	attN = top,Fel.FASA.Mercury.Redstone.Eng_4288820722
 	EVENTS
 	{
 	}
@@ -7656,23 +7724,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleExternalIgnitor
-		isEnabled = True
-		ignitionsRemained = -1
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		IGNITOR_RESOURCE
-		{
-			name = ElectricCharge
-			amount = 250
 		}
 	}
 }

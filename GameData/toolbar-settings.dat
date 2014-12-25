@@ -1,6 +1,6 @@
 toolbars
 {
-	kspVersions = 0.24.0,0.24.1,0.24.2,0.25.0
+	kspVersions = 0.90.0
 	SPACECENTER
 	{
 		toolbar_603955183
@@ -20,7 +20,7 @@ toolbars
 	{
 		toolbar_21012281
 		{
-			x = 432
+			x = 401
 			y = -3
 			width = 250
 			height = 38
@@ -59,7 +59,7 @@ toolbars
 	{
 		toolbar_21012281
 		{
-			x = 432
+			x = 401
 			y = -3
 			width = 250
 			height = 38
@@ -143,8 +143,8 @@ toolbars
 		}
 		toolbar_387804338
 		{
-			x = 300
-			y = 300
+			x = 212
+			y = 40
 			width = 250
 			height = 38
 			autoHide = False
@@ -251,7 +251,7 @@ toolbars
 			x = 212
 			y = 40
 			width = 250
-			height = 81
+			height = 38
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
