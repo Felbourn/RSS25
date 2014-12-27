@@ -13,6 +13,7 @@ GameData/*.dll
 GameData/000_Toolbar/*
 GameData/AJE/*
 GameData/AIES_Aerospace/*
+GameData/B9_Aerospace/*
 GameData/blackheart/*
 GameData/blizzy/*
 GameData/BoulderCo/*
@@ -30,6 +31,7 @@ GameData/DistantObject/*
 GameData/FASA/*
 GameData/Firespitter/*
 GameData/Fusebox/*
+GameData/KAS/*
 GameData/KerbalJointReinforcement/*
 GameData/KerbalStockLauncherOverhaul/*
 GameData/HGR/*
@@ -46,9 +48,11 @@ GameData/MEPS/*
 GameData/MagicSmokeIndustries/*
 GameData/ModuleRCSFX/*
 GameData/NASAmission/*
+GameData/NearFuturePropulsion/*
 GameData/NavyFish/*
 GameData/PartHighlighter/*
 GameData/PlanetShine/*
+GameData/ProceduralDynamics/*
 GameData/ProceduralFairings/*
 GameData/ProceduralParts/*
 GameData/RCSBuildAid/*

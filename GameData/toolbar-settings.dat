@@ -85,13 +85,13 @@ toolbars
 		{
 			x = 156
 			y = 1
-			width = 250
+			width = 294
 			height = 38
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels,SmokeScreen.main
+			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,ferram4.FAREditorButton
 		}
 		toolbar_999066674
 		{
@@ -115,7 +115,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.LS
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.LS,Tac.FB
 		}
 		toolbar_52115996
 		{
@@ -196,13 +196,13 @@ toolbars
 		{
 			x = 156
 			y = 1
-			width = 250
+			width = 294
 			height = 38
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels,SmokeScreen.main
+			visibleButtons = KerbalAlarmClock.btnToolbarIcon,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,AGM.AGMMainSwitch,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,ferram4.FAREditorButton
 		}
 		toolbar_999066674
 		{
@@ -226,7 +226,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.LS
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.LS,Tac.FB
 		}
 	}
 	FLIGHTMAP
