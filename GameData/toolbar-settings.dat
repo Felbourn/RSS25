@@ -271,7 +271,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = CIT_NodeHelper.NodeHelperButton,Fusebox.FBToggle,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Tac.LS,sirkut2.IREditorGroupButton,sirkut.IREditorButton,RCSBuildAid.mainButton
+			visibleButtons = CIT_NodeHelper.NodeHelperButton,Fusebox.FBToggle,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Tac.LS,sirkut2.IREditorGroupButton,sirkut.IREditorButton,RCSBuildAid.mainButton,ferram4.FAREditorButton
 		}
 		toolbar_664540194
 		{
@@ -284,6 +284,21 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,PartOrganizer.sort,PartOrganizer.filter
 			visibleButtons = PartOrganizer.sort,PartOrganizer.filter
+		}
+	}
+	SETTINGS
+	{
+		toolbar_835181466
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
 		}
 	}
 }
