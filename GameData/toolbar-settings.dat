@@ -127,7 +127,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = AmbientLightAdjustment.adjustLevels,CrewManifest.CrewManifest,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,MechJeb2.Rendezvous_Planner,MechJeb2.Flight_Computer,MechJeb2.Smart_A_S_S_,MechJeb2.Maneuver_Planner,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
+			visibleButtons = AmbientLightAdjustment.adjustLevels,CrewManifest.CrewManifest,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,MechJeb2.Rendezvous_Planner,MechJeb2.Flight_Computer,MechJeb2.Smart_A_S_S_,MechJeb2.Maneuver_Planner,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI,ferram4.FAREditorButton
 		}
 		toolbar_237132762
 		{
@@ -241,7 +241,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = AmbientLightAdjustment.adjustLevels,CrewManifest.CrewManifest,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,MechJeb2.Rendezvous_Planner,MechJeb2.Flight_Computer,MechJeb2.Smart_A_S_S_,MechJeb2.Maneuver_Planner,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI
+			visibleButtons = AmbientLightAdjustment.adjustLevels,CrewManifest.CrewManifest,Fusebox.FBToggle,KerbalAlarmClock.btnToolbarIcon,MechJeb2.Rendezvous_Planner,MechJeb2.Flight_Computer,MechJeb2.Smart_A_S_S_,MechJeb2.Maneuver_Planner,Tac.LS,test.saveAndQuit,test.toSPH,test.toTS,test.toVAB,Trajectories.ToggleUI,ferram4.FAREditorButton
 		}
 	}
 	TRACKSTATION
@@ -251,7 +251,7 @@ toolbars
 			x = 212
 			y = 40
 			width = 250
-			height = 38
+			height = 81
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False

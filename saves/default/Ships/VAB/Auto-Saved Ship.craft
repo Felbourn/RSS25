@@ -1,13 +1,13 @@
-ship = Bold Orion
+ship = Untitled Space Craft
 version = 0.25.0
 description = 
 type = VAB
 PART
 {
-	part = His.vanguard_4287633756
+	part = Almach.Crew.A_4293929916
 	partName = Part
-	pos = 0.01268783,18.36411,0.05727332
-	rot = -2.573467E-09,0.9999689,9.00996E-08,-0.007890734
+	pos = 0,10,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -15,9 +15,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	modCost = 0
-	link = strutCube_4287632414
-	attN = bottom,strutCube_4287632414
+	modCost = 0.2783934
+	link = Almach.Decoupler.A_4293929820
+	link = Almach.Parachute.A_4293929780
+	link = VNG.PB.ParachuteBox_4293294836
+	attN = bottom,Almach.Decoupler.A_4293929820
+	attN = top,Almach.Parachute.A_4293929780
 	EVENTS
 	{
 	}
@@ -107,16 +110,136 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		EVENTS
+		{
+			StoreDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Store Experiments (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Stored Data (0)
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 1000
+		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
-		Torque = 0.1
+		Torque = 0.5
 		Decouple = 0
-		Mass = 0.001
+		Mass = 0.7256393
 		EVENTS
 		{
 		}
@@ -148,6 +271,45 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = LifeSupportAll
+		utilization = 86
+		mass = 0.7
+		timestamp = 260599218.179518
+		volume = 4
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = MechJebCore
 		isEnabled = True
 		EVENTS
@@ -168,17 +330,48 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleRendezvousGuidance
+			MechJebModuleAscentGuidance
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleWaypointHelpWindow
+			MechJebModuleManeuverPlanner
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			ModExtensionDemo
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentPathEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -193,17 +386,17 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleTargetController
+			ModExtensionDemo
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleThrustWindow
+			MechJebModuleWaypointHelpWindow
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleSettings
+			MechJebModuleRendezvousGuidance
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -258,48 +451,17 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomWindowEditor
+			MechJebModuleSettings
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleAscentPathEditor
+			MechJebModuleTargetController
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleAscentAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentGuidance
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleJokeObscurePanel
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleInfoItems
+			MechJebModuleThrustWindow
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -364,6 +526,17 @@ PART
 	}
 	MODULE
 	{
+		name = JSINonTransparentPod
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTripLogger
 		isEnabled = True
 		EVENTS
@@ -402,309 +575,68 @@ PART
 	RESOURCE
 	{
 		name = ElectricCharge
-		amount = 100
-		maxAmount = 100
+		amount = 125
+		maxAmount = 125
 		flowState = True
 		isTweakable = True
 		hideFlow = False
 		flowMode = Both
-	}
-}
-PART
-{
-	part = proceduralTankRealFuels_4287633708
-	partName = Part
-	pos = -0.001735334,12.72185,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 0
-	modCost = 581.2957
-	link = tailfin_4287633638
-	link = tailfin_4287633600
-	link = tailfin_4287633562
-	link = tailfin_4287633524
-	link = strutCube_4287633486
-	attN = top,KzInterstageAdapter2_4287632694
-	attN = bottom,strutCube_4287633486
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralPart
-		isEnabled = True
-		textureSet = Juno2_Lower
-		shapeName = Cylinder
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCylinder
-		isEnabled = True
-		diameter = 0.8
-		length = 5.75
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCone
-		isEnabled = True
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapePill
-		isEnabled = True
-		diameter = 1
-		length = 1
-		fillet = 0.2
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		fillet_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #1
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = MiniSolid
-		utilization = 49
-		mass = 0.1416
-		timestamp = 260488279.973065
-		volume = 1416
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 2.66208
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCrossFeed
-		isEnabled = True
-		crossFeedOverride = True
-		EVENTS
-		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Crossfeed is On
-				guiName = Crossfeed is On
-				category = Crossfeed is On
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
 	}
 	RESOURCE
 	{
-		name = SolidFuel
-		amount = 1416
-		maxAmount = 1416
+		name = MonoPropellant
+		amount = 30
+		maxAmount = 30
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Food
+		amount = 0.99585064
+		maxAmount = 0.99585064
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Water
+		amount = 0.56431536
+		maxAmount = 0.56431536
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxygen
+		amount = 209.128632
+		maxAmount = 209.128632
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Waste
+		amount = 0
+		maxAmount = 0.49792532
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = WasteWater
+		amount = 0
+		maxAmount = 0.89626556
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -713,940 +645,37 @@ PART
 }
 PART
 {
-	part = tailfin_4287633638
+	part = Almach.Decoupler.A_4293929820
 	partName = Part
-	pos = -0.4017353,15.41378,0.06224506
-	rot = -2.094576E-16,1,-1.734852E-15,-4.703244E-10
+	pos = 0,9.228421,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -590.625
-	sym = tailfin_4287633600
-	sym = tailfin_4287633562
-	sym = tailfin_4287633524
-	srfN = srfAttach,proceduralTankRealFuels_4287633708
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 15.625
-		BreakTorque = 15.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0003125
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.25
-		currentScale = 0.25
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 9.375
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287633600
-	partName = Part
-	pos = -0.001735192,15.41378,0.4622447
-	rot = 1.098993E-14,0.7071069,-1.5281E-14,-0.7071069
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -590.625
-	sym = tailfin_4287633638
-	sym = tailfin_4287633562
-	sym = tailfin_4287633524
-	srfN = srfAttach,proceduralTankRealFuels_4287633708
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 15.625
-		BreakTorque = 15.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0003125
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.25
-		currentScale = 0.25
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 9.375
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287633562
-	partName = Part
-	pos = 0.3982647,15.41378,0.06224441
-	rot = 1.952954E-15,-8.521804E-08,-7.84543E-15,-1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -590.625
-	sym = tailfin_4287633638
-	sym = tailfin_4287633600
-	sym = tailfin_4287633524
-	srfN = srfAttach,proceduralTankRealFuels_4287633708
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 15.625
-		BreakTorque = 15.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0003125
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.25
-		currentScale = 0.25
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 9.375
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287633524
-	partName = Part
-	pos = -0.001735482,15.41378,-0.3377554
-	rot = 1.5281E-14,-0.7071069,1.098993E-14,-0.7071069
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -590.625
-	sym = tailfin_4287633638
-	sym = tailfin_4287633600
-	sym = tailfin_4287633562
-	srfN = srfAttach,proceduralTankRealFuels_4287633708
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 15.625
-		BreakTorque = 15.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0003125
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.25
-		currentScale = 0.25
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 9.375
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = strutCube_4287633486
-	partName = Part
-	pos = -0.001735334,9.718114,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 0
-	modCost = 0
-	link = strutCube_4287633460
-	link = proceduralTankRealFuels_4287633348
-	attN = top,proceduralTankRealFuels_4287633708
-	attN = bottom,proceduralTankRealFuels_4287633348
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.007
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 100
-		currentScale = 100
-		defaultScale = 100
-		isFreeScale = True
-		version = 1.44.0.0
-		defaultTransformScale = (1, 1, 1)
-		dryCost = 16
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 25
-			maxValue = 400
-			incrementLarge = 37.5
-			incrementSmall = 3.75
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KASModuleGrab
-		isEnabled = True
-		grabbed = False
-		evaHolderVesselName = 
-		EVENTS
-		{
-			ContextMenuGrab
-			{
-				active = True
-				guiActive = False
-				guiIcon = Grab
-				guiName = Grab
-				category = Grab
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuDrop
-			{
-				active = True
-				guiActive = False
-				guiIcon = Drop
-				guiName = Drop
-				category = Drop
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuEvaAttach
-			{
-				active = True
-				guiActive = False
-				guiIcon = Attach
-				guiName = Attach
-				category = Attach
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = strutCube_4287633460
-	partName = Part
-	pos = -0.003383966,9.736849,0.06510026
-	rot = 1.896608E-07,0.7071068,-2.107343E-08,-0.7071071
-	attRot = -0.9999999,0,0,0
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	link = His.vangaurd.solid_4287633434
-	srfN = srfAttach,strutCube_4287633486
-	attN = bottom,His.vangaurd.solid_4287633434
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.007
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 100
-		currentScale = 100
-		defaultScale = 100
-		isFreeScale = True
-		version = 1.44.0.0
-		defaultTransformScale = (1, 1, 1)
-		dryCost = 16
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 25
-			maxValue = 400
-			incrementLarge = 37.5
-			incrementSmall = 3.75
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KASModuleGrab
-		isEnabled = True
-		grabbed = False
-		evaHolderVesselName = 
-		EVENTS
-		{
-			ContextMenuGrab
-			{
-				active = True
-				guiActive = False
-				guiIcon = Grab
-				guiName = Grab
-				category = Grab
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuDrop
-			{
-				active = True
-				guiActive = False
-				guiIcon = Drop
-				guiName = Drop
-				category = Drop
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuEvaAttach
-			{
-				active = True
-				guiActive = False
-				guiIcon = Attach
-				guiName = Attach
-				category = Attach
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.vangaurd.solid_4287633434
-	partName = Part
-	pos = -0.003383998,9.758114,0.06510027
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 2
-	dstg = 4
+	istg = 0
+	dstg = 0
 	sidx = 0
-	sqor = 2
+	sqor = 0
 	attm = 0
 	modCost = 0
-	link = KzInterstageAdapter2_4287633132
-	attN = top,strutCube_4287633460
-	attN = bottom,KzInterstageAdapter2_4287633132
+	link = Almach.Engine.A_4293929722
+	link = Almach.Mono.A_4293929008
+	link = Almach.Mono.A_4293928976
+	link = Almach.Mono.A_4293928944
+	link = Almach.Mono.A_4293928912
+	link = Almach.Mono.A_4293928880
+	link = Almach.Mono.A_4293928848
+	link = Almach.Mono.A_4293928816
+	link = Almach.Mono.A_4293928784
+	link = Almach.Mono.A_4293928752
+	link = Almach.Mono.A_4293928720
+	link = Almach.Mono.A_4293928688
+	link = Almach.Mono.A_4293928656
+	link = Almach.Mono.A_4293928624
+	link = Almach.Mono.A_4293928592
+	link = Almach.Mono.A_4293928560
+	link = Almach.Mono.A_4293928528
+	attN = bottom,Almach.Engine.A_4293929722
+	attN = top,Almach.Crew.A_4293929916
 	EVENTS
 	{
 	}
@@ -1655,13 +684,248 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEngines
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 380
+		Mass = 0.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableDecouple
+		isEnabled = True
+		ejectionForce = 400
+		ejectionForce_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStagingToggle
+		isEnabled = True
+		stagingEnabled = True
+		stagingEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.Parachute.A_4293929780
+	partName = Part
+	pos = 0,10.54127,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = 1
+	sqor = 0
+	attm = 0
+	modCost = 0
+	attN = bottom,Almach.Crew.A_4293929916
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		deployAltitude = 500
+		minAirPressureToOpen = 0.01
+		staged = False
+		deployAltitude_UIFlight
+		{
+			controlEnabled = True
+			minValue = 50
+			maxValue = 5000
+			stepIncrement = 50
+		}
+		minAirPressureToOpen_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.01
+			maxValue = 0.5
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Deploy
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy Chute
+				guiName = Deploy Chute
+				category = Deploy Chute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			CutParachute
+			{
+				active = False
+				guiActive = True
+				guiIcon = Cut Parachute
+				guiName = Cut Parachute
+				category = Cut Parachute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Repack
+			{
+				active = False
+				guiActive = False
+				guiIcon = Repack Chute
+				guiName = Repack Chute
+				category = Repack Chute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.07
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.Engine.A_4293929722
+	partName = Part
+	pos = 0,8.694983,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = 2
+	sqor = 0
+	attm = 0
+	modCost = 0
+	link = Almach.Antenna.A_4293929654
+	link = Almach.Antenna.A_4293929626
+	link = Almach.Antenna.A_4293929598
+	link = Almach.Antenna.A_4293929570
+	link = Almach.RCS.A_4293929542
+	link = Almach.RCS.A_4293929502
+	link = Almach.RCS.A_4293929462
+	link = Almach.RCS.A_4293929422
+	link = Almach.LFO.A_4293929382
+	attN = bottom,Almach.LFO.A_4293929382
+	attN = top,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
 		isEnabled = True
 		staged = False
 		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
-		currentThrottle = 0.9876297
+		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
 		thrustPercentage_UIFlight
@@ -1714,8 +978,82 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimateHeat
+		name = ModuleJettison
 		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 32
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.3
 		EVENTS
 		{
 		}
@@ -1725,66 +1063,27 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEngineThrustController
+		name = ModuleTweakableGimbal
 		isEnabled = True
-		canAdjustAtAnytime = False
-		gp = 0
-		initialThrust = 1
-		thrustPercent = 1
+		gimbalRange = 0.5
+		reverseGimbalControl = False
+		gimbalRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 0.1
+		}
+		reverseGimbalControl_UIFlight
+		{
+			controlEnabled = True
+		}
 		EVENTS
 		{
-			Group1
-			{
-				active = True
-				guiActive = True
-				guiIcon = Set Group 1
-				guiName = Set Group 1
-				category = Set Group 1
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Group2
-			{
-				active = True
-				guiActive = True
-				guiIcon = Set Group 1
-				guiName = Set Group 1
-				category = Set Group 1
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuIncreaseThrust
-			{
-				active = True
-				guiActive = True
-				guiIcon = Increase Thrust
-				guiName = Increase Thrust
-				category = Increase Thrust
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuDecreaseThrust
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decrease Thrust
-				guiName = Decrease Thrust
-				category = Decrease Thrust
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
-			ActionGroupIncreaseThrust
-			{
-				actionGroup = None
-			}
-			ActionGroupDecreaseThrust
+			ActionGimbalFlip
 			{
 				actionGroup = None
 			}
@@ -1792,9 +1091,8 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleSRBThrust
+		name = FARBasicDragModel
 		isEnabled = True
-		ignitionStartTime = 0
 		EVENTS
 		{
 		}
@@ -1802,61 +1100,57 @@ PART
 		{
 		}
 	}
+}
+PART
+{
+	part = Almach.Antenna.A_4293929654
+	partName = Part
+	pos = -0.4085379,8.762754,2.435076E-08
+	rot = -0.7071056,-0.001295086,-0.7071056,0.001295128
+	attRot = 0.4226184,0,0,0.9063079
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Antenna.A_4293929626
+	sym = Almach.Antenna.A_4293929598
+	sym = Almach.Antenna.A_4293929570
+	srfN = srfAttach,Almach.Engine.A_4293929722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
 	MODULE
 	{
-		name = ModuleReactionWheel
+		name = ModuleDataTransmitter
 		isEnabled = True
-		stateString = Active
-		WheelState = Active
 		EVENTS
 		{
-			OnToggle
+			StartTransmission
 			{
 				active = True
 				guiActive = True
-				guiIcon = Toggle Torque
-				guiName = Toggle Torque
-				category = Toggle Torque
+				guiIcon = Transmit Data
+				guiName = Transmit Data
+				category = Transmit Data
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-		}
-		ACTIONS
-		{
-			Activate
+			StopTransmission
 			{
-				actionGroup = None
-			}
-			Deactivate
-			{
-				actionGroup = None
-			}
-			Toggle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				active = False
+				guiActive = True
+				guiIcon = Stop Transmitting
+				guiName = Stop Transmitting
+				category = Stop Transmitting
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
 		}
@@ -1869,11 +1163,11 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 1900
+		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
-		Torque = 1
+		Torque = 0
 		Decouple = 0
 		Mass = 0.01
 		EVENTS
@@ -1885,66 +1179,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = Thiokol TX-20
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		EVENTS
-		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Thiokol TX-20
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -1957,23 +1191,22 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4287633348
+	part = Almach.Antenna.A_4293929626
 	partName = Part
-	pos = -0.001735334,9.839384,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
+	pos = 3.249386E-16,8.762754,0.4085379
+	rot = -0.9999983,2.971682E-08,4.214685E-08,0.001831557
+	attRot = 0.4226184,0,0,0.9063079
 	mir = 1,1,1
-	istg = 3
-	dstg = 3
+	istg = 0
+	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 62.80956
-	link = tailfin_4287633284
-	link = tailfin_4287633246
-	link = tailfin_4287633208
-	link = tailfin_4287633170
-	attN = bottom,strutCube_4287633486
+	attm = 1
+	modCost = 0
+	sym = Almach.Antenna.A_4293929654
+	sym = Almach.Antenna.A_4293929598
+	sym = Almach.Antenna.A_4293929570
+	srfN = srfAttach,Almach.Engine.A_4293929722
 	EVENTS
 	{
 	}
@@ -1982,204 +1215,28 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralPart
+		name = ModuleDataTransmitter
 		isEnabled = True
-		textureSet = CastorSRB
-		shapeName = Cone
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCylinder
-		isEnabled = True
-		diameter = 1
-		length = 1
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCone
-		isEnabled = True
-		topDiameter = 0.8
-		bottomDiameter = 1
-		length = 0.5
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapePill
-		isEnabled = True
-		diameter = 1
-		length = 1
-		fillet = 0.2
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		fillet_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #1
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = MiniSolid
-		utilization = 48
-		mass = 0.0153
-		timestamp = 260488279.973065
-		volume = 153
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			Empty
+			StartTransmission
 			{
 				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
+				guiActive = True
+				guiIcon = Transmit Data
+				guiName = Transmit Data
+				category = Transmit Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			StopTransmission
+			{
+				active = False
+				guiActive = True
+				guiIcon = Stop Transmitting
+				guiName = Stop Transmitting
+				category = Stop Transmitting
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -2200,33 +1257,9 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.0153
+		Mass = 0.01
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCrossFeed
-		isEnabled = True
-		crossFeedOverride = True
-		EVENTS
-		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Crossfeed is On
-				guiName = Crossfeed is On
-				category = Crossfeed is On
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -2243,35 +1276,25 @@ PART
 		{
 		}
 	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 0
-		maxAmount = 153
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
 }
 PART
 {
-	part = tailfin_4287633284
+	part = Almach.Antenna.A_4293929598
 	partName = Part
-	pos = -0.426034,9.967891,0.06224509
-	rot = -0.1009415,-0.9948925,1.125759E-08,9.670623E-09
-	attRot = 0,0,0,1
+	pos = 0.4085379,8.762754,-6.006628E-08
+	rot = -0.7071055,0.001295128,0.7071057,0.001295086
+	attRot = 0.4226184,0,0,0.9063079
 	mir = 1,1,1
-	istg = 3
-	dstg = 3
+	istg = 0
+	dstg = 0
 	sidx = -1
 	sqor = -1
 	attm = 1
-	modCost = -574.275
-	sym = tailfin_4287633246
-	sym = tailfin_4287633208
-	sym = tailfin_4287633170
-	srfN = srfAttach,proceduralTankRealFuels_4287633348
+	modCost = 0
+	sym = Almach.Antenna.A_4293929654
+	sym = Almach.Antenna.A_4293929626
+	sym = Almach.Antenna.A_4293929570
+	srfN = srfAttach,Almach.Engine.A_4293929722
 	EVENTS
 	{
 	}
@@ -2280,750 +1303,28 @@ PART
 	}
 	MODULE
 	{
-		name = ExtendedPartInfo
+		name = ModuleDataTransmitter
 		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 30.625
-		BreakTorque = 30.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0008575
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.35
-		currentScale = 0.35
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 25.725
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287633246
-	partName = Part
-	pos = -0.00173518,9.967891,0.4865434
-	rot = -0.0713765,-0.7034952,0.0713765,0.7034952
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -574.275
-	sym = tailfin_4287633284
-	sym = tailfin_4287633208
-	sym = tailfin_4287633170
-	srfN = srfAttach,proceduralTankRealFuels_4287633348
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 30.625
-		BreakTorque = 30.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0008575
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.35
-		currentScale = 0.35
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 25.725
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287633208
-	partName = Part
-	pos = 0.4225633,9.967891,0.06224439
-	rot = 1.531283E-08,3.431702E-08,0.1009415,0.9948925
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -574.275
-	sym = tailfin_4287633284
-	sym = tailfin_4287633246
-	sym = tailfin_4287633170
-	srfN = srfAttach,proceduralTankRealFuels_4287633348
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 30.625
-		BreakTorque = 30.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0008575
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.35
-		currentScale = 0.35
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 25.725
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287633170
-	partName = Part
-	pos = -0.001735494,9.967891,-0.3620538
-	rot = 0.0713765,0.7034951,0.07137648,0.7034953
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -574.275
-	sym = tailfin_4287633284
-	sym = tailfin_4287633246
-	sym = tailfin_4287633208
-	srfN = srfAttach,proceduralTankRealFuels_4287633348
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 30.625
-		BreakTorque = 30.625
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0008575
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.35
-		currentScale = 0.35
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 25.725
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzInterstageAdapter2_4287633132
-	partName = Part
-	pos = -0.003383996,8.698113,0.06510027
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 2
-	dstg = 5
-	sidx = 1
-	sqor = 2
-	attm = 0
-	modCost = 25.0028
-	link = KzProcFairingFuselage2_4287633088
-	link = proceduralTankRealFuels_4287633028
-	link = KzProcFairingFuselage2_4287632146
-	attN = bottom,proceduralTankRealFuels_4287633028
-	attN = top1,His.vangaurd.solid_4287633434
-	attN = connect01,KzProcFairingFuselage2_4287633088
-	attN = connect02,KzProcFairingFuselage2_4287632146
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingAdapter
-		isEnabled = True
-		extraHeight = 0.3
-		baseSize = 1
-		topSize = 1
-		height = 0.6
-		extraHeight_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		baseSize_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		topSize_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		height_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingBase
-		isEnabled = True
-		extraRadius = 0
-		fuelCrossFeed = False
-		autoStrutSides = True
-		extraRadius_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		autoStrutSides_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleCrossFeed
+			StartTransmission
 			{
 				active = True
 				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle crossfeed
-				guiName = Toggle crossfeed
-				category = Toggle crossfeed
+				guiIcon = Transmit Data
+				guiName = Transmit Data
+				category = Transmit Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			StopTransmission
+			{
+				active = False
+				guiActive = True
+				guiIcon = Stop Transmitting
+				guiName = Stop Transmitting
+				category = Stop Transmitting
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3035,45 +1336,18 @@ PART
 	}
 	MODULE
 	{
-		name = KzNodeNumberTweaker
+		name = ExtendedPartInfo
 		isEnabled = True
-		numNodes = 2
-		radius = 0.5
-		radius_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 5
-			incrementLarge = 0.625
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
 		EVENTS
 		{
-			IncrementNodes
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = More nodes
-				guiName = More nodes
-				category = More nodes
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DecrementNodes
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Fewer nodes
-				guiName = Fewer nodes
-				category = Fewer nodes
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -3081,18 +1355,64 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDecouple
+		name = FARBasicDragModel
 		isEnabled = True
-		isDecoupled = False
 		EVENTS
 		{
-			Decouple
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.Antenna.A_4293929570
+	partName = Part
+	pos = -4.870151E-08,8.762754,-0.4085379
+	rot = 4.214685E-08,0.001831557,0.9999983,-2.971682E-08
+	attRot = 0.4226184,0,0,0.9063079
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Antenna.A_4293929654
+	sym = Almach.Antenna.A_4293929626
+	sym = Almach.Antenna.A_4293929598
+	srfN = srfAttach,Almach.Engine.A_4293929722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		EVENTS
+		{
+			StartTransmission
 			{
 				active = True
 				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
+				guiIcon = Transmit Data
+				guiName = Transmit Data
+				category = Transmit Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			StopTransmission
+			{
+				active = False
+				guiActive = True
+				guiIcon = Stop Transmitting
+				guiName = Stop Transmitting
+				category = Stop Transmitting
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3100,7 +1420,96 @@ PART
 		}
 		ACTIONS
 		{
-			DecoupleAction
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.RCS.A_4293929542
+	partName = Part
+	pos = -0.4975395,8.866391,2.965567E-08
+	rot = 0.2430613,-0.664019,-0.2430613,-0.664019
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.RCS.A_4293929502
+	sym = Almach.RCS.A_4293929462
+	sym = Almach.RCS.A_4293929422
+	srfN = srfAttach,Almach.Engine.A_4293929722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -3110,14 +1519,14 @@ PART
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 0
+		Thrust = 1
 		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.05
+		Mass = 0.01
 		EVENTS
 		{
 		}
@@ -3127,14 +1536,30 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTweakableDecouple
+		name = RcsSounds
 		isEnabled = True
-		ejectionForce = 0
-		ejectionForce_UIFlight
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableRCS
+		isEnabled = True
+		startEnabled = True
+		thrustLimit = 100
+		startEnabled_UIFlight
 		{
 			controlEnabled = True
-			minValue = -3.402823E+38
-			maxValue = 3.402823E+38
+		}
+		thrustLimit_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
 			stepIncrement = 1
 		}
 		EVENTS
@@ -3142,44 +1567,14 @@ PART
 		}
 		ACTIONS
 		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = True
-		stagingEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
+			ActionEnableThruster
 			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
+				actionGroup = None
 			}
-		}
-		ACTIONS
-		{
+			ActionDisableThruster
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
@@ -3196,19 +1591,22 @@ PART
 }
 PART
 {
-	part = KzProcFairingFuselage2_4287633088
+	part = Almach.RCS.A_4293929502
 	partName = Part
-	pos = 0.4966159,8.290112,0.06510012
-	rot = -2.094576E-16,1,-1.734852E-15,-4.703244E-10
-	attRot = 0,0.9999999,0,0
+	pos = 8.741274E-18,8.866391,0.4975395
+	rot = -3.161013E-08,-0.9390646,-0.3437406,0
+	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 6
-	dstg = 6
+	istg = 0
+	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 15.60743
-	attN = connect,KzInterstageAdapter2_4287633132
+	attm = 1
+	modCost = 0
+	sym = Almach.RCS.A_4293929542
+	sym = Almach.RCS.A_4293929462
+	sym = Almach.RCS.A_4293929422
+	srfN = srfAttach,Almach.Engine.A_4293929722
 	EVENTS
 	{
 	}
@@ -3217,43 +1615,54 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralFairingSide
+		name = ModuleRCS
 		isEnabled = True
-		numSegs = 12
-		numSideParts = 2
-		baseRad = 0.46
-		maxRad = 0.46
-		cylStart = 0
-		cylEnd = 0.9
-		topRad = 0.46
-		inlineHeight = 0.9
-		sideThickness = 0.04
-		meshPos = (0.4999999, 0.4080019, -7.706694E-08)
-		meshRot = (1.840118E-34, -1, 0, -3.633778E-31)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
+		isEnabled = True
 		EVENTS
 		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
+		Thrust = 1
+		MaxTemp = 800
 		CrashTol = 12
-		BreakForce = 10.40495
-		BreakTorque = 10.40495
+		BreakForce = 250
+		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.005202477
+		Mass = 0.01
 		EVENTS
 		{
 		}
@@ -3263,37 +1672,10 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleHeatShield
+		name = RcsSounds
 		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
 		EVENTS
 		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -3301,24 +1683,34 @@ PART
 	}
 	MODULE
 	{
-		name = FARPayloadFairingModule
+		name = ModuleTweakableRCS
 		isEnabled = True
+		startEnabled = True
+		thrustLimit = 100
+		startEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		thrustLimit_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
 		EVENTS
 		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
+			ActionEnableThruster
+			{
+				actionGroup = None
+			}
+			ActionDisableThruster
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
@@ -3335,25 +1727,22 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4287633028
+	part = Almach.RCS.A_4293929462
 	partName = Part
-	pos = -0.003383998,5.698108,0.06510027
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = 0.4975395,8.866391,-7.315195E-08
+	rot = -0.2430614,-0.664019,-0.2430613,0.664019
 	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 6
-	dstg = 6
+	istg = 0
+	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 31.75259
-	link = His.FASAApolloLFEH1_4287632962
-	link = tailfin_4287632846
-	link = tailfin_4287632808
-	link = tailfin_4287632770
-	link = tailfin_4287632732
-	attN = top,KzInterstageAdapter2_4287633132
-	attN = bottom,His.FASAApolloLFEH1_4287632962
+	attm = 1
+	modCost = 0
+	sym = Almach.RCS.A_4293929542
+	sym = Almach.RCS.A_4293929502
+	sym = Almach.RCS.A_4293929422
+	srfN = srfAttach,Almach.Engine.A_4293929722
 	EVENTS
 	{
 	}
@@ -3362,18 +1751,54 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralPart
+		name = ModuleRCS
 		isEnabled = True
-		textureSet = Original
-		shapeName = Cylinder
-		textureSet_UIEditor
+		isEnabled = True
+		EVENTS
 		{
-			controlEnabled = True
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
-		shapeName_UIEditor
+		ACTIONS
 		{
-			controlEnabled = True
+			ToggleAction
+			{
+				actionGroup = None
+			}
 		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 1
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
 		EVENTS
 		{
 		}
@@ -3383,26 +1808,8 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralShapeCylinder
+		name = RcsSounds
 		isEnabled = True
-		diameter = 1
-		length = 6
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
 		EVENTS
 		{
 		}
@@ -3412,165 +1819,97 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralShapeCone
+		name = ModuleTweakableRCS
 		isEnabled = True
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapePill
-		isEnabled = True
-		diameter = 1
-		length = 1
-		fillet = 0.2
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		fillet_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #1
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		selectedShape_UIEditor
+		startEnabled = True
+		thrustLimit = 100
+		startEnabled_UIFlight
 		{
 			controlEnabled = True
 		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = Default
-		utilization = 67
-		mass = 0.0918687
-		timestamp = 260488279.973065
-		volume = 3157
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
+		thrustLimit_UIFlight
 		{
 			controlEnabled = True
 			minValue = 0
 			maxValue = 100
-			incrementSlide = 1
+			stepIncrement = 1
 		}
 		EVENTS
 		{
-			Empty
+		}
+		ACTIONS
+		{
+			ActionEnableThruster
+			{
+				actionGroup = None
+			}
+			ActionDisableThruster
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.RCS.A_4293929422
+	partName = Part
+	pos = -5.931133E-08,8.866391,-0.4975395
+	rot = -0.3437406,0,3.161013E-08,0.9390646
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.RCS.A_4293929542
+	sym = Almach.RCS.A_4293929502
+	sym = Almach.RCS.A_4293929462
+	srfN = srfAttach,Almach.Engine.A_4293929722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
 			{
 				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			MFT0
+			Enable
 			{
-				active = True
-				guiActive = False
-				guiIcon = 45% Kerosene / 55% LqdOxygen
-				guiName = 45% Kerosene / 55% LqdOxygen
-				category = 45% Kerosene / 55% LqdOxygen
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3578,7 +1917,112 @@ PART
 		}
 		ACTIONS
 		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
 		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 1
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.01
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = RcsSounds
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableRCS
+		isEnabled = True
+		startEnabled = True
+		thrustLimit = 100
+		startEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		thrustLimit_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionEnableThruster
+			{
+				actionGroup = None
+			}
+			ActionDisableThruster
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.LFO.A_4293929382
+	partName = Part
+	pos = 0,7.766858,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = Almach.Engine.B_4293929348
+	link = Almach.Engine.C_4293929280
+	link = Almach.Engine.C_4293929212
+	link = Almach.Engine.C_4293929144
+	link = Almach.Engine.C_4293929076
+	attN = bottom,Almach.Engine.B_4293929348
+	attN = top,Almach.Engine.A_4293929722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
 	}
 	MODULE
 	{
@@ -3591,33 +2035,9 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 3.237977
+		Mass = 0.45
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCrossFeed
-		isEnabled = True
-		crossFeedOverride = True
-		EVENTS
-		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Crossfeed is On
-				guiName = Crossfeed is On
-				category = Crossfeed is On
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -3636,9 +2056,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = Kerosene
-		amount = 1420.65
-		maxAmount = 1420.64996236563
+		name = LiquidFuel
+		amount = 126
+		maxAmount = 126
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -3646,9 +2066,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = LqdOxygen
-		amount = 1736.35003763438
-		maxAmount = 1736.35003763438
+		name = Oxidizer
+		amount = 154
+		maxAmount = 154
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -3657,19 +2077,170 @@ PART
 }
 PART
 {
-	part = His.FASAApolloLFEH1_4287632962
+	part = Almach.Engine.B_4293929348
 	partName = Part
-	pos = -0.003383998,2.298101,0.06510027
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = 0,6.885608,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 3
-	dstg = 7
-	sidx = 0
-	sqor = 3
+	istg = 0
+	dstg = 0
+	sidx = 4
+	sqor = 0
 	attm = 0
 	modCost = 0
-	attN = top,proceduralTankRealFuels_4287633028
+	attN = top,Almach.LFO.A_4293929382
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 60
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.3
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Almach.Engine.C_4293929280
+	partName = Part
+	pos = -0.7188127,7.170866,2.943353E-08
+	rot = 0,-0.7071068,0,-0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = 3
+	sqor = 0
+	attm = 1
+	modCost = 0
+	sym = Almach.Engine.C_4293929212
+	sym = Almach.Engine.C_4293929144
+	sym = Almach.Engine.C_4293929076
+	srfN = srfAttach,Almach.LFO.A_4293929382
 	EVENTS
 	{
 	}
@@ -3777,60 +2348,16 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ReflectiveShaderModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 123.81
-		MaxTemp = 2000
+		Thrust = 9
+		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.191
+		Mass = 0.12
 		EVENTS
 		{
 		}
@@ -3842,7 +2369,7 @@ PART
 	{
 		name = ModuleTweakableGimbal
 		isEnabled = True
-		gimbalRange = 0.5
+		gimbalRange = 4
 		reverseGimbalControl = False
 		gimbalRange_UIFlight
 		{
@@ -3868,962 +2395,6 @@ PART
 	}
 	MODULE
 	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 1.25
-		currentScale = 1.25
-		defaultScale = 1.25
-		isFreeScale = True
-		version = 1.44.0.0
-		defaultTransformScale = (1, 1, 1)
-		dryCost = 5000
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 0.44
-			incrementSmall = 0.04
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287632846
-	partName = Part
-	pos = -0.5033842,3.231453,0.06510073
-	rot = -2.094576E-16,1,-1.734852E-15,-4.703244E-10
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -525
-	sym = tailfin_4287632808
-	sym = tailfin_4287632770
-	sym = tailfin_4287632732
-	srfN = srfAttach,proceduralTankRealFuels_4287633028
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 62.5
-		BreakTorque = 62.5
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0025
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.5
-		currentScale = 0.5
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 75
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287632808
-	partName = Part
-	pos = -0.003383828,3.231453,0.5651004
-	rot = 7.047648E-15,0.707107,-4.90314E-15,-0.707107
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -525
-	sym = tailfin_4287632846
-	sym = tailfin_4287632770
-	sym = tailfin_4287632732
-	srfN = srfAttach,proceduralTankRealFuels_4287633028
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 62.5
-		BreakTorque = 62.5
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0025
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.5
-		currentScale = 0.5
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 75
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287632770
-	partName = Part
-	pos = 0.4966161,3.231453,0.06509992
-	rot = -5.03311E-15,-8.521804E-08,7.3092E-15,-1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -525
-	sym = tailfin_4287632846
-	sym = tailfin_4287632808
-	sym = tailfin_4287632732
-	srfN = srfAttach,proceduralTankRealFuels_4287633028
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 62.5
-		BreakTorque = 62.5
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0025
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.5
-		currentScale = 0.5
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 75
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = tailfin_4287632732
-	partName = Part
-	pos = -0.00338419,3.231453,-0.4348995
-	rot = 4.90314E-15,-0.707107,7.047648E-15,-0.707107
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = -525
-	sym = tailfin_4287632846
-	sym = tailfin_4287632808
-	sym = tailfin_4287632770
-	srfN = srfAttach,proceduralTankRealFuels_4287633028
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 62.5
-		BreakTorque = 62.5
-		Torque = 0
-		Decouple = 0
-		Mass = 0.0025
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.25
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 0.5
-		currentScale = 0.5
-		defaultScale = 1
-		isFreeScale = False
-		version = 1.44.0.0
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		dryCost = 75
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.625
-			maxValue = 5
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARWingAerodynamicModel
-		isEnabled = True
-		massMultiplier = 1
-		massMultiplier_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KzInterstageAdapter2_4287632694
-	partName = Part
-	pos = -0.001735335,15.59686,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 1
-	dstg = 2
-	sidx = 0
-	sqor = 1
-	attm = 0
-	modCost = 16.80645
-	link = KzProcFairingFuselage2_4287632650
-	link = proceduralTankRealFuels_4287633708
-	link = KzProcFairingFuselage2_4287632206
-	attN = bottom,proceduralTankRealFuels_4287633708
-	attN = top1,His.vangaurd.solid_4287632590
-	attN = connect01,KzProcFairingFuselage2_4287632650
-	attN = connect02,KzProcFairingFuselage2_4287632206
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingAdapter
-		isEnabled = True
-		extraHeight = 0.4
-		baseSize = 0.8
-		topSize = 0.5
-		height = 0.3
-		extraHeight_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		baseSize_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		topSize_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		height_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingBase
-		isEnabled = True
-		extraRadius = 0
-		fuelCrossFeed = False
-		autoStrutSides = True
-		extraRadius_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		autoStrutSides_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle crossfeed
-				guiName = Toggle crossfeed
-				category = Toggle crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzNodeNumberTweaker
-		isEnabled = True
-		numNodes = 2
-		radius = 0.4
-		radius_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 5
-			incrementLarge = 0.625
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-			IncrementNodes
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = More nodes
-				guiName = More nodes
-				category = More nodes
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DecrementNodes
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Fewer nodes
-				guiName = Fewer nodes
-				category = Fewer nodes
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		isDecoupled = False
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.05
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableDecouple
-		isEnabled = True
-		ejectionForce = 0
-		ejectionForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -3.402823E+38
-			maxValue = 3.402823E+38
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = True
-		stagingEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
 		name = FARBasicDragModel
 		isEnabled = True
 		EVENTS
@@ -4836,160 +2407,22 @@ PART
 }
 PART
 {
-	part = KzProcFairingFuselage2_4287632650
+	part = Almach.Engine.C_4293929212
 	partName = Part
-	pos = 0.3982647,15.17046,0.06224457
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = -1.341104E-08,7.170866,0.7188126
+	rot = 0,-1,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 3
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	attm = 0
-	modCost = 6.51863
-	attN = connect,KzInterstageAdapter2_4287632694
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 12
-		numSideParts = 2
-		baseRad = 0.368
-		maxRad = 0.368
-		cylStart = 0
-		cylEnd = 0.1472
-		topRad = 0.218
-		inlineHeight = 0.7
-		sideThickness = 0.032
-		meshPos = (-0.4, 0.4264002, 5.876273E-08)
-		meshRot = (0, 0, 0, 1)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1700
-		CrashTol = 12
-		BreakForce = 4.345753
-		BreakTorque = 4.345753
-		Torque = 0
-		Decouple = 0
-		Mass = 0.002172876
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.vangaurd.solid_4287632590
-	partName = Part
-	pos = -0.001735334,16.35686,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 1
-	dstg = 1
-	sidx = 1
-	sqor = 1
-	attm = 0
+	istg = 0
+	dstg = 0
+	sidx = 5
+	sqor = 0
+	attm = 1
 	modCost = 0
-	link = KzInterstageAdapter2_4287632694
-	attN = top,proceduralTankRealFuels_4287632504
-	attN = bottom,KzInterstageAdapter2_4287632694
+	sym = Almach.Engine.C_4293929280
+	sym = Almach.Engine.C_4293929144
+	sym = Almach.Engine.C_4293929076
+	srfN = srfAttach,Almach.LFO.A_4293929382
 	EVENTS
 	{
 	}
@@ -4998,13 +2431,13 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEngines
+		name = ModuleEnginesFX
 		isEnabled = True
 		staged = False
 		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
-		currentThrottle = 0.9876297
+		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
 		thrustPercentage_UIFlight
@@ -5047,7 +2480,7 @@ PART
 			}
 			ShutdownAction
 			{
-				actionGroup = Custom01
+				actionGroup = None
 			}
 			ActivateAction
 			{
@@ -5057,65 +2490,31 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimateHeat
+		name = ModuleGimbal
 		isEnabled = True
+		gimbalLock = False
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineThrustController
-		isEnabled = True
-		canAdjustAtAnytime = False
-		gp = 0
-		initialThrust = 1
-		thrustPercent = 1
-		EVENTS
-		{
-			Group1
+			LockGimbal
 			{
 				active = True
 				guiActive = True
-				guiIcon = Set Group 1
-				guiName = Set Group 1
-				category = Set Group 1
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Group2
+			FreeGimbal
 			{
-				active = True
+				active = False
 				guiActive = True
-				guiIcon = Set Group 1
-				guiName = Set Group 1
-				category = Set Group 1
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuIncreaseThrust
-			{
-				active = True
-				guiActive = True
-				guiIcon = Increase Thrust
-				guiName = Increase Thrust
-				category = Increase Thrust
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuDecreaseThrust
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decrease Thrust
-				guiName = Decrease Thrust
-				category = Decrease Thrust
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -5123,102 +2522,24 @@ PART
 		}
 		ACTIONS
 		{
-			ActionGroupIncreaseThrust
+			ToggleAction
 			{
 				actionGroup = None
 			}
-			ActionGroupDecreaseThrust
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleSRBThrust
-		isEnabled = True
-		ignitionStartTime = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleReactionWheel
-		isEnabled = True
-		stateString = Active
-		WheelState = Active
-		EVENTS
-		{
-			OnToggle
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Torque
-				guiName = Toggle Torque
-				category = Toggle Torque
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			Activate
-			{
-				actionGroup = None
-			}
-			Deactivate
-			{
-				actionGroup = None
-			}
-			Toggle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
 		}
 	}
 	MODULE
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1900
+		Thrust = 9
+		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
-		Torque = 1
+		Torque = 0
 		Decouple = 0
-		Mass = 0.01
+		Mass = 0.12
 		EVENTS
 		{
 		}
@@ -5228,62 +2549,30 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEngineConfigs
+		name = ModuleTweakableGimbal
 		isEnabled = True
-		configuration = Altair X-248
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
+		gimbalRange = 4
+		reverseGimbalControl = False
+		gimbalRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 0.1
+		}
+		reverseGimbalControl_UIFlight
+		{
+			controlEnabled = True
+		}
 		EVENTS
 		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Altair X-248
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
+			ActionGimbalFlip
 			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
+				actionGroup = None
 			}
-		}
-		ACTIONS
-		{
 		}
 	}
 	MODULE
@@ -5300,22 +2589,22 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4287632504
+	part = Almach.Engine.C_4293929144
 	partName = Part
-	pos = -0.001735335,17.14437,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = 0.7188127,7.170866,-9.227413E-08
+	rot = 0,-0.7071068,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 0
-	modCost = 45.15852
-	link = proceduralTankRealFuels_4287632324
-	link = His.vangaurd.solid_4287632590
-	attN = top,proceduralTankRealFuels_4287632324
-	attN = bottom,His.vangaurd.solid_4287632590
+	sidx = 6
+	sqor = 0
+	attm = 1
+	modCost = 0
+	sym = Almach.Engine.C_4293929280
+	sym = Almach.Engine.C_4293929212
+	sym = Almach.Engine.C_4293929076
+	srfN = srfAttach,Almach.LFO.A_4293929382
 	EVENTS
 	{
 	}
@@ -5324,204 +2613,42 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralPart
+		name = ModuleEnginesFX
 		isEnabled = True
-		textureSet = Juno2_Lower
-		shapeName = Cylinder
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCylinder
-		isEnabled = True
-		diameter = 0.5
-		length = 1.875
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCone
-		isEnabled = True
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapePill
-		isEnabled = True
-		diameter = 1
-		length = 1
-		fillet = 0.2
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		fillet_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #1
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = MiniSolid
-		utilization = 30
-		mass = 0.011
-		timestamp = 260488279.973065
-		volume = 110
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
 		{
 			controlEnabled = True
 			minValue = 0
 			maxValue = 100
-			incrementSlide = 1
+			stepIncrement = 0.5
 		}
 		EVENTS
 		{
-			Empty
+			Activate
 			{
 				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -5529,20 +2656,72 @@ PART
 		}
 		ACTIONS
 		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 0
+		Thrust = 9
 		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.2068
+		Mass = 0.12
 		EVENTS
 		{
 		}
@@ -5552,26 +2731,30 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleCrossFeed
+		name = ModuleTweakableGimbal
 		isEnabled = True
-		crossFeedOverride = True
+		gimbalRange = 4
+		reverseGimbalControl = False
+		gimbalRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 0.1
+		}
+		reverseGimbalControl_UIFlight
+		{
+			controlEnabled = True
+		}
 		EVENTS
 		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Crossfeed is On
-				guiName = Crossfeed is On
-				category = Crossfeed is On
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
+			ActionGimbalFlip
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
@@ -5585,23 +2768,195 @@ PART
 		{
 		}
 	}
-	RESOURCE
+}
+PART
+{
+	part = Almach.Engine.C_4293929076
+	partName = Part
+	pos = -7.227811E-08,7.170866,-0.7188126
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = 7
+	sqor = 0
+	attm = 1
+	modCost = 0
+	sym = Almach.Engine.C_4293929280
+	sym = Almach.Engine.C_4293929212
+	sym = Almach.Engine.C_4293929144
+	srfN = srfAttach,Almach.LFO.A_4293929382
+	EVENTS
 	{
-		name = SolidFuel
-		amount = 110
-		maxAmount = 110
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 9
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.12
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableGimbal
+		isEnabled = True
+		gimbalRange = 4
+		reverseGimbalControl = False
+		gimbalRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 0.1
+		}
+		reverseGimbalControl_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionGimbalFlip
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 }
 PART
 {
-	part = strutCube_4287632440
+	part = Almach.Mono.A_4293929008
 	partName = Part
-	pos = 0.01989521,18.2106,0.06448115
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = -0.5001169,9.266861,0.1340059
+	rot = -0.09984503,-0.7816097,0.1131928,-0.6052311
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5610,8 +2965,14 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = proceduralTankRealFuels_4287632504
-	srfN = srfAttach,proceduralTankRealFuels_4287632504
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928816
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
 	EVENTS
 	{
 	}
@@ -5629,82 +2990,9 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.007
+		Mass = 0.052
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 100
-		currentScale = 100
-		defaultScale = 100
-		isFreeScale = True
-		version = 1.44.0.0
-		defaultTransformScale = (1, 1, 1)
-		dryCost = 16
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 25
-			maxValue = 400
-			incrementLarge = 37.5
-			incrementSmall = 3.75
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KASModuleGrab
-		isEnabled = True
-		grabbed = False
-		evaHolderVesselName = 
-		EVENTS
-		{
-			ContextMenuGrab
-			{
-				active = True
-				guiActive = False
-				guiIcon = Grab
-				guiName = Grab
-				category = Grab
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuDrop
-			{
-				active = True
-				guiActive = False
-				guiIcon = Drop
-				guiName = Drop
-				category = Drop
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuEvaAttach
-			{
-				active = True
-				guiActive = False
-				guiIcon = Attach
-				guiName = Attach
-				category = Attach
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -5721,13 +3009,23 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = strutCube_4287632414
+	part = Almach.Mono.A_4293928976
 	partName = Part
-	pos = 0.01268749,18.39784,0.05727344
-	rot = 6.322028E-08,-0.7071068,-6.322028E-08,0.7071068
+	pos = -0.2588795,9.266861,0.4483926
+	rot = -0.04892775,-0.9537251,0.1427856,-0.2600515
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5735,294 +3033,20 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	modCost = -12.544
-	link = proceduralHeatshield_4287632388
-	link = strutCube_4287632440
-	srfN = srfAttach,strutCube_4287632440
-	attN = top,proceduralHeatshield_4287632388
-	attN = bottom,His.vanguard_4287633756
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928816
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 800
-		CrashTol = 12
-		BreakForce = 90.00001
-		BreakTorque = 90.00001
-		Torque = 0
-		Decouple = 0
-		Mass = 0.001512
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		tweakScale = 60
-		currentScale = 60
-		defaultScale = 100
-		isFreeScale = True
-		version = 1.44.0.0
-		defaultTransformScale = (1, 1, 1)
-		dryCost = 3.456002
-		tweakScale_UIEditor
-		{
-			controlEnabled = True
-			minValue = 25
-			maxValue = 400
-			incrementLarge = 37.5
-			incrementSmall = 3.75
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KASModuleGrab
-		isEnabled = True
-		grabbed = False
-		evaHolderVesselName = 
-		EVENTS
-		{
-			ContextMenuGrab
-			{
-				active = True
-				guiActive = False
-				guiIcon = Grab
-				guiName = Grab
-				category = Grab
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuDrop
-			{
-				active = True
-				guiActive = False
-				guiIcon = Drop
-				guiName = Drop
-				category = Drop
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ContextMenuEvaAttach
-			{
-				active = True
-				guiActive = False
-				guiIcon = Attach
-				guiName = Attach
-				category = Attach
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = proceduralHeatshield_4287632388
-	partName = Part
-	pos = 0.01268717,18.49008,0.05727354
-	rot = 0.9999689,2.573467E-09,-0.007890734,-9.00996E-08
-	attRot = 0,0,0.9999999,0
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	attm = 0
-	modCost = 1.61868E-05
-	attN = top,strutCube_4287632414
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ProceduralPart
-		isEnabled = True
-		textureSet = Ablative
-		shapeName = Smooth Cone
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #3
-		topDiameter = 0.3
-		bottomDiameter = 0
-		length = 0.03
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TankContentSwitcher
-		isEnabled = True
-		tankVolume = 0.001691411
-		mass = 0.2
-		tankType = Ablative Shielding
-		tankType_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		isDecoupled = False
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, -1, 0)
-		reflective = 0.05
-		ablative = AblativeShielding
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralHeatshield
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
 	}
 	MODULE
 	{
@@ -6034,43 +3058,8 @@ PART
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
-		Decouple = 100
-		Mass = 0.20205
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableDecouple
-		isEnabled = True
-		ejectionForce = 100
-		ejectionForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -3.402823E+38
-			maxValue = 3.402823E+38
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = True
-		stagingEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
+		Decouple = 0
+		Mass = 0.052
 		EVENTS
 		{
 		}
@@ -6091,9 +3080,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = AblativeShielding
-		amount = 2.05
-		maxAmount = 2.04999995231628
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -6102,246 +3091,31 @@ PART
 }
 PART
 {
-	part = proceduralTankRealFuels_4287632324
+	part = Almach.Mono.A_4293928944
 	partName = Part
-	pos = -0.001735335,18.14438,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = 0.1340059,9.266861,0.5001169
+	rot = 0.009438324,-0.9806445,0.1506405,0.1247185
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 0.2340489
-	link = proceduralNoseCone_4287632260
-	attN = top,proceduralNoseCone_4287632260
-	attN = bottom,proceduralTankRealFuels_4287632504
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928816
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
-	}
-	MODULE
-	{
-		name = ProceduralPart
-		isEnabled = True
-		textureSet = Juno2_Lower
-		shapeName = Cylinder
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCylinder
-		isEnabled = True
-		diameter = 0.5
-		length = 0.125
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeCone
-		isEnabled = True
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapePill
-		isEnabled = True
-		diameter = 1
-		length = 1
-		fillet = 0.2
-		diameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		fillet_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #1
-		topDiameter = 0.5
-		bottomDiameter = 1
-		length = 1
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = Default
-		utilization = 86
-		mass = 0.000336
-		timestamp = 260488279.973065
-		volume = 21
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT0
-			{
-				active = True
-				guiActive = False
-				guiIcon = 45% Kerosene / 55% LqdOxygen
-				guiName = 45% Kerosene / 55% LqdOxygen
-				category = 45% Kerosene / 55% LqdOxygen
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
 	}
 	MODULE
 	{
@@ -6354,33 +3128,9 @@ PART
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.238476
+		Mass = 0.052
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCrossFeed
-		isEnabled = True
-		crossFeedOverride = True
-		EVENTS
-		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Crossfeed is On
-				guiName = Crossfeed is On
-				category = Crossfeed is On
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -6399,9 +3149,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = LeadBallast
-		amount = 21
-		maxAmount = 21
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -6410,19 +3160,26 @@ PART
 }
 PART
 {
-	part = proceduralNoseCone_4287632260
+	part = Almach.Mono.A_4293928912
 	partName = Part
-	pos = -0.00173534,18.58189,0.06224469
-	rot = -1.734852E-15,4.703244E-10,2.094576E-16,1
+	pos = 0.4483925,9.266861,0.2588796
+	rot = 0.0663675,-0.8582697,0.1355618,0.4905013
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 0.000683785
-	attN = bottom,proceduralTankRealFuels_4287632324
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928816
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
 	EVENTS
 	{
 	}
@@ -6431,138 +3188,18 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralPart
-		isEnabled = True
-		textureSet = Mu
-		shapeName = Smooth Cone
-		textureSet_UIEditor
-		{
-			controlEnabled = True
-		}
-		shapeName_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapeBezierCone
-		isEnabled = True
-		selectedShape = Round #2
-		topDiameter = 0
-		bottomDiameter = 0.5
-		length = 0.7500001
-		selectedShape_UIEditor
-		{
-			controlEnabled = True
-		}
-		topDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.25
-			incrementLarge = 1.25
-			incrementSmall = 0.25
-			incrementSlide = 0.001
-		}
-		bottomDiameter_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		length_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.01
-			incrementLarge = 1
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TankContentSwitcher
-		isEnabled = True
-		tankVolume = 0.07145089
-		mass = 0.008574107
-		tankType = Structural
-		tankType_UIEditor
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 1700
+		MaxTemp = 800
 		CrashTol = 12
 		BreakForce = 250
 		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.008574107
+		Mass = 0.052
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -6579,22 +3216,39 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = KzProcFairingFuselage2_4287632206
+	part = Almach.Mono.A_4293928880
 	partName = Part
-	pos = -0.4017355,15.17046,0.0622448
-	rot = -2.094576E-16,1,-1.734852E-15,-4.703244E-10
-	attRot = 0,0.9999999,0,0
+	pos = 0.5001169,9.266861,-0.134006
+	rot = 0.1131928,-0.6052311,0.09984503,0.7816097
+	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 3
-	dstg = 3
+	istg = 0
+	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 6.51863
-	attN = connect,KzInterstageAdapter2_4287632694
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928816
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
 	EVENTS
 	{
 	}
@@ -6603,105 +3257,18 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 12
-		numSideParts = 2
-		baseRad = 0.368
-		maxRad = 0.368
-		cylStart = 0
-		cylEnd = 0.1472
-		topRad = 0.218
-		inlineHeight = 0.7
-		sideThickness = 0.032
-		meshPos = (-0.4000002, 0.4264002, 3.73423E-08)
-		meshRot = (-8.043453E-42, 4.371139E-08, 1.840118E-34, 1)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 1700
+		MaxTemp = 800
 		CrashTol = 12
-		BreakForce = 4.345753
-		BreakTorque = 4.345753
+		BreakForce = 250
+		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.002172876
+		Mass = 0.052
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -6718,22 +3285,39 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = KzProcFairingFuselage2_4287632146
+	part = Almach.Mono.A_4293928848
 	partName = Part
-	pos = -0.503384,8.290113,0.0651004
-	rot = -2.094576E-16,1,-1.734852E-15,-4.703244E-10
-	attRot = 0,0.9999999,0,0
+	pos = 0.2588795,9.266861,-0.4483926
+	rot = 0.1427856,-0.2600515,0.04892774,0.9537251
+	attRot = 0,0,0,1
 	mir = 1,1,1
-	istg = 6
-	dstg = 6
+	istg = 0
+	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 0
-	modCost = 15.60743
-	attN = connect,KzInterstageAdapter2_4287633132
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928816
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
 	EVENTS
 	{
 	}
@@ -6742,26 +3326,774 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralFairingSide
+		name = ExtendedPartInfo
 		isEnabled = True
-		numSegs = 12
-		numSideParts = 2
-		baseRad = 0.46
-		maxRad = 0.46
-		cylStart = 0
-		cylEnd = 0.9
-		topRad = 0.46
-		inlineHeight = 0.9
-		sideThickness = 0.04
-		meshPos = (-0.5, 0.408, 4.121102E-08)
-		meshRot = (-8.043453E-42, 4.371139E-08, 1.840118E-34, 1)
-		shapeLock = False
-		shapeLock_UIFlight
-		{
-			controlEnabled = True
-		}
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
 		EVENTS
 		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928816
+	partName = Part
+	pos = -0.1340059,9.266861,-0.5001169
+	rot = 0.1506405,0.1247185,-0.009438324,0.9806445
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928784
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928784
+	partName = Part
+	pos = -0.4483927,9.266861,-0.2588795
+	rot = 0.1355618,0.4905014,-0.06636754,0.8582696
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293929008
+	sym = Almach.Mono.A_4293928976
+	sym = Almach.Mono.A_4293928944
+	sym = Almach.Mono.A_4293928912
+	sym = Almach.Mono.A_4293928880
+	sym = Almach.Mono.A_4293928848
+	sym = Almach.Mono.A_4293928816
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928752
+	partName = Part
+	pos = -0.5151359,9.263798,-0.08507429
+	rot = 0.1065046,0.6990399,-0.1065046,0.6990399
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928560
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928720
+	partName = Part
+	pos = -0.4244127,9.263798,0.3040995
+	rot = 0.05763989,0.9133397,-0.139155,0.3783177
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928560
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928688
+	partName = Part
+	pos = -0.08507431,9.263798,0.5151358
+	rot = 0,0.9885917,-0.1506203,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928560
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928656
+	partName = Part
+	pos = 0.3040994,9.263798,0.4244127
+	rot = -0.05763989,0.9133396,-0.139155,-0.3783177
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928560
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928624
+	partName = Part
+	pos = 0.5151359,9.263798,0.08507425
+	rot = -0.1065046,0.6990399,-0.1065046,-0.6990399
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928560
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928592
+	partName = Part
+	pos = 0.4244127,9.263798,-0.3040995
+	rot = -0.139155,0.3783176,-0.05763989,-0.9133397
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928560
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928560
+	partName = Part
+	pos = 0.08507425,9.263798,-0.5151359
+	rot = -0.1506203,0,0,-0.9885917
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928528
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Almach.Mono.A_4293928528
+	partName = Part
+	pos = -0.3040996,9.263798,-0.4244126
+	rot = -0.139155,-0.3783178,0.05763992,-0.9133396
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Almach.Mono.A_4293928752
+	sym = Almach.Mono.A_4293928720
+	sym = Almach.Mono.A_4293928688
+	sym = Almach.Mono.A_4293928656
+	sym = Almach.Mono.A_4293928624
+	sym = Almach.Mono.A_4293928592
+	sym = Almach.Mono.A_4293928560
+	srfN = srfAttach,Almach.Decoupler.A_4293929820
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 800
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.052
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 15
+		maxAmount = 15
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = VNG.PB.ParachuteBox_4293294836
+	partName = Strut
+	pos = -0.420707,10.07749,-0.4098782
+	rot = 0,0.9238796,0,0.3826834
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	srfN = srfAttach,Almach.Crew.A_4293929916
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleKrEquipKerbal
+		isEnabled = True
+		count = 5
+		EVENTS
+		{
+			EquipNearbyKerbal
+			{
+				active = True
+				guiActive = True
+				guiIcon = 
+				guiName = Equip Parachute
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
@@ -6772,75 +4104,15 @@ PART
 		name = ExtendedPartInfo
 		isEnabled = True
 		Thrust = 0
-		MaxTemp = 1700
+		MaxTemp = 800
 		CrashTol = 12
-		BreakForce = 10.40495
-		BreakTorque = 10.40495
+		BreakForce = 250
+		BreakTorque = 250
 		Torque = 0
 		Decouple = 0
-		Mass = 0.005202477
+		Mass = 0.05
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.1
-		ablative = 
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-		}
-		dissipation
-		{
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPayloadFairingModule
-		isEnabled = True
-		EVENTS
-		{
-			FairingShapeChanged
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
