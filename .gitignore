@@ -10,6 +10,7 @@ saves/default/Ships/VAB/x *
 saves/scenarios/*
 saves/training/*
 RVE/*
+AIES_Aerospace/*
 GameData/*.dll
 GameData/000_Toolbar/*
 GameData/AJE/*
@@ -67,6 +68,8 @@ GameData/RemoteTech/*
 GameData/ResourceConverter/*
 GameData/ResourceOverview_1.0.1.1/*
 GameData/RN_R7/*
+GameData/RN_Salyut/*
+GameData/RN_Soyuz/*
 GameData/RN_Soviet_Probes/*
 GameData/RN_US_Probes/*
 GameData/RSSTextures/*
