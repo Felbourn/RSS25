@@ -4,9 +4,9 @@ description =
 type = VAB
 PART
 {
-	part = VHis.rn.vostok.tdu_4294156330
+	part = VHis.rn.vostok.tdu_4294269686
 	partName = Part
-	pos = -0.3180132,33.22989,-0.0481368
+	pos = -0.3109933,33.68837,0.01176047
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -16,10 +16,10 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = VHis.rn.vostok.dec_4294154024
-	link = His.r7.vostok.blok.e_4294152750
-	attN = top,VHis.rn.vostok.dec_4294154024
-	attN = bottom,His.r7.vostok.blok.e_4294152750
+	link = His.r7.vostok.blok.e_4294266102
+	link = VHis.rn.vostok.dec_4294267380
+	attN = top,VHis.rn.vostok.dec_4294267380
+	attN = bottom,His.r7.vostok.blok.e_4294266102
 	EVENTS
 	{
 	}
@@ -152,7 +152,7 @@ PART
 		{
 			toggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom04
 			}
 		}
 	}
@@ -185,7 +185,7 @@ PART
 		{
 			toggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -273,961 +273,9 @@ PART
 }
 PART
 {
-	part = VHis.rn.vostok.dec_4294154024
+	part = His.r7.vostok.blok.e_4294266102
 	partName = Part
-	pos = -0.3180132,33.22989,-0.0481368
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 1
-	dstg = 1
-	sidx = 0
-	sqor = 1
-	attm = 0
-	modCost = 0
-	link = VHis.rn.vostok.sc_4294153790
-	attN = bottom,VHis.rn.vostok.tdu_4294156330
-	attN = top,VHis.rn.vostok.sc_4294153790
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		isDecoupled = False
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FSanimateGeneric
-		isEnabled = True
-		startDeployed = False
-		isAnimating = False
-		animTime = 0
-		reverseAnimation = False
-		animSpeed = -1
-		hasBeenInitialized = True
-		EVENTS
-		{
-			toggleEvent
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Deploy
-				guiName = Disconnect Wires
-				category = Deploy
-				guiActiveUnfocused = False
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ReflectiveShaderModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 1200
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 1
-		Mass = 0.2
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableDecouple
-		isEnabled = True
-		ejectionForce = 1
-		ejectionForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -3.402823E+38
-			maxValue = 3.402823E+38
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = True
-		stagingEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = VHis.rn.vostok.sc_4294153790
-	partName = Part
-	pos = -0.3180132,35.12642,-0.0481368
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 2
-	sidx = 1
-	sqor = 0
-	attm = 0
-	modCost = 0
-	link = VHis.rn.vostok.para_4294152892
-	attN = bottom,VHis.rn.vostok.dec_4294154024
-	attN = para,VHis.rn.vostok.para_4294152892
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleSAS
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		controlSrcStatusText = 
-		EVENTS
-		{
-			MakeReference
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control From Here
-				guiName = Control From Here
-				category = Control From Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			RenameVessel
-			{
-				active = True
-				guiActive = True
-				guiIcon = Rename Vessel
-				guiName = Rename Vessel
-				category = Rename Vessel
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSanimateGeneric
-		isEnabled = True
-		startDeployed = False
-		isAnimating = False
-		animTime = 0
-		reverseAnimation = False
-		animSpeed = -1
-		hasBeenInitialized = True
-		EVENTS
-		{
-			toggleEvent
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Deploy
-				guiName = Deploy Antennas
-				category = Deploy
-				guiActiveUnfocused = False
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.08
-		ablative = AblativeShielding
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-			key = 650 0 0 0
-			key = 2000 300 0 0
-			key = 6000 375 0 0
-		}
-		dissipation
-		{
-			key = 300 0 0 0
-			key = 800 284 0 0
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKrEjectPilot
-		isEnabled = True
-		maxUses = 3
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Eject
-			{
-				actionGroup = Abort
-			}
-		}
-	}
-	MODULE
-	{
-		name = ReflectiveShaderModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 2000
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 2
-		Decouple = 0
-		Mass = 2.163389
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = LifeSupportModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		EntryAngle = 0
-		EntryHorizon = False
-		HighAngle = 0
-		HighHorizon = False
-		LowAngle = 0
-		LowHorizon = False
-		GroundAngle = 0
-		GroundHorizon = False
-		hasTarget = False
-		targetLocation = (0, 0, 0)
-		targetReferenceBody = 
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = MechJebCore
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		MechJebLocalSettings
-		{
-			MechJebModuleJoke
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleMenu
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousGuidance
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointHelpWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleTargetController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSettings
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSmartASS
-			{
-				mode = ORBITAL
-				target = OFF
-				advReference = INERTIAL
-				advDirection = FORWARD
-				forceRol = False
-				unlockParts = 
-				unlockTechs = 
-				srfHdg
-				{
-					_val = 90
-					_text = 90
-				}
-				srfPit
-				{
-					_val = 90
-					_text = 90
-				}
-				srfRol
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelYaw
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelPit
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelRol
-				{
-					_val = 0
-					_text = 0
-				}
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleStageStats
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentPathEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentGuidance
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleJokeObscurePanel
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWarpController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustController
-			{
-				limitThrottle = False
-				unlockParts = 
-				unlockTechs = 
-				maxThrottle
-				{
-					_val = 1
-					_text = 100
-				}
-			}
-			MechJebModuleRCSController
-			{
-				unlockParts = 
-				unlockTechs = 
-				Tf
-				{
-					_val = 1
-					_text = 1
-				}
-			}
-			MechJebModuleRCSBalancer
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleStagingController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorder
-			{
-				markUT = 0
-				deltaVExpended = 0
-				dragLosses = 0
-				gravityLosses = 0
-				steeringLosses = 0
-				markLatitude = 0
-				markLongitude = 0
-				markAltitude = 0
-				markBodyIndex = 1
-				maxDragGees = 0
-				unlockParts = 
-				unlockTechs = 
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleReactionWheel
-		isEnabled = True
-		stateString = Active
-		WheelState = Active
-		EVENTS
-		{
-			OnToggle
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Torque
-				guiName = Toggle Torque
-				category = Toggle Torque
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			Activate
-			{
-				actionGroup = None
-			}
-			Deactivate
-			{
-				actionGroup = None
-			}
-			Toggle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = JSINonTransparentPod
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = RasterPropMonitorComputer
-		isEnabled = True
-		data = 
-		vesselDescription = 
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTripLogger
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Surfaced
-		{
-		}
-		Flew
-		{
-		}
-		FlewBy
-		{
-		}
-		Orbited
-		{
-		}
-		SubOrbited
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 10000
-		maxAmount = 10000
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = AblativeShielding
-		amount = 800
-		maxAmount = 800
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Food
-		amount = 56
-		maxAmount = 56
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Water
-		amount = 235
-		maxAmount = 235
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxygen
-		amount = 7872
-		maxAmount = 7872
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Waste
-		amount = 0
-		maxAmount = 20
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = WasteWater
-		amount = 0
-		maxAmount = 1
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = CarbonDioxide
-		amount = 0
-		maxAmount = 10000
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = VHis.rn.vostok.para_4294152892
-	partName = Part
-	pos = -0.3180132,35.12642,-0.0481368
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 3
-	sidx = 0
-	sqor = 0
-	attm = 0
-	modCost = 0
-	attN = para,VHis.rn.vostok.sc_4294153790
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		deployAltitude = 5000
-		minAirPressureToOpen = 0.1
-		staged = False
-		deployAltitude_UIFlight
-		{
-			controlEnabled = True
-			minValue = 50
-			maxValue = 5000
-			stepIncrement = 50
-		}
-		minAirPressureToOpen_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.01
-			maxValue = 0.5
-			stepIncrement = 0.01
-		}
-		EVENTS
-		{
-			Deploy
-			{
-				active = True
-				guiActive = True
-				guiIcon = Deploy Chute
-				guiName = Deploy Chute
-				category = Deploy Chute
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			CutParachute
-			{
-				active = False
-				guiActive = True
-				guiIcon = Cut Parachute
-				guiName = Cut Parachute
-				category = Cut Parachute
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			Repack
-			{
-				active = False
-				guiActive = False
-				guiIcon = Repack Chute
-				guiName = Repack Chute
-				category = Repack Chute
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ReflectiveShaderModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 2000
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.187
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleHeatShield
-		isEnabled = True
-		deployAnimationController = 0
-		direction = (0, 0, 0)
-		reflective = 0.08
-		ablative = AblativeShielding
-		area = 0
-		thickness = 0
-		adjustCollider = 0
-		crashTolerance = 8
-		damage = 0
-		dead = False
-		loss
-		{
-			key = 650 0 0 0
-			key = 2000 300 0 0
-			key = 6000 375 0 0
-		}
-		dissipation
-		{
-			key = 300 0 0 0
-			key = 800 284 0 0
-		}
-		EVENTS
-		{
-			RepairDamage
-			{
-				active = True
-				guiActive = False
-				guiIcon = No Damage
-				guiName = No Damage
-				category = No Damage
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = AblativeShielding
-		amount = 37
-		maxAmount = 37
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = His.r7.vostok.blok.e_4294152750
-	partName = Part
-	pos = -0.3180132,33.03514,-0.0481368
+	pos = -0.3109933,33.49362,0.01176047
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1237,13 +285,13 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = His.r7.adapter.blok.e_4294152560
-	link = VHis.r7.vostok.fairing.r_4294148990
-	link = VHis.r7.vostok.fairing.l_4294148934
-	attN = bottom,His.r7.adapter.blok.e_4294152560
-	attN = payload,VHis.rn.vostok.tdu_4294156330
-	attN = dec1,VHis.r7.vostok.fairing.r_4294148990
-	attN = dec2,VHis.r7.vostok.fairing.l_4294148934
+	link = His.r7.adapter.blok.e_4294265912
+	link = VHis.r7.vostok.fairing.r_4294263046
+	link = VHis.r7.vostok.fairing.l_4294262990
+	attN = bottom,His.r7.adapter.blok.e_4294265912
+	attN = payload,VHis.rn.vostok.tdu_4294269686
+	attN = dec1,VHis.r7.vostok.fairing.r_4294263046
+	attN = dec2,VHis.r7.vostok.fairing.l_4294262990
 	EVENTS
 	{
 	}
@@ -1308,7 +356,7 @@ PART
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		thrustPercentage = 11
+		thrustPercentage = 100
 		manuallyOverridden = False
 		thrustPercentage_UIFlight
 		{
@@ -1476,9 +524,9 @@ PART
 }
 PART
 {
-	part = His.r7.adapter.blok.e_4294152560
+	part = His.r7.adapter.blok.e_4294265912
 	partName = Part
-	pos = -0.3180132,29.61337,-0.0481368
+	pos = -0.3109933,30.07185,0.01176047
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1488,9 +536,9 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	link = His.SputCore_4294152494
-	attN = top,His.r7.vostok.blok.e_4294152750
-	attN = bottom,His.SputCore_4294152494
+	link = His.SputCore_4294265846
+	attN = top,His.r7.vostok.blok.e_4294266102
+	attN = bottom,His.SputCore_4294265846
 	EVENTS
 	{
 	}
@@ -1592,9 +640,9 @@ PART
 }
 PART
 {
-	part = His.SputCore_4294152494
+	part = His.SputCore_4294265846
 	partName = Part
-	pos = -0.3180132,14.75191,-0.0481368
+	pos = -0.3109933,15.21039,0.01176047
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1604,13 +652,13 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0.000983136
-	link = His.Sput108_4294152318
-	link = His.SputBoost_4294151614
-	link = His.SputBoost_4294150958
-	link = His.SputBoost_4294150302
-	link = His.SputBoost_4294149646
-	attN = top,His.r7.adapter.blok.e_4294152560
-	attN = bottom,His.Sput108_4294152318
+	link = His.SputBoost_4294265670
+	link = His.SputBoost_4294265014
+	link = His.SputBoost_4294264358
+	link = His.SputBoost_4294263702
+	link = His.Sput108_4294262934
+	attN = top,His.r7.adapter.blok.e_4294265912
+	attN = bottom,His.Sput108_4294262934
 	EVENTS
 	{
 	}
@@ -1697,1369 +745,9 @@ PART
 }
 PART
 {
-	part = His.Sput108_4294152318
+	part = His.SputBoost_4294265670
 	partName = Part
-	pos = -0.3180132,3.423338,-0.0481368
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 8
-	dstg = 2
-	sidx = 0
-	sqor = 8
-	attm = 0
-	modCost = 0
-	link = His.SputVern_4294152054
-	link = His.SputVern_4294151944
-	link = His.SputVern_4294151834
-	link = His.SputVern_4294151724
-	attN = top,His.SputCore_4294152494
-	attN = 1,His.SputVern_4294151834
-	attN = 2,His.SputVern_4294152054
-	attN = 3,His.SputVern_4294151724
-	attN = 4,His.SputVern_4294151944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = Vostok-1
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		EVENTS
-		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Vostok-1
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 656.4
-		MaxTemp = 2200
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.87
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.SputVern_4294152054
-	partName = Part
-	pos = -1.419292,2.853678,-0.0481368
-	rot = 0,1,0,0
-	attRot = 0,0.9999999,0,0
-	mir = 1,1,1
-	istg = 8
-	dstg = 2
-	sidx = 1
-	sqor = 8
-	attm = 0
-	modCost = 0
-	attN = top,His.Sput108_4294152318
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KM_Gimbal
-		isEnabled = True
-		gimbalTransformName = gimbal
-		yawGimbalRange = 0
-		pitchGimbalRange = 22.5
-		debug = True
-		trimX = 0
-		trimY = 0
-		enableTrim = True
-		gimbalConstrain = 14
-		enableGimbal = True
-		enableSmoothGimbal = False
-		responseSpeed = 25
-		enableRoll = False
-		autoSetRoll = True
-		trimX_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		trimY_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableTrim_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalConstrain_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableSmoothGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		responseSpeed_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			dbg_run
-			{
-				active = True
-				guiActive = False
-				guiIcon = Toggle Debug
-				guiName = Toggle Debug
-				category = Toggle Debug
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleRoll
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle Roll
-				guiName = Activate roll
-				category = Toggle Roll
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleGimbal
-			{
-				actionGroup = None
-			}
-			plusTrimX
-			{
-				actionGroup = None
-			}
-			minusTrim
-			{
-				actionGroup = None
-			}
-			plus5Trim
-			{
-				actionGroup = None
-			}
-			minus5Trim
-			{
-				actionGroup = None
-			}
-			plusTrimY
-			{
-				actionGroup = None
-			}
-			minusTrimY
-			{
-				actionGroup = None
-			}
-			plus5TrimY
-			{
-				actionGroup = None
-			}
-			minus5TrimY
-			{
-				actionGroup = None
-			}
-			toggletTrim
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = Vostok-1
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		EVENTS
-		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Vostok-1
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 2200
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.095
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.SputVern_4294151944
-	partName = Part
-	pos = -0.3180132,2.853678,1.053142
-	rot = 0,0.7071068,0,-0.7071068
-	attRot = 0,0.7071067,0,-0.7071067
-	mir = 1,1,1
-	istg = 8
-	dstg = 2
-	sidx = 2
-	sqor = 8
-	attm = 0
-	modCost = 0
-	attN = top,His.Sput108_4294152318
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KM_Gimbal
-		isEnabled = True
-		gimbalTransformName = gimbal
-		yawGimbalRange = 0
-		pitchGimbalRange = 22.5
-		debug = True
-		trimX = 0
-		trimY = 0
-		enableTrim = True
-		gimbalConstrain = 14
-		enableGimbal = True
-		enableSmoothGimbal = False
-		responseSpeed = 25
-		enableRoll = False
-		autoSetRoll = True
-		trimX_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		trimY_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableTrim_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalConstrain_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableSmoothGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		responseSpeed_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			dbg_run
-			{
-				active = True
-				guiActive = False
-				guiIcon = Toggle Debug
-				guiName = Toggle Debug
-				category = Toggle Debug
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleRoll
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle Roll
-				guiName = Activate roll
-				category = Toggle Roll
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleGimbal
-			{
-				actionGroup = None
-			}
-			plusTrimX
-			{
-				actionGroup = None
-			}
-			minusTrim
-			{
-				actionGroup = None
-			}
-			plus5Trim
-			{
-				actionGroup = None
-			}
-			minus5Trim
-			{
-				actionGroup = None
-			}
-			plusTrimY
-			{
-				actionGroup = None
-			}
-			minusTrimY
-			{
-				actionGroup = None
-			}
-			plus5TrimY
-			{
-				actionGroup = None
-			}
-			minus5TrimY
-			{
-				actionGroup = None
-			}
-			toggletTrim
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = Vostok-1
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		EVENTS
-		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Vostok-1
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 2200
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.095
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.SputVern_4294151834
-	partName = Part
-	pos = 0.7832658,2.853678,-0.0481368
-	rot = 0,0,0,-1
-	attRot = 0,0,0,-0.9999999
-	mir = 1,1,1
-	istg = 8
-	dstg = 2
-	sidx = 3
-	sqor = 8
-	attm = 0
-	modCost = 0
-	attN = top,His.Sput108_4294152318
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KM_Gimbal
-		isEnabled = True
-		gimbalTransformName = gimbal
-		yawGimbalRange = 0
-		pitchGimbalRange = 22.5
-		debug = True
-		trimX = 0
-		trimY = 0
-		enableTrim = True
-		gimbalConstrain = 14
-		enableGimbal = True
-		enableSmoothGimbal = False
-		responseSpeed = 25
-		enableRoll = False
-		autoSetRoll = True
-		trimX_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		trimY_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableTrim_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalConstrain_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableSmoothGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		responseSpeed_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			dbg_run
-			{
-				active = True
-				guiActive = False
-				guiIcon = Toggle Debug
-				guiName = Toggle Debug
-				category = Toggle Debug
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleRoll
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle Roll
-				guiName = Activate roll
-				category = Toggle Roll
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleGimbal
-			{
-				actionGroup = None
-			}
-			plusTrimX
-			{
-				actionGroup = None
-			}
-			minusTrim
-			{
-				actionGroup = None
-			}
-			plus5Trim
-			{
-				actionGroup = None
-			}
-			minus5Trim
-			{
-				actionGroup = None
-			}
-			plusTrimY
-			{
-				actionGroup = None
-			}
-			minusTrimY
-			{
-				actionGroup = None
-			}
-			plus5TrimY
-			{
-				actionGroup = None
-			}
-			minus5TrimY
-			{
-				actionGroup = None
-			}
-			toggletTrim
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = Vostok-1
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		EVENTS
-		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Vostok-1
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 2200
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.095
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.SputVern_4294151724
-	partName = Part
-	pos = -0.3180132,2.853678,-1.149416
-	rot = 0,-0.7071068,0,-0.7071068
-	attRot = 0,-0.7071067,0,-0.7071067
-	mir = 1,1,1
-	istg = 8
-	dstg = 2
-	sidx = 4
-	sqor = 8
-	attm = 0
-	modCost = 0
-	attN = top,His.Sput108_4294152318
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KM_Gimbal
-		isEnabled = True
-		gimbalTransformName = gimbal
-		yawGimbalRange = 0
-		pitchGimbalRange = 22.5
-		debug = True
-		trimX = 0
-		trimY = 0
-		enableTrim = True
-		gimbalConstrain = 14
-		enableGimbal = True
-		enableSmoothGimbal = False
-		responseSpeed = 25
-		enableRoll = False
-		autoSetRoll = True
-		trimX_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		trimY_UIFlight
-		{
-			controlEnabled = True
-			minValue = -14
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableTrim_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalConstrain_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 14
-			stepIncrement = 1
-		}
-		enableGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableSmoothGimbal_UIFlight
-		{
-			controlEnabled = True
-		}
-		responseSpeed_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			dbg_run
-			{
-				active = True
-				guiActive = False
-				guiIcon = Toggle Debug
-				guiName = Toggle Debug
-				category = Toggle Debug
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleRoll
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle Roll
-				guiName = Activate roll
-				category = Toggle Roll
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleGimbal
-			{
-				actionGroup = None
-			}
-			plusTrimX
-			{
-				actionGroup = None
-			}
-			minusTrim
-			{
-				actionGroup = None
-			}
-			plus5Trim
-			{
-				actionGroup = None
-			}
-			minus5Trim
-			{
-				actionGroup = None
-			}
-			plusTrimY
-			{
-				actionGroup = None
-			}
-			minusTrimY
-			{
-				actionGroup = None
-			}
-			plus5TrimY
-			{
-				actionGroup = None
-			}
-			minus5TrimY
-			{
-				actionGroup = None
-			}
-			toggletTrim
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = Vostok-1
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		EVENTS
-		{
-			NextEngine
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Current Configuration
-				guiName = Vostok-1
-				category = Current Configuration
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			NextTech
-			{
-				active = True
-				guiActive = False
-				guiIcon = Tech Level
-				guiName = Tech Level
-				category = Tech Level
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExtendedPartInfo
-		isEnabled = True
-		Thrust = 0
-		MaxTemp = 2200
-		CrashTol = 12
-		BreakForce = 250
-		BreakTorque = 250
-		Torque = 0
-		Decouple = 0
-		Mass = 0.095
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARBasicDragModel
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.SputBoost_4294151614
-	partName = Part
-	pos = -1.345142,16.90731,-0.04813674
+	pos = -1.338122,17.36579,0.01176053
 	rot = -1.368567E-07,0,2.612301E-06,-1
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3069,14 +757,14 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = -0.001112663
-	link = His.Sput107_4294151532
-	link = launchClamp1_4294151182
-	link = launchClamp1_4294151070
-	sym = His.SputBoost_4294150958
-	sym = His.SputBoost_4294150302
-	sym = His.SputBoost_4294149646
-	srfN = srfAttach,His.SputCore_4294152494
-	attN = top,His.Sput107_4294151532
+	link = His.Sput107_4294265588
+	link = launchClamp1_4294265238
+	link = launchClamp1_4294265126
+	sym = His.SputBoost_4294265014
+	sym = His.SputBoost_4294264358
+	sym = His.SputBoost_4294263702
+	srfN = srfAttach,His.SputCore_4294265846
+	attN = top,His.Sput107_4294265588
 	EVENTS
 	{
 	}
@@ -3373,26 +1061,26 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294151532
+	part = His.Sput107_4294265588
 	partName = Part
-	pos = -1.764385,3.778116,-0.04814032
+	pos = -1.757365,4.236597,0.01175695
 	rot = 1.367124E-13,0.7071068,6.97692E-14,-0.7071068
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 5
+	sidx = 0
 	sqor = 8
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294151402
-	link = His.SputVern_4294151292
-	sym = His.Sput107_4294150876
-	sym = His.Sput107_4294150220
-	sym = His.Sput107_4294149564
-	attN = top,His.SputBoost_4294151614
-	attN = 1,His.SputVern_4294151292
-	attN = 2,His.SputVern_4294151402
+	link = His.SputVern_4294265458
+	link = His.SputVern_4294265348
+	sym = His.Sput107_4294264932
+	sym = His.Sput107_4294264276
+	sym = His.Sput107_4294263620
+	attN = top,His.SputBoost_4294265670
+	attN = 1,His.SputVern_4294265348
+	attN = 2,His.SputVern_4294265458
 	EVENTS
 	{
 	}
@@ -3511,7 +1199,7 @@ PART
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 742.7
+		Thrust = 928.8
 		MaxTemp = 2200
 		CrashTol = 12
 		BreakForce = 250
@@ -3540,22 +1228,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294151402
+	part = His.SputVern_4294265458
 	partName = Part
-	pos = -3.81834,2.913496,-0.5914954
-	rot = -1.433368E-13,1,2.103735E-15,-4.405692E-19
+	pos = -3.81132,3.371976,-0.531599
+	rot = -1.433368E-13,1,2.103741E-15,1.671352E-26
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 6
+	sidx = 1
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294150746
-	sym = His.SputVern_4294150090
-	sym = His.SputVern_4294149434
-	attN = top,His.Sput107_4294151532
+	sym = His.SputVern_4294264802
+	sym = His.SputVern_4294264146
+	sym = His.SputVern_4294263490
+	attN = top,His.Sput107_4294265588
 	EVENTS
 	{
 	}
@@ -3841,22 +1529,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294151292
+	part = His.SputVern_4294265348
 	partName = Part
-	pos = -3.81834,2.913496,0.4988366
-	rot = -1.433368E-13,1,2.103735E-15,-4.405692E-19
+	pos = -3.81132,3.371977,0.5587347
+	rot = -1.433368E-13,1,2.103741E-15,1.671352E-26
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 7
+	sidx = 2
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294150636
-	sym = His.SputVern_4294149980
-	sym = His.SputVern_4294149324
-	attN = top,His.Sput107_4294151532
+	sym = His.SputVern_4294264692
+	sym = His.SputVern_4294264036
+	sym = His.SputVern_4294263380
+	attN = top,His.Sput107_4294265588
 	EVENTS
 	{
 	}
@@ -4142,9 +1830,9 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294151182
+	part = launchClamp1_4294265238
 	partName = Part
-	pos = -4.785141,3.515678,0.8639671
+	pos = -4.778121,3.974159,0.9238644
 	rot = -0.01866679,-0.7930215,0.01868246,-0.608621
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4154,10 +1842,10 @@ PART
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294150526
-	sym = launchClamp1_4294149870
-	sym = launchClamp1_4294149214
-	srfN = srfAttach,His.SputBoost_4294151614
+	sym = launchClamp1_4294264582
+	sym = launchClamp1_4294263926
+	sym = launchClamp1_4294263270
+	srfN = srfAttach,His.SputBoost_4294265670
 	EVENTS
 	{
 	}
@@ -4168,8 +1856,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.674002
-		height = 4.223837
+		scaleFactor = 1.855708
+		height = 4.682317
 		towerRot = 0.01866679,0.7930215,-0.01868246,-0.608621
 		EVENTS
 		{
@@ -4310,22 +1998,22 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294151070
+	part = launchClamp1_4294265126
 	partName = Part
-	pos = -4.83006,3.466978,-0.9721552
+	pos = -4.82304,3.925459,-0.9122579
 	rot = 0.01866123,0.6086199,-0.01870681,0.7930218
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
 	dstg = 4
-	sidx = 4
+	sidx = 1
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294150414
-	sym = launchClamp1_4294149758
-	sym = launchClamp1_4294149102
-	srfN = srfAttach,His.SputBoost_4294151614
+	sym = launchClamp1_4294264470
+	sym = launchClamp1_4294263814
+	sym = launchClamp1_4294263158
+	srfN = srfAttach,His.SputBoost_4294265670
 	EVENTS
 	{
 	}
@@ -4336,8 +2024,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.654705
-		height = 4.17515
+		scaleFactor = 1.836411
+		height = 4.633629
 		towerRot = -0.01866123,-0.6086199,0.01870681,0.7930218
 		EVENTS
 		{
@@ -4478,9 +2166,9 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294150958
+	part = His.SputBoost_4294265014
 	partName = Part
-	pos = -0.3180132,16.90731,0.978992
+	pos = -0.3109933,17.36579,1.038889
 	rot = 1.750404E-06,-0.7071068,1.943948E-06,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4490,14 +2178,14 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = -0.001112663
-	link = His.Sput107_4294150876
-	link = launchClamp1_4294150526
-	link = launchClamp1_4294150414
-	sym = His.SputBoost_4294151614
-	sym = His.SputBoost_4294150302
-	sym = His.SputBoost_4294149646
-	srfN = srfAttach,His.SputCore_4294152494
-	attN = top,His.Sput107_4294150876
+	link = His.Sput107_4294264932
+	link = launchClamp1_4294264582
+	link = launchClamp1_4294264470
+	sym = His.SputBoost_4294265670
+	sym = His.SputBoost_4294264358
+	sym = His.SputBoost_4294263702
+	srfN = srfAttach,His.SputCore_4294265846
+	attN = top,His.Sput107_4294264932
 	EVENTS
 	{
 	}
@@ -4794,26 +2482,26 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294150876
+	part = His.Sput107_4294264932
 	partName = Part
-	pos = -0.3180167,3.778116,1.398236
+	pos = -0.3109968,4.236597,1.458133
 	rot = 0,0,0,-1
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 8
+	sidx = 3
 	sqor = 8
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294150746
-	link = His.SputVern_4294150636
-	sym = His.Sput107_4294151532
-	sym = His.Sput107_4294150220
-	sym = His.Sput107_4294149564
-	attN = top,His.SputBoost_4294150958
-	attN = 1,His.SputVern_4294150636
-	attN = 2,His.SputVern_4294150746
+	link = His.SputVern_4294264802
+	link = His.SputVern_4294264692
+	sym = His.Sput107_4294265588
+	sym = His.Sput107_4294264276
+	sym = His.Sput107_4294263620
+	attN = top,His.SputBoost_4294265014
+	attN = 1,His.SputVern_4294264692
+	attN = 2,His.SputVern_4294264802
 	EVENTS
 	{
 	}
@@ -4932,7 +2620,7 @@ PART
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 742.7
+		Thrust = 928.8
 		MaxTemp = 2200
 		CrashTol = 12
 		BreakForce = 250
@@ -4961,22 +2649,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294150746
+	part = His.SputVern_4294264802
 	partName = Part
-	pos = -0.8613714,2.913496,3.452191
-	rot = -1.997819E-13,0.7071069,2.840843E-13,-0.7071069
+	pos = -0.8543522,3.371976,3.512089
+	rot = -1.997819E-13,0.7071068,2.840843E-13,-0.7071068
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 9
+	sidx = 4
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294151402
-	sym = His.SputVern_4294150090
-	sym = His.SputVern_4294149434
-	attN = top,His.Sput107_4294150876
+	sym = His.SputVern_4294265458
+	sym = His.SputVern_4294264146
+	sym = His.SputVern_4294263490
+	attN = top,His.Sput107_4294264932
 	EVENTS
 	{
 	}
@@ -5262,22 +2950,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294150636
+	part = His.SputVern_4294264692
 	partName = Part
-	pos = 0.2289605,2.913496,3.452196
-	rot = -1.997819E-13,0.7071069,2.840843E-13,-0.7071069
+	pos = 0.2359813,3.371977,3.5121
+	rot = -1.997819E-13,0.7071068,2.840843E-13,-0.7071068
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 10
+	sidx = 5
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294151292
-	sym = His.SputVern_4294149980
-	sym = His.SputVern_4294149324
-	attN = top,His.Sput107_4294150876
+	sym = His.SputVern_4294265348
+	sym = His.SputVern_4294264036
+	sym = His.SputVern_4294263380
+	attN = top,His.Sput107_4294264932
 	EVENTS
 	{
 	}
@@ -5563,22 +3251,22 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294150526
+	part = launchClamp1_4294264582
 	partName = Part
-	pos = 0.5940928,3.515678,4.418998
-	rot = 1.108515E-05,-0.991111,0.02640991,0.1303909
+	pos = 0.6011141,3.974159,4.478902
+	rot = 1.108515E-05,-0.9911109,0.02640991,0.1303909
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
 	dstg = 4
-	sidx = 1
+	sidx = 2
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294151182
-	sym = launchClamp1_4294149870
-	sym = launchClamp1_4294149214
-	srfN = srfAttach,His.SputBoost_4294150958
+	sym = launchClamp1_4294265238
+	sym = launchClamp1_4294263926
+	sym = launchClamp1_4294263270
+	srfN = srfAttach,His.SputBoost_4294265014
 	EVENTS
 	{
 	}
@@ -5589,8 +3277,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.674002
-		height = 4.223837
+		scaleFactor = 1.855708
+		height = 4.682317
 		towerRot = -1.108515E-05,0.9911109,-0.02640991,0.1303909
 		EVENTS
 		{
@@ -5731,22 +3419,22 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294150414
+	part = launchClamp1_4294264470
 	partName = Part
-	pos = -1.242032,3.466978,4.463919
-	rot = -3.222869E-05,0.9911106,-0.0264232,0.1303918
+	pos = -1.235012,3.925459,4.523823
+	rot = -3.222868E-05,0.9911104,-0.0264232,0.1303918
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
 	dstg = 4
-	sidx = 5
+	sidx = 3
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294151070
-	sym = launchClamp1_4294149758
-	sym = launchClamp1_4294149102
-	srfN = srfAttach,His.SputBoost_4294150958
+	sym = launchClamp1_4294265126
+	sym = launchClamp1_4294263814
+	sym = launchClamp1_4294263158
+	srfN = srfAttach,His.SputBoost_4294265014
 	EVENTS
 	{
 	}
@@ -5757,8 +3445,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.654705
-		height = 4.17515
+		scaleFactor = 1.836411
+		height = 4.633629
 		towerRot = 3.222868E-05,-0.9911104,0.0264232,0.1303918
 		EVENTS
 		{
@@ -5899,9 +3587,9 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294150302
+	part = His.SputBoost_4294264358
 	partName = Part
-	pos = 0.7091157,16.90731,-0.04813698
+	pos = 0.7161357,17.36579,0.01176029
 	rot = 2.612301E-06,-1,1.368566E-07,4.371139E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5911,14 +3599,14 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = -0.001112663
-	link = His.Sput107_4294150220
-	link = launchClamp1_4294149870
-	link = launchClamp1_4294149758
-	sym = His.SputBoost_4294151614
-	sym = His.SputBoost_4294150958
-	sym = His.SputBoost_4294149646
-	srfN = srfAttach,His.SputCore_4294152494
-	attN = top,His.Sput107_4294150220
+	link = His.Sput107_4294264276
+	link = launchClamp1_4294263926
+	link = launchClamp1_4294263814
+	sym = His.SputBoost_4294265670
+	sym = His.SputBoost_4294265014
+	sym = His.SputBoost_4294263702
+	srfN = srfAttach,His.SputCore_4294265846
+	attN = top,His.Sput107_4294264276
 	EVENTS
 	{
 	}
@@ -6215,26 +3903,26 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294150220
+	part = His.Sput107_4294264276
 	partName = Part
-	pos = 1.12836,3.778116,-0.04813344
-	rot = -7.160638E-14,-0.7071068,-7.406898E-13,-0.7071068
+	pos = 1.13538,4.236597,0.01176383
+	rot = -7.160642E-14,-0.7071068,-1.536498E-12,-0.7071068
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 11
+	sidx = 6
 	sqor = 8
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294150090
-	link = His.SputVern_4294149980
-	sym = His.Sput107_4294151532
-	sym = His.Sput107_4294150876
-	sym = His.Sput107_4294149564
-	attN = top,His.SputBoost_4294150302
-	attN = 1,His.SputVern_4294149980
-	attN = 2,His.SputVern_4294150090
+	link = His.SputVern_4294264146
+	link = His.SputVern_4294264036
+	sym = His.Sput107_4294265588
+	sym = His.Sput107_4294264932
+	sym = His.Sput107_4294263620
+	attN = top,His.SputBoost_4294264358
+	attN = 1,His.SputVern_4294264036
+	attN = 2,His.SputVern_4294264146
 	EVENTS
 	{
 	}
@@ -6353,7 +4041,7 @@ PART
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 742.7
+		Thrust = 928.8
 		MaxTemp = 2200
 		CrashTol = 12
 		BreakForce = 250
@@ -6382,22 +4070,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294150090
+	part = His.SputVern_4294264146
 	partName = Part
-	pos = 3.182312,2.913496,0.4952208
-	rot = 2.604216E-15,-4.371139E-08,3.766927E-13,-1
+	pos = 3.189333,3.371976,0.555118
+	rot = 2.604242E-15,-8.42937E-08,3.766927E-13,-1
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 12
+	sidx = 7
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294151402
-	sym = His.SputVern_4294150746
-	sym = His.SputVern_4294149434
-	attN = top,His.Sput107_4294150220
+	sym = His.SputVern_4294265458
+	sym = His.SputVern_4294264802
+	sym = His.SputVern_4294263490
+	attN = top,His.Sput107_4294264276
 	EVENTS
 	{
 	}
@@ -6683,22 +4371,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294149980
+	part = His.SputVern_4294264036
 	partName = Part
-	pos = 3.182313,2.913496,-0.5951109
-	rot = 2.604216E-15,-4.371139E-08,3.766927E-13,-1
+	pos = 3.189333,3.371977,-0.5352154
+	rot = 2.604242E-15,-8.42937E-08,3.766927E-13,-1
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 13
+	sidx = 8
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294151292
-	sym = His.SputVern_4294150636
-	sym = His.SputVern_4294149324
-	attN = top,His.Sput107_4294150220
+	sym = His.SputVern_4294265348
+	sym = His.SputVern_4294264692
+	sym = His.SputVern_4294263380
+	attN = top,His.Sput107_4294264276
 	EVENTS
 	{
 	}
@@ -6984,22 +4672,22 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294149870
+	part = launchClamp1_4294263926
 	partName = Part
-	pos = 4.149115,3.515678,-0.9602412
+	pos = 4.156135,3.974159,-0.9003439
 	rot = 0.01868246,-0.608621,0.01866678,0.7930215
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
 	dstg = 4
-	sidx = 2
+	sidx = 4
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294151182
-	sym = launchClamp1_4294150526
-	sym = launchClamp1_4294149214
-	srfN = srfAttach,His.SputBoost_4294150302
+	sym = launchClamp1_4294265238
+	sym = launchClamp1_4294264582
+	sym = launchClamp1_4294263270
+	srfN = srfAttach,His.SputBoost_4294264358
 	EVENTS
 	{
 	}
@@ -7010,8 +4698,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.674002
-		height = 4.223837
+		scaleFactor = 1.855708
+		height = 4.682317
 		towerRot = -0.01868246,0.608621,-0.01866678,0.7930215
 		EVENTS
 		{
@@ -7152,22 +4840,22 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294149758
+	part = launchClamp1_4294263814
 	partName = Part
-	pos = 4.194034,3.466978,0.8758813
+	pos = 4.201054,3.925459,0.9357786
 	rot = -0.01870681,0.7930218,-0.01866123,-0.60862
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
 	dstg = 4
-	sidx = 6
+	sidx = 5
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294151070
-	sym = launchClamp1_4294150414
-	sym = launchClamp1_4294149102
-	srfN = srfAttach,His.SputBoost_4294150302
+	sym = launchClamp1_4294265126
+	sym = launchClamp1_4294264470
+	sym = launchClamp1_4294263158
+	srfN = srfAttach,His.SputBoost_4294264358
 	EVENTS
 	{
 	}
@@ -7178,8 +4866,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.654705
-		height = 4.17515
+		scaleFactor = 1.836411
+		height = 4.633629
 		towerRot = 0.01870681,-0.7930218,0.01866123,-0.60862
 		EVENTS
 		{
@@ -7320,9 +5008,9 @@ PART
 }
 PART
 {
-	part = His.SputBoost_4294149646
+	part = His.SputBoost_4294263702
 	partName = Part
-	pos = -0.3180133,16.90731,-1.075265
+	pos = -0.3109934,17.36579,-1.015368
 	rot = 1.943948E-06,-0.7071068,-1.750404E-06,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -7332,14 +5020,14 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = -0.001112663
-	link = His.Sput107_4294149564
-	link = launchClamp1_4294149214
-	link = launchClamp1_4294149102
-	sym = His.SputBoost_4294151614
-	sym = His.SputBoost_4294150958
-	sym = His.SputBoost_4294150302
-	srfN = srfAttach,His.SputCore_4294152494
-	attN = top,His.Sput107_4294149564
+	link = His.Sput107_4294263620
+	link = launchClamp1_4294263270
+	link = launchClamp1_4294263158
+	sym = His.SputBoost_4294265670
+	sym = His.SputBoost_4294265014
+	sym = His.SputBoost_4294264358
+	srfN = srfAttach,His.SputCore_4294265846
+	attN = top,His.Sput107_4294263620
 	EVENTS
 	{
 	}
@@ -7636,26 +5324,26 @@ PART
 }
 PART
 {
-	part = His.Sput107_4294149564
+	part = His.Sput107_4294263620
 	partName = Part
-	pos = -0.3180097,3.778116,-1.494509
+	pos = -0.3109898,4.236597,-1.434612
 	rot = 0,-1,0,-2.817212E-17
 	attRot = 0,0.7071067,0,-0.7071067
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 14
+	sidx = 9
 	sqor = 8
 	attm = 0
 	modCost = 0
-	link = His.SputVern_4294149434
-	link = His.SputVern_4294149324
-	sym = His.Sput107_4294151532
-	sym = His.Sput107_4294150876
-	sym = His.Sput107_4294150220
-	attN = top,His.SputBoost_4294149646
-	attN = 1,His.SputVern_4294149324
-	attN = 2,His.SputVern_4294149434
+	link = His.SputVern_4294263490
+	link = His.SputVern_4294263380
+	sym = His.Sput107_4294265588
+	sym = His.Sput107_4294264932
+	sym = His.Sput107_4294264276
+	attN = top,His.SputBoost_4294263702
+	attN = 1,His.SputVern_4294263380
+	attN = 2,His.SputVern_4294263490
 	EVENTS
 	{
 	}
@@ -7774,7 +5462,7 @@ PART
 	{
 		name = ExtendedPartInfo
 		isEnabled = True
-		Thrust = 742.7
+		Thrust = 928.8
 		MaxTemp = 2200
 		CrashTol = 12
 		BreakForce = 250
@@ -7803,22 +5491,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294149434
+	part = His.SputVern_4294263490
 	partName = Part
-	pos = 0.225345,2.913496,-3.54847
-	rot = 2.840843E-13,-0.7071069,1.997819E-13,-0.7071069
+	pos = 0.2323653,3.371976,-3.48858
+	rot = 2.840843E-13,-0.7071068,1.997819E-13,-0.7071068
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 15
+	sidx = 10
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294151402
-	sym = His.SputVern_4294150746
-	sym = His.SputVern_4294150090
-	attN = top,His.Sput107_4294149564
+	sym = His.SputVern_4294265458
+	sym = His.SputVern_4294264802
+	sym = His.SputVern_4294264146
+	attN = top,His.Sput107_4294263620
 	EVENTS
 	{
 	}
@@ -8104,22 +5792,22 @@ PART
 }
 PART
 {
-	part = His.SputVern_4294149324
+	part = His.SputVern_4294263380
 	partName = Part
-	pos = -0.8649868,2.913496,-3.548465
-	rot = 2.840843E-13,-0.7071069,1.997819E-13,-0.7071069
+	pos = -0.857968,3.371977,-3.488568
+	rot = 2.840843E-13,-0.7071068,1.997819E-13,-0.7071068
 	attRot = 0,0.9999999,0,0
 	mir = 1,1,1
 	istg = 8
 	dstg = 4
-	sidx = 16
+	sidx = 11
 	sqor = 8
 	attm = 0
 	modCost = 0
-	sym = His.SputVern_4294151292
-	sym = His.SputVern_4294150636
-	sym = His.SputVern_4294149980
-	attN = top,His.Sput107_4294149564
+	sym = His.SputVern_4294265348
+	sym = His.SputVern_4294264692
+	sym = His.SputVern_4294264036
+	attN = top,His.Sput107_4294263620
 	EVENTS
 	{
 	}
@@ -8405,22 +6093,22 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294149214
+	part = launchClamp1_4294263270
 	partName = Part
-	pos = -1.230118,3.515678,-4.515272
-	rot = 0.02640991,0.1303909,-1.108515E-05,0.991111
+	pos = -1.223098,3.974159,-4.455381
+	rot = 0.02640991,0.1303909,-1.108515E-05,0.9911109
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
 	dstg = 4
-	sidx = 3
+	sidx = 6
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294151182
-	sym = launchClamp1_4294150526
-	sym = launchClamp1_4294149870
-	srfN = srfAttach,His.SputBoost_4294149646
+	sym = launchClamp1_4294265238
+	sym = launchClamp1_4294264582
+	sym = launchClamp1_4294263926
+	srfN = srfAttach,His.SputBoost_4294263702
 	EVENTS
 	{
 	}
@@ -8431,8 +6119,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.674002
-		height = 4.223837
+		scaleFactor = 1.855708
+		height = 4.682317
 		towerRot = -0.02640991,-0.1303909,1.108515E-05,0.9911109
 		EVENTS
 		{
@@ -8573,10 +6261,10 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294149102
+	part = launchClamp1_4294263158
 	partName = Part
-	pos = 0.6060078,3.466978,-4.560191
-	rot = -0.0264232,0.1303918,3.222869E-05,-0.9911106
+	pos = 0.6130296,3.925459,-4.5003
+	rot = -0.0264232,0.1303918,3.222868E-05,-0.9911104
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 7
@@ -8585,10 +6273,10 @@ PART
 	sqor = 7
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4294151070
-	sym = launchClamp1_4294150414
-	sym = launchClamp1_4294149758
-	srfN = srfAttach,His.SputBoost_4294149646
+	sym = launchClamp1_4294265126
+	sym = launchClamp1_4294264470
+	sym = launchClamp1_4294263814
+	srfN = srfAttach,His.SputBoost_4294263702
 	EVENTS
 	{
 	}
@@ -8599,8 +6287,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.654705
-		height = 4.17515
+		scaleFactor = 1.836411
+		height = 4.633629
 		towerRot = 0.0264232,-0.1303918,-3.222868E-05,-0.9911104
 		EVENTS
 		{
@@ -8741,9 +6429,2360 @@ PART
 }
 PART
 {
-	part = VHis.r7.vostok.fairing.r_4294148990
+	part = His.Sput108_4294262934
 	partName = Part
-	pos = -0.3180131,36.49928,-0.05734763
+	pos = -0.3109933,3.881811,0.01176047
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 8
+	dstg = 2
+	sidx = 12
+	sqor = 8
+	attm = 0
+	modCost = 0
+	link = His.SputVern_4294262670
+	link = His.SputVern_4294262560
+	link = His.SputVern_4294262450
+	link = His.SputVern_4294262340
+	attN = top,His.SputCore_4294265846
+	attN = 1,His.SputVern_4294262450
+	attN = 2,His.SputVern_4294262670
+	attN = 3,His.SputVern_4294262340
+	attN = 4,His.SputVern_4294262560
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngineConfigs
+		isEnabled = True
+		configuration = Vostok-1
+		techLevel = -1
+		thrustRating = maxThrust
+		modded = False
+		EVENTS
+		{
+			NextEngine
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Current Configuration
+				guiName = Vostok-1
+				category = Current Configuration
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			NextTech
+			{
+				active = True
+				guiActive = False
+				guiIcon = Tech Level
+				guiName = Tech Level
+				category = Tech Level
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 802.8
+		MaxTemp = 2200
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.87
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.SputVern_4294262670
+	partName = Part
+	pos = -1.412272,3.312149,0.01176047
+	rot = 0,1,0,0
+	attRot = 0,0.9999999,0,0
+	mir = 1,1,1
+	istg = 8
+	dstg = 2
+	sidx = 13
+	sqor = 8
+	attm = 0
+	modCost = 0
+	attN = top,His.Sput108_4294262934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KM_Gimbal
+		isEnabled = True
+		gimbalTransformName = gimbal
+		yawGimbalRange = 0
+		pitchGimbalRange = 22.5
+		debug = True
+		trimX = 0
+		trimY = 0
+		enableTrim = True
+		gimbalConstrain = 14
+		enableGimbal = True
+		enableSmoothGimbal = False
+		responseSpeed = 25
+		enableRoll = False
+		autoSetRoll = True
+		trimX_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		trimY_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableTrim_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalConstrain_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableSmoothGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		responseSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			dbg_run
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Debug
+				guiName = Toggle Debug
+				category = Toggle Debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRoll
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Roll
+				guiName = Activate roll
+				category = Toggle Roll
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleGimbal
+			{
+				actionGroup = None
+			}
+			plusTrimX
+			{
+				actionGroup = None
+			}
+			minusTrim
+			{
+				actionGroup = None
+			}
+			plus5Trim
+			{
+				actionGroup = None
+			}
+			minus5Trim
+			{
+				actionGroup = None
+			}
+			plusTrimY
+			{
+				actionGroup = None
+			}
+			minusTrimY
+			{
+				actionGroup = None
+			}
+			plus5TrimY
+			{
+				actionGroup = None
+			}
+			minus5TrimY
+			{
+				actionGroup = None
+			}
+			toggletTrim
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngineConfigs
+		isEnabled = True
+		configuration = Vostok-1
+		techLevel = -1
+		thrustRating = maxThrust
+		modded = False
+		EVENTS
+		{
+			NextEngine
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Current Configuration
+				guiName = Vostok-1
+				category = Current Configuration
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			NextTech
+			{
+				active = True
+				guiActive = False
+				guiIcon = Tech Level
+				guiName = Tech Level
+				category = Tech Level
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 2200
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.095
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.SputVern_4294262560
+	partName = Part
+	pos = -0.3109933,3.312149,1.113039
+	rot = 0,0.7071068,0,-0.7071068
+	attRot = 0,0.7071067,0,-0.7071067
+	mir = 1,1,1
+	istg = 8
+	dstg = 2
+	sidx = 14
+	sqor = 8
+	attm = 0
+	modCost = 0
+	attN = top,His.Sput108_4294262934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KM_Gimbal
+		isEnabled = True
+		gimbalTransformName = gimbal
+		yawGimbalRange = 0
+		pitchGimbalRange = 22.5
+		debug = True
+		trimX = 0
+		trimY = 0
+		enableTrim = True
+		gimbalConstrain = 14
+		enableGimbal = True
+		enableSmoothGimbal = False
+		responseSpeed = 25
+		enableRoll = False
+		autoSetRoll = True
+		trimX_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		trimY_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableTrim_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalConstrain_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableSmoothGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		responseSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			dbg_run
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Debug
+				guiName = Toggle Debug
+				category = Toggle Debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRoll
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Roll
+				guiName = Activate roll
+				category = Toggle Roll
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleGimbal
+			{
+				actionGroup = None
+			}
+			plusTrimX
+			{
+				actionGroup = None
+			}
+			minusTrim
+			{
+				actionGroup = None
+			}
+			plus5Trim
+			{
+				actionGroup = None
+			}
+			minus5Trim
+			{
+				actionGroup = None
+			}
+			plusTrimY
+			{
+				actionGroup = None
+			}
+			minusTrimY
+			{
+				actionGroup = None
+			}
+			plus5TrimY
+			{
+				actionGroup = None
+			}
+			minus5TrimY
+			{
+				actionGroup = None
+			}
+			toggletTrim
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngineConfigs
+		isEnabled = True
+		configuration = Vostok-1
+		techLevel = -1
+		thrustRating = maxThrust
+		modded = False
+		EVENTS
+		{
+			NextEngine
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Current Configuration
+				guiName = Vostok-1
+				category = Current Configuration
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			NextTech
+			{
+				active = True
+				guiActive = False
+				guiIcon = Tech Level
+				guiName = Tech Level
+				category = Tech Level
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 2200
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.095
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.SputVern_4294262450
+	partName = Part
+	pos = 0.7902858,3.312149,0.01176047
+	rot = 0,0,0,-1
+	attRot = 0,0,0,-0.9999999
+	mir = 1,1,1
+	istg = 8
+	dstg = 2
+	sidx = 15
+	sqor = 8
+	attm = 0
+	modCost = 0
+	attN = top,His.Sput108_4294262934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KM_Gimbal
+		isEnabled = True
+		gimbalTransformName = gimbal
+		yawGimbalRange = 0
+		pitchGimbalRange = 22.5
+		debug = True
+		trimX = 0
+		trimY = 0
+		enableTrim = True
+		gimbalConstrain = 14
+		enableGimbal = True
+		enableSmoothGimbal = False
+		responseSpeed = 25
+		enableRoll = False
+		autoSetRoll = True
+		trimX_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		trimY_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableTrim_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalConstrain_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableSmoothGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		responseSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			dbg_run
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Debug
+				guiName = Toggle Debug
+				category = Toggle Debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRoll
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Roll
+				guiName = Activate roll
+				category = Toggle Roll
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleGimbal
+			{
+				actionGroup = None
+			}
+			plusTrimX
+			{
+				actionGroup = None
+			}
+			minusTrim
+			{
+				actionGroup = None
+			}
+			plus5Trim
+			{
+				actionGroup = None
+			}
+			minus5Trim
+			{
+				actionGroup = None
+			}
+			plusTrimY
+			{
+				actionGroup = None
+			}
+			minusTrimY
+			{
+				actionGroup = None
+			}
+			plus5TrimY
+			{
+				actionGroup = None
+			}
+			minus5TrimY
+			{
+				actionGroup = None
+			}
+			toggletTrim
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngineConfigs
+		isEnabled = True
+		configuration = Vostok-1
+		techLevel = -1
+		thrustRating = maxThrust
+		modded = False
+		EVENTS
+		{
+			NextEngine
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Current Configuration
+				guiName = Vostok-1
+				category = Current Configuration
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			NextTech
+			{
+				active = True
+				guiActive = False
+				guiIcon = Tech Level
+				guiName = Tech Level
+				category = Tech Level
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 2200
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.095
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.SputVern_4294262340
+	partName = Part
+	pos = -0.3109933,3.312149,-1.089519
+	rot = 0,-0.7071068,0,-0.7071068
+	attRot = 0,-0.7071067,0,-0.7071067
+	mir = 1,1,1
+	istg = 8
+	dstg = 2
+	sidx = 16
+	sqor = 8
+	attm = 0
+	modCost = 0
+	attN = top,His.Sput108_4294262934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KM_Gimbal
+		isEnabled = True
+		gimbalTransformName = gimbal
+		yawGimbalRange = 0
+		pitchGimbalRange = 22.5
+		debug = True
+		trimX = 0
+		trimY = 0
+		enableTrim = True
+		gimbalConstrain = 14
+		enableGimbal = True
+		enableSmoothGimbal = False
+		responseSpeed = 25
+		enableRoll = False
+		autoSetRoll = True
+		trimX_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		trimY_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableTrim_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalConstrain_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableSmoothGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		responseSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			dbg_run
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Debug
+				guiName = Toggle Debug
+				category = Toggle Debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRoll
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Roll
+				guiName = Activate roll
+				category = Toggle Roll
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleGimbal
+			{
+				actionGroup = None
+			}
+			plusTrimX
+			{
+				actionGroup = None
+			}
+			minusTrim
+			{
+				actionGroup = None
+			}
+			plus5Trim
+			{
+				actionGroup = None
+			}
+			minus5Trim
+			{
+				actionGroup = None
+			}
+			plusTrimY
+			{
+				actionGroup = None
+			}
+			minusTrimY
+			{
+				actionGroup = None
+			}
+			plus5TrimY
+			{
+				actionGroup = None
+			}
+			minus5TrimY
+			{
+				actionGroup = None
+			}
+			toggletTrim
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngineConfigs
+		isEnabled = True
+		configuration = Vostok-1
+		techLevel = -1
+		thrustRating = maxThrust
+		modded = False
+		EVENTS
+		{
+			NextEngine
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Current Configuration
+				guiName = Vostok-1
+				category = Current Configuration
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			NextTech
+			{
+				active = True
+				guiActive = False
+				guiIcon = Tech Level
+				guiName = Tech Level
+				category = Tech Level
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 2200
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.095
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = VHis.rn.vostok.dec_4294267380
+	partName = Part
+	pos = -0.3109933,33.68837,0.01176047
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	attm = 0
+	modCost = 0
+	link = VHis.rn.vostok.sc_4294267146
+	attN = bottom,VHis.rn.vostok.tdu_4294269686
+	attN = top,VHis.rn.vostok.sc_4294267146
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSanimateGeneric
+		isEnabled = True
+		startDeployed = False
+		isAnimating = False
+		animTime = 0
+		reverseAnimation = False
+		animSpeed = -1
+		hasBeenInitialized = True
+		EVENTS
+		{
+			toggleEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Deploy
+				guiName = Disconnect Wires
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAction
+			{
+				actionGroup = Custom05
+			}
+		}
+	}
+	MODULE
+	{
+		name = ReflectiveShaderModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 1200
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 1
+		Mass = 0.2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableDecouple
+		isEnabled = True
+		ejectionForce = 1
+		ejectionForce_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStagingToggle
+		isEnabled = True
+		stagingEnabled = True
+		stagingEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = VHis.rn.vostok.sc_4294267146
+	partName = Part
+	pos = -0.3109933,35.5849,0.01176047
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 2
+	sidx = 0
+	sqor = 0
+	attm = 0
+	modCost = 0
+	link = VHis.rn.vostok.para_4294266244
+	attN = bottom,VHis.rn.vostok.dec_4294267380
+	attN = para,VHis.rn.vostok.para_4294266244
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSanimateGeneric
+		isEnabled = True
+		startDeployed = False
+		isAnimating = False
+		animTime = 0
+		reverseAnimation = False
+		animSpeed = -1
+		hasBeenInitialized = True
+		EVENTS
+		{
+			toggleEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Deploy
+				guiName = Deploy Antennas
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleHeatShield
+		isEnabled = True
+		deployAnimationController = 0
+		direction = (0, 0, 0)
+		reflective = 0.08
+		ablative = AblativeShielding
+		area = 0
+		thickness = 0
+		adjustCollider = 0
+		crashTolerance = 8
+		damage = 0
+		dead = False
+		loss
+		{
+			key = 650 0 0 0
+			key = 2000 300 0 0
+			key = 6000 375 0 0
+		}
+		dissipation
+		{
+			key = 300 0 0 0
+			key = 800 284 0 0
+		}
+		EVENTS
+		{
+			RepairDamage
+			{
+				active = True
+				guiActive = False
+				guiIcon = No Damage
+				guiName = No Damage
+				category = No Damage
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKrEjectPilot
+		isEnabled = True
+		maxUses = 3
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			Eject
+			{
+				actionGroup = Abort, Custom07
+			}
+		}
+	}
+	MODULE
+	{
+		name = ReflectiveShaderModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 2000
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 2
+		Decouple = 0
+		Mass = 2.163389
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = LifeSupportModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+		isEnabled = True
+		EntryAngle = 0
+		EntryHorizon = False
+		HighAngle = 0
+		HighHorizon = False
+		LowAngle = 0
+		LowHorizon = False
+		GroundAngle = 0
+		GroundHorizon = False
+		hasTarget = False
+		targetLocation = (0, 0, 0)
+		targetReferenceBody = 
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleJoke
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStageStats
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				unlockParts = 
+				unlockTechs = 
+				srfHdg
+				{
+					_val = 90
+					_text = 90
+				}
+				srfPit
+				{
+					_val = 90
+					_text = 90
+				}
+				srfRol
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelYaw
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelPit
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelRol
+				{
+					_val = 0
+					_text = 0
+				}
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentPathEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTargetController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWarpController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				limitThrottle = False
+				unlockParts = 
+				unlockTechs = 
+				maxThrottle
+				{
+					_val = 1
+					_text = 100
+				}
+			}
+			MechJebModuleRCSController
+			{
+				unlockParts = 
+				unlockTechs = 
+				Tf
+				{
+					_val = 1
+					_text = 1
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStagingController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				markUT = 0
+				deltaVExpended = 0
+				dragLosses = 0
+				gravityLosses = 0
+				steeringLosses = 0
+				markLatitude = 0
+				markLongitude = 0
+				markAltitude = 0
+				markBodyIndex = 1
+				maxDragGees = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleKrEjectPilot
+		isEnabled = True
+		maxUses = 3
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			Eject
+			{
+				actionGroup = Abort, Custom07
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleKrEquipKerbal
+		isEnabled = True
+		count = 5
+		EVENTS
+		{
+			EquipNearbyKerbal
+			{
+				active = True
+				guiActive = True
+				guiIcon = 
+				guiName = Equip Parachute
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = Custom06
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = JSINonTransparentPod
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = RasterPropMonitorComputer
+		isEnabled = True
+		data = 
+		vesselDescription = 
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 10000
+		maxAmount = 10000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = AblativeShielding
+		amount = 800
+		maxAmount = 800
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Food
+		amount = 56
+		maxAmount = 56
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Water
+		amount = 235
+		maxAmount = 235
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxygen
+		amount = 7872
+		maxAmount = 7872
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Waste
+		amount = 0
+		maxAmount = 20
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = WasteWater
+		amount = 0
+		maxAmount = 1
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = CarbonDioxide
+		amount = 0
+		maxAmount = 10000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = VHis.rn.vostok.para_4294266244
+	partName = Part
+	pos = -0.3109933,35.5849,0.01176047
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 3
+	sidx = 1
+	sqor = 0
+	attm = 0
+	modCost = 0
+	attN = para,VHis.rn.vostok.sc_4294267146
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		deployAltitude = 5000
+		minAirPressureToOpen = 0.1
+		staged = False
+		deployAltitude_UIFlight
+		{
+			controlEnabled = True
+			minValue = 50
+			maxValue = 5000
+			stepIncrement = 50
+		}
+		minAirPressureToOpen_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.01
+			maxValue = 0.5
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Deploy
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy Chute
+				guiName = Deploy Chute
+				category = Deploy Chute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			CutParachute
+			{
+				active = False
+				guiActive = True
+				guiIcon = Cut Parachute
+				guiName = Cut Parachute
+				category = Cut Parachute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Repack
+			{
+				active = False
+				guiActive = False
+				guiIcon = Repack Chute
+				guiName = Repack Chute
+				category = Repack Chute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ReflectiveShaderModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExtendedPartInfo
+		isEnabled = True
+		Thrust = 0
+		MaxTemp = 2000
+		CrashTol = 12
+		BreakForce = 250
+		BreakTorque = 250
+		Torque = 0
+		Decouple = 0
+		Mass = 0.187
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleHeatShield
+		isEnabled = True
+		deployAnimationController = 0
+		direction = (0, 0, 0)
+		reflective = 0.08
+		ablative = AblativeShielding
+		area = 0
+		thickness = 0
+		adjustCollider = 0
+		crashTolerance = 8
+		damage = 0
+		dead = False
+		loss
+		{
+			key = 650 0 0 0
+			key = 2000 300 0 0
+			key = 6000 375 0 0
+		}
+		dissipation
+		{
+			key = 300 0 0 0
+			key = 800 284 0 0
+		}
+		EVENTS
+		{
+			RepairDamage
+			{
+				active = True
+				guiActive = False
+				guiIcon = No Damage
+				guiName = No Damage
+				category = No Damage
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = AblativeShielding
+		amount = 37
+		maxAmount = 37
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = VHis.r7.vostok.fairing.r_4294263046
+	partName = Part
+	pos = -0.3109934,36.95776,0.00254941
 	rot = 0,0.7071068,0,0.7071068
 	attRot = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -8753,7 +8792,7 @@ PART
 	sqor = 5
 	attm = 0
 	modCost = 0
-	attN = top,His.r7.vostok.blok.e_4294152750
+	attN = top,His.r7.vostok.blok.e_4294266102
 	EVENTS
 	{
 	}
@@ -8946,9 +8985,9 @@ PART
 }
 PART
 {
-	part = VHis.r7.vostok.fairing.l_4294148934
+	part = VHis.r7.vostok.fairing.l_4294262990
 	partName = Part
-	pos = -0.3180133,36.49928,-0.03892601
+	pos = -0.3109931,36.95776,0.02097154
 	rot = 0,0.7071068,0,0.7071068
 	attRot = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -8958,7 +8997,7 @@ PART
 	sqor = 5
 	attm = 0
 	modCost = 0
-	attN = top,His.r7.vostok.blok.e_4294152750
+	attN = top,His.r7.vostok.blok.e_4294266102
 	EVENTS
 	{
 	}

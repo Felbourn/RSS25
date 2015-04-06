@@ -96,7 +96,7 @@ The thrust varies with ISP to be more realistic with fuel flow per second.</stri
     <string name="IspPreset10Atm">1</string>
     <bool name="IspPreset10Extend">1</bool>
     <bool name="IspPreset10ThrustCorrection">1</bool>
-    <string name="IspPreset10RatingIspCutoff">385</string>
+    <string name="IspPreset10RatingIspCutoff">800</string>
     <string name="IspPreset10RatingThrustCutoff">-1</string>
     <string name="IspPreset11Name">NothingHere</string>
 </config>

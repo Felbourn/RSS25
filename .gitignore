@@ -3,6 +3,9 @@
 *.txt
 *.lnk
 *.dll
+*.png
+*.pngcache
+*.tcache
 TEMP/*
 KSP_Data/*
 Screenshots/*
@@ -14,6 +17,7 @@ AIES_Aerospace/*
 GameData/*.dll
 GameData/000_Toolbar/*
 GameData/AJE/*
+GameData/ActivceTexrure/*
 GameData/AIES_Aerospace/*
 GameData/B9_Aerospace/*
 GameData/blackheart/*
@@ -40,10 +44,12 @@ GameData/KerbalScienceFoundation/*
 GameData/HGR/*
 GameData/History/Flags/*
 GameData/HullCameraVDS/*
+GameData/Interstellar/*
 GameData/JSI/*
 GameData/KerbCam/*
 GameData/KerbalIspDifficultyScaler/*
 GameData/KerbalTek/*
+GameData/Klockheed_Martian_Special/*
 GameData/KWRocketry/*
 GameData/MechJeb2/*
 GameData/MP_Nazari/*
@@ -74,6 +80,7 @@ GameData/RN_Soviet_Probes/*
 GameData/RN_US_Probes/*
 GameData/RSSTextures/*
 GameData/sceneJumper/*
+GameData/SDHI/*
 GameData/SelectRoot/*
 GameData/SimplePartOrganizer/*
 GameData/SmokeScreen/*
