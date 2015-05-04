@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = FASA/Flags/FASA_USA50
-	launchID = 191
+	launchID = 194
 	PARAMETERS
 	{
 		preset = Normal
@@ -439,8 +439,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.25.0
-		UT = 289056665.048529
-		activeVessel = 0
+		UT = 289057243.309599
+		activeVessel = -1
 		mapViewFiltering = 584
 		VESSEL
 		{
